@@ -99,6 +99,7 @@ For production deployment, you'll need to:
    - `RAPIDAPI_HOST`: The RapidAPI host
    - `RAPIDAPI_BASE`: The base URL for the RapidAPI endpoint
    - `NODE_ENV`: Set to "production"
+   - `FRONTEND_URL`: Your frontend URL (e.g., https://videodownload.netlify.app) for CORS configuration
 
 3. Start the server:
    ```

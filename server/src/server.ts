@@ -12,7 +12,11 @@ const app = express();
 
 // Middleware
 app.use(express.json({ limit: "1mb" }));
-app.use(cors());
+// Configure CORS to allow requests from the frontend
+app.use(cors({
+  origin: process.env.FRONTEND_URL || '*', // Replace with your Netlify domain in production
+  credentials: true
+}));
 
 // Rate limiting - 30 requests per minute per IP
 const limiter = rateLimit({ 

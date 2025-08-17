@@ -1,4 +1,5 @@
 import { useState } from "react";
+import config from "@/config";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -87,7 +88,7 @@ export function VideoDownloader() {
 
     try {
       // Call our backend API
-      const response = await fetch('/api/extract', {
+      const response = await fetch(`${config.apiBaseUrl}/api/extract`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -447,8 +448,8 @@ export function VideoDownloader() {
                               .replace(/[^A-Za-z0-9._-]/g, '');
                             const urlParam = encodeURIComponent(item.downloadUrl || item.url || '');
                             const nameParam = encodeURIComponent(filenameBase);
-                            // Hit backend proxy to force attachment download
-                            const proxyUrl = `/api/download?url=${urlParam}&filename=${nameParam}`;
+                                                      // Hit backend proxy to force attachment download
+                          const proxyUrl = `${config.apiBaseUrl}/api/download?url=${urlParam}&filename=${nameParam}`;
 
                             // Programmatic download
                             const anchor = document.createElement('a');

@@ -82,34 +82,57 @@ npm run server:dev
 
 ## Deployment
 
-### Frontend
+We recommend deploying the backend to Render and the frontend to Netlify for optimal performance.
 
-The frontend can be deployed to any static hosting provider like:
-- Vercel
-- Netlify
-- GitHub Pages
-- AWS S3 + CloudFront
+### Backend Deployment (Render)
 
-Build the frontend with:
+1. Create a new Web Service on [Render](https://render.com)
+2. Connect to your GitHub repository
+3. Configure the service:
+   - Build Command: `cd server && npm install`
+   - Start Command: `cd server && npm start`
+   - Environment Variables:
+     - `PORT`: 10000 (or whatever Render uses by default)
+     - `RAPIDAPI_KEY`: Your RapidAPI key
+     - `RAPIDAPI_HOST`: social-download-all-in-one.p.rapidapi.com
+     - `RAPIDAPI_BASE`: https://social-download-all-in-one.p.rapidapi.com
+     - `NODE_ENV`: production
+     - `FRONTEND_URL`: Your Netlify URL (once you have it)
+
+### Frontend Deployment (Netlify)
+
+1. Create a new site on [Netlify](https://netlify.com)
+2. Connect to your GitHub repository
+3. Configure build settings:
+   - Build Command: `npm run build`
+   - Publish Directory: `dist`
+4. Add environment variables:
+   - Key: `VITE_API_URL`
+   - Value: Your Render backend URL (e.g., `https://videodownload-backend.onrender.com`)
+
+### Configuration
+
+The frontend is configured to use the API URL from the environment variable. We've set up a config file at `src/config.ts` that uses this environment variable:
+
+```typescript
+// Backend API URL configuration
+const config = {
+  apiBaseUrl: import.meta.env.VITE_API_URL || 'http://localhost:3000',
+};
+
+export default config;
 ```
-npm run build
+
+All API calls now use this configuration:
+
+```typescript
+// Example API call
+const response = await fetch(`${config.apiBaseUrl}/api/extract`, {
+  // options...
+});
 ```
 
-### Backend
-
-The backend server can be deployed to services like:
-- Heroku
-- Render
-- DigitalOcean
-- AWS
-- Vercel (serverless functions)
-
-Make sure to:
-1. Set the required environment variables (especially your RapidAPI key)
-2. Update the frontend API endpoint to point to your deployed backend
-3. Set up CORS properly for production
-
-See the `server/README.md` file for more detailed deployment instructions.
+For detailed instructions, see the `DEPLOYMENT.md` file.
 
 ## Legal Considerations
 
