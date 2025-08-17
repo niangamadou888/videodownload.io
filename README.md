@@ -1,73 +1,128 @@
-# Welcome to your Lovable project
+# VideoDownload.io
 
-## Project info
+A modern, fast, and user-friendly web application for downloading videos, audio, and images from 40+ popular social media platforms.
 
-**URL**: https://lovable.dev/projects/21a2443e-03a4-4acc-b818-b52adb2b5474
+![VideoDownload.io Screenshot](src/assets/video-download-hero.png)
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Download videos from 40+ platforms including YouTube, TikTok, Instagram, Facebook, Twitter, and more
+- Extract high-quality video, audio, and image downloads without watermarks
+- Multiple quality options for each download
+- Clean, responsive UI built with React and Tailwind CSS
+- Secure server-side processing to protect API keys
 
-**Use Lovable**
+## How It Works
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/21a2443e-03a4-4acc-b818-b52adb2b5474) and start prompting.
+1. Paste a URL from a supported social media platform
+2. Our backend securely processes the request using the Social Download All-in-One API
+3. Select your preferred format and quality
+4. Download directly to your device with a single click
 
-Changes made via Lovable will be committed automatically to this repo.
+## Supported Platforms
 
-**Use your preferred IDE**
+- YouTube
+- TikTok
+- Instagram
+- Facebook
+- Twitter/X
+- Snapchat
+- Pinterest
+- LinkedIn
+- Reddit
+- Vimeo
+- Tumblr
+- Dailymotion
+- And many more...
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React, TypeScript, Vite, Tailwind CSS, shadcn/ui
+- **Backend**: Node.js, Express, Axios
+- **API Integration**: RapidAPI (Social Download All-in-One)
 
-Follow these steps:
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or later)
+- npm or bun
+- RapidAPI key for the [Social Download All-in-One API](https://rapidapi.com/ytjar/api/social-download-all-in-one)
+
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/yourusername/videodownload.io.git
+cd videodownload.io
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install frontend dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install backend dependencies
+cd server && npm install && cd ..
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Configure the backend
+# Create a .env file in the server directory with:
+# PORT=6000
+# RAPIDAPI_KEY=your_rapidapi_key_here
+# RAPIDAPI_HOST=social-download-all-in-one.p.rapidapi.com
+# RAPIDAPI_BASE=https://social-download-all-in-one.p.rapidapi.com
+
+# Start development servers
+# Option 1: Start both frontend and backend with one command
+npm run start:all
+
+# Option 2: Start them separately
+# In one terminal:
 npm run dev
+# In another terminal:
+npm run server:dev
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Frontend
 
-**Use GitHub Codespaces**
+The frontend can be deployed to any static hosting provider like:
+- Vercel
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Build the frontend with:
+```
+npm run build
+```
 
-## What technologies are used for this project?
+### Backend
 
-This project is built with:
+The backend server can be deployed to services like:
+- Heroku
+- Render
+- DigitalOcean
+- AWS
+- Vercel (serverless functions)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Make sure to:
+1. Set the required environment variables (especially your RapidAPI key)
+2. Update the frontend API endpoint to point to your deployed backend
+3. Set up CORS properly for production
 
-## How can I deploy this project?
+See the `server/README.md` file for more detailed deployment instructions.
 
-Simply open [Lovable](https://lovable.dev/projects/21a2443e-03a4-4acc-b818-b52adb2b5474) and click on Share -> Publish.
+## Legal Considerations
 
-## Can I connect a custom domain to my Lovable project?
+- This application is for educational and personal use only
+- Users are responsible for complying with the terms of service of all platforms
+- Users should respect copyright laws and only download content they have the right to access
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Acknowledgements
+
+- [Social Download All-in-One API](https://rapidapi.com/ytjar/api/social-download-all-in-one)
+- [shadcn/ui](https://ui.shadcn.com/) for UI components
+- [Tailwind CSS](https://tailwindcss.com/) for styling
