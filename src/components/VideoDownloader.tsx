@@ -19,7 +19,7 @@ import {
   FaTumblr,
   FaDailymotion
 } from "react-icons/fa6";
-import heroImage from "@/assets/video-download-hero-removebg-preview.png";
+import heroImage from "@/assets/video-dowloader-logo.png";
 
 interface DownloadItem {
   type: string;
