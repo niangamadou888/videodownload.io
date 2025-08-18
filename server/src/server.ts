@@ -10,6 +10,9 @@ dotenv.config();
 
 const app = express();
 
+// Trust proxy for deployment platforms like Render that use X-Forwarded-For headers
+app.set('trust proxy', 1);
+
 // Middleware
 app.use(express.json({ limit: "1mb" }));
 // Configure CORS to allow requests from the frontend
