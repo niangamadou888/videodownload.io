@@ -18,10 +18,10 @@ export function LanguageSelector() {
         <Button 
           variant="ghost"
           size="icon"
-          className="rounded-full w-10 h-10 bg-primary/10 hover:bg-primary/20 text-white"
+          className="rounded-full w-12 h-12 bg-primary/40 hover:bg-primary/60 text-white border-2 border-white/30 shadow-lg"
           aria-label={t('languageSelector')}
         >
-          <Globe className="h-5 w-5" />
+          <Globe className="h-6 w-6" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-card/80 backdrop-blur-md border-primary/20">

@@ -317,7 +317,13 @@ export function VideoDownloader() {
   };
 
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen overflow-hidden relative">
+      {/* Language selector at top right of site */}
+      <div className="absolute top-6 right-6 z-50 flex items-center gap-2">
+        <span className="text-sm font-medium text-white bg-primary/30 px-3 py-1 rounded-full shadow-md">{t("languageSelector")}</span>
+        <LanguageSelector />
+      </div>
+
       {/* Hero Section */}
       <div className="relative container mx-auto px-4 py-16">
         {/* Decorative elements */}
@@ -346,11 +352,6 @@ export function VideoDownloader() {
             {/* Decorative corner accents */}
             <div className="absolute -top-2 -left-2 w-16 h-16 border-t-2 border-l-2 border-primary/50 rounded-tl-md"></div>
             <div className="absolute -bottom-2 -right-2 w-16 h-16 border-b-2 border-r-2 border-accent/50 rounded-br-md"></div>
-            
-            {/* Language selector */}
-            <div className="absolute top-6 right-6">
-              <LanguageSelector />
-            </div>
             
             <div className="flex flex-col sm:flex-row gap-6 mb-8 relative">
               <Input
