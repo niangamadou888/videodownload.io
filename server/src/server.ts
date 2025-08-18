@@ -354,41 +354,124 @@ app.get("/api/download", async (req, res) => {
 
   try {
     const urlObj = new URL(rawUrl);
+    const hostname = urlObj.hostname;
+    
+    // Log download attempt for debugging
+    console.log(`Download request for: ${rawUrl}`);
+    console.log(`Referer provided: ${refererUrl || 'none'}`);
 
-    // Construct realistic browser-like headers and forward optional Range
-    const headers: Record<string, string> = {
-      "User-Agent":
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-      "Accept":
-        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    // Try multiple header combinations to bypass CDN protections
+    const userAgents = [
+      // Modern Chrome
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+      // Modern Firefox
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+      // Mobile Safari
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+    ];
+    
+    // Determine referer strategy
+    const refererToUse = refererUrl && isValidHttpUrl(refererUrl) ? refererUrl : `${urlObj.protocol}//${urlObj.host}/`;
+    const originToUse = new URL(refererToUse).origin;
+    
+    // Base headers that work for most services
+    const baseHeaders: Record<string, string> = {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
       "Accept-Language": "en-US,en;q=0.9",
       "Connection": "keep-alive",
+      "Sec-Fetch-Dest": "document",
+      "Sec-Fetch-Mode": "navigate",
+      "Sec-Fetch-Site": "same-origin",
+      "Pragma": "no-cache",
+      "Cache-Control": "no-cache",
+      "DNT": "1",
     };
 
-    // If client provided the original content page, forward as Referer/Origin
-    if (refererUrl && isValidHttpUrl(refererUrl)) {
-      headers["Referer"] = refererUrl;
-      const r = new URL(refererUrl);
-      headers["Origin"] = `${r.protocol}//${r.host}`;
-    } else {
-      // Fallback referer to the upstream origin which some CDNs require
-      headers["Referer"] = `${urlObj.protocol}//${urlObj.host}/`;
-      headers["Origin"] = `${urlObj.protocol}//${urlObj.host}`;
-    }
-
     // Forward Range if present to support partial content
-    const rangeHeader = req.headers["range"];
-    if (typeof rangeHeader === "string" && rangeHeader.trim().length > 0) {
-      headers["Range"] = rangeHeader;
+    if (typeof req.headers["range"] === "string" && req.headers["range"].trim().length > 0) {
+      baseHeaders["Range"] = req.headers["range"];
     }
 
-    const upstream = await axios.get(rawUrl, {
-      responseType: "stream",
-      timeout: 60_000,
-      headers,
-      maxRedirects: 5,
-      validateStatus: (s) => s >= 200 && s < 400, // allow redirects to be followed
-    });
+    // Create different header combinations to try
+    const headerSets: Record<string, string>[] = [
+      // Set 1: Standard with direct referer
+      {
+        ...baseHeaders,
+        "User-Agent": userAgents[0],
+        "Referer": refererToUse,
+        "Origin": originToUse,
+      },
+      // Set 2: Same site origin
+      {
+        ...baseHeaders,
+        "User-Agent": userAgents[1],
+        "Referer": `${urlObj.protocol}//${urlObj.host}/`,
+        "Origin": `${urlObj.protocol}//${urlObj.host}`,
+        "Sec-Fetch-Site": "same-origin",
+      },
+      // Set 3: Mobile user agent with minimal headers
+      {
+        "User-Agent": userAgents[2],
+        "Accept": "*/*",
+        "Referer": refererToUse,
+      }
+    ];
+
+    // Special case for specific hosts with known anti-bot measures
+    if (hostname.includes("tiktok") || hostname.includes("douyin")) {
+      // TikTok specific headers
+      const tiktokHeaders: Record<string, string> = {
+        ...baseHeaders,
+        "User-Agent": userAgents[0],
+        "Referer": "https://www.tiktok.com/",
+        "Origin": "https://www.tiktok.com",
+        "Cookie": "tt_csrf_token=1; tt_chain_token=1;"
+      };
+      headerSets.push(tiktokHeaders);
+    } else if (hostname.includes("instagram") || hostname.includes("fbcdn")) {
+      // Instagram/Facebook specific headers
+      const instagramHeaders: Record<string, string> = {
+        ...baseHeaders,
+        "User-Agent": userAgents[0],
+        "Referer": "https://www.instagram.com/",
+        "Origin": "https://www.instagram.com",
+        "X-IG-App-ID": "936619743392459"
+      };
+      headerSets.push(instagramHeaders);
+    }
+
+    // Try each header set until one works
+    let upstream = null;
+    let lastError = null;
+
+    for (const headers of headerSets) {
+      try {
+        console.log(`Trying download with headers:`, JSON.stringify(headers, null, 2));
+        
+        upstream = await axios.get(rawUrl, {
+          responseType: "stream",
+          timeout: 60_000,
+          headers,
+          maxRedirects: 5,
+          validateStatus: (s) => s >= 200 && s < 400,
+        });
+        
+        console.log(`Download successful with status: ${upstream.status}`);
+        break; // Success! Exit the loop
+      } catch (e) {
+        lastError = e;
+        if (axios.isAxiosError(e)) {
+          console.log(`Download attempt failed with status: ${e.response?.status}, message: ${e.message}`);
+        } else {
+          console.log(`Download attempt failed with error: ${(e as Error).message}`);
+        }
+        // Continue to next header set
+      }
+    }
+
+    if (!upstream) {
+      throw lastError || new Error("All download attempts failed");
+    }
 
     // Infer content type/length
     const contentType = upstream.headers["content-type"] || "application/octet-stream";
