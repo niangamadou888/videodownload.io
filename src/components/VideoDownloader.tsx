@@ -6,6 +6,8 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 import { Download, Globe, Loader2, Play, Video, Music, Image as ImageIcon } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageSelector } from "@/components/LanguageSelector";
 import { 
   FaTiktok,
   FaInstagram,
@@ -62,6 +64,7 @@ export function VideoDownloader() {
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState<DownloadResult | null>(null);
   const { toast } = useToast();
+  const { t } = useLanguage();
 
   // Reset result when URL changes
   const handleUrlChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -75,8 +78,8 @@ export function VideoDownloader() {
   const handleDownload = async () => {
     if (!url.trim()) {
       toast({
-        title: "Invalid URL",
-        description: "Please enter a valid video URL",
+        title: t("invalidUrl"),
+        description: t("enterValidUrl"),
         variant: "destructive",
       });
       return;
@@ -183,14 +186,14 @@ export function VideoDownloader() {
       
       setResult(processedResult);
       toast({
-        title: "Download Ready!",
-        description: "Your video has been processed successfully",
+        title: t("downloadReady"),
+        description: t("processedSuccessfully"),
       });
     } catch (error) {
       console.error("Download error:", error);
       toast({
-        title: "Download Failed",
-        description: error instanceof Error ? error.message : "Something went wrong. Please try again.",
+        title: t("downloadFailed"),
+        description: error instanceof Error ? error.message : t("unableToDownload"),
         variant: "destructive",
       });
     } finally {
@@ -330,12 +333,12 @@ export function VideoDownloader() {
               className="w-72 h-56 object-contain animate-float drop-shadow-2xl"
             />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent tracking-tight">
-            VideoDownload.io
+                      <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent tracking-tight">
+            {t("appTitle")}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            Download videos, audio, and images from <span className="font-semibold text-white">40+ social media platforms</span>.
-            Fast, free, and without watermarks.
+            {t("appDescription").replace("40+", "")} <span className="font-semibold text-white">40+ {t("appDescription").includes("platforms") ? "" : "social media platforms"}</span>
+            {t("appDescription").includes("Fast") ? "" : ". Fast, free, and without watermarks."}
           </p>
           
           {/* Download Interface */}
@@ -344,10 +347,15 @@ export function VideoDownloader() {
             <div className="absolute -top-2 -left-2 w-16 h-16 border-t-2 border-l-2 border-primary/50 rounded-tl-md"></div>
             <div className="absolute -bottom-2 -right-2 w-16 h-16 border-b-2 border-r-2 border-accent/50 rounded-br-md"></div>
             
+            {/* Language selector */}
+            <div className="absolute top-6 right-6">
+              <LanguageSelector />
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-6 mb-8 relative">
               <Input
                 type="url"
-                placeholder="Paste video URL here (TikTok, Instagram, YouTube, etc.)"
+                placeholder={t("inputPlaceholder")}
                 value={url}
                 onChange={handleUrlChange}
                 className="flex-1 bg-input/40 backdrop-blur-sm border-primary/20 text-base md:text-lg h-14 md:h-16 shadow-lg focus:ring-2 focus:ring-primary/50 rounded-lg pl-5"
@@ -363,12 +371,12 @@ export function VideoDownloader() {
                 {isLoading ? (
                   <>
                     <Loader2 className="h-5 w-5 animate-spin mr-2" />
-                    Processing...
+                    {t("processing")}
                   </>
                 ) : (
                   <>
                     <Download className="h-5 w-5 mr-2" />
-                    Download
+                    {t("downloadButton")}
                   </>
                 )}
               </Button>
@@ -376,7 +384,7 @@ export function VideoDownloader() {
             
             <div className="flex items-center justify-center gap-3 text-sm md:text-base text-muted-foreground">
               <Globe className="h-5 w-5 text-primary/70" />
-              <span>Supports 40+ platforms • No registration required • Fast & secure</span>
+              <span>{t("supportText")}</span>
             </div>
           </Card>
 
@@ -414,7 +422,7 @@ export function VideoDownloader() {
                   </div>
                   {result.author && (
                     <div className="text-sm text-muted-foreground flex items-center gap-2">
-                      <span>Creator:</span>
+                      <span>{t("creator")}</span>
                       <span className="text-foreground font-medium">{result.author}</span>
                     </div>
                   )}
@@ -422,7 +430,7 @@ export function VideoDownloader() {
               </div>
               
               <div className="space-y-4">
-                <h4 className="font-medium text-lg mb-3 text-white">Download Options</h4>
+                <h4 className="font-medium text-lg mb-3 text-white">{t("downloadOptions")}</h4>
                 {result.results && result.results.length > 0 ? (
                   <div className="grid grid-cols-1 gap-4">
                     {result.results.map((item, index) => (
@@ -446,8 +454,8 @@ export function VideoDownloader() {
                             try {
                               // Show toast to indicate download is starting
                               toast({
-                                title: "Starting Download...",
-                                description: "Direct download initiated",
+                                title: t("startingDownload"),
+                                description: t("directDownloadInitiated"),
                               });
                               
                               // Direct download from source URL
@@ -458,24 +466,24 @@ export function VideoDownloader() {
                             } catch (error) {
                               console.error("Download error:", error);
                               toast({
-                                title: "Download Failed",
-                                description: "Unable to download the file. Please try again.",
+                                title: t("downloadFailed"),
+                                description: t("unableToDownload"),
                                 variant: "destructive",
                               });
                             }
                           }}
                         >
                           <Download className="h-5 w-5 mr-2" />
-                          Download
+                          {t("downloadButton")}
                         </Button>
                       </div>
                     ))}
                   </div>
                 ) : (
                   <div className="p-6 text-center border border-dashed border-primary/30 rounded-xl bg-card/30">
-                    <p className="text-white mb-2">No download options available</p>
-                    <p className="text-sm text-muted-foreground">Please try a different URL or check that the content is publicly accessible</p>
-                    <p className="text-xs mt-3 text-muted-foreground">Response status: {result.status}</p>
+                    <p className="text-white mb-2">{t("noDownloadOptions")}</p>
+                    <p className="text-sm text-muted-foreground">{t("tryDifferentUrl")}</p>
+                    <p className="text-xs mt-3 text-muted-foreground">{t("responseStatus")} {result.status}</p>
                   </div>
                 )}
               </div>
@@ -488,7 +496,7 @@ export function VideoDownloader() {
           <div className="absolute top-1/2 left-0 w-full h-40 bg-gradient-to-r from-primary/5 via-accent/10 to-primary/5 -z-10 blur-3xl"></div>
           
           <div className="max-w-xs mx-auto mb-12 relative">
-            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Supported Platforms</h2>
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t("supportedPlatforms")}</h2>
             <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full mx-auto"></div>
           </div>
           
@@ -515,7 +523,7 @@ export function VideoDownloader() {
           <div className="absolute -z-10 -right-40 top-10 w-80 h-80 bg-accent/10 rounded-full blur-3xl"></div>
           
           <div className="text-center max-w-xs mx-auto mb-12">
-            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Key Features</h2>
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">{t("keyFeatures")}</h2>
             <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full mx-auto"></div>
           </div>
           
@@ -525,8 +533,8 @@ export function VideoDownloader() {
               <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse-glow">
                 <Download className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-semibold mb-3 text-white">High Quality</h3>
-              <p className="text-muted-foreground leading-relaxed">Download videos in the highest available quality, up to 4K resolution for maximum clarity.</p>
+              <h3 className="text-2xl font-semibold mb-3 text-white">{t("highQuality")}</h3>
+              <p className="text-muted-foreground leading-relaxed">{t("highQualityDesc")}</p>
             </Card>
 
             <Card className="glass-card p-8 text-center transition-transform duration-300 hover:scale-[1.02] border border-primary/10 hover:border-primary/30 overflow-hidden relative group">
@@ -534,8 +542,8 @@ export function VideoDownloader() {
               <div className="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse-glow">
                 <Video className="h-8 w-8 text-accent" />
               </div>
-              <h3 className="text-2xl font-semibold mb-3 text-white">No Watermarks</h3>
-              <p className="text-muted-foreground leading-relaxed">Get clean downloads without watermarks from supported platforms for professional use.</p>
+              <h3 className="text-2xl font-semibold mb-3 text-white">{t("noWatermarks")}</h3>
+              <p className="text-muted-foreground leading-relaxed">{t("noWatermarksDesc")}</p>
             </Card>
 
             <Card className="glass-card p-8 text-center transition-transform duration-300 hover:scale-[1.02] border border-primary/10 hover:border-primary/30 overflow-hidden relative group">
@@ -543,14 +551,14 @@ export function VideoDownloader() {
               <div className="w-16 h-16 bg-primary-glow/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:animate-pulse-glow">
                 <Globe className="h-8 w-8 text-primary-glow" />
               </div>
-              <h3 className="text-2xl font-semibold mb-3 text-white">40+ Platforms</h3>
-              <p className="text-muted-foreground leading-relaxed">Support for all major social media and video platforms with regularly updated compatibility.</p>
+              <h3 className="text-2xl font-semibold mb-3 text-white">{t("manyPlatforms")}</h3>
+              <p className="text-muted-foreground leading-relaxed">{t("manyPlatformsDesc")}</p>
             </Card>
           </div>
           
           {/* Footer section */}
           <div className="mt-32 text-center">
-            <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} VideoDownload.io - Fast & Free Video Downloader</p>
+            <p className="text-sm text-muted-foreground">{t("copyright").replace("{year}", new Date().getFullYear().toString())}</p>
           </div>
         </div>
       </div>
