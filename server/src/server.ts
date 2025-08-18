@@ -4,6 +4,7 @@ import axios from "axios";
 import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
+import fs from "fs";
 
 // Load environment variables
 dotenv.config();
@@ -359,11 +360,61 @@ app.get("/api/redirect", async (req, res) => {
 
 // In production, serve the built frontend
 if (process.env.NODE_ENV === "production") {
-  const clientPath = path.join(__dirname, "../../dist");
+  
+  // Try multiple possible paths to find the frontend build
+  const possiblePaths = [
+    path.join(__dirname, "../../dist"),          // Regular path
+    path.join(process.cwd(), "dist"),            // From current working directory
+    "/opt/render/project/src/dist",              // Render-specific path 1
+    path.join(process.cwd(), "../dist"),         // One level up
+    path.join(process.cwd(), "../../dist"),      // Two levels up
+  ];
+  
+  // Find the first path that exists
+  let clientPath = possiblePaths[0]; // Default
+  let foundValidPath = false;
+  
+  for (const possiblePath of possiblePaths) {
+    try {
+      if (fs.existsSync(path.join(possiblePath, "index.html"))) {
+        console.log(`Found frontend build at: ${possiblePath}`);
+        clientPath = possiblePath;
+        foundValidPath = true;
+        break;
+      }
+    } catch (err) {
+      console.warn(`Path check failed for: ${possiblePath}`);
+    }
+  }
+  
+  console.log(`Serving static files from: ${clientPath}`);
   app.use(express.static(clientPath));
   
   app.get("*", (_, res) => {
-    res.sendFile(path.join(clientPath, "index.html"));
+    const indexPath = path.join(clientPath, "index.html");
+    console.log(`Attempting to serve: ${indexPath}`);
+    
+    // Check if index.html exists before sending
+    if (foundValidPath) {
+      res.sendFile(indexPath);
+    } else {
+      // Return API-only mode page
+      res.status(404).send(`
+        <html>
+          <head><title>API Mode Active</title></head>
+          <body style="font-family: Arial, sans-serif; padding: 20px; line-height: 1.6;">
+            <h1>VideoDownload.io API</h1>
+            <p>The frontend build was not found. The server is running in API-only mode.</p>
+            <p>Available endpoints:</p>
+            <ul>
+              <li><code>/api/extract</code> - Extract download URLs (POST)</li>
+              <li><code>/api/redirect</code> - Redirect to download URL (GET)</li>
+              <li><code>/api/health</code> - Health check endpoint (GET)</li>
+            </ul>
+          </body>
+        </html>
+      `);
+    }
   });
 }
 
