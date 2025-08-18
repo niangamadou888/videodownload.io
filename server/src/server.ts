@@ -343,17 +343,46 @@ app.post("/api/extract", async (req, res) => {
 app.get("/api/download", async (req, res) => {
   const rawUrl = req.query.url as string | undefined;
   const suggestedName = (req.query.filename as string | undefined) || "download";
+  const refererUrl = req.query.referer as string | undefined;
 
   if (!isValidHttpUrl(rawUrl)) {
     return res.status(400).json({ error: "Invalid 'url' query parameter" });
   }
 
   try {
+    const urlObj = new URL(rawUrl);
+
+    // Construct realistic browser-like headers and forward optional Range
+    const headers: Record<string, string> = {
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+      "Accept":
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+    };
+
+    // If client provided the original content page, forward as Referer/Origin
+    if (refererUrl && isValidHttpUrl(refererUrl)) {
+      headers["Referer"] = refererUrl;
+      const r = new URL(refererUrl);
+      headers["Origin"] = `${r.protocol}//${r.host}`;
+    } else {
+      // Fallback referer to the upstream origin which some CDNs require
+      headers["Referer"] = `${urlObj.protocol}//${urlObj.host}/`;
+      headers["Origin"] = `${urlObj.protocol}//${urlObj.host}`;
+    }
+
+    // Forward Range if present to support partial content
+    const rangeHeader = req.headers["range"];
+    if (typeof rangeHeader === "string" && rangeHeader.trim().length > 0) {
+      headers["Range"] = rangeHeader;
+    }
+
     const upstream = await axios.get(rawUrl, {
       responseType: "stream",
       timeout: 60_000,
-      // Some hosts require a UA; keep generic
-      headers: { "User-Agent": "Mozilla/5.0 (compatible; VideoDownload.io)" },
+      headers,
       maxRedirects: 5,
       validateStatus: (s) => s >= 200 && s < 400, // allow redirects to be followed
     });
@@ -363,7 +392,6 @@ app.get("/api/download", async (req, res) => {
     const contentLength = upstream.headers["content-length"];
 
     // Derive filename
-    const urlObj = new URL(rawUrl);
     const urlName = urlObj.pathname.split("/").pop() || "file";
     const extFromType = (() => {
       if (typeof contentType === "string") {

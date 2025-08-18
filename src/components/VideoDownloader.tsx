@@ -448,8 +448,9 @@ export function VideoDownloader() {
                               .replace(/[^A-Za-z0-9._-]/g, '');
                             const urlParam = encodeURIComponent(item.downloadUrl || item.url || '');
                             const nameParam = encodeURIComponent(filenameBase);
-                                                      // Hit backend proxy to force attachment download
-                          const proxyUrl = `${config.apiBaseUrl}/api/download?url=${urlParam}&filename=${nameParam}`;
+                            const refererParam = encodeURIComponent(result.url || url);
+                            // Hit backend proxy to force attachment download with referer hint
+                            const proxyUrl = `${config.apiBaseUrl}/api/download?url=${urlParam}&filename=${nameParam}&referer=${refererParam}`;
 
                             // Programmatic download
                             const anchor = document.createElement('a');
