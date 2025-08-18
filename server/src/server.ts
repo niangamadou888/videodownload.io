@@ -347,6 +347,7 @@ app.get("/api/download", async (req, res) => {
   const rawUrl = req.query.url as string | undefined;
   const suggestedName = (req.query.filename as string | undefined) || "download";
   const refererUrl = req.query.referer as string | undefined;
+  const sourceType = req.query.source as string | undefined;
 
   if (!isValidHttpUrl(rawUrl)) {
     return res.status(400).json({ error: "Invalid 'url' query parameter" });
@@ -359,6 +360,9 @@ app.get("/api/download", async (req, res) => {
     // Log download attempt for debugging
     console.log(`Download request for: ${rawUrl}`);
     console.log(`Referer provided: ${refererUrl || 'none'}`);
+    console.log(`Source type: ${sourceType || 'unknown'}`);
+    console.log(`Client IP: ${req.ip}`);
+    console.log(`User-Agent: ${req.headers['user-agent']}`);
 
     // Try multiple header combinations to bypass CDN protections
     const userAgents = [
@@ -367,7 +371,9 @@ app.get("/api/download", async (req, res) => {
       // Modern Firefox
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
       // Mobile Safari
-      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+      // Android Chrome
+      "Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
     ];
     
     // Determine referer strategy
@@ -414,6 +420,11 @@ app.get("/api/download", async (req, res) => {
         "User-Agent": userAgents[2],
         "Accept": "*/*",
         "Referer": refererToUse,
+      },
+      // Set 4: Android mobile with minimal headers
+      {
+        "User-Agent": userAgents[3],
+        "Accept": "*/*",
       }
     ];
 
@@ -428,6 +439,14 @@ app.get("/api/download", async (req, res) => {
         "Cookie": "tt_csrf_token=1; tt_chain_token=1;"
       };
       headerSets.push(tiktokHeaders);
+      
+      // TikTok mobile app headers
+      const tiktokMobileHeaders: Record<string, string> = {
+        "User-Agent": "TikTok 26.2.0 rv:262018 (iPhone; iOS 14.4.2; en_US) Cronet",
+        "Accept": "*/*",
+        "Connection": "keep-alive"
+      };
+      headerSets.push(tiktokMobileHeaders);
     } else if (hostname.includes("instagram") || hostname.includes("fbcdn")) {
       // Instagram/Facebook specific headers
       const instagramHeaders: Record<string, string> = {
@@ -438,6 +457,25 @@ app.get("/api/download", async (req, res) => {
         "X-IG-App-ID": "936619743392459"
       };
       headerSets.push(instagramHeaders);
+      
+      // Instagram mobile app headers
+      const instagramMobileHeaders: Record<string, string> = {
+        "User-Agent": "Instagram 219.0.0.12.117 Android",
+        "Accept": "*/*",
+        "Connection": "keep-alive"
+      };
+      headerSets.push(instagramMobileHeaders);
+    } else if (hostname.includes("youtube") || hostname.includes("googlevideo")) {
+      // YouTube specific headers
+      const youtubeHeaders: Record<string, string> = {
+        ...baseHeaders,
+        "User-Agent": userAgents[0],
+        "Referer": "https://www.youtube.com/",
+        "Origin": "https://www.youtube.com",
+        "X-YouTube-Client-Name": "1",
+        "X-YouTube-Client-Version": "2.20230331.00.00"
+      };
+      headerSets.push(youtubeHeaders);
     }
 
     // Try each header set until one works
@@ -452,7 +490,7 @@ app.get("/api/download", async (req, res) => {
           responseType: "stream",
           timeout: 60_000,
           headers,
-          maxRedirects: 5,
+          maxRedirects: 10,  // Increased to handle more redirects
           validateStatus: (s) => s >= 200 && s < 400,
         });
         
@@ -462,6 +500,27 @@ app.get("/api/download", async (req, res) => {
         lastError = e;
         if (axios.isAxiosError(e)) {
           console.log(`Download attempt failed with status: ${e.response?.status}, message: ${e.message}`);
+          
+          // If we got redirected but failed, try to follow that redirect manually
+          if (e.response?.headers?.location) {
+            const redirectUrl = e.response.headers.location;
+            console.log(`Following redirect to: ${redirectUrl}`);
+            
+            try {
+              if (isValidHttpUrl(redirectUrl)) {
+                upstream = await axios.get(redirectUrl, {
+                  responseType: "stream",
+                  timeout: 60_000,
+                  headers,
+                  maxRedirects: 5,
+                });
+                console.log(`Redirect download successful with status: ${upstream.status}`);
+                break; // Success with redirect!
+              }
+            } catch (redirectError) {
+              console.log(`Redirect download failed: ${(redirectError as Error).message}`);
+            }
+          }
         } else {
           console.log(`Download attempt failed with error: ${(e as Error).message}`);
         }

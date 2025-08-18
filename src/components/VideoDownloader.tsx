@@ -442,23 +442,35 @@ export function VideoDownloader() {
                           variant="glass"
                           size="default"
                           className="bg-primary/20 hover:bg-primary/40 text-white border-primary/30"
-                          onClick={() => {
-                            const filenameBase = `${result.source || 'video'}_${formatDisplayName(item)}`
-                              .replace(/\s+/g, '_')
-                              .replace(/[^A-Za-z0-9._-]/g, '');
-                            const urlParam = encodeURIComponent(item.downloadUrl || item.url || '');
-                            const nameParam = encodeURIComponent(filenameBase);
-                            const refererParam = encodeURIComponent(result.url || url);
-                            // Hit backend proxy to force attachment download with referer hint
-                            const proxyUrl = `${config.apiBaseUrl}/api/download?url=${urlParam}&filename=${nameParam}&referer=${refererParam}`;
-
-                            // Programmatic download
-                            const anchor = document.createElement('a');
-                            anchor.href = proxyUrl;
-                            anchor.download = filenameBase;
-                            document.body.appendChild(anchor);
-                            anchor.click();
-                            document.body.removeChild(anchor);
+                          onClick={async () => {
+                            try {
+                              // Show toast to indicate download is starting
+                              toast({
+                                title: "Starting Download...",
+                                description: "Please wait while we prepare your file",
+                              });
+                              
+                              const filenameBase = `${result.source || 'video'}_${formatDisplayName(item)}`
+                                .replace(/\s+/g, '_')
+                                .replace(/[^A-Za-z0-9._-]/g, '');
+                              const urlParam = encodeURIComponent(item.downloadUrl || item.url || '');
+                              const nameParam = encodeURIComponent(filenameBase);
+                              const refererParam = encodeURIComponent(result.url || url);
+                              const sourceParam = encodeURIComponent(result.source || '');
+                              
+                              // Hit backend proxy to force attachment download with referer hint
+                              const proxyUrl = `${config.apiBaseUrl}/api/download?url=${urlParam}&filename=${nameParam}&referer=${refererParam}&source=${sourceParam}`;
+                              
+                              // Open in new tab for better download experience
+                              window.open(proxyUrl, '_blank');
+                            } catch (error) {
+                              console.error("Download error:", error);
+                              toast({
+                                title: "Download Failed",
+                                description: "Unable to download the file. Please try again.",
+                                variant: "destructive",
+                              });
+                            }
                           }}
                         >
                           <Download className="h-5 w-5 mr-2" />
