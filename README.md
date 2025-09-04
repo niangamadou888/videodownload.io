@@ -26,13 +26,11 @@ A modern, fast, and user-friendly web application for downloading videos, audio,
 - Instagram
 - Facebook
 - Twitter/X
-- Snapchat
 - Pinterest
 - LinkedIn
 - Reddit
 - Vimeo
-- Tumblr
-- Dailymotion
+- Threads
 - And many more...
 
 ## Technologies Used

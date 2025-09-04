@@ -14,15 +14,15 @@ import {
   FaYoutube,
   FaFacebook,
   FaXTwitter,
-  FaSnapchat,
   FaPinterest,
   FaLinkedin,
   FaRedditAlien,
   FaVimeoV,
-  FaTumblr,
-  FaDailymotion
+  
 } from "react-icons/fa6";
+import { SiThreads } from "react-icons/si";
 import heroImage from "@/assets/video-dowloader-logo.png";
+import { Link } from "react-router-dom";
 
 interface DownloadItem {
   type: string;
@@ -50,13 +50,11 @@ const SUPPORTED_PLATFORMS = [
   { name: "YouTube", Icon: FaYoutube, color: "bg-[#FF0000]" },
   { name: "Facebook", Icon: FaFacebook, color: "bg-[#1877F2]" },
   { name: "Twitter", Icon: FaXTwitter, color: "bg-[#0f1419]" },
-  { name: "Snapchat", Icon: FaSnapchat, color: "bg-[#FFFC00]" },
   { name: "Pinterest", Icon: FaPinterest, color: "bg-[#E60023]" },
   { name: "LinkedIn", Icon: FaLinkedin, color: "bg-[#0A66C2]" },
   { name: "Reddit", Icon: FaRedditAlien, color: "bg-[#FF4500]" },
   { name: "Vimeo", Icon: FaVimeoV, color: "bg-[#19B7EA]" },
-  { name: "Tumblr", Icon: FaTumblr, color: "bg-[#35465C]" },
-  { name: "Dailymotion", Icon: FaDailymotion, color: "bg-[#0066DC]" },
+  { name: "Threads", Icon: SiThreads, color: "bg-[#000000]" },
 ] as const;
 
 export function VideoDownloader() {
@@ -501,18 +499,20 @@ export function VideoDownloader() {
             <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full mx-auto"></div>
           </div>
           
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5 max-w-5xl mx-auto">
             {SUPPORTED_PLATFORMS.map((platform, index) => (
               <div key={index} className="group relative">
-                <Card className="glass-card p-6 hover:scale-[1.05] transition-all duration-300 overflow-hidden border border-primary/10 hover:border-primary/30">
-                  <div className={`absolute inset-0 opacity-20 ${platform.color}`} />
-                  <div className="relative flex flex-col items-center gap-3">
-                    <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${platform.color} text-white shadow-lg group-hover:animate-pulse-glow`}>
-                      <platform.Icon className="w-8 h-8" />
+                <Link to={`/${platform.name.toLowerCase().replace(/\s+/g, '')}`} className="block">
+                  <Card className="glass-card p-6 hover:scale-[1.05] transition-all duration-300 overflow-hidden border border-primary/10 hover:border-primary/30">
+                    <div className={`absolute inset-0 opacity-20 ${platform.color}`} />
+                    <div className="relative flex flex-col items-center gap-3">
+                      <div className={`w-16 h-16 rounded-xl flex items-center justify-center ${platform.color} text-white shadow-lg group-hover:animate-pulse-glow`}>
+                        <platform.Icon className="w-8 h-8" />
+                      </div>
+                      <div className="text-base font-medium text-white">{platform.name}</div>
                     </div>
-                    <div className="text-base font-medium text-white">{platform.name}</div>
-                  </div>
-                </Card>
+                  </Card>
+                </Link>
               </div>
             ))}
           </div>
