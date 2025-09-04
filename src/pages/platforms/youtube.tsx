@@ -2,11 +2,13 @@ import type { ComponentType, ReactNode } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import PlatformSubheader from "@/components/PlatformSubheader";
 import { Video as VideoIcon, Zap, Music, Monitor, ListChecks, Shield, Link as LinkIcon, Clipboard, Cog, Download } from "lucide-react";
 
 export default function YouTubePage() {
   return (
     <div className="min-h-screen relative">
+      <PlatformSubheader platform="YouTube" />
       <div className="container mx-auto px-4 py-12">
         <div className="mx-auto max-w-5xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
           {/* Features */}

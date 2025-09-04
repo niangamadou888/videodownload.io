@@ -1,11 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import PlatformSubheader from "@/components/PlatformSubheader";
 
 export default function InstagramPage() {
   const platform = "Instagram";
   return (
     <div className="min-h-screen relative">
+      <PlatformSubheader platform={platform} />
       <div className="container mx-auto px-4 py-12">
         <div className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
