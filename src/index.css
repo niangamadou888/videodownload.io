@@ -184,6 +184,95 @@ All colors MUST be HSL.
     background-size: 200% 100%;
     animation: shimmer 3s infinite;
   }
+
+  /* Section blocks with variant accents */
+  .section-block {
+    position: relative;
+    padding: 1.25rem; /* 20px */
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-glass);
+    overflow: hidden;
+  }
+
+  .section-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--section-gradient, linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent))));
+  }
+
+  .section-block::after {
+    content: '';
+    position: absolute;
+    inset: -30% -10% auto auto;
+    width: 380px;
+    height: 220px;
+    background: radial-gradient(closest-side, var(--section-glow, hsl(var(--primary) / 0.15)), transparent 60%);
+    filter: blur(8px);
+    pointer-events: none;
+    transform: rotate(-12deg);
+  }
+
+  .section-title {
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: var(--section-gradient, linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent))));
+  }
+
+  .section-subtitle {
+    color: hsl(var(--foreground));
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .section-muted {
+    color: hsl(var(--muted-foreground));
+  }
+
+  /* Variants */
+  .section-why {
+    --section-gradient: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--primary-glow)), hsl(var(--accent)));
+    --section-glow: hsl(var(--primary) / 0.18);
+  }
+
+  .section-who {
+    --section-gradient: linear-gradient(90deg, hsl(260 85% 65%), hsl(280 85% 65%), hsl(300 80% 70%));
+    --section-glow: hsl(290 80% 60% / 0.18);
+  }
+
+  .section-legal {
+    --section-gradient: linear-gradient(90deg, hsl(160 70% 48%), hsl(170 75% 55%), hsl(190 85% 60%));
+    --section-glow: hsl(170 70% 50% / 0.18);
+  }
+
+  .section-risks {
+    --section-gradient: linear-gradient(90deg, hsl(10 85% 60%), hsl(25 90% 60%), hsl(40 90% 60%));
+    --section-glow: hsl(20 85% 55% / 0.18);
+  }
+
+  .section-whyuse {
+    --section-gradient: linear-gradient(90deg, hsl(230 90% 65%), hsl(250 90% 60%), hsl(270 85% 70%));
+    --section-glow: hsl(250 90% 60% / 0.18);
+  }
+
+  .section-faqs {
+    --section-gradient: linear-gradient(90deg, hsl(200 90% 60%), hsl(220 90% 65%), hsl(240 85% 70%));
+    --section-glow: hsl(220 85% 60% / 0.18);
+  }
+
+  .section-cta {
+    --section-gradient: linear-gradient(90deg, hsl(190 95% 55%), hsl(210 90% 60%), hsl(250 90% 60%));
+    --section-glow: hsl(210 90% 60% / 0.2);
+  }
 }
 
 @keyframes float {
