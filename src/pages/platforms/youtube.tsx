@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import PlatformSubheader from "@/components/PlatformSubheader";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Video as VideoIcon, Zap, Music, Monitor, ListChecks, Shield, Link as LinkIcon, Clipboard, Cog, Download, CheckCircle } from "lucide-react";
+import { VideoDownloader } from "@/components/VideoDownloader";
 
 export default function YouTubePage() {
   return (
@@ -12,6 +13,10 @@ export default function YouTubePage() {
       <PlatformSubheader platform="YouTube" />
       <div className="container mx-auto px-4 py-12">
         <div className="mx-auto max-w-5xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
+          {/* Minimal Download Box (no other homepage sections) */}
+          <div className="mb-10">
+            <VideoDownloader boxOnly />
+          </div>
           {/* Features */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">Features</h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">Tools to Make Downloading YouTube Videos Simple and Reliable</h2>

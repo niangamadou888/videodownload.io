@@ -57,7 +57,7 @@ const SUPPORTED_PLATFORMS = [
   { name: "Threads", Icon: SiThreads, color: "bg-[#000000]" },
 ] as const;
 
-export function VideoDownloader() {
+export function VideoDownloader({ boxOnly = false }: { boxOnly?: boolean }) {
   const [url, setUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState<DownloadResult | null>(null);
@@ -314,6 +314,160 @@ export function VideoDownloader() {
     }
   };
 
+  // Build reusable pieces to optionally render only the download box
+  const downloadInterface = (
+    <Card className="glass-card max-w-4xl mx-auto p-8 md:p-10 mb-16 border-primary/10 relative overflow-hidden">
+      {/* Decorative corner accents */}
+      <div className="absolute -top-2 -left-2 w-16 h-16 border-t-2 border-l-2 border-primary/50 rounded-tl-md"></div>
+      <div className="absolute -bottom-2 -right-2 w-16 h-16 border-b-2 border-r-2 border-accent/50 rounded-br-md"></div>
+      
+      <div className="flex flex-col sm:flex-row gap-6 mb-8 relative">
+        <Input
+          type="url"
+          placeholder={t("inputPlaceholder")}
+          value={url}
+          onChange={handleUrlChange}
+          className="flex-1 bg-input/40 backdrop-blur-sm border-primary/20 text-base md:text-lg h-14 md:h-16 shadow-lg focus:ring-2 focus:ring-primary/50 rounded-lg pl-5"
+          disabled={isLoading}
+        />
+        <Button
+          onClick={handleDownload}
+          disabled={isLoading}
+          variant="download"
+          size="lg"
+          className="h-14 md:h-16 px-8 md:px-10 text-base font-semibold rounded-lg"
+        >
+          {isLoading ? (
+            <>
+              <Loader2 className="h-5 w-5 animate-spin mr-2" />
+              {t("processing")}
+            </>
+          ) : (
+            <>
+              <Download className="h-5 w-5 mr-2" />
+              {t("downloadButton")}
+            </>
+          )}
+        </Button>
+      </div>
+      
+      <div className="flex items-center justify-center gap-3 text-sm md:text-base text-muted-foreground">
+        <Globe className="h-5 w-5 text-primary/70" />
+        <span>{t("supportText")}</span>
+      </div>
+    </Card>
+  );
+
+  const resultsInterface = result && (
+    <Card className="glass-card max-w-3xl mx-auto p-8 mb-16 border-primary/10 overflow-hidden backdrop-blur-lg relative">
+      <div className="absolute -z-10 top-0 right-0 w-1/3 h-1/3 bg-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute -z-10 bottom-0 left-0 w-1/3 h-1/3 bg-accent/10 rounded-full blur-3xl"></div>
+      
+      <div className="flex flex-col md:flex-row items-start gap-6 mb-8 border-b border-primary/10 pb-6">
+        {result.thumb && (
+          <div className="relative group">
+            <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/30 rounded-2xl blur transition-all duration-300 -z-10"></div>
+            <img 
+              src={result.thumb} 
+              alt="Thumbnail" 
+              className="w-full md:w-52 h-auto aspect-video md:h-52 object-cover rounded-xl shadow-xl border border-primary/20 transition-transform duration-300 group-hover:scale-[1.02]"
+            />
+          </div>
+        )}
+        <div className="flex-1 text-left">
+          <h3 className="font-semibold text-xl md:text-2xl mb-3 text-white leading-tight">{result.title}</h3>
+          <div className="flex flex-wrap gap-3 mb-4">
+            {formatDuration(result.duration) && (
+              <Badge variant="outline" className="bg-primary/20 text-white border-primary/30 py-1 px-3 text-sm hover:bg-primary/30 transition-colors">
+                <Play className="h-3 w-3 mr-2" />
+                {formatDuration(result.duration)}
+              </Badge>
+            )}
+            {result.source && (
+              <Badge variant="outline" className="bg-accent/20 text-white border-accent/30 py-1 px-3 text-sm hover:bg-accent/30 transition-colors uppercase tracking-wide">
+                {result.source}
+              </Badge>
+            )}
+          </div>
+          {result.author && (
+            <div className="text-sm text-muted-foreground flex items-center gap-2">
+              <span>{t("creator")}</span>
+              <span className="text-foreground font-medium">{result.author}</span>
+            </div>
+          )}
+        </div>
+      </div>
+      
+      <div className="space-y-4">
+        <h4 className="font-medium text-lg mb-3 text-white">{t("downloadOptions")}</h4>
+        {result.results && result.results.length > 0 ? (
+          <div className="grid grid-cols-1 gap-4">
+            {result.results.map((item, index) => (
+              <div key={index} className="flex items-center justify-between p-4 bg-card/40 hover:bg-card/50 rounded-xl border border-primary/10 transition-all duration-300 hover:border-primary/20">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-white">
+                    {getFileIcon(item.type)}
+                  </div>
+                  <div>
+                    <span className="font-medium text-white">
+                      {formatDisplayName(item)}
+                    </span>
+                    {item.size && <span className="text-primary/80 ml-3 text-sm">({item.size})</span>}
+                  </div>
+                </div>
+                <Button
+                  variant="glass"
+                  size="default"
+                  className="bg-primary/20 hover:bg-primary/40 text-white border-primary/30"
+                  onClick={() => {
+                    try {
+                      // Show toast to indicate download is starting
+                      toast({
+                        title: t("startingDownload"),
+                        description: t("directDownloadInitiated"),
+                      });
+                      
+                      // Direct download from source URL
+                      const downloadUrl = item.downloadUrl || item.url || '';
+                      
+                      // Open the download URL directly in a new tab
+                      window.open(downloadUrl, '_blank');
+                    } catch (error) {
+                      console.error("Download error:", error);
+                      toast({
+                        title: t("downloadFailed"),
+                        description: t("unableToDownload"),
+                        variant: "destructive",
+                      });
+                    }
+                  }}
+                >
+                  <Download className="h-5 w-5 mr-2" />
+                  {t("downloadButton")}
+                </Button>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="p-6 text-center border border-dashed border-primary/30 rounded-xl bg-card/30">
+            <p className="text-white mb-2">{t("noDownloadOptions")}</p>
+            <p className="text-sm text-muted-foreground">{t("tryDifferentUrl")}</p>
+            <p className="text-xs mt-3 text-muted-foreground">{t("responseStatus")} {result.status}</p>
+          </div>
+        )}
+      </div>
+    </Card>
+  );
+
+  if (boxOnly) {
+    return (
+      <div className="w-full">
+        {downloadInterface}
+        {resultsInterface}
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen overflow-hidden relative">
       {/* Language selector at top right of site */}
@@ -346,148 +500,10 @@ export function VideoDownloader() {
           </p>
           
           {/* Download Interface */}
-          <Card className="glass-card max-w-4xl mx-auto p-8 md:p-10 mb-16 border-primary/10 relative overflow-hidden">
-            {/* Decorative corner accents */}
-            <div className="absolute -top-2 -left-2 w-16 h-16 border-t-2 border-l-2 border-primary/50 rounded-tl-md"></div>
-            <div className="absolute -bottom-2 -right-2 w-16 h-16 border-b-2 border-r-2 border-accent/50 rounded-br-md"></div>
-            
-            <div className="flex flex-col sm:flex-row gap-6 mb-8 relative">
-              <Input
-                type="url"
-                placeholder={t("inputPlaceholder")}
-                value={url}
-                onChange={handleUrlChange}
-                className="flex-1 bg-input/40 backdrop-blur-sm border-primary/20 text-base md:text-lg h-14 md:h-16 shadow-lg focus:ring-2 focus:ring-primary/50 rounded-lg pl-5"
-                disabled={isLoading}
-              />
-              <Button
-                onClick={handleDownload}
-                disabled={isLoading}
-                variant="download"
-                size="lg"
-                className="h-14 md:h-16 px-8 md:px-10 text-base font-semibold rounded-lg"
-              >
-                {isLoading ? (
-                  <>
-                    <Loader2 className="h-5 w-5 animate-spin mr-2" />
-                    {t("processing")}
-                  </>
-                ) : (
-                  <>
-                    <Download className="h-5 w-5 mr-2" />
-                    {t("downloadButton")}
-                  </>
-                )}
-              </Button>
-            </div>
-            
-            <div className="flex items-center justify-center gap-3 text-sm md:text-base text-muted-foreground">
-              <Globe className="h-5 w-5 text-primary/70" />
-              <span>{t("supportText")}</span>
-            </div>
-          </Card>
+          {downloadInterface}
 
           {/* Results */}
-          {result && (
-            <Card className="glass-card max-w-3xl mx-auto p-8 mb-16 border-primary/10 overflow-hidden backdrop-blur-lg relative">
-              <div className="absolute -z-10 top-0 right-0 w-1/3 h-1/3 bg-primary/10 rounded-full blur-3xl"></div>
-              <div className="absolute -z-10 bottom-0 left-0 w-1/3 h-1/3 bg-accent/10 rounded-full blur-3xl"></div>
-              
-              <div className="flex flex-col md:flex-row items-start gap-6 mb-8 border-b border-primary/10 pb-6">
-                {result.thumb && (
-                  <div className="relative group">
-                    <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/30 rounded-2xl blur transition-all duration-300 -z-10"></div>
-                    <img 
-                      src={result.thumb} 
-                      alt="Thumbnail" 
-                      className="w-full md:w-52 h-auto aspect-video md:h-52 object-cover rounded-xl shadow-xl border border-primary/20 transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                  </div>
-                )}
-                <div className="flex-1 text-left">
-                  <h3 className="font-semibold text-xl md:text-2xl mb-3 text-white leading-tight">{result.title}</h3>
-                  <div className="flex flex-wrap gap-3 mb-4">
-                    {formatDuration(result.duration) && (
-                      <Badge variant="outline" className="bg-primary/20 text-white border-primary/30 py-1 px-3 text-sm hover:bg-primary/30 transition-colors">
-                        <Play className="h-3 w-3 mr-2" />
-                        {formatDuration(result.duration)}
-                      </Badge>
-                    )}
-                    {result.source && (
-                      <Badge variant="outline" className="bg-accent/20 text-white border-accent/30 py-1 px-3 text-sm hover:bg-accent/30 transition-colors uppercase tracking-wide">
-                        {result.source}
-                      </Badge>
-                    )}
-                  </div>
-                  {result.author && (
-                    <div className="text-sm text-muted-foreground flex items-center gap-2">
-                      <span>{t("creator")}</span>
-                      <span className="text-foreground font-medium">{result.author}</span>
-                    </div>
-                  )}
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <h4 className="font-medium text-lg mb-3 text-white">{t("downloadOptions")}</h4>
-                {result.results && result.results.length > 0 ? (
-                  <div className="grid grid-cols-1 gap-4">
-                    {result.results.map((item, index) => (
-                      <div key={index} className="flex items-center justify-between p-4 bg-card/40 hover:bg-card/50 rounded-xl border border-primary/10 transition-all duration-300 hover:border-primary/20">
-                        <div className="flex items-center gap-4">
-                          <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-white">
-                            {getFileIcon(item.type)}
-                          </div>
-                          <div>
-                            <span className="font-medium text-white">
-                              {formatDisplayName(item)}
-                            </span>
-                            {item.size && <span className="text-primary/80 ml-3 text-sm">({item.size})</span>}
-                          </div>
-                        </div>
-                        <Button
-                          variant="glass"
-                          size="default"
-                          className="bg-primary/20 hover:bg-primary/40 text-white border-primary/30"
-                          onClick={() => {
-                            try {
-                              // Show toast to indicate download is starting
-                              toast({
-                                title: t("startingDownload"),
-                                description: t("directDownloadInitiated"),
-                              });
-                              
-                              // Direct download from source URL
-                              const downloadUrl = item.downloadUrl || item.url || '';
-                              
-                              // Open the download URL directly in a new tab
-                              window.open(downloadUrl, '_blank');
-                            } catch (error) {
-                              console.error("Download error:", error);
-                              toast({
-                                title: t("downloadFailed"),
-                                description: t("unableToDownload"),
-                                variant: "destructive",
-                              });
-                            }
-                          }}
-                        >
-                          <Download className="h-5 w-5 mr-2" />
-                          {t("downloadButton")}
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="p-6 text-center border border-dashed border-primary/30 rounded-xl bg-card/30">
-                    <p className="text-white mb-2">{t("noDownloadOptions")}</p>
-                    <p className="text-sm text-muted-foreground">{t("tryDifferentUrl")}</p>
-                    <p className="text-xs mt-3 text-muted-foreground">{t("responseStatus")} {result.status}</p>
-                  </div>
-                )}
-              </div>
-            </Card>
-          )}
+          {resultsInterface}
         </div>
 
         {/* Supported Platforms */}
