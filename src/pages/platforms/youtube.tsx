@@ -124,7 +124,7 @@ export default function YouTubePage() {
           <div className="section-block section-who mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">Who Should Download YouTube Videos</h1>
             <h2 className="section-subtitle text-xl md:text-2xl">People Who Benefit Most from Offline Videos</h2>
-            <p className="section-muted mb-4">Downloading YouTube videos isn’t just for casual viewers—it’s a game‑changer for specific groups who need offline access for work, creativity, or convenience. Here’s a look at who can get the most out of downloading YouTube videos and why it’s worth doing.</p>
+            <p className="section-muted mb-4">Downloading YouTube videos isn’t just for casual viewers it’s a game‑changer for specific groups who need offline access for work, creativity, or convenience. Here’s a look at who can get the most out of downloading YouTube videos and why it’s worth doing.</p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
                 <div className="mt-1 w-8 h-8 rounded-lg bg-accent/20 text-accent flex items-center justify-center">
@@ -278,7 +278,7 @@ export default function YouTubePage() {
                 Our site is free of pop‑up ads, fake buttons, or malicious scripts, ensuring your device stays safe from viruses and spyware.
               </FeatureCard>
               <FeatureCard icon={Monitor} title="User‑Friendly Design">
-                With a clean interface and simple process, anyone can download videos in seconds — no technical skills required.
+                With a clean interface and simple process, anyone can download videos in seconds   no technical skills required.
               </FeatureCard>
               <FeatureCard icon={Zap} title="High‑Speed Downloads">
                 Our optimized servers process videos quickly, so you get your files without long waits, even for high‑quality or long videos.
@@ -287,7 +287,7 @@ export default function YouTubePage() {
                 Choose from MP4 for videos or MP3 for audio, with multiple resolution options to match your needs, from 720p to 4K.
               </FeatureCard>
               <FeatureCard icon={Download} title="Completely Free">
-                Download unlimited videos without paying a cent. No subscriptions, no hidden fees — full features at no cost.
+                Download unlimited videos without paying a cent. No subscriptions, no hidden fees   full features at no cost.
               </FeatureCard>
               <FeatureCard icon={Shield} title="Privacy‑First Approach">
                 We don’t track your downloads, store your personal data, or share your information with anyone, keeping your activity private.
@@ -440,7 +440,7 @@ function EnhancedFeatures() {
       Need just the audio? Convert any YouTube video into an MP3 file with a single click. This feature is perfect for saving music tracks, podcast episodes, or audio from lectures for offline listening, making it versatile for various use cases.
       </FeatureCard>
       <FeatureCard icon={Monitor} title="No Software Installation Required">
-      Download videos directly through your browser on any device—desktop, tablet, or phone. There’s no need to install apps, plugins, or extra programs, which keeps your device clean and your downloading process straightforward and hassle-free.
+      Download videos directly through your browser on any device desktop, tablet, or phone. There’s no need to install apps, plugins, or extra programs, which keeps your device clean and your downloading process straightforward and hassle-free.
       </FeatureCard>
       <FeatureCard icon={ListChecks} title="Full Playlist Download Support">
       Save entire YouTube playlists in one go. Instead of downloading each video individually, paste the playlist link, and our system will process all videos at once, organizing them for easy access. This is a huge time-saver for bulk downloads.
