@@ -57,7 +57,7 @@ const SUPPORTED_PLATFORMS = [
   { name: "Threads", Icon: SiThreads, color: "bg-[#000000]" },
 ] as const;
 
-export function VideoDownloader({ boxOnly = false }: { boxOnly?: boolean }) {
+export function VideoDownloader({ boxOnly = false, inputPlaceholder }: { boxOnly?: boolean; inputPlaceholder?: string }) {
   const [url, setUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState<DownloadResult | null>(null);
@@ -324,7 +324,7 @@ export function VideoDownloader({ boxOnly = false }: { boxOnly?: boolean }) {
       <div className="flex flex-col sm:flex-row gap-6 mb-8 relative">
         <Input
           type="url"
-          placeholder={t("inputPlaceholder")}
+          placeholder={inputPlaceholder || t("inputPlaceholder")}
           value={url}
           onChange={handleUrlChange}
           className="flex-1 bg-input/40 backdrop-blur-sm border-primary/20 text-base md:text-lg h-14 md:h-16 shadow-lg focus:ring-2 focus:ring-primary/50 rounded-lg pl-5"
