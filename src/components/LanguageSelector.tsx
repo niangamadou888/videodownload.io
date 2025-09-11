@@ -43,6 +43,42 @@ export function LanguageSelector() {
         >
           🇮🇹 {t('italian')}
         </DropdownMenuItem>
+        <DropdownMenuItem 
+          onClick={() => setLanguage('pt')}
+          className={`${language === 'pt' ? 'bg-primary/20' : ''} cursor-pointer`}
+        >
+          🇵🇹 {t('portuguese')}
+        </DropdownMenuItem>
+        <DropdownMenuItem 
+          onClick={() => setLanguage('es')}
+          className={`${language === 'es' ? 'bg-primary/20' : ''} cursor-pointer`}
+        >
+          🇪🇸 {t('spanish')}
+        </DropdownMenuItem>
+        <DropdownMenuItem 
+          onClick={() => setLanguage('nl')}
+          className={`${language === 'nl' ? 'bg-primary/20' : ''} cursor-pointer`}
+        >
+          🇳🇱 {t('dutch')}
+        </DropdownMenuItem>
+        <DropdownMenuItem 
+          onClick={() => setLanguage('de')}
+          className={`${language === 'de' ? 'bg-primary/20' : ''} cursor-pointer`}
+        >
+          🇩🇪 {t('german')}
+        </DropdownMenuItem>
+        <DropdownMenuItem 
+          onClick={() => setLanguage('vi')}
+          className={`${language === 'vi' ? 'bg-primary/20' : ''} cursor-pointer`}
+        >
+          🇻🇳 {t('vietnamese')}
+        </DropdownMenuItem>
+        <DropdownMenuItem 
+          onClick={() => setLanguage('id')}
+          className={`${language === 'id' ? 'bg-primary/20' : ''} cursor-pointer`}
+        >
+          🇮🇩 {t('indonesian')}
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

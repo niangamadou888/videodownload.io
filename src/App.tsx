@@ -21,14 +21,14 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <LanguageProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <LanguageProvider>
           <Routes>
+            {/* English routes (default, no prefix) */}
             <Route path="/" element={<Index />} />
-            {/* Platform-specific SEO/content pages */}
             <Route path="/youtube" element={<YouTubePage />} />
             <Route path="/tiktok" element={<TikTokPage />} />
             <Route path="/instagram" element={<InstagramPage />} />
@@ -39,12 +39,117 @@ const App = () => (
             <Route path="/reddit" element={<RedditPage />} />
             <Route path="/vimeo" element={<VimeoPage />} />
             <Route path="/threads" element={<ThreadsPage />} />
+            
+            {/* French routes */}
+            <Route path="/fr" element={<Index />} />
+            <Route path="/fr/youtube" element={<YouTubePage />} />
+            <Route path="/fr/tiktok" element={<TikTokPage />} />
+            <Route path="/fr/instagram" element={<InstagramPage />} />
+            <Route path="/fr/facebook" element={<FacebookPage />} />
+            <Route path="/fr/twitter" element={<TwitterPage />} />
+            <Route path="/fr/pinterest" element={<PinterestPage />} />
+            <Route path="/fr/linkedin" element={<LinkedInPage />} />
+            <Route path="/fr/reddit" element={<RedditPage />} />
+            <Route path="/fr/vimeo" element={<VimeoPage />} />
+            <Route path="/fr/threads" element={<ThreadsPage />} />
+            
+            {/* Italian routes */}
+            <Route path="/it" element={<Index />} />
+            <Route path="/it/youtube" element={<YouTubePage />} />
+            <Route path="/it/tiktok" element={<TikTokPage />} />
+            <Route path="/it/instagram" element={<InstagramPage />} />
+            <Route path="/it/facebook" element={<FacebookPage />} />
+            <Route path="/it/twitter" element={<TwitterPage />} />
+            <Route path="/it/pinterest" element={<PinterestPage />} />
+            <Route path="/it/linkedin" element={<LinkedInPage />} />
+            <Route path="/it/reddit" element={<RedditPage />} />
+            <Route path="/it/vimeo" element={<VimeoPage />} />
+            <Route path="/it/threads" element={<ThreadsPage />} />
+            
+            {/* Portuguese routes */}
+            <Route path="/pt" element={<Index />} />
+            <Route path="/pt/youtube" element={<YouTubePage />} />
+            <Route path="/pt/tiktok" element={<TikTokPage />} />
+            <Route path="/pt/instagram" element={<InstagramPage />} />
+            <Route path="/pt/facebook" element={<FacebookPage />} />
+            <Route path="/pt/twitter" element={<TwitterPage />} />
+            <Route path="/pt/pinterest" element={<PinterestPage />} />
+            <Route path="/pt/linkedin" element={<LinkedInPage />} />
+            <Route path="/pt/reddit" element={<RedditPage />} />
+            <Route path="/pt/vimeo" element={<VimeoPage />} />
+            <Route path="/pt/threads" element={<ThreadsPage />} />
+            
+            {/* Spanish routes */}
+            <Route path="/es" element={<Index />} />
+            <Route path="/es/youtube" element={<YouTubePage />} />
+            <Route path="/es/tiktok" element={<TikTokPage />} />
+            <Route path="/es/instagram" element={<InstagramPage />} />
+            <Route path="/es/facebook" element={<FacebookPage />} />
+            <Route path="/es/twitter" element={<TwitterPage />} />
+            <Route path="/es/pinterest" element={<PinterestPage />} />
+            <Route path="/es/linkedin" element={<LinkedInPage />} />
+            <Route path="/es/reddit" element={<RedditPage />} />
+            <Route path="/es/vimeo" element={<VimeoPage />} />
+            <Route path="/es/threads" element={<ThreadsPage />} />
+            
+            {/* Dutch routes */}
+            <Route path="/nl" element={<Index />} />
+            <Route path="/nl/youtube" element={<YouTubePage />} />
+            <Route path="/nl/tiktok" element={<TikTokPage />} />
+            <Route path="/nl/instagram" element={<InstagramPage />} />
+            <Route path="/nl/facebook" element={<FacebookPage />} />
+            <Route path="/nl/twitter" element={<TwitterPage />} />
+            <Route path="/nl/pinterest" element={<PinterestPage />} />
+            <Route path="/nl/linkedin" element={<LinkedInPage />} />
+            <Route path="/nl/reddit" element={<RedditPage />} />
+            <Route path="/nl/vimeo" element={<VimeoPage />} />
+            <Route path="/nl/threads" element={<ThreadsPage />} />
+            
+            {/* German routes */}
+            <Route path="/de" element={<Index />} />
+            <Route path="/de/youtube" element={<YouTubePage />} />
+            <Route path="/de/tiktok" element={<TikTokPage />} />
+            <Route path="/de/instagram" element={<InstagramPage />} />
+            <Route path="/de/facebook" element={<FacebookPage />} />
+            <Route path="/de/twitter" element={<TwitterPage />} />
+            <Route path="/de/pinterest" element={<PinterestPage />} />
+            <Route path="/de/linkedin" element={<LinkedInPage />} />
+            <Route path="/de/reddit" element={<RedditPage />} />
+            <Route path="/de/vimeo" element={<VimeoPage />} />
+            <Route path="/de/threads" element={<ThreadsPage />} />
+            
+            {/* Vietnamese routes */}
+            <Route path="/vi" element={<Index />} />
+            <Route path="/vi/youtube" element={<YouTubePage />} />
+            <Route path="/vi/tiktok" element={<TikTokPage />} />
+            <Route path="/vi/instagram" element={<InstagramPage />} />
+            <Route path="/vi/facebook" element={<FacebookPage />} />
+            <Route path="/vi/twitter" element={<TwitterPage />} />
+            <Route path="/vi/pinterest" element={<PinterestPage />} />
+            <Route path="/vi/linkedin" element={<LinkedInPage />} />
+            <Route path="/vi/reddit" element={<RedditPage />} />
+            <Route path="/vi/vimeo" element={<VimeoPage />} />
+            <Route path="/vi/threads" element={<ThreadsPage />} />
+            
+            {/* Indonesian routes */}
+            <Route path="/id" element={<Index />} />
+            <Route path="/id/youtube" element={<YouTubePage />} />
+            <Route path="/id/tiktok" element={<TikTokPage />} />
+            <Route path="/id/instagram" element={<InstagramPage />} />
+            <Route path="/id/facebook" element={<FacebookPage />} />
+            <Route path="/id/twitter" element={<TwitterPage />} />
+            <Route path="/id/pinterest" element={<PinterestPage />} />
+            <Route path="/id/linkedin" element={<LinkedInPage />} />
+            <Route path="/id/reddit" element={<RedditPage />} />
+            <Route path="/id/vimeo" element={<VimeoPage />} />
+            <Route path="/id/threads" element={<ThreadsPage />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </LanguageProvider>
+        </LanguageProvider>
+      </BrowserRouter>
+    </TooltipProvider>
   </QueryClientProvider>
 );
 

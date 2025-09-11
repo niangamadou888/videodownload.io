@@ -2,8 +2,11 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import PlatformSubheader from "@/components/PlatformSubheader";
+import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 
 export default function TikTokPage() {
+  const { buildUrl } = useLanguageNavigation();
+
   const platform = "TikTok";
   return (
     <div className="min-h-screen relative">
@@ -62,7 +65,7 @@ export default function TikTokPage() {
         </div>
 
         <div className="text-center mt-10">
-          <Link to="/">
+          <Link to={buildUrl("/")}>
             <Button variant="download" className="px-6">Open Downloader</Button>
           </Link>
         </div>

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import PlatformSubheader from "@/components/PlatformSubheader";
 
 export default function LinkedInPage() {
+  const { buildUrl } = useLanguageNavigation();
+
   const platform = "LinkedIn";
   return (
     <div className="min-h-screen relative">
@@ -62,7 +64,7 @@ export default function LinkedInPage() {
         </div>
 
         <div className="text-center mt-10">
-          <Link to="/">
+          <Link to={buildUrl("/")}>
             <Button variant="download" className="px-6">Open Downloader</Button>
           </Link>
         </div>

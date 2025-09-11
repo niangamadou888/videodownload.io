@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Download, Globe, Loader2, Play, Video, Music, Image as ImageIcon } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { LanguageSelector } from "@/components/LanguageSelector";
+import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { 
   FaTiktok,
   FaInstagram,
@@ -63,6 +64,7 @@ export function VideoDownloader({ boxOnly = false, inputPlaceholder }: { boxOnly
   const [result, setResult] = useState<DownloadResult | null>(null);
   const { toast } = useToast();
   const { t } = useLanguage();
+  const { buildUrl } = useLanguageNavigation();
 
   // Reset result when URL changes
   const handleUrlChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -518,7 +520,7 @@ export function VideoDownloader({ boxOnly = false, inputPlaceholder }: { boxOnly
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5 max-w-5xl mx-auto">
             {SUPPORTED_PLATFORMS.map((platform, index) => (
               <div key={index} className="group relative">
-                <Link to={`/${platform.name.toLowerCase().replace(/\s+/g, '')}`} className="block">
+                <Link to={buildUrl(`/${platform.name.toLowerCase().replace(/\s+/g, '')}`)} className="block">
                   <Card className="glass-card p-6 hover:scale-[1.05] transition-all duration-300 overflow-hidden border border-primary/10 hover:border-primary/30">
                     <div className={`absolute inset-0 opacity-20 ${platform.color}`} />
                     <div className="relative flex flex-col items-center gap-3">

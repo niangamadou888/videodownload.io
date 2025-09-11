@@ -18,8 +18,11 @@ import {
 } from "react-icons/fa6";
 import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
+import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 
 export default function YouTubePage() {
+  const { buildUrl } = useLanguageNavigation();
+  
   return (
     <div className="min-h-screen relative">
       <PlatformSubheader platform="YouTube" />
@@ -372,7 +375,7 @@ export default function YouTubePage() {
                 { name: 'Vimeo', Icon: FaVimeoV, color: 'bg-[#19B7EA]', hex: '#19B7EA' },
                 { name: 'Threads', Icon: SiThreads, color: 'bg-[#000000]', hex: '#000000' },
               ].map((p) => (
-                <Link key={p.name} to={`/${p.name.toLowerCase().replace(/\s+/g, '')}`} className="block h-full">
+                <Link key={p.name} to={buildUrl(`/${p.name.toLowerCase().replace(/\s+/g, '')}`)} className="block h-full">
                   <Card className="group glass-card p-4 h-24 sm:h-28 flex items-center hover:scale-[1.03] hover:translate-y-[-1px] transition-all duration-200 border border-primary/10 hover:border-primary/30 overflow-hidden relative">
                     <div className={`absolute inset-0 ${p.color} opacity-10`} />
                     <div className={`absolute -right-6 -top-6 w-24 h-24 rounded-full ${p.color} blur-2xl opacity-20`} />
