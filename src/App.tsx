@@ -10,6 +10,7 @@ import YouTubePageFr from "./pages/platforms/youtube-fr";
 import YouTubePageIt from "./pages/platforms/youtube-it";
 import YouTubePagePt from "./pages/platforms/youtube-pt";
 import YouTubePageEs from "./pages/platforms/youtube-es";
+import YouTubePageNl from "./pages/platforms/youtube-nl";
 import TikTokPage from "./pages/platforms/tiktok";
 import InstagramPage from "./pages/platforms/instagram";
 import FacebookPage from "./pages/platforms/facebook";
@@ -105,7 +106,7 @@ const App = () => (
             
             {/* Dutch routes */}
             <Route path="/nl" element={<Index />} />
-            <Route path="/nl/youtube" element={<YouTubePage />} />
+            <Route path="/nl/youtube" element={<YouTubePageNl />} />
             <Route path="/nl/tiktok" element={<TikTokPage />} />
             <Route path="/nl/instagram" element={<InstagramPage />} />
             <Route path="/nl/facebook" element={<FacebookPage />} />
