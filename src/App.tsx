@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import YouTubePage from "./pages/platforms/youtube";
 import YouTubePageFr from "./pages/platforms/youtube-fr";
 import YouTubePageIt from "./pages/platforms/youtube-it";
+import YouTubePagePt from "./pages/platforms/youtube-pt";
 import TikTokPage from "./pages/platforms/tiktok";
 import InstagramPage from "./pages/platforms/instagram";
 import FacebookPage from "./pages/platforms/facebook";
@@ -77,7 +78,7 @@ const App = () => (
             
             {/* Portuguese routes */}
             <Route path="/pt" element={<Index />} />
-            <Route path="/pt/youtube" element={<YouTubePage />} />
+            <Route path="/pt/youtube" element={<YouTubePagePt />} />
             <Route path="/pt/tiktok" element={<TikTokPage />} />
             <Route path="/pt/instagram" element={<InstagramPage />} />
             <Route path="/pt/facebook" element={<FacebookPage />} />
