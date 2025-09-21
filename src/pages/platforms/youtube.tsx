@@ -794,7 +794,7 @@ export default function YouTubePage() {
               ].map((p) => (
                 <Link
                   key={p.name}
-                  to={buildUrl(`/${p.name.toLowerCase().replace(/\s+/g, "")}`)}
+                  to={`/en/${p.name.toLowerCase().replace(/\s+/g, "")}`}
                   className="block h-full"
                 >
                   <Card className="group glass-card p-4 h-24 sm:h-28 flex items-center hover:scale-[1.03] hover:translate-y-[-1px] transition-all duration-200 border border-primary/10 hover:border-primary/30 overflow-hidden relative">
