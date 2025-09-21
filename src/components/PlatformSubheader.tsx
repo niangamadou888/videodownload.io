@@ -34,14 +34,20 @@ export function PlatformSubheader({ platform }: { platform: string }) {
   const meta = PLATFORM_META[key];
   const Icon = meta?.Icon;
   const color = meta?.color ?? "bg-primary/30";
-  const { buildUrl } = useLanguageNavigation();
+  const { buildUrl, currentLanguage } = useLanguageNavigation();
+
+  // Temporary fix for buildUrl to ensure proper prefixing
+  const buildFixedUrl = (path: string) => {
+    const cleanPath = path.startsWith('/') ? path : `/${path}`;
+    return `/${currentLanguage}${cleanPath}`;
+  };
 
   return (
     <div className="sticky top-0 z-40 w-full">
       <div className="backdrop-blur-md bg-background/70 border-b border-primary/10">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-14">
-            <Link to={buildUrl("/")} className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link to={buildFixedUrl("/")} className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
               <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg border border-primary/20 bg-secondary/30">
                 <ArrowLeft className="w-4 h-4" />
               </span>

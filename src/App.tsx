@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import YouTubePage from "./pages/platforms/youtube";
@@ -28,19 +28,22 @@ const App = () => (
       <BrowserRouter>
         <LanguageProvider>
           <Routes>
-            {/* English routes (default, no prefix) */}
-            <Route path="/" element={<Index />} />
-            <Route path="/youtube" element={<YouTubePage />} />
-            <Route path="/tiktok" element={<TikTokPage />} />
-            <Route path="/instagram" element={<InstagramPage />} />
-            <Route path="/facebook" element={<FacebookPage />} />
-            <Route path="/twitter" element={<TwitterPage />} />
-            <Route path="/pinterest" element={<PinterestPage />} />
-            <Route path="/linkedin" element={<LinkedInPage />} />
-            <Route path="/reddit" element={<RedditPage />} />
-            <Route path="/vimeo" element={<VimeoPage />} />
-            <Route path="/threads" element={<ThreadsPage />} />
-            
+            {/* Root redirect to /en */}
+            <Route path="/" element={<Navigate to="/en" replace />} />
+
+            {/* English routes */}
+            <Route path="/en" element={<Index />} />
+            <Route path="/en/youtube" element={<YouTubePage />} />
+            <Route path="/en/tiktok" element={<TikTokPage />} />
+            <Route path="/en/instagram" element={<InstagramPage />} />
+            <Route path="/en/facebook" element={<FacebookPage />} />
+            <Route path="/en/twitter" element={<TwitterPage />} />
+            <Route path="/en/pinterest" element={<PinterestPage />} />
+            <Route path="/en/linkedin" element={<LinkedInPage />} />
+            <Route path="/en/reddit" element={<RedditPage />} />
+            <Route path="/en/vimeo" element={<VimeoPage />} />
+            <Route path="/en/threads" element={<ThreadsPage />} />
+
             {/* French routes */}
             <Route path="/fr" element={<Index />} />
             <Route path="/fr/youtube" element={<YouTubePageFr />} />

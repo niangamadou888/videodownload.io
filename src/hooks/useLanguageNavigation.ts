@@ -24,7 +24,7 @@ export const useLanguageNavigation = () => {
     const pathSegments = location.pathname.split('/').filter(Boolean);
     
     // If first segment is a language code, remove it
-    const languageCodes = ['fr', 'it', 'pt', 'es', 'nl', 'de', 'vi', 'id'];
+    const languageCodes = ['en', 'fr', 'it', 'pt', 'es', 'nl', 'de', 'vi', 'id'];
     if (pathSegments.length > 0 && languageCodes.includes(pathSegments[0])) {
       return '/' + pathSegments.slice(1).join('/');
     }
