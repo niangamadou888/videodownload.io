@@ -434,7 +434,40 @@ export const translations: Translations = {
     dutch: 'Niederländisch',
     german: 'Deutsch',
     vietnamese: 'Vietnamesisch',
-    indonesian: 'Indonesisch'
+    indonesian: 'Indonesisch',
+
+    // YouTube page specific content
+    youtube: {
+      inputPlaceholder: 'Fügen Sie eine YouTube-Video-, Shorts- oder Playlist-URL ein',
+      features: 'Funktionen',
+      featuresSubtitle: 'Funktionen, die das Herunterladen von YouTube-Videos einfach und zuverlässig machen',
+      featuresDescription: 'Hier sind sechs leistungsstarke Funktionen, die videodownload.io zur ersten Wahl machen, wenn Sie YouTube-Videos schnell, sicher und effizient herunterladen möchten. Jede Funktion wurde entwickelt, um Ihr Erlebnis zu verbessern und Ihnen Flexibilität für all Ihre Download-Bedürfnisse zu bieten.',
+      howToDownload: 'So laden Sie YouTube-Videos herunter',
+      howToDownloadSubtitle: 'Eine klare Schritt-für-Schritt-Anleitung, um Videos mühelos zu speichern',
+      howToDownloadDescription: 'Mit videodownload.io ist es ganz einfach, YouTube-Videos auf Ihr Gerät zu holen. Befolgen Sie diese vier einfachen Schritte, um jedes Video in wenigen Minuten herunterzuladen. Jeder Schritt ist intuitiv gestaltet, selbst wenn Sie kein Technikprofi sind.',
+      downloadYouTubeVideo: 'YouTube-Video herunterladen',
+      whyDownload: 'Warum YouTube-Videos herunterladen',
+      whyDownloadSubtitle: 'Die wichtigsten Einsatzszenarien für den Offline-Zugriff',
+      whyDownloadDescription: 'Das Herunterladen von YouTube-Videos gibt Ihnen die Freiheit, Inhalte jederzeit und überall ohne Internetverbindung anzusehen. Ob Sie Daten sparen, eine Reise vorbereiten oder Inhalte archivieren – Offline-Videos sind unglaublich praktisch. Hier finden Sie einige der besten Gründe, YouTube-Videos für den persönlichen Gebrauch herunterzuladen.',
+      whoShouldDownload: 'Wer sollte YouTube-Videos herunterladen',
+      whoShouldDownloadSubtitle: 'Personen, die am meisten von Offline-Videos profitieren',
+      whoShouldDownloadDescription: 'Das Herunterladen von YouTube-Videos ist nicht nur etwas für Gelegenheitszuschauer – es ist ein Game-Changer für bestimmte Gruppen, die Offline-Zugriff für Arbeit, Kreativität oder Komfort benötigen. Hier erfahren Sie, wer am meisten vom Herunterladen von YouTube-Videos profitiert und warum es sich lohnt.',
+      isItLegal: 'Ist es legal, YouTube-Videos herunterzuladen?',
+      isItLegalSubtitle: 'Was Sie über die Rechtslage wissen müssen',
+      risks: 'Risiken beim Herunterladen von YouTube-Videos',
+      risksSubtitle: 'Potenzielle Gefahren und wie Sie sie vermeiden',
+      risksDescription: 'So praktisch das Herunterladen von YouTube-Videos auch ist, es birgt Risiken, wenn Sie die falschen Tools verwenden oder rechtliche Grenzen ignorieren. Wenn Sie sich dieser Gefahren bewusst sind, können Sie klügere Entscheidungen treffen und Ihr Gerät sowie Ihre Daten schützen. Hier sind die wichtigsten Risiken, auf die Sie achten sollten.',
+      whyUse: 'Warum videodownload.io verwenden',
+      whyUseSubtitle: 'Ihr vertrauenswürdiger Partner für YouTube-Downloads',
+      whyUseDescription: 'Wir haben videodownload.io entwickelt, um eine sichere, einfache und schnelle Möglichkeit zum Herunterladen von YouTube-Videos zu bieten – ohne den Ärger dubioser Websites. Unsere Mission war es, eine schlanke Plattform zu schaffen, die den Lärm werbelastiger und riskanter Downloader durchbricht. Hier sind sechs Gründe, warum videodownload.io sich als beste Wahl für Ihre YouTube-Downloads hervorhebt.',
+      faqs: 'FAQs',
+      faqsSubtitle: 'Häufige Fragen zu videodownload.io und YouTube-Downloads',
+      faqsDescription: 'Wir haben Antworten auf die häufigsten Fragen zur Nutzung von videodownload.io und zum Herunterladen von YouTube-Videos zusammengestellt, damit Sie sicher loslegen können.',
+      startDownloading: 'Jetzt mit dem Herunterladen beginnen',
+      startDownloadingSubtitle: 'Sichern Sie sich Ihre YouTube-Videos in Sekundenschnelle',
+      exploreMore: 'Weitere Downloader entdecken',
+      exploreMoreSubtitle: 'Laden Sie Inhalte von Ihren Lieblingsplattformen herunter'
+    }
   },
   
   vi: {
