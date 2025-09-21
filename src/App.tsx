@@ -17,6 +17,8 @@ import RedditPage from "./pages/platforms/reddit";
 import VimeoPage from "./pages/platforms/vimeo";
 import ThreadsPage from "./pages/platforms/threads";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import BackToTopButton from "@/components/BackToTopButton";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <LanguageProvider>
+          <ScrollToTop />
+          <BackToTopButton />
           <Routes>
             {/* Root redirect to /en */}
             <Route path="/" element={<Navigate to="/en" replace />} />
