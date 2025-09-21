@@ -56,7 +56,40 @@ export const translations: Translations = {
     dutch: 'Dutch',
     german: 'German',
     vietnamese: 'Vietnamese',
-    indonesian: 'Indonesian'
+    indonesian: 'Indonesian',
+
+    // YouTube page specific content
+    youtube: {
+      inputPlaceholder: 'Paste a YouTube video, Shorts, or playlist URL',
+      features: 'Features',
+      featuresSubtitle: 'Features That Make Downloading YouTube Videos Simple and Reliable',
+      featuresDescription: 'Here are six powerful features that make videodownload.io the go-to choice for downloading YouTube videos quickly, safely, and efficiently. Each feature is designed to enhance your experience and provide flexibility for all your downloading needs.',
+      howToDownload: 'How to Download YouTube Videos',
+      howToDownloadSubtitle: 'A Clear, Step-by-Step Guide to Save Videos Effortlessly',
+      howToDownloadDescription: 'Getting YouTube videos onto your device is simple with videodownload.io. Follow these four straightforward steps to download any video in minutes. Each step is designed to be intuitive, even if you\'re not tech-savvy.',
+      downloadYouTubeVideo: 'Download YouTube Video',
+      whyDownload: 'Why Download YouTube Videos',
+      whyDownloadSubtitle: 'Top Use Cases for Offline Video Access',
+      whyDownloadDescription: 'Downloading YouTube videos gives you the freedom to watch content anytime, anywhere, without relying on an internet connection. Whether you\'re saving data, preparing for a trip, or archiving content, offline videos are incredibly useful. Below are some of the best reasons to download YouTube videos for personal use.',
+      whoShouldDownload: 'Who Should Download YouTube Videos',
+      whoShouldDownloadSubtitle: 'People Who Benefit Most from Offline Videos',
+      whoShouldDownloadDescription: 'Downloading YouTube videos isn\'t just for casual viewers it\'s a game‑changer for specific groups who need offline access for work, creativity, or convenience. Here\'s a look at who can get the most out of downloading YouTube videos and why it\'s worth doing.',
+      isItLegal: 'Is It Legal to Download YouTube Videos?',
+      isItLegalSubtitle: 'What You Need to Know About the Law',
+      risks: 'Risks of Downloading YouTube Videos',
+      risksSubtitle: 'Potential Dangers and How to Avoid Them',
+      risksDescription: 'While downloading YouTube videos is convenient, it comes with risks if you use the wrong tools or ignore legal boundaries. Being aware of these dangers helps you make smart choices and protect your device and data. Here are the main risks to watch out for.',
+      whyUse: 'Why Use videodownload.io',
+      whyUseSubtitle: 'Your Trusted Partner for YouTube Downloads',
+      whyUseDescription: 'We launched videodownload.io to provide a safe, simple, and fast way to download YouTube videos without the headaches of sketchy websites. Our mission was to create a clean platform that cuts through the noise of ad-heavy, risky downloaders. Here are six reasons why videodownload.io stands out as the best choice for your YouTube video downloads.',
+      faqs: 'FAQs',
+      faqsSubtitle: 'Common Questions About videodownload.io and YouTube Downloads',
+      faqsDescription: 'We\'ve compiled answers to the most frequent questions about using videodownload.io and downloading YouTube videos to help you get started with confidence.',
+      startDownloading: 'Start Downloading Now',
+      startDownloadingSubtitle: 'Get Your YouTube Videos in Seconds',
+      exploreMore: 'Explore More Downloaders',
+      exploreMoreSubtitle: 'Download from your favorite platforms'
+    }
   },
   
   fr: {
@@ -108,7 +141,40 @@ export const translations: Translations = {
     dutch: 'Néerlandais',
     german: 'Allemand',
     vietnamese: 'Vietnamien',
-    indonesian: 'Indonésien'
+    indonesian: 'Indonésien',
+
+    // YouTube page specific content
+    youtube: {
+      inputPlaceholder: 'Collez une URL de vidéo, Shorts ou playlist YouTube',
+      features: 'Fonctionnalités',
+      featuresSubtitle: 'Les fonctionnalités qui rendent le téléchargement de vidéos YouTube simple et fiable',
+      featuresDescription: 'Voici six fonctionnalités puissantes qui font de videodownload.io le choix de référence pour télécharger des vidéos YouTube rapidement, en toute sécurité et efficacement. Chaque fonctionnalité est conçue pour améliorer votre expérience et offrir de la flexibilité pour tous vos besoins de téléchargement.',
+      howToDownload: 'Comment télécharger des vidéos YouTube',
+      howToDownloadSubtitle: 'Un guide clair, étape par étape pour sauvegarder des vidéos sans effort',
+      howToDownloadDescription: 'Obtenir des vidéos YouTube sur votre appareil est simple avec videodownload.io. Suivez ces quatre étapes simples pour télécharger n\'importe quelle vidéo en quelques minutes. Chaque étape est conçue pour être intuitive, même si vous n\'êtes pas très à l\'aise avec la technologie.',
+      downloadYouTubeVideo: 'Télécharger une vidéo YouTube',
+      whyDownload: 'Pourquoi télécharger des vidéos YouTube',
+      whyDownloadSubtitle: 'Principaux cas d\'usage pour l\'accès vidéo hors ligne',
+      whyDownloadDescription: 'Télécharger des vidéos YouTube vous donne la liberté de regarder du contenu à tout moment, n\'importe où, sans dépendre d\'une connexion internet. Que vous économisiez des données, prépariez un voyage ou archiviez du contenu, les vidéos hors ligne sont incroyablement utiles. Voici quelques-unes des meilleures raisons de télécharger des vidéos YouTube pour un usage personnel.',
+      whoShouldDownload: 'Qui devrait télécharger des vidéos YouTube',
+      whoShouldDownloadSubtitle: 'Les personnes qui bénéficient le plus des vidéos hors ligne',
+      whoShouldDownloadDescription: 'Télécharger des vidéos YouTube n\'est pas seulement pour les spectateurs occasionnels - c\'est un changement de donne pour des groupes spécifiques qui ont besoin d\'un accès hors ligne pour le travail, la créativité ou la commodité. Voici un aperçu de qui peut tirer le meilleur parti du téléchargement de vidéos YouTube et pourquoi cela vaut la peine.',
+      isItLegal: 'Est-il légal de télécharger des vidéos YouTube ?',
+      isItLegalSubtitle: 'Ce que vous devez savoir sur la loi',
+      risks: 'Risques du téléchargement de vidéos YouTube',
+      risksSubtitle: 'Dangers potentiels et comment les éviter',
+      risksDescription: 'Bien que télécharger des vidéos YouTube soit pratique, cela comporte des risques si vous utilisez les mauvais outils ou ignorez les limites légales. Être conscient de ces dangers vous aide à faire des choix intelligents et à protéger votre appareil et vos données. Voici les principaux risques à surveiller.',
+      whyUse: 'Pourquoi utiliser videodownload.io',
+      whyUseSubtitle: 'Votre partenaire de confiance pour les téléchargements YouTube',
+      whyUseDescription: 'Nous avons lancé videodownload.io pour fournir un moyen sûr, simple et rapide de télécharger des vidéos YouTube sans les maux de tête des sites web douteux. Notre mission était de créer une plateforme propre qui coupe à travers le bruit des téléchargeurs lourds en publicités et risqués. Voici six raisons pour lesquelles videodownload.io se distingue comme le meilleur choix pour vos téléchargements de vidéos YouTube.',
+      faqs: 'FAQ',
+      faqsSubtitle: 'Questions courantes sur videodownload.io et les téléchargements YouTube',
+      faqsDescription: 'Nous avons compilé les réponses aux questions les plus fréquentes sur l\'utilisation de videodownload.io et le téléchargement de vidéos YouTube pour vous aider à commencer en toute confiance.',
+      startDownloading: 'Commencer à télécharger maintenant',
+      startDownloadingSubtitle: 'Obtenez vos vidéos YouTube en quelques secondes',
+      exploreMore: 'Explorer plus de téléchargeurs',
+      exploreMoreSubtitle: 'Téléchargez depuis vos plateformes préférées'
+    }
   },
   
   it: {

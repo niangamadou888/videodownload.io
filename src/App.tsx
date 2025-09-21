@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import YouTubePage from "./pages/platforms/youtube";
+import YouTubePageFr from "./pages/platforms/youtube-fr";
 import TikTokPage from "./pages/platforms/tiktok";
 import InstagramPage from "./pages/platforms/instagram";
 import FacebookPage from "./pages/platforms/facebook";
@@ -42,7 +43,7 @@ const App = () => (
             
             {/* French routes */}
             <Route path="/fr" element={<Index />} />
-            <Route path="/fr/youtube" element={<YouTubePage />} />
+            <Route path="/fr/youtube" element={<YouTubePageFr />} />
             <Route path="/fr/tiktok" element={<TikTokPage />} />
             <Route path="/fr/instagram" element={<InstagramPage />} />
             <Route path="/fr/facebook" element={<FacebookPage />} />
