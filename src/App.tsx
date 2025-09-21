@@ -9,6 +9,7 @@ import YouTubePage from "./pages/platforms/youtube";
 import YouTubePageFr from "./pages/platforms/youtube-fr";
 import YouTubePageIt from "./pages/platforms/youtube-it";
 import YouTubePagePt from "./pages/platforms/youtube-pt";
+import YouTubePageEs from "./pages/platforms/youtube-es";
 import TikTokPage from "./pages/platforms/tiktok";
 import InstagramPage from "./pages/platforms/instagram";
 import FacebookPage from "./pages/platforms/facebook";
@@ -91,7 +92,7 @@ const App = () => (
             
             {/* Spanish routes */}
             <Route path="/es" element={<Index />} />
-            <Route path="/es/youtube" element={<YouTubePage />} />
+            <Route path="/es/youtube" element={<YouTubePageEs />} />
             <Route path="/es/tiktok" element={<TikTokPage />} />
             <Route path="/es/instagram" element={<InstagramPage />} />
             <Route path="/es/facebook" element={<FacebookPage />} />
