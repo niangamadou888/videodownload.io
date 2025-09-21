@@ -13,6 +13,7 @@ import YouTubePageEs from "./pages/platforms/youtube-es";
 import YouTubePageNl from "./pages/platforms/youtube-nl";
 import YouTubePageDe from "./pages/platforms/youtube-de";
 import YouTubePageVi from "./pages/platforms/youtube-vi";
+import YouTubePageId from "./pages/platforms/youtube-id";
 import TikTokPage from "./pages/platforms/tiktok";
 import InstagramPage from "./pages/platforms/instagram";
 import FacebookPage from "./pages/platforms/facebook";
@@ -147,7 +148,7 @@ const App = () => (
             
             {/* Indonesian routes */}
             <Route path="/id" element={<Index />} />
-            <Route path="/id/youtube" element={<YouTubePage />} />
+            <Route path="/id/youtube" element={<YouTubePageId />} />
             <Route path="/id/tiktok" element={<TikTokPage />} />
             <Route path="/id/instagram" element={<InstagramPage />} />
             <Route path="/id/facebook" element={<FacebookPage />} />
