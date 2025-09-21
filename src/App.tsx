@@ -12,6 +12,7 @@ import YouTubePagePt from "./pages/platforms/youtube-pt";
 import YouTubePageEs from "./pages/platforms/youtube-es";
 import YouTubePageNl from "./pages/platforms/youtube-nl";
 import YouTubePageDe from "./pages/platforms/youtube-de";
+import YouTubePageVi from "./pages/platforms/youtube-vi";
 import TikTokPage from "./pages/platforms/tiktok";
 import InstagramPage from "./pages/platforms/instagram";
 import FacebookPage from "./pages/platforms/facebook";
@@ -133,7 +134,7 @@ const App = () => (
             
             {/* Vietnamese routes */}
             <Route path="/vi" element={<Index />} />
-            <Route path="/vi/youtube" element={<YouTubePage />} />
+            <Route path="/vi/youtube" element={<YouTubePageVi />} />
             <Route path="/vi/tiktok" element={<TikTokPage />} />
             <Route path="/vi/instagram" element={<InstagramPage />} />
             <Route path="/vi/facebook" element={<FacebookPage />} />
