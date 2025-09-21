@@ -26,7 +26,7 @@ interface LanguageProviderProps {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  
+
   // Get initial language from URL path with error handling
   const [language, setLanguageState] = useState<Language>(() => {
     try {
@@ -40,13 +40,26 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   const setLanguage = useCallback((newLanguage: Language) => {
     try {
       const { path } = getLanguageFromPath(location.pathname);
-      const newUrl = buildLanguageUrl(newLanguage, path);
-      
+
+      // Build the new URL
+      let newUrl: string;
+
+      // Clean the path - if it's just '/' or empty, we're on homepage
+      const cleanPath = !path || path === '/' || path === '' ? '' : path;
+
+      if (cleanPath === '') {
+        // We're on the homepage, navigate to the language root
+        newUrl = `/${newLanguage}`;
+      } else {
+        // We're on a subpage, build URL with new language prefix
+        newUrl = `/${newLanguage}${cleanPath}`;
+      }
+
       setLanguageState(newLanguage);
       if (typeof window !== 'undefined') {
         localStorage.setItem('language', newLanguage);
       }
-      
+
       navigate(newUrl, { replace: true });
     } catch (error) {
       console.error('Error setting language:', error);

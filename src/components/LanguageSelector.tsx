@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import {
   DropdownMenu,
@@ -10,7 +11,30 @@ import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
 
 export function LanguageSelector() {
-  const { language, setLanguage, t } = useLanguage();
+  const { language, t } = useLanguage();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLanguageChange = (newLanguage: string) => {
+    const currentPath = location.pathname;
+    const segments = currentPath.split('/').filter(Boolean);
+
+    // Get the current page path without language prefix
+    let pagePath = '';
+    if (segments.length > 1) {
+      // We're on a subpage like /fr/youtube
+      pagePath = '/' + segments.slice(1).join('/');
+    }
+
+    // Build the new URL directly
+    const newUrl = `/${newLanguage}${pagePath}`;
+    navigate(newUrl, { replace: true });
+
+    // Update language in localStorage
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('language', newLanguage);
+    }
+  };
 
   return (
     <DropdownMenu>
@@ -25,56 +49,56 @@ export function LanguageSelector() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-card/80 backdrop-blur-md border-primary/20">
-        <DropdownMenuItem 
-          onClick={() => setLanguage('en')}
+        <DropdownMenuItem
+          onClick={() => handleLanguageChange('en')}
           className={`${language === 'en' ? 'bg-primary/20' : ''} cursor-pointer`}
         >
           🇺🇸 {t('english')}
         </DropdownMenuItem>
-        <DropdownMenuItem 
-          onClick={() => setLanguage('fr')}
+        <DropdownMenuItem
+          onClick={() => handleLanguageChange('fr')}
           className={`${language === 'fr' ? 'bg-primary/20' : ''} cursor-pointer`}
         >
           🇫🇷 {t('french')}
         </DropdownMenuItem>
-        <DropdownMenuItem 
-          onClick={() => setLanguage('it')}
+        <DropdownMenuItem
+          onClick={() => handleLanguageChange('it')}
           className={`${language === 'it' ? 'bg-primary/20' : ''} cursor-pointer`}
         >
           🇮🇹 {t('italian')}
         </DropdownMenuItem>
-        <DropdownMenuItem 
-          onClick={() => setLanguage('pt')}
+        <DropdownMenuItem
+          onClick={() => handleLanguageChange('pt')}
           className={`${language === 'pt' ? 'bg-primary/20' : ''} cursor-pointer`}
         >
           🇵🇹 {t('portuguese')}
         </DropdownMenuItem>
-        <DropdownMenuItem 
-          onClick={() => setLanguage('es')}
+        <DropdownMenuItem
+          onClick={() => handleLanguageChange('es')}
           className={`${language === 'es' ? 'bg-primary/20' : ''} cursor-pointer`}
         >
           🇪🇸 {t('spanish')}
         </DropdownMenuItem>
-        <DropdownMenuItem 
-          onClick={() => setLanguage('nl')}
+        <DropdownMenuItem
+          onClick={() => handleLanguageChange('nl')}
           className={`${language === 'nl' ? 'bg-primary/20' : ''} cursor-pointer`}
         >
           🇳🇱 {t('dutch')}
         </DropdownMenuItem>
-        <DropdownMenuItem 
-          onClick={() => setLanguage('de')}
+        <DropdownMenuItem
+          onClick={() => handleLanguageChange('de')}
           className={`${language === 'de' ? 'bg-primary/20' : ''} cursor-pointer`}
         >
           🇩🇪 {t('german')}
         </DropdownMenuItem>
-        <DropdownMenuItem 
-          onClick={() => setLanguage('vi')}
+        <DropdownMenuItem
+          onClick={() => handleLanguageChange('vi')}
           className={`${language === 'vi' ? 'bg-primary/20' : ''} cursor-pointer`}
         >
           🇻🇳 {t('vietnamese')}
         </DropdownMenuItem>
-        <DropdownMenuItem 
-          onClick={() => setLanguage('id')}
+        <DropdownMenuItem
+          onClick={() => handleLanguageChange('id')}
           className={`${language === 'id' ? 'bg-primary/20' : ''} cursor-pointer`}
         >
           🇮🇩 {t('indonesian')}
