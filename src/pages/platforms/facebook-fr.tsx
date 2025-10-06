@@ -40,12 +40,12 @@ import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
-export default function FacebookPage() {
+export default function FacebookPageFr() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Facebook Video Download | Free & HD",
-    description: "Download Facebook videos, Reels, and Live streams in mp4, 1080p, HD quality. Free online video downloader and converter."
+    title: "Télécharger Vidéo Facebook | Gratuit & HD",
+    description: "Téléchargez des vidéos Facebook, Reels et Lives en mp4, 1080p, HD. Convertisseur et téléchargeur de vidéos gratuit en ligne."
   });
 
   return (
@@ -57,37 +57,37 @@ export default function FacebookPage() {
           <div id="facebook-downloader" className="mb-10">
             <VideoDownloader
               boxOnly
-              inputPlaceholder="Paste a Facebook video, Reel, or Watch URL"
+              inputPlaceholder="Collez une URL de vidéo, Reel ou Watch Facebook"
             />
           </div>
           {/* Features */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Features
+            Fonctionnalités
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            Tools to Make Downloading Facebook Videos Easy
+            Outils pour faciliter le téléchargement de vidéos Facebook
           </h2>
           <p className="text-muted-foreground mb-6">
-            Here are six features that make videodownload.io the top choice for downloading Facebook videos. Each one is built to save time, ensure quality, and keep your experience safe and simple.
+            Voici six fonctionnalités qui font de videodownload.io le meilleur choix pour télécharger des vidéos Facebook. Chacune est conçue pour gagner du temps, garantir la qualité et rendre votre expérience sûre et simple.
           </p>
 
           <EnhancedFeatures />
 
           {/* How to Download */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            How to Download Facebook Videos
+            Comment télécharger des vidéos Facebook
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            Step-by-Step Guide to Save Videos Fast
+            Guide étape par étape pour sauvegarder des vidéos rapidement
           </h2>
           <p className="text-muted-foreground mb-6">
-            Downloading Facebook videos with videodownload.io is simple and quick, even if you're not tech-savvy. Follow these four steps to get your video saved to your device in minutes.
+            Télécharger des vidéos Facebook avec videodownload.io est simple et rapide, même si vous n'êtes pas très à l'aise avec la technologie. Suivez ces quatre étapes pour sauvegarder votre vidéo sur votre appareil en quelques minutes.
           </p>
           <EnhancedSteps />
           <div className="text-center mt-6 mb-10">
             <a href="#facebook-downloader">
               <Button variant="download" className="px-6">
-                Download Facebook Video
+                Télécharger une vidéo Facebook
               </Button>
             </a>
           </div>
@@ -95,13 +95,13 @@ export default function FacebookPage() {
           {/* Why Download */}
           <div className="section-block section-why mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Download Facebook Videos
+              Pourquoi télécharger des vidéos Facebook
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Best Use Cases for Offline Viewing and Use
+              Meilleurs cas d'usage pour le visionnage et l'utilisation hors ligne
             </h2>
             <p className="section-muted mb-4">
-              Downloading Facebook videos lets you watch or repurpose content without needing an internet connection. It's great for saving data, archiving memories, or creating new content. Here are some top reasons to download Facebook videos for personal or professional use.
+              Télécharger des vidéos Facebook vous permet de regarder ou de réutiliser du contenu sans avoir besoin d'une connexion internet. C'est idéal pour économiser des données, archiver des souvenirs ou créer du nouveau contenu. Voici quelques-unes des meilleures raisons de télécharger des vidéos Facebook pour un usage personnel ou professionnel.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -110,10 +110,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Offline Viewing on the Go
+                    Visionnage hors ligne en déplacement
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save videos to watch during commutes, flights, or in areas with no Wi-Fi or data, like rural spots or international trips.
+                    Sauvegardez des vidéos pour les regarder pendant les trajets, les vols ou dans des zones sans Wi-Fi ou données, comme les zones rurales ou les voyages internationaux.
                   </p>
                 </div>
               </div>
@@ -123,10 +123,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Content Creation
+                    Création de contenu
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Download clips for reactions, edits, or montages for your own social media, as long as you follow copyright rules or get creator permission.
+                    Téléchargez des clips pour des réactions, montages ou vidéos pour vos propres réseaux sociaux, tant que vous respectez les règles de droits d'auteur ou obtenez la permission du créateur.
                   </p>
                 </div>
               </div>
@@ -136,10 +136,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Learning and Training
+                    Apprentissage et formation
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save tutorials, webinars, or how-to videos for offline study, like cooking demos, fitness routines, or business tips.
+                    Sauvegardez des tutoriels, webinaires ou vidéos pratiques pour l'étude hors ligne, comme des démonstrations de cuisine, des routines de fitness ou des conseils business.
                   </p>
                 </div>
               </div>
@@ -149,10 +149,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Preserving Memories
+                    Préserver les souvenirs
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Keep family videos, event highlights, or group posts that might disappear if accounts are deleted or privacy settings change.
+                    Conservez des vidéos de famille, moments forts d'événements ou publications de groupes qui pourraient disparaître si les comptes sont supprimés ou si les paramètres de confidentialité changent.
                   </p>
                 </div>
               </div>
@@ -162,10 +162,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Marketing and Business
+                    Marketing et affaires
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Businesses can download their own branded videos or live streams for offline use in presentations, ads, or client meetings.
+                    Les entreprises peuvent télécharger leurs propres vidéos de marque ou streams en direct pour une utilisation hors ligne dans des présentations, publicités ou réunions clients.
                   </p>
                 </div>
               </div>
@@ -175,10 +175,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Saving Data Costs
+                    Économiser les coûts de données
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Download over Wi-Fi to avoid using mobile data, especially for long or high-quality videos on limited plans.
+                    Téléchargez via Wi-Fi pour éviter d'utiliser les données mobiles, surtout pour les vidéos longues ou de haute qualité sur des forfaits limités.
                   </p>
                 </div>
               </div>
@@ -188,10 +188,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Offline Entertainment
+                    Divertissement hors ligne
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Build a collection of funny clips, music videos, or live streams to enjoy offline during downtime or travel.
+                    Créez une collection de clips drôles, clips musicaux ou streams en direct pour en profiter hors ligne pendant vos temps libres ou voyages.
                   </p>
                 </div>
               </div>
@@ -201,29 +201,29 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Community Sharing
+                    Partage communautaire
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save videos from Facebook groups or pages for offline sharing in workshops, classes, or community events without internet.
+                    Sauvegardez des vidéos de groupes ou pages Facebook pour un partage hors ligne lors d'ateliers, cours ou événements communautaires sans internet.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              Downloading Facebook videos gives you flexibility to enjoy or use content whenever and wherever you need it, without relying on a connection.
+              Télécharger des vidéos Facebook vous donne la flexibilité de profiter ou d'utiliser du contenu quand et où vous en avez besoin, sans dépendre d'une connexion.
             </p>
           </div>
 
           {/* Who Should Download */}
           <div className="section-block section-who mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Who Should Download Facebook Videos
+              Qui devrait télécharger des vidéos Facebook
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              People Who Benefit from Offline Access
+              Les personnes qui bénéficient d'un accès hors ligne
             </h2>
             <p className="section-muted mb-4">
-              Downloading Facebook videos is helpful for anyone who wants to watch or use content offline. It's not just for casual users—specific groups can save time and effort by downloading. Here's who should consider it and why.
+              Télécharger des vidéos Facebook est utile pour quiconque souhaite regarder ou utiliser du contenu hors ligne. Ce n'est pas seulement pour les utilisateurs occasionnels—des groupes spécifiques peuvent gagner du temps et des efforts en téléchargeant. Voici qui devrait le considérer et pourquoi.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -232,10 +232,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Content Creators
+                    Créateurs de contenu
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Influencers, YouTubers, or TikTokers can download videos for reactions, collaborations, or edits, provided they respect copyright or get permission.
+                    Les influenceurs, YouTubeurs ou TikTokeurs peuvent télécharger des vidéos pour des réactions, collaborations ou montages, à condition de respecter les droits d'auteur ou d'obtenir la permission.
                   </p>
                 </div>
               </div>
@@ -245,10 +245,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Students and Educators
+                    Étudiants et enseignants
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save educational content, like lectures, tutorials, or webinars, for offline study or classroom use, especially in low-connectivity areas.
+                    Sauvegardez du contenu éducatif, comme des conférences, tutoriels ou webinaires, pour une étude hors ligne ou une utilisation en classe, surtout dans les zones à faible connectivité.
                   </p>
                 </div>
               </div>
@@ -258,10 +258,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Travelers
+                    Voyageurs
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Download entertainment, like viral clips or live streams, for offline viewing during trips with no internet access.
+                    Téléchargez du divertissement, comme des clips viraux ou des streams en direct, pour un visionnage hors ligne pendant les voyages sans accès internet.
                   </p>
                 </div>
               </div>
@@ -271,10 +271,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Business Owners
+                    Entrepreneurs
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save your own branded videos, live streams, or ads for offline use in marketing, pitches, or client presentations.
+                    Sauvegardez vos propres vidéos de marque, streams en direct ou publicités pour une utilisation hors ligne dans le marketing, pitchs ou présentations clients.
                   </p>
                 </div>
               </div>
@@ -284,10 +284,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Memory Keepers
+                    Gardiens de souvenirs
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Preserve personal videos, family moments, or group posts that might vanish due to account changes or privacy settings.
+                    Préservez des vidéos personnelles, moments de famille ou publications de groupes qui pourraient disparaître en raison de changements de compte ou de paramètres de confidentialité.
                   </p>
                 </div>
               </div>
@@ -297,10 +297,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Fitness Enthusiasts
+                    Passionnés de fitness
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Download workout videos, yoga sessions, or health tips to follow along offline at home or in the gym.
+                    Téléchargez des vidéos d'entraînement, sessions de yoga ou conseils santé pour les suivre hors ligne à la maison ou à la salle de sport.
                   </p>
                 </div>
               </div>
@@ -310,10 +310,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Community Leaders
+                    Leaders communautaires
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save group videos or page content for offline sharing in meetings, events, or workshops without needing Wi-Fi.
+                    Sauvegardez des vidéos de groupes ou du contenu de pages pour un partage hors ligne lors de réunions, événements ou ateliers sans avoir besoin de Wi-Fi.
                   </p>
                 </div>
               </div>
@@ -323,10 +323,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Hobbyists
+                    Amateurs
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Download videos for inspiration, like DIY projects or craft tutorials, to reference offline while working on hobbies.
+                    Téléchargez des vidéos pour l'inspiration, comme des projets DIY ou tutoriels d'artisanat, pour les consulter hors ligne tout en travaillant sur vos loisirs.
                   </p>
                 </div>
               </div>
@@ -336,13 +336,13 @@ export default function FacebookPage() {
           {/* Legal */}
           <div className="section-block section-legal mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Is It Legal to Download Facebook Videos?
+              Est-il légal de télécharger des vidéos Facebook ?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Understanding the Legal Rules
+              Comprendre les règles légales
             </h2>
             <p className="section-muted mb-4">
-              Downloading Facebook videos is a complex topic. Facebook's Terms of Service don't allow downloading content without permission from the creator or platform. Under U.S. copyright law, saving copyrighted videos without approval is illegal and could lead to lawsuits, though this is rare for personal use. Exceptions include:
+              Télécharger des vidéos Facebook est un sujet complexe. Les Conditions d'utilisation de Facebook n'autorisent pas le téléchargement de contenu sans la permission du créateur ou de la plateforme. Selon la loi américaine sur les droits d'auteur, sauvegarder des vidéos protégées sans approbation est illégal et pourrait mener à des poursuites, bien que cela soit rare pour un usage personnel. Les exceptions incluent :
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -351,10 +351,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    Public Domain Videos
+                    Vidéos du domaine public
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Videos in the public domain, which aren't protected by copyright.
+                    Les vidéos dans le domaine public, qui ne sont pas protégées par le droit d'auteur.
                   </p>
                 </div>
               </div>
@@ -364,10 +364,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    Creative Commons Licenses
+                    Licences Creative Commons
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Videos under Creative Commons licenses, which may allow downloading for specific uses, like sharing or remixing, if you follow the terms.
+                    Vidéos sous licences Creative Commons, qui peuvent autoriser le téléchargement pour des usages spécifiques, comme le partage ou le remixage, si vous suivez les termes.
                   </p>
                 </div>
               </div>
@@ -377,10 +377,10 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    Creator Permission
+                    Permission du créateur
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Videos where the creator explicitly permits downloads.
+                    Vidéos où le créateur autorise explicitement les téléchargements.
                   </p>
                 </div>
               </div>
@@ -390,115 +390,115 @@ export default function FacebookPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    Fair Use Cases
+                    Cas d'usage équitable
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Fair use cases, like downloading for education, commentary, or research, though this depends on how you use the video.
+                    Cas d'usage équitable, comme le téléchargement pour l'éducation, commentaire ou recherche, bien que cela dépende de la façon dont vous utilisez la vidéo.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              Always check the video's description for its license or ask the creator for permission. Facebook's save feature lets you bookmark posts for personal viewing, which is a legal alternative. To stay safe, respect copyright rules and consider asking creators before downloading.
+              Vérifiez toujours la description de la vidéo pour sa licence ou demandez au créateur la permission. La fonction de sauvegarde de Facebook vous permet de marquer des publications pour un visionnage personnel, ce qui est une alternative légale. Pour rester en sécurité, respectez les règles de droits d'auteur et envisagez de demander aux créateurs avant de télécharger.
             </p>
           </div>
 
           {/* Risks */}
           <div className="section-block section-risks mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Risks of Downloading Facebook Videos
+              Risques du téléchargement de vidéos Facebook
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Dangers to Avoid When Downloading
+              Dangers à éviter lors du téléchargement
             </h2>
             <p className="section-muted mb-4">
-              Downloading Facebook videos can be super convenient, but it comes with risks if you use untrustworthy tools or ignore legal boundaries. Knowing these risks helps you protect your device and stay safe. Here are the main ones to watch out for.
+              Télécharger des vidéos Facebook peut être super pratique, mais cela comporte des risques si vous utilisez des outils peu fiables ou ignorez les limites légales. Connaître ces risques vous aide à protéger votre appareil et rester en sécurité. Voici les principaux à surveiller.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6">
               <FeatureCard
                 tone="red"
                 icon={AlertTriangle}
-                title="Malware from Shady Sites"
+                title="Logiciels malveillants de sites douteux"
               >
-                Many download sites have fake buttons, pop-up ads, or hidden scripts <a href="https://www.itpro.com/security/malware/358165/malware-found-on-browser-extensions">that install viruses or malware</a>. These can harm your device or steal data. Use trusted platforms like videodownload.io to avoid this.
+                De nombreux sites de téléchargement ont de faux boutons, des publicités pop-up ou des scripts cachés <a href="https://www.itpro.com/security/malware/358165/malware-found-on-browser-extensions">qui installent des virus ou des logiciels malveillants</a>. Ceux-ci peuvent endommager votre appareil ou voler des données. Utilisez des plateformes de confiance comme videodownload.io pour éviter cela.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Shield} title="Legal Issues">
-                Downloading without permission breaks Facebook's rules and could lead to account bans or, in rare cases, legal action from copyright holders. Check the video's license first.
+              <FeatureCard tone="red" icon={Shield} title="Problèmes légaux">
+                Télécharger sans permission viole les règles de Facebook et pourrait mener à des bannissements de compte ou, dans de rares cas, à des actions légales de détenteurs de droits d'auteur. Vérifiez d'abord la licence de la vidéo.
               </FeatureCard>
               <FeatureCard
                 tone="red"
                 icon={FileX}
-                title="Poor-Quality Files"
+                title="Fichiers de mauvaise qualité"
               >
-                Unreliable sites often deliver blurry or broken videos that don't play properly, wasting your time and storage space.
+                Les sites peu fiables livrent souvent des vidéos floues ou cassées qui ne se lisent pas correctement, gaspillant votre temps et votre espace de stockage.
               </FeatureCard>
-              <FeatureCard tone="red" icon={EyeOff} title="Privacy Risks">
-              Sketchy sites may track your activity, collect personal info, or sell your data to third parties. Choose a tool that doesn't ask for unnecessary permissions.
+              <FeatureCard tone="red" icon={EyeOff} title="Risques de confidentialité">
+              Les sites douteux peuvent suivre votre activité, collecter des informations personnelles ou vendre vos données à des tiers. Choisissez un outil qui ne demande pas de permissions inutiles.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Ban} title="Corrupted Downloads">
-              Poorly designed sites might give you incomplete files that won't open, leaving you frustrated.
+              <FeatureCard tone="red" icon={Ban} title="Téléchargements corrompus">
+              Les sites mal conçus peuvent vous donner des fichiers incomplets qui ne s'ouvriront pas, vous laissant frustré.
               </FeatureCard>
               <FeatureCard
                 tone="red"
                 icon={AlertCircle}
-                title="Ethical Concerns"
+                title="Préoccupations éthiques"
               >
-                Downloading skips views or ads, which can hurt creators who rely on engagement for income. Support creators by watching online when possible.
+                Télécharger évite les vues ou publicités, ce qui peut nuire aux créateurs qui dépendent de l'engagement pour leurs revenus. Soutenez les créateurs en regardant en ligne quand c'est possible.
               </FeatureCard>
               <FeatureCard
                 tone="red"
                 icon={AlertCircle}
-                title="Storage Overload"
+                title="Surcharge de stockage"
               >
-                Downloading many videos, especially in high quality, can fill up your device's storage quickly. Manage your downloads to avoid this.
+                Télécharger de nombreuses vidéos, surtout en haute qualité, peut remplir rapidement le stockage de votre appareil. Gérez vos téléchargements pour éviter cela.
               </FeatureCard>
             </div>
             <p className="section-muted">
-            Using a secure, reputable tool like videodownload.io and respecting copyright rules can help you avoid these risks and download safely.
+            Utiliser un outil sécurisé et réputé comme videodownload.io et respecter les règles de droits d'auteur peut vous aider à éviter ces risques et télécharger en toute sécurité.
             </p>
           </div>
 
           {/* Why Use videodownload.io */}
           <div className="section-block section-whyuse mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Use videodownload.io
+              Pourquoi utiliser videodownload.io
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Your Trusted Choice for Facebook Downloads
+              Votre choix de confiance pour les téléchargements Facebook
             </h2>
             <p className="section-muted mb-4">
-            We launched videodownload.io to provide a clean, fast, and secure way to download Facebook videos without the risks of shady websites. Our goal was to make downloading simple and safe for everyone. Here are six reasons to choose us.
+            Nous avons lancé videodownload.io pour fournir un moyen propre, rapide et sécurisé de télécharger des vidéos Facebook sans les risques des sites web douteux. Notre objectif était de rendre le téléchargement simple et sûr pour tous. Voici six raisons de nous choisir.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-2">
-              <FeatureCard icon={Shield} title="Malware-Free and Secure">
-              Our site has no pop-up ads, fake links, or harmful scripts, keeping your device safe from viruses or spyware.
+              <FeatureCard icon={Shield} title="Sans logiciels malveillants et sécurisé">
+              Notre site n'a pas de publicités pop-up, faux liens ou scripts nuisibles, gardant votre appareil en sécurité contre les virus ou logiciels espions.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="Easy to Use">
-              Paste the link, click download, and you're done. No complicated steps or tech skills needed.
+              <FeatureCard icon={Monitor} title="Facile à utiliser">
+              Collez le lien, cliquez sur télécharger, et c'est fait. Pas d'étapes compliquées ou de compétences techniques requises.
               </FeatureCard>
-              <FeatureCard icon={Zap} title="Fast Processing">
-                Our servers handle videos quickly, delivering your downloads in seconds, even for live streams or group content.
+              <FeatureCard icon={Zap} title="Traitement rapide">
+                Nos serveurs traitent les vidéos rapidement, livrant vos téléchargements en quelques secondes, même pour les streams en direct ou le contenu de groupes.
               </FeatureCard>
-              <FeatureCard icon={ListChecks} title="Flexible Formats">
-                Choose MP4 for videos or MP3 for audio, with quality options like 720p or 1080p to suit your needs.
+              <FeatureCard icon={ListChecks} title="Formats flexibles">
+                Choisissez MP4 pour les vidéos ou MP3 pour l'audio, avec des options de qualité comme 720p ou 1080p pour répondre à vos besoins.
               </FeatureCard>
-              <FeatureCard icon={Download} title="Completely Free">
-                Download unlimited videos without paying anything. No subscriptions or hidden fees, ever.
+              <FeatureCard icon={Download} title="Complètement gratuit">
+                Téléchargez des vidéos illimitées sans rien payer. Pas d'abonnements ou de frais cachés, jamais.
               </FeatureCard>
-              <FeatureCard icon={Shield} title="Privacy Protection">
-                We don't track your downloads, store your data, or share your info, so your activity stays private.
+              <FeatureCard icon={Shield} title="Protection de la confidentialité">
+                Nous ne suivons pas vos téléchargements, ne stockons pas vos données, ni ne partageons vos informations, donc votre activité reste privée.
               </FeatureCard>
             </div>
           </div>
 
           {/* FAQs */}
           <div className="section-block section-faqs mb-8 md:mb-10">
-            <h1 className="section-title text-3xl md:text-4xl">FAQs</h1>
+            <h1 className="section-title text-3xl md:text-4xl">FAQ</h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Common Questions About videodownload.io and Facebook Downloads
+              Questions courantes sur videodownload.io et les téléchargements Facebook
             </h2>
             <p className="section-muted mb-4">
-              Here are answers to common questions about using videodownload.io to download Facebook videos, so you can start downloading with confidence.
+              Voici les réponses aux questions courantes sur l'utilisation de videodownload.io pour télécharger des vidéos Facebook, afin que vous puissiez commencer à télécharger en toute confiance.
             </p>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem
@@ -506,10 +506,10 @@ export default function FacebookPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  1. Is videodownload.io free to use?
+                  1. Est-ce que videodownload.io est gratuit ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, our platform is 100% free. Download as many videos as you want with no fees or limits.
+                  Oui, notre plateforme est 100% gratuite. Téléchargez autant de vidéos que vous voulez sans frais ni limites.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -517,10 +517,10 @@ export default function FacebookPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  2. Do I need to install software to download?
+                  2. Dois-je installer un logiciel pour télécharger ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No, everything works through your browser. No apps, extensions, or downloads are required, keeping it simple.
+                  Non, tout fonctionne via votre navigateur. Pas d'applications, d'extensions ou de téléchargements requis, pour rester simple.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -528,10 +528,10 @@ export default function FacebookPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  3. Can I download Facebook live streams or group videos?
+                  3. Puis-je télécharger des streams en direct Facebook ou des vidéos de groupes ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, we support downloading live streams and group videos, as long as you have access to the content. Just paste the link.
+                  Oui, nous prenons en charge le téléchargement de streams en direct et de vidéos de groupes, tant que vous avez accès au contenu. Collez simplement le lien.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -539,10 +539,10 @@ export default function FacebookPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  4. Is videodownload.io safe?
+                  4. Est-ce que videodownload.io est sûr ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Absolutely. Our site is secure, with no pop-up ads or risky links. We prioritize your safety and test our platform regularly.
+                  Absolument. Notre site est sécurisé, sans publicités pop-up ou liens risqués. Nous priorisons votre sécurité et testons notre plateforme régulièrement.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -550,10 +550,10 @@ export default function FacebookPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  5. Can I download high-quality videos?
+                  5. Puis-je télécharger des vidéos en haute qualité ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, you can download in the highest quality available, like 720p or 1080p, based on the original Facebook video.
+                  Oui, vous pouvez télécharger dans la meilleure qualité disponible, comme 720p ou 1080p, en fonction de la vidéo Facebook originale.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -561,10 +561,10 @@ export default function FacebookPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  6. What if a video doesn't download?
+                  6. Que faire si une vidéo ne se télécharge pas ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Check the URL and your internet connection. If it still fails, contact our support team, and we'll fix it quickly.
+                  Vérifiez l'URL et votre connexion internet. Si cela échoue toujours, contactez notre équipe de support, et nous le réparerons rapidement.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -572,10 +572,10 @@ export default function FacebookPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  7. Can I save just the audio from a Facebook video?
+                  7. Puis-je sauvegarder uniquement l'audio d'une vidéo Facebook ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, our MP3 feature lets you extract audio from any video, perfect for music, speeches, or clips.
+                  Oui, notre fonction MP3 vous permet d'extraire l'audio de n'importe quelle vidéo, parfait pour la musique, les discours ou les clips.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -583,10 +583,10 @@ export default function FacebookPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  8. Is downloading Facebook videos legal?
+                  8. Est-il légal de télécharger des vidéos Facebook ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  It depends. Facebook's rules prohibit downloading without permission. Videos in the public domain, under Creative Commons, or with creator approval are usually fine. Fair use might apply for education or commentary, but always check the license to stay safe.
+                  Cela dépend. Les règles de Facebook interdisent le téléchargement sans permission. Les vidéos dans le domaine public, sous Creative Commons ou avec l'approbation du créateur sont généralement acceptables. L'usage équitable peut s'appliquer pour l'éducation ou le commentaire, mais vérifiez toujours la licence pour rester en sécurité.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -595,30 +595,30 @@ export default function FacebookPage() {
           {/* Start Downloading Now */}
           <div className="section-block section-cta mb-2 text-center">
             <h1 className="section-title text-3xl md:text-4xl">
-              Start Downloading Now
+              Commencer à télécharger maintenant
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Get Your Facebook Videos in Seconds
+              Obtenez vos vidéos Facebook en quelques secondes
             </h2>
             <div className="grid sm:grid-cols-3 gap-3 max-w-3xl mx-auto mb-4">
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Fast and simple process
+                Processus rapide et simple
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Safe, malware-free downloads
+                Téléchargements sûrs, sans logiciels malveillants
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                High-quality video and audio
+                Vidéo et audio haute qualité
               </div>
             </div>
             <div className="mt-2">
               <a href="#facebook-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Download Facebook Video
+                  Télécharger une vidéo Facebook
                 </Button>
               </a>
             </div>
@@ -627,10 +627,10 @@ export default function FacebookPage() {
           {/* Explore More Downloaders */}
           <div className="section-block section-downloaders mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Explore More Downloaders
+              Explorer plus de téléchargeurs
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Download from your favorite platforms
+              Téléchargez depuis vos plateformes préférées
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-4">
               {[
@@ -708,7 +708,7 @@ export default function FacebookPage() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Download {p.name} Video
+                        Télécharger vidéo {p.name}
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}
@@ -768,23 +768,23 @@ function FeatureCard({
 function EnhancedFeatures() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
-      <FeatureCard icon={VideoIcon} title="High-Quality Video Downloads">
-        Pick from resolutions like 720p or 1080p, depending on what the Facebook video offers. Whether it's a live stream or a short clip, you can choose the best quality without dealing with complex settings.
+      <FeatureCard icon={VideoIcon} title="Téléchargements vidéo haute qualité">
+        Choisissez parmi des résolutions comme 720p ou 1080p, selon ce que la vidéo Facebook propose. Que ce soit un stream en direct ou un court clip, vous pouvez choisir la meilleure qualité sans gérer des paramètres complexes.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="Fast Download Speeds">
-        Our servers grab Facebook videos quickly. Most downloads finish in under a minute, based on your internet speed and video length, so you're not stuck waiting.
+      <FeatureCard icon={Zap} title="Vitesses de téléchargement rapides">
+        Nos serveurs récupèrent les vidéos Facebook rapidement. La plupart des téléchargements se terminent en moins d'une minute, en fonction de votre vitesse internet et de la longueur de la vidéo, donc vous n'attendez pas.
       </FeatureCard>
-      <FeatureCard icon={Music} title="Audio Extraction Option">
-        Need just the sound? Convert Facebook videos to MP3 files with one click. Perfect for saving music, speeches, or podcast-style clips for offline use.
+      <FeatureCard icon={Music} title="Option d'extraction audio">
+        Besoin juste du son ? Convertissez des vidéos Facebook en fichiers MP3 en un clic. Parfait pour sauvegarder de la musique, des discours ou des clips de style podcast pour une utilisation hors ligne.
       </FeatureCard>
-      <FeatureCard icon={Monitor} title="No Software Needed">
-        Download videos straight from our website using any browser on your phone, tablet, or computer. No apps or extra programs are required, keeping things clean and easy.
+      <FeatureCard icon={Monitor} title="Aucun logiciel requis">
+        Téléchargez des vidéos directement depuis notre site web en utilisant n'importe quel navigateur sur votre téléphone, tablette ou ordinateur. Pas d'applications ou de programmes supplémentaires requis, gardant les choses propres et faciles.
       </FeatureCard>
-      <FeatureCard icon={ListChecks} title="Support for Live and Group Videos">
-        Save videos from Facebook posts, live streams, or private group content (if you have access). Just paste the link, and we'll handle the rest, even for unique content types.
+      <FeatureCard icon={ListChecks} title="Support pour les vidéos en direct et de groupes">
+        Sauvegardez des vidéos de publications Facebook, streams en direct ou contenu de groupes privés (si vous avez accès). Collez simplement le lien, et nous gérerons le reste, même pour les types de contenu uniques.
       </FeatureCard>
-      <FeatureCard icon={Shield} title="Safe and Ad-Free Interface">
-        Our site has no pop-up ads, fake buttons, or risky redirects. You get a clean, secure experience every time, so you can download without worrying about viruses.
+      <FeatureCard icon={Shield} title="Interface sécurisée et sans publicités">
+        Notre site n'a pas de publicités pop-up, faux boutons ou redirections risquées. Vous obtenez une expérience propre et sécurisée à chaque fois, donc vous pouvez télécharger sans vous soucier des virus.
       </FeatureCard>
     </div>
   );
@@ -823,17 +823,17 @@ function StepCard({
 function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-      <StepCard step={1} title="Copy the Facebook Video URL">
-        <a href="http://www.facebook.com">Open Facebook</a> on your app or browser, find the video, live stream, or group post you want, and copy its URL. Click the three dots on the post and select "Copy Link" or grab the URL from the browser's address bar.
+      <StepCard step={1} title="Copiez l'URL de la vidéo Facebook">
+        <a href="http://www.facebook.com">Ouvrez Facebook</a> sur votre application ou navigateur, trouvez la vidéo, le stream en direct ou la publication de groupe que vous voulez, et copiez son URL. Cliquez sur les trois points sur la publication et sélectionnez "Copier le lien" ou récupérez l'URL dans la barre d'adresse du navigateur.
       </StepCard>
-      <StepCard step={2} title="Paste the URL on Our Site">
-        Go to videodownload.io in any browser. On our homepage, find the download bar and paste the copied Facebook link. Check the URL to make sure it's correct.
+      <StepCard step={2} title="Collez l'URL sur notre site">
+        Rendez-vous sur videodownload.io dans n'importe quel navigateur. Sur notre page d'accueil, trouvez la barre de téléchargement et collez le lien Facebook copié. Vérifiez que l'URL est correcte.
       </StepCard>
-      <StepCard step={3} title="We Process the Video">
-        Click the "Download" button. Our system will fetch the video and prepare it for you in seconds. Choose your format, like MP4 for video or MP3 for audio, and quality if prompted.
+      <StepCard step={3} title="Nous traitons la vidéo">
+        Cliquez sur le bouton "Télécharger". Notre système va récupérer la vidéo et la préparer pour vous en quelques secondes. Choisissez votre format, comme MP4 pour la vidéo ou MP3 pour l'audio, et la qualité si demandé.
       </StepCard>
-      <StepCard step={4} title="Save Your Facebook Video">
-        When the download link appears, click it to save the video to your device. Rename the file if you want to keep your downloads organized for easy access later.
+      <StepCard step={4} title="Sauvegardez votre vidéo Facebook">
+        Lorsque le lien de téléchargement apparaît, cliquez dessus pour sauvegarder la vidéo sur votre appareil. Renommez le fichier si vous voulez garder vos téléchargements organisés pour un accès facile plus tard.
       </StepCard>
     </div>
   );

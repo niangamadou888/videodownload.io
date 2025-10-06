@@ -17,6 +17,14 @@ import YouTubePageId from "./pages/platforms/youtube-id";
 import TikTokPage from "./pages/platforms/tiktok";
 import InstagramPage from "./pages/platforms/instagram";
 import FacebookPage from "./pages/platforms/facebook";
+import FacebookPageFr from "./pages/platforms/facebook-fr";
+import FacebookPageIt from "./pages/platforms/facebook-it";
+import FacebookPageEs from "./pages/platforms/facebook-es";
+import FacebookPagePt from "./pages/platforms/facebook-pt";
+import FacebookPageNl from "./pages/platforms/facebook-nl";
+import FacebookPageDe from "./pages/platforms/facebook-de";
+import FacebookPageId from "./pages/platforms/facebook-id";
+import FacebookPageVi from "./pages/platforms/facebook-vi";
 import TwitterPage from "./pages/platforms/twitter";
 import PinterestPage from "./pages/platforms/pinterest";
 import LinkedInPage from "./pages/platforms/linkedin";
@@ -60,7 +68,7 @@ const App = () => (
             <Route path="/fr/youtube" element={<YouTubePageFr />} />
             <Route path="/fr/tiktok" element={<TikTokPage />} />
             <Route path="/fr/instagram" element={<InstagramPage />} />
-            <Route path="/fr/facebook" element={<FacebookPage />} />
+            <Route path="/fr/facebook" element={<FacebookPageFr />} />
             <Route path="/fr/twitter" element={<TwitterPage />} />
             <Route path="/fr/pinterest" element={<PinterestPage />} />
             <Route path="/fr/linkedin" element={<LinkedInPage />} />
@@ -73,7 +81,7 @@ const App = () => (
             <Route path="/it/youtube" element={<YouTubePageIt />} />
             <Route path="/it/tiktok" element={<TikTokPage />} />
             <Route path="/it/instagram" element={<InstagramPage />} />
-            <Route path="/it/facebook" element={<FacebookPage />} />
+            <Route path="/it/facebook" element={<FacebookPageIt />} />
             <Route path="/it/twitter" element={<TwitterPage />} />
             <Route path="/it/pinterest" element={<PinterestPage />} />
             <Route path="/it/linkedin" element={<LinkedInPage />} />
@@ -86,7 +94,7 @@ const App = () => (
             <Route path="/pt/youtube" element={<YouTubePagePt />} />
             <Route path="/pt/tiktok" element={<TikTokPage />} />
             <Route path="/pt/instagram" element={<InstagramPage />} />
-            <Route path="/pt/facebook" element={<FacebookPage />} />
+            <Route path="/pt/facebook" element={<FacebookPagePt />} />
             <Route path="/pt/twitter" element={<TwitterPage />} />
             <Route path="/pt/pinterest" element={<PinterestPage />} />
             <Route path="/pt/linkedin" element={<LinkedInPage />} />
@@ -99,7 +107,7 @@ const App = () => (
             <Route path="/es/youtube" element={<YouTubePageEs />} />
             <Route path="/es/tiktok" element={<TikTokPage />} />
             <Route path="/es/instagram" element={<InstagramPage />} />
-            <Route path="/es/facebook" element={<FacebookPage />} />
+            <Route path="/es/facebook" element={<FacebookPageEs />} />
             <Route path="/es/twitter" element={<TwitterPage />} />
             <Route path="/es/pinterest" element={<PinterestPage />} />
             <Route path="/es/linkedin" element={<LinkedInPage />} />
@@ -112,7 +120,7 @@ const App = () => (
             <Route path="/nl/youtube" element={<YouTubePageNl />} />
             <Route path="/nl/tiktok" element={<TikTokPage />} />
             <Route path="/nl/instagram" element={<InstagramPage />} />
-            <Route path="/nl/facebook" element={<FacebookPage />} />
+            <Route path="/nl/facebook" element={<FacebookPageNl />} />
             <Route path="/nl/twitter" element={<TwitterPage />} />
             <Route path="/nl/pinterest" element={<PinterestPage />} />
             <Route path="/nl/linkedin" element={<LinkedInPage />} />
@@ -125,7 +133,7 @@ const App = () => (
             <Route path="/de/youtube" element={<YouTubePageDe />} />
             <Route path="/de/tiktok" element={<TikTokPage />} />
             <Route path="/de/instagram" element={<InstagramPage />} />
-            <Route path="/de/facebook" element={<FacebookPage />} />
+            <Route path="/de/facebook" element={<FacebookPageDe />} />
             <Route path="/de/twitter" element={<TwitterPage />} />
             <Route path="/de/pinterest" element={<PinterestPage />} />
             <Route path="/de/linkedin" element={<LinkedInPage />} />
@@ -138,7 +146,7 @@ const App = () => (
             <Route path="/vi/youtube" element={<YouTubePageVi />} />
             <Route path="/vi/tiktok" element={<TikTokPage />} />
             <Route path="/vi/instagram" element={<InstagramPage />} />
-            <Route path="/vi/facebook" element={<FacebookPage />} />
+            <Route path="/vi/facebook" element={<FacebookPageVi />} />
             <Route path="/vi/twitter" element={<TwitterPage />} />
             <Route path="/vi/pinterest" element={<PinterestPage />} />
             <Route path="/vi/linkedin" element={<LinkedInPage />} />
@@ -151,7 +159,7 @@ const App = () => (
             <Route path="/id/youtube" element={<YouTubePageId />} />
             <Route path="/id/tiktok" element={<TikTokPage />} />
             <Route path="/id/instagram" element={<InstagramPage />} />
-            <Route path="/id/facebook" element={<FacebookPage />} />
+            <Route path="/id/facebook" element={<FacebookPageId />} />
             <Route path="/id/twitter" element={<TwitterPage />} />
             <Route path="/id/pinterest" element={<PinterestPage />} />
             <Route path="/id/linkedin" element={<LinkedInPage />} />
