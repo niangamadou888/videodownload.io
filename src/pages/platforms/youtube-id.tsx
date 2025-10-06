@@ -38,9 +38,15 @@ import {
 import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function YouTubePageId() {
   const { buildUrl } = useLanguageNavigation();
+
+  usePageMeta({
+    title: "Download Video YouTube | Gratis & HD",
+    description: "Download video YouTube, Shorts, dan Live dalam format mp4, 1080p, 4k. Pengunduh dan konverter video online gratis."
+  });
 
   return (
     <div className="min-h-screen relative">
@@ -371,7 +377,9 @@ export default function YouTubePageId() {
               Persyaratan Layanan YouTube secara eksplisit melarang pengunduhan
               video kecuali platform menyediakan opsi resmi, seperti{" "}
               <a
-                href="https://support.google.com/youtube/answer/11977233?hl=en&co=GENIE.Platform%3DAndroid"
+                href="https://support.google.com/youtube/answer/11977233?hl=id&co=GENIE.Platform%3DAndroid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow underline transition-colors"
               >
                 fitur offline YouTube Premium
@@ -446,7 +454,9 @@ export default function YouTubePageId() {
                     Pengunduhan terbatas untuk edukasi, komentar, kritik, atau
                     riset bisa masuk dalam{" "}
                     <a
-                      href="https://support.google.com/youtube/answer/9783148?hl=en"
+                      href="https://support.google.com/youtube/answer/9783148?hl=id"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary-glow underline transition-colors"
                     >
                       fair use

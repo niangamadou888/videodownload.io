@@ -2,11 +2,18 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import PlatformSubheader from "@/components/PlatformSubheader";
+import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function InstagramPage() {
   const { buildUrl } = useLanguageNavigation();
 
   const platform = "Instagram";
+
+  usePageMeta({
+    title: "Instagram Video Download | Free & HD",
+    description: "Download Instagram videos, Reels, Stories, and IGTV in mp4, 1080p, 4k quality. Free online video downloader and converter."
+  });
   return (
     <div className="min-h-screen relative">
       <PlatformSubheader platform={platform} />

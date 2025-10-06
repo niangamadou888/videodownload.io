@@ -39,10 +39,16 @@ import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function YouTubePageFr() {
   const { buildUrl } = useLanguageNavigation();
   const { t } = useLanguage();
+
+  usePageMeta({
+    title: "Télécharger Vidéo YouTube | Gratuit & HD",
+    description: "Téléchargez des vidéos YouTube, Shorts et Live en mp4, 1080p, 4k. Convertisseur et téléchargeur de vidéos gratuit en ligne."
+  });
 
   return (
     <div className="min-h-screen relative">
@@ -375,6 +381,8 @@ export default function YouTubePageFr() {
               officielle, comme{" "}
               <a
                 href="https://support.google.com/youtube/answer/11977233?hl=fr&co=GENIE.Platform%3DAndroid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow underline transition-colors"
               >
                 la fonction hors ligne de YouTube Premium
@@ -450,6 +458,8 @@ export default function YouTubePageFr() {
                     recherche pourrait qualifier comme{" "}
                     <a
                       href="https://support.google.com/youtube/answer/9783148?hl=fr"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary-glow underline transition-colors"
                     >
                       usage équitable

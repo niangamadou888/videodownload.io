@@ -38,9 +38,15 @@ import {
 import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function YouTubePageIt() {
   const { buildUrl } = useLanguageNavigation();
+
+  usePageMeta({
+    title: "Scaricare Video YouTube | Gratis & HD",
+    description: "Scarica video YouTube, Shorts e Live in mp4, 1080p, 4k. Convertitore e downloader di video gratuito online."
+  });
 
   return (
     <div className="min-h-screen relative">
@@ -378,6 +384,8 @@ export default function YouTubePageIt() {
               ufficiale, come la{" "}
               <a
                 href="https://support.google.com/youtube/answer/11977233?hl=it&co=GENIE.Platform%3DAndroid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow underline transition-colors"
               >
                 funzione offline di YouTube Premium
@@ -455,6 +463,8 @@ export default function YouTubePageIt() {
                     critica o ricerca può rientrare nel{" "}
                     <a
                       href="https://support.google.com/youtube/answer/9783148?hl=it"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary-glow underline transition-colors"
                     >
                       fair use

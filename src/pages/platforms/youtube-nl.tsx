@@ -38,9 +38,15 @@ import {
 import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function YouTubePageNl() {
   const { buildUrl } = useLanguageNavigation();
+
+  usePageMeta({
+    title: "YouTube Video Downloaden | Gratis & HD",
+    description: "Download YouTube videos, Shorts en Lives in mp4, 1080p, 4k. Gratis online video downloader en converter."
+  });
 
   return (
     <div className="min-h-screen relative">
@@ -371,7 +377,9 @@ export default function YouTubePageNl() {
               duidelijk dat het downloaden van video's verboden is, tenzij het
               platform een officiële optie biedt, zoals{" "}
               <a
-                href="https://support.google.com/youtube/answer/11977233?hl=en&co=GENIE.Platform%3DAndroid"
+                href="https://support.google.com/youtube/answer/11977233?hl=nl&co=GENIE.Platform%3DAndroid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow underline transition-colors"
               >
                 de offline functie van YouTube Premium
@@ -447,7 +455,9 @@ export default function YouTubePageNl() {
                     Beperkt downloaden voor educatie, commentaar, kritiek of
                     onderzoek kan vallen onder{" "}
                     <a
-                      href="https://support.google.com/youtube/answer/9783148?hl=en"
+                      href="https://support.google.com/youtube/answer/9783148?hl=nl"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary-glow underline transition-colors"
                     >
                       fair use

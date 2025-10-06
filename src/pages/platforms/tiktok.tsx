@@ -3,11 +3,17 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import PlatformSubheader from "@/components/PlatformSubheader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function TikTokPage() {
   const { buildUrl } = useLanguageNavigation();
 
   const platform = "TikTok";
+
+  usePageMeta({
+    title: "TikTok Video Download | Free & HD",
+    description: "Download TikTok videos, Reels, and Stories in mp4, 1080p, 4k quality. Free online video downloader and converter."
+  });
   return (
     <div className="min-h-screen relative">
       <PlatformSubheader platform={platform} />

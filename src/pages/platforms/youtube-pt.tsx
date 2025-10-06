@@ -38,9 +38,15 @@ import {
 import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function YouTubePagePt() {
   const { buildUrl } = useLanguageNavigation();
+
+  usePageMeta({
+    title: "Baixar Vídeo YouTube | Grátis & HD",
+    description: "Baixe vídeos do YouTube, Shorts e Lives em mp4, 1080p, 4k. Conversor e downloader de vídeos grátis online."
+  });
 
   return (
     <div className="min-h-screen relative">
@@ -364,7 +370,9 @@ export default function YouTubePagePt() {
               do YouTube proíbem explicitamente o download de vídeos, a menos que a
               plataforma ofereça uma opção oficial, como o{" "}
               <a
-                href="https://support.google.com/youtube/answer/11977233?hl=en&co=GENIE.Platform%3DAndroid"
+                href="https://support.google.com/youtube/answer/11977233?hl=pt&co=GENIE.Platform%3DAndroid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow underline transition-colors"
               >
                 recurso offline do YouTube Premium
@@ -439,7 +447,9 @@ export default function YouTubePagePt() {
                     Downloads limitados para educação, comentários, críticas ou pesquisa podem
                     se enquadrar em{" "}
                     <a
-                      href="https://support.google.com/youtube/answer/9783148?hl=en"
+                      href="https://support.google.com/youtube/answer/9783148?hl=pt"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary-glow underline transition-colors"
                     >
                       fair use

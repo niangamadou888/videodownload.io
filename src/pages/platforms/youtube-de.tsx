@@ -38,9 +38,15 @@ import {
 import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function YouTubePageDe() {
   const { buildUrl } = useLanguageNavigation();
+
+  usePageMeta({
+    title: "YouTube Video Herunterladen | Kostenlos & HD",
+    description: "YouTube Videos, Shorts und Lives in mp4, 1080p, 4k herunterladen. Kostenloser Online-Video-Downloader und Converter."
+  });
 
   return (
     <div className="min-h-screen relative">
@@ -326,7 +332,9 @@ export default function YouTubePageDe() {
               Ob das Herunterladen von YouTube-Videos erlaubt ist, hängt von mehreren Faktoren ab. Die Nutzungsbedingungen von YouTube verbieten Downloads ausdrücklich,
               es sei denn, die Plattform bietet eine offizielle Option wie das {" "}
               <a
-                href="https://support.google.com/youtube/answer/11977233?hl=en&co=GENIE.Platform%3DAndroid"
+                href="https://support.google.com/youtube/answer/11977233?hl=de&co=GENIE.Platform%3DAndroid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow underline transition-colors"
               >
                 Offline-Feature von YouTube Premium
@@ -394,7 +402,9 @@ export default function YouTubePageDe() {
                   <p className="text-sm text-muted-foreground">
                     Begrenzte Downloads für Bildung, Kommentar, Kritik oder Forschung können unter {" "}
                     <a
-                      href="https://support.google.com/youtube/answer/9783148?hl=en"
+                      href="https://support.google.com/youtube/answer/9783148?hl=de"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary-glow underline transition-colors"
                     >
                       Fair Use

@@ -38,9 +38,15 @@ import {
 import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function YouTubePage() {
   const { buildUrl } = useLanguageNavigation();
+
+  usePageMeta({
+    title: "YouTube Video Download | Free & HD",
+    description: "Download YouTube videos, Shorts, and Live streams in mp4, 1080p, 4k quality. Free online video downloader and converter."
+  });
 
   return (
     <div className="min-h-screen relative">
@@ -373,6 +379,8 @@ export default function YouTubePage() {
               option, like{" "}
               <a
                 href="https://support.google.com/youtube/answer/11977233?hl=en&co=GENIE.Platform%3DAndroid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow underline transition-colors"
               >
                 YouTube Premium's offline feature
@@ -448,6 +456,8 @@ export default function YouTubePage() {
                     research might qualify as{" "}
                     <a
                       href="https://support.google.com/youtube/answer/9783148?hl=en"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary-glow underline transition-colors"
                     >
                       fair use
@@ -938,7 +948,7 @@ function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
       <StepCard step={1} title="Copy the YouTube Video URL">
-        Open YouTube in your browser or app, find the video you want to
+        <a href="http://www.youtube.com">Open YouTube</a> in your browser or app, find the video you want to
         download, and copy its URL. You can grab the link from the browser’s
         address bar or by clicking the “Share” button below the video and
         selecting “Copy Link.”

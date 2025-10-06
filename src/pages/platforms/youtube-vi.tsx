@@ -38,9 +38,15 @@ import {
 import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function YouTubePageVi() {
   const { buildUrl } = useLanguageNavigation();
+
+  usePageMeta({
+    title: "Tải Video YouTube | Miễn Phí & HD",
+    description: "Tải video YouTube, Shorts và Live ở định dạng mp4, 1080p, 4k. Công cụ tải và chuyển đổi video trực tuyến miễn phí."
+  });
 
   return (
     <div className="min-h-screen relative">
@@ -342,7 +348,9 @@ export default function YouTubePageVi() {
               Tính hợp pháp của việc tải video YouTube phụ thuộc vào nhiều yếu tố, và bạn nên hiểu rõ quy định để tránh rắc rối.
               Điều khoản dịch vụ của YouTube nêu rõ cấm tải video trừ khi nền tảng cung cấp tùy chọn chính thức như{" "}
               <a
-                href="https://support.google.com/youtube/answer/11977233?hl=en&co=GENIE.Platform%3DAndroid"
+                href="https://support.google.com/youtube/answer/11977233?hl=vi&co=GENIE.Platform%3DAndroid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow underline transition-colors"
               >
                 tính năng xem ngoại tuyến của YouTube Premium
@@ -412,7 +420,9 @@ export default function YouTubePageVi() {
                   <p className="text-sm text-muted-foreground">
                     Việc tải hạn chế cho mục đích giáo dục, bình luận, phê bình hoặc nghiên cứu có thể thuộc{" "}
                     <a
-                      href="https://support.google.com/youtube/answer/9783148?hl=en"
+                      href="https://support.google.com/youtube/answer/9783148?hl=vi"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary-glow underline transition-colors"
                     >
                       phạm vi fair use

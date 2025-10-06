@@ -38,9 +38,15 @@ import {
 import { SiThreads } from "react-icons/si";
 import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function YouTubePageEs() {
   const { buildUrl } = useLanguageNavigation();
+
+  usePageMeta({
+    title: "Descargar Video YouTube | Gratis & HD",
+    description: "Descarga videos de YouTube, Shorts y Lives en mp4, 1080p, 4k. Conversor y descargador de videos gratis en línea."
+  });
 
   return (
     <div className="min-h-screen relative">
@@ -334,7 +340,9 @@ export default function YouTubePageEs() {
               La legalidad de descargar videos de YouTube depende de varios factores, y es importante entender las reglas para evitar problemas. Los
               Términos de Servicio de YouTube prohíben expresamente descargar videos a menos que la plataforma ofrezca una opción oficial, como la{" "}
               <a
-                href="https://support.google.com/youtube/answer/11977233?hl=en&co=GENIE.Platform%3DAndroid"
+                href="https://support.google.com/youtube/answer/11977233?hl=es&co=GENIE.Platform%3DAndroid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow underline transition-colors"
               >
                 función sin conexión de YouTube Premium
@@ -402,7 +410,9 @@ export default function YouTubePageEs() {
                   <p className="text-sm text-muted-foreground">
                     Descargas limitadas para educación, comentarios, críticas o investigación pueden considerarse{" "}
                     <a
-                      href="https://support.google.com/youtube/answer/9783148?hl=en"
+                      href="https://support.google.com/youtube/answer/9783148?hl=es"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary hover:text-primary-glow underline transition-colors"
                     >
                       uso legítimo
