@@ -40,71 +40,70 @@ import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
-export default function PinterestPage() {
+export default function TikTokPageId() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Pinterest Video Download | Free & HD",
-    description: "Download Pinterest videos and pins in mp4, 1080p quality. Free online video downloader and converter."
+    title: "Unduh Video TikTok | Gratis & HD",
+    description:
+      "Unduh video TikTok tanpa watermark dalam kualitas HD. Pengunduh TikTok gratis: cepat, aman, dan tanpa biaya."
   });
 
   return (
     <div className="min-h-screen relative">
-      <PlatformSubheader platform="Pinterest" />
+      <PlatformSubheader platform="TikTok" />
       <div className="container mx-auto px-4 py-12">
         <div className="mx-auto max-w-5xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
-          {/* Minimal Download Box */}
-          <div id="pinterest-downloader" className="mb-10">
+          {/* Kotak unduh minimal */}
+          <div id="tiktok-downloader" className="mb-10">
             <VideoDownloader
               boxOnly
-              inputPlaceholder="Paste a Pinterest video or pin URL"
+              inputPlaceholder="Tempel URL video TikTok"
             />
           </div>
-          {/* Features */}
+
+          {/* Fitur */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Features
+            Unduh video TikTok dengan mudah
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            Download Pinterest Videos Easily
+            Panduan penting untuk menyimpan klip secara offline
           </h2>
           <p className="text-muted-foreground mb-6">
-            Your Simple Guide to Saving Creative Clips Offline
+            Simpan video TikTok dalam kualitas HD tanpa watermark. Pengunduh kami cepat, aman, dan sepenuhnya gratis, sempurna untuk ditonton kapan saja.
           </p>
 
           <EnhancedFeatures />
 
-          {/* How to Download */}
+          {/* Cara mengunduh */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            How to Download Pinterest Videos
+            Cara mengunduh video TikTok
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            A Clear, Step-by-Step Guide to Save Videos Effortlessly
+            Panduan langkah demi langkah sederhana untuk menyimpan dalam hitungan detik
           </h2>
           <p className="text-muted-foreground mb-6">
-            Getting Pinterest videos onto your device is simple with
-            videodownload.io. Follow these four straightforward steps to
-            download any video in minutes. Each step is designed to be
-            intuitive, even if you're not tech-savvy.
+            Dengan videodownload.io, Anda mengunduh video apa pun dalam beberapa menit. Empat langkah intuitif yang dirancang untuk kemudahan, bahkan tanpa keahlian teknis.
           </p>
           <EnhancedSteps />
           <div className="text-center mt-6 mb-10">
-            <a href="#pinterest-downloader">
+            <a href="#tiktok-downloader">
               <Button variant="download" className="px-6">
-                Download Pinterest Video
+                Unduh video TikTok
               </Button>
             </a>
           </div>
 
-          {/* Why Download */}
+          {/* Mengapa mengunduh */}
           <div className="section-block section-why mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Download Pinterest Videos
+              Mengapa mengunduh video TikTok
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Best Use Cases
+              Ketika akses offline membuat perbedaan
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is a goldmine for inspiration, but its feed moves fast, and pins can disappear. Downloading lets you keep the videos that spark ideas, turning fleeting finds into a personal collection. It's about saving what fuels your creativity or plans, not just hoarding content. You control your stash, safe from deleted pins or app glitches.
+              TikTok berubah dalam hitungan jam: tren menghilang, profil berganti arah, dan video penting hilang. Dengan mengunduh, Anda menyimpan apa yang benar-benar penting, membangun koleksi khusus, dan tidak bergantung pada sinyal atau platform.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -113,10 +112,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Offline Viewing
+                    Menonton offline saat bepergian
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save DIY tutorials or travel guides for trips with no Wi-Fi, like camping or long flights. Parents download kid-friendly craft videos for rainy days, keeping kids busy without internet.
+                    Pesawat, kereta bawah tanah, atau Wi-Fi yang tidak stabil merusak pengalaman. Simpan tutorial, komedi, dan lagu anak-anak sebelum meninggalkan rumah dan tonton tanpa gangguan.
                   </p>
                 </div>
               </div>
@@ -126,10 +125,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Repurposing for Creators
+                    Remix dan pembuatan konten
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers save decor clips to remix into their own content, adding tips or tweaks. Small businesses grab product demos to share on other platforms, skipping watermarks for clean edits.
+                    Kreator menyimpan klip referensi untuk me-remix tren, membandingkan teknik, atau menjawab audiens tanpa watermark. Ideal untuk react, reels, dan kolaborasi.
                   </p>
                 </div>
               </div>
@@ -139,10 +138,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Archiving Your Own Pins
+                    Cadangkan video Anda sendiri
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If you post videos, they can vanish from board changes or platform issues. Download them to a drive to protect your work, like a recipe you shared or a portfolio piece.
+                    Yang sering memposting tahu bahwa larangan atau pengeditan yang salah dapat menghapus semuanya. Simpan salinan HD di komputer atau cloud dan tetap tenang. Siswa juga menyimpan ringkasan atau tips belajar untuk ditinjau secara offline.
                   </p>
                 </div>
               </div>
@@ -152,10 +151,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Learning and Planning
+                    Gunakan kembali di platform lain
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Students save art tutorials or study tips for offline practice. Event planners download wedding or party ideas to show clients, no need to search again.
+                    Sesuaikan video untuk Reels atau Shorts dan perluas jangkauan. Bisnis kecil menyimpan testimoni atau behind-the-scenes untuk ditampilkan di situs web, presentasi, atau titik penjualan.
                   </p>
                 </div>
               </div>
@@ -165,31 +164,29 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Personal Projects
+                    Arsip pribadi kenangan
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save gardening tips for spring planting or workout routines for daily use. Turn a quick pin into a go-to resource for your next big idea.
+                    Momen keluarga, resep, presentasi sekolah, atau penghargaan tetap terlindungi dan siap untuk dibagikan tanpa bergantung pada aplikasi.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              Downloading Pinterest videos offers flexibility and convenience,
-              making it easier to enjoy content on your terms, whether for fun,
-              work, or learning.
+              Singkatnya, mengunduh video TikTok memberi Anda kebebasan penuh untuk mengonsumsi, belajar, atau bekerja dengan kecepatan Anda sendiri.
             </p>
           </div>
 
-          {/* Who Should Download */}
+          {/* Siapa yang harus mengunduh */}
           <div className="section-block section-who mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Who Should Download Pinterest Videos
+              Siapa yang harus mengunduh video TikTok
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              People Who Benefit Most from Downloading
+              Orang yang paling diuntungkan dari mode offline
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is all about ideas, but downloading videos fits people who turn those ideas into action. It's for those who use the platform to create, plan, or learn, not just browse for fun. If you're saving clips to make something real, downloading is your tool.
+              Mengunduh sangat penting bagi mereka yang menggunakan TikTok sebagai alat untuk kreasi, studi, atau bisnis. Jika video mendukung rutinitas Anda, masuk akal untuk menyimpannya.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -198,10 +195,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Content Creators
+                    Pembuat konten
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers and influencers save DIY or style videos to remix for their audience, like a fashion vlogger tweaking a look from a pin. They download their own posts too, keeping clean copies without logos.
+                    Menyimpan video mereka sendiri atau inspirasi untuk mengedit dengan santai, membandingkan tren, dan menghasilkan tanggapan tanpa watermark.
                   </p>
                 </div>
               </div>
@@ -211,10 +208,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Hobbyists and DIYers
+                    Guru dan siswa
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Crafters save knitting or painting tutorials to follow step-by-step at home. Gardeners download planting guides to check while digging. It's hands-on inspiration, offline.
+                    Menyimpan demonstrasi, eksperimen, atau tips cepat untuk digunakan di kelas, ditinjau nanti, atau mempersiapkan aktivitas tanpa ketergantungan internet.
                   </p>
                 </div>
               </div>
@@ -224,10 +221,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Event Planners and Small Businesses
+                    Keluarga dan pengasuh
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Wedding planners save decor clips to pitch clients. Shops grab product videos to feature on websites or ads, building trust without watermarks.
+                    Menyimpan momen istimewa, lagu, dan cerita untuk ditonton bersama atau dibagikan dengan mereka yang tidak menggunakan aplikasi.
                   </p>
                 </div>
               </div>
@@ -237,10 +234,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Parents and Educators
+                    Bisnis kecil
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Teachers save craft demos for classroom projects. Moms download sensory play videos for toddlers, ready for screen-free days.
+                    Memanfaatkan UGC, testimoni, dan behind-the-scenes untuk digunakan di etalase, presentasi, dan kampanye omnichannel.
                   </p>
                 </div>
               </div>
@@ -250,31 +247,35 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Homeowners and Renovators
+                    Penghobi dan autodidak
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save kitchen remodel tips or furniture hacks to plan upgrades. Even casual users download motivational clips, like vision board ideas, to keep dreams in focus.
+                    Mengunduh resep, pelajaran musik, panduan berkebun, atau rutinitas latihan untuk dipraktikkan dengan kecepatan yang tepat.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              No matter your role or lifestyle, downloading Pinterest videos can
-              save time, data, and effort while keeping your favorite content
-              accessible.
+              Apa pun profil Anda, mengunduh video menghemat waktu, data, dan menjamin akses konstan ke konten utama.
             </p>
           </div>
 
-          {/* Legal */}
+          {/* Aspek hukum */}
           <div className="section-block section-legal mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Is It Legal to Download Pinterest Videos?
+              Apakah mengunduh video TikTok legal?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              What You Need to Know About the Law
+              Apa yang dikatakan hukum tentang unduhan
             </h2>
             <p className="section-muted mb-4">
-              Videos are copyrighted by their creators under laws like the DMCA in the US. Saving for private viewing, like practicing a craft offline, often counts as fair use. But sharing without credit or using for profit can lead to legal trouble. Music or voiceovers in videos may have extra copyright layers, though short personal saves rarely face issues.
+              Mengunduh video TikTok adalah area abu-abu. <a href="https://support.tiktok.com/en/using-tiktok/exploring-videos/video-downloads">Aturan platform memungkinkan penyimpanan klip publik</a> untuk menonton offline ketika kreator tidak memblokirnya. Untuk penggunaan pribadi tidak ada masalah, tetapi ketentuan melarang alat pihak ketiga, jadi secara teoritis TikTok dapat mengenali pola. Dalam praktiknya, upaya berfokus pada unggah ulang massal.
+            </p>
+            <p className="section-muted mb-4">
+              Undang-undang hak cipta seperti DMCA melindungi kreator. Menyimpan video untuk ditonton nanti biasanya termasuk dalam penggunaan wajar jika Anda tidak mengubah atau mendistribusikannya. Memposting ulang tanpa kredit atau tanpa transformasi merupakan pelanggaran dan dapat mengakibatkan penghapusan. Soundtrack juga memiliki pemilik, meskipun potongan pendek untuk penggunaan pribadi jarang ditandai.
+            </p>
+            <p className="section-muted mb-2">
+              Situasi di mana pengunduhan diizinkan:
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -283,107 +284,122 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    When It's Allowed
+                    Izin kreator
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If the creator allows downloads or the content is public domain, you're safe. Educational use, like showing a tutorial in class, often qualifies as fair use. Check pin descriptions for permissions. Keep downloads private and credit creators if you share to stay on the right side.
+                    Jika penulis mengizinkan unduhan, Anda dapat mengunduh tanpa khawatir.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 section-muted">
+                <div className="mt-1 w-8 h-8 rounded-lg bg-green-500/20 text-green-500 flex items-center justify-center">
+                  <Shield className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="font-semibold text-green-400">
+                    Konten domain publik
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Karya tanpa perlindungan hak cipta dapat diunduh secara bebas.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 section-muted">
+                <div className="mt-1 w-8 h-8 rounded-lg bg-green-500/20 text-green-500 flex items-center justify-center">
+                  <Shield className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="font-semibold text-green-400">
+                    Penggunaan pendidikan yang adil
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Sekolah dan guru dapat menggunakan potongan pendek untuk tujuan pedagogis dalam batas penggunaan wajar. Selalu periksa deskripsi video.
                   </p>
                 </div>
               </div>
             </div>
+            <p className="section-muted">
+              Kesimpulan: jaga penggunaan tetap pribadi dan hormat. Jika Anda ingin membagikan, minta izin atau beri kredit pada penulis dengan jelas.
+            </p>
           </div>
 
-          {/* Risks */}
+          {/* Risiko */}
           <div className="section-block section-risks mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              The Risks Associated with Downloading Pinterest Videos
+              Risiko saat mengunduh video TikTok
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Potential Dangers and How to Avoid Them
+              Bahaya umum dan cara menghindarinya
             </h2>
             <p className="section-muted mb-4">
-              Third-party downloaders sound convenient, but sketchy ones bring real trouble. Not every site is safe, and clicking blindly can mess up your device or data. Know the risks before you download to avoid headaches later.
+              Alat pihak ketiga dapat menyembunyikan jebakan: dari virus hingga penipuan. Sebelum menempelkan tautan di situs web mana pun, patut diketahui risiko utama untuk melindungi perangkat Anda.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6">
-              <FeatureCard
-                tone="red"
-                icon={AlertTriangle}
-                title="Malware"
-              >
-                Shady sites hide viruses in video files, sneaking in spyware or ransomware. One bad download can lock your files or steal passwords. Some tools have been caught with keyloggers, turning a craft clip into a privacy mess.
+              <FeatureCard tone="red" icon={AlertTriangle} title="Malware di situs mencurigakan">
+                Beberapa portal menyisipkan virus, trojan, atau ransomware bersama dengan unduhan. Satu klik dapat membahayakan data Anda atau mengunci perangkat.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Shield} title="Phishing Scams">
-                Fake download pages mimic Pinterest's login, grabbing your credentials if you fall for it. Or ads push "updates" that install trackers, watching your activity beyond the platform.
+              <FeatureCard tone="red" icon={Shield} title="Penipuan phishing">
+                Tombol palsu meniru layar login TikTok dan mencuri kredensial, atau menawarkan "pembaruan" yang menginstal spyware.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={FileX}
-                title="Quality Issues"
-              >
-                Bad sites compress videos, causing choppy playback or lost audio. You wanted a clear tutorial, but get a glitchy file instead.
+              <FeatureCard tone="red" icon={EyeOff} title="Kebocoran data">
+                Alat yang tidak dapat diandalkan mencatat riwayat Anda dan menjual informasi kepada pihak ketiga, menghasilkan spam dan upaya penipuan.
               </FeatureCard>
-              <FeatureCard tone="red" icon={EyeOff} title="Privacy Leaks">
-                Some sites log your downloads, selling your IP or video choices to advertisers. Hackers could snag that data, leading to spam or targeted scams.
+              <FeatureCard tone="red" icon={FileX} title="Kehilangan kualitas">
+                Layanan lemah mengompresi file terlalu banyak, menyebabkan gangguan, audio tidak sinkron, dan warna pudar.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Ban} title="Pinterest Bans">
-                Heavy use of third-party tools can flag your account, especially for creators. You could lose your boards or followers overnight.
+              <FeatureCard tone="red" icon={Ban} title="Pemblokiran akun">
+                TikTok dapat mendeteksi unduhan massal melalui alat eksternal dan menangguhkan profil, terutama kreator.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={AlertCircle}
-                title="Storage Overload"
-              >
-                Saving lots of videos eats space, bogging down phones or drives. Corrupted files might crash players, wasting time to fix.
+              <FeatureCard tone="red" icon={AlertCircle} title="Penyimpanan penuh">
+                Mengumpulkan video besar dengan cepat mengisi penyimpanan dan dapat membuat pemutar crash. Jaga perpustakaan tetap terorganisir.
               </FeatureCard>
             </div>
             <p className="section-muted">
-              Stick to trusted sites, scan downloads, and use VPNs to stay safe.
+              Hanya gunakan situs terpercaya, analisis file yang diunduh, dan jika mungkin, jelajahi dengan VPN dan antivirus yang diperbarui.
             </p>
           </div>
 
-          {/* Why Use videodownload.io */}
+          {/* Mengapa menggunakan videodownload.io */}
           <div className="section-block section-whyuse mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Use videodownload.io
+              Mengapa menggunakan videodownload.io
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Your Trusted Partner for Pinterest Downloads
+              Mitra terpercaya Anda untuk mengunduh TikTok
             </h2>
             <p className="section-muted mb-4">
-              We started videodownload.io in 2022 because we were fed up with buggy apps and risky sites. As Pinterest users, we wanted a fast, clean way to save videos without drama. We're a small team, not a big company, focused on making downloads easy and secure. Millions of users trust us with no data breaches, and we keep tweaking based on their feedback.
+              Kami membuat videodownload.io untuk memiliki metode yang dapat diandalkan tanpa iklan yang mengganggu atau aplikasi berat. Sejak itu, kami telah memproses jutaan unduhan dengan aman. Kami terus meningkatkan alat berdasarkan umpan balik komunitas untuk memberikan pengalaman yang sederhana dan stabil.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-2">
-              <FeatureCard icon={Zap} title="Under Five Seconds">
-                Downloads complete even on busy days.
+              <FeatureCard icon={Zap} title="Kecepatan instan">
+                Kami memproses sebagian besar video dalam beberapa detik berkat server yang dioptimalkan.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="No Ads or Pop-ups">
-                Just a simple interface.
+              <FeatureCard icon={Shield} title="Tanpa iklan mengganggu">
+                Antarmuka bersih tanpa pop-up atau pengalihan aneh.
               </FeatureCard>
-              <FeatureCard icon={VideoIcon} title="Watermarks Removed">
-                Clean, usable clips.
+              <FeatureCard icon={VideoIcon} title="Tanpa watermark">
+                Kami menyediakan file tanpa watermark, siap untuk pengeditan atau posting ulang yang diotorisasi.
               </FeatureCard>
-              <FeatureCard icon={ListChecks} title="Unlimited Saves">
-                No daily caps.
+              <FeatureCard icon={ListChecks} title="Unduhan tak terbatas">
+                Gunakan sebanyak yang Anda inginkan. Kami tidak membatasi jumlah video per hari.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="Works on Any Device">
-                From old tablets to new laptops.
+              <FeatureCard icon={Monitor} title="Berfungsi di perangkat apa pun">
+                Hanya browser di ponsel, tablet, atau komputer Anda. Tidak perlu instalasi.
               </FeatureCard>
-              <FeatureCard icon={Shield} title="Secure Setup">
-                No data stored after you're done.
+              <FeatureCard icon={Shield} title="Privasi terjamin">
+                Kami tidak melacak unduhan Anda dan tidak menyimpan tautan. Setelah proses selesai, tidak ada data yang tersimpan.
               </FeatureCard>
             </div>
           </div>
 
-          {/* FAQs */}
+          {/* Pertanyaan yang sering diajukan */}
           <div className="section-block section-faqs mb-8 md:mb-10">
-            <h1 className="section-title text-3xl md:text-4xl">FAQs</h1>
+            <h1 className="section-title text-3xl md:text-4xl">Pertanyaan yang sering diajukan</h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Common Questions About Pinterest Downloads
+              Semua yang perlu Anda ketahui tentang videodownload.io
             </h2>
             <p className="section-muted mb-4">
-              We've compiled answers to the most frequent questions about using
-              videodownload.io and downloading Pinterest videos to help you get
-              started with confidence.
+              Kami telah mengumpulkan jawaban cepat agar Anda dapat menggunakan layanan dengan tenang dan memanfaatkan unduhan TikTok Anda dengan lebih baik.
             </p>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem
@@ -391,10 +407,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I download videos from private Pinterest boards?
+                  Bisakah saya mengunduh video TikTok pribadi?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No, we only support public pins. Private or secret board videos need creator permission, and we respect those boundaries to stay legit.
+                  Tidak. Alat ini hanya berfungsi dengan video publik. Konten pribadi memerlukan izin kreator. Jika video adalah milik Anda, gunakan unduhan asli TikTok.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -402,10 +418,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Will downloading slow my phone or computer?
+                  Apakah mengunduh membuat ponsel saya lambat?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Our files are clean and light, so no lag. But saving lots of videos can fill storage, so manage your space carefully.
+                  Tidak karena kami. File ringan dan kami tidak menginstal apa pun. Hanya pantau ruang jika Anda mengunduh banyak video.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -413,10 +429,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Why is my downloaded video watermark-free?
+                  Mengapa video yang diunduh tidak memiliki watermark?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest adds logos to track shares, but we pull the raw file and clean it up, giving you a clear video for personal use.
+                  Karena kami menggunakan aliran asli dan menghapus watermark yang diterapkan oleh TikTok, meninggalkan file bersih untuk penggunaan pribadi.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -424,10 +440,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I save just the audio from a Pinterest video?
+                  Bisakah saya hanya mengunduh audio?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, choose MP3 after pasting the link. Great for grabbing music or voiceovers from tutorials without the visuals.
+                  Ya. Setelah menempelkan tautan, pilih format MP3 untuk hanya menyimpan audio.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -435,10 +451,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  What if my download doesn't start?
+                  Apa yang harus dilakukan jika unduhan gagal?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Ensure the link is public and starts with pinterest.com. Try another browser or clear cache. Our support chat fixes issues fast.
+                  Pastikan tautan lengkap dan video bersifat publik. Coba browser lain atau hapus cache. Masih berlanjut? Hubungi dukungan kami - kami menjawab dengan cepat.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -446,10 +462,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Is there a limit on video length?
+                  Apakah ada batasan ukuran atau durasi?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  We handle videos up to 60 minutes, though most Pinterest clips are short. Longer ones take a bit but download fully.
+                  Kami mendukung video hingga 60 menit. Yang lebih besar membutuhkan sedikit lebih banyak waktu untuk diproses, tetapi diunduh sepenuhnya.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -457,10 +473,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Do you keep my downloaded videos?
+                  Apakah Anda menyimpan video yang saya unduh?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No way. We process instantly and delete everything after. Your files stay on your device, not our servers.
+                  Tidak. Proses dilakukan secara real-time dan tidak ada yang disimpan. File hanya tetap dengan Anda.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -468,54 +484,54 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can creators see if I downloaded their video?
+                  Apakah kreator tahu bahwa saya mengunduh video?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest doesn't notify them. Your download stays private, with no alerts to the poster.
+                  Tidak. TikTok tidak mengirim notifikasi; unduhan tetap anonim.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
 
-          {/* Start Downloading Now */}
+          {/* Mulai sekarang */}
           <div className="section-block section-cta mb-2 text-center">
             <h1 className="section-title text-3xl md:text-4xl">
-              Start Saving Pinterest Videos Now
+              Siap menyimpan favorit Anda?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Grab Your Inspiration Clips in Seconds
+              Bawa video Anda offline dalam hitungan detik
             </h2>
             <div className="grid sm:grid-cols-3 gap-3 max-w-3xl mx-auto mb-4">
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Copy Pinterest Pin Link
+                Salin tautan TikTok
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Paste on Our Site
+                Tempel di sini
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Download Clean Video
+                Klik Unduh
               </div>
             </div>
             <div className="mt-2">
-              <a href="#pinterest-downloader">
+              <a href="#tiktok-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Download Pinterest Video
+                  Unduh video TikTok
                 </Button>
               </a>
             </div>
           </div>
 
-          {/* Explore More Downloaders */}
+          {/* Jelajahi pengunduh lain */}
           <div className="section-block section-downloaders mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Explore More Downloaders
+              Jelajahi pengunduh lain
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Download from your favorite platforms
+              Unduh dari platform favorit Anda
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-4">
               {[
@@ -583,7 +599,7 @@ export default function PinterestPage() {
               ].map((p) => (
                 <Link
                   key={p.name}
-                  to={`/en/${p.name.toLowerCase().replace(/\s+/g, "")}`}
+                  to={buildUrl(`/${p.name.toLowerCase().replace(/\s+/g, "")}`)}
                   className="block h-full"
                 >
                   <Card className="group glass-card p-4 h-24 sm:h-28 flex items-center hover:scale-[1.03] hover:translate-y-[-1px] transition-all duration-200 border border-primary/10 hover:border-primary/30 overflow-hidden relative">
@@ -593,7 +609,7 @@ export default function PinterestPage() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Download {p.name} Video
+                        Unduh video {p.name}
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}
@@ -653,29 +669,28 @@ function FeatureCard({
 function EnhancedFeatures() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
-      <FeatureCard icon={VideoIcon} title="Top-Notch Video Quality">
-        Save Pinterest videos in their best resolution, up to 1080p if the original pin supports it. No blurry visuals or faded colors when you watch later. We pull the file straight from Pinterest's servers, keeping every detail sharp for that DIY tutorial or recipe clip.
+      <FeatureCard icon={VideoIcon} title="Unduhan HD">
+        Unduh hingga 1080p (atau lebih, jika tersedia) dan pertahankan warna cerah dan detail tajam, karena kami mengambil file langsung dari sumber.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="No Watermarks or Overlays">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest displays the creator's username on videos downloaded through their app</a>, cluttering the view. We strip all that away, delivering a clean clip ready for your projects or personal use. Watch that home decor idea without text blocking the details.
+      <FeatureCard icon={FileX} title="Tanpa watermark">
+        Tidak seperti aplikasi resmi, kami menyediakan video bersih tanpa logo, siap untuk pengeditan atau posting ulang yang diotorisasi.
       </FeatureCard>
-      <FeatureCard icon={Monitor} title="Works on Any Device">
-        Use your phone, tablet, laptop, or desktop, and it runs smoothly. No apps or extra software needed. Just open our site in your browser, paste the link, and download. Tested on everything from old iPhones to new PCs, it's always hassle-free.
+      <FeatureCard icon={Monitor} title="Berfungsi di perangkat apa pun">
+        Gunakan di Android, iOS, Windows, atau macOS langsung melalui browser. Tidak perlu instalasi atau konfigurasi.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="Fast Download Speeds">
-        Waiting stinks. Our tool grabs Pinterest videos in seconds, usually under 10 for most clips. We use servers close to Pinterest's for quick pulls, so you can save a craft video or workout routine during a coffee break.
+      <FeatureCard icon={Zap} title="Pemrosesan cepat">
+        Sebagian besar unduhan hanya memakan waktu beberapa detik berkat server yang dioptimalkan dekat TikTok.
       </FeatureCard>
-      <FeatureCard icon={ListChecks} title="Completely Free to Use">
-        No costs, no sign-ups, no hidden fees. Download as many videos as you want, every day, without limits. We keep it free so you can save that wedding inspo or art project clip without hitting a paywall.
+      <FeatureCard icon={Download} title="100% gratis">
+        Tidak perlu pendaftaran, kartu kredit, atau biaya tersembunyi. Unduh sebanyak yang Anda inginkan, setiap hari.
       </FeatureCard>
-      <FeatureCard icon={Shield} title="Safe and Private Process">
-        Your info stays secure. We don't store your links or videos after you download. No tracking, no logs, and no spammy ads. The process is clean, keeping your device free from junk or risks.
+      <FeatureCard icon={Shield} title="Aman dan pribadi">
+        Kami tidak melacak dan tidak menyimpan tautan. Setelah mengunduh, tidak ada informasi yang tersisa dengan kami.
       </FeatureCard>
     </div>
   );
 }
 
-// --- Enhanced Steps ---
 function StepCard({
   step,
   title,
@@ -708,17 +723,17 @@ function StepCard({
 function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-      <StepCard step={1} title="Copy the Video Link from Pinterest">
-        <a href="http://www.pinterest.com">Open Pinterest</a> on your phone or browser. Find the video you love, like a knitting tutorial or a home makeover clip. Click the three dots at the top right of the pin. From the menu, select "Copy link." This grabs the full URL, something like pinterest.com/pin/123456789. Make sure it's exact.
+      <StepCard step={1} title="Salin tautan video">
+        <a href="https://www.tiktok.com/">Buka TikTok</a> melalui aplikasi atau browser, temukan video yang diinginkan, ketuk tombol Bagikan dan pilih «Salin tautan» untuk mendapatkan URL lengkap.
       </StepCard>
-      <StepCard step={2} title="Paste the Link into Our Site">
-        Go to videodownload.io in your browser. You'll see a box labeled "Paste Pinterest link here." Click inside and paste the copied link. Check that it starts with pinterest.com to avoid mistakes. Only public pins work; private or secret board videos won't download.
+      <StepCard step={2} title="Tempel tautan di videodownload.io">
+        Buka videodownload.io di browser, klik kotak atas dan tempel alamat yang disalin. Konfirmasikan bahwa tautan dimulai dengan tiktok.com dan video bersifat publik.
       </StepCard>
-      <StepCard step={3} title="We Fetch and Clean the Video">
-        Click the green "Download" button next to the box. Our system pulls the video from Pinterest's servers in seconds. We remove any watermarks and ensure the quality is solid. Audio stays clear, so you don't miss steps in that recipe or craft guide.
+      <StepCard step={3} title="Biarkan sistem menyiapkan file">
+        Klik «Unduh». Kami mengambil video dari server TikTok, menghapus watermark dan memeriksa kualitas dalam beberapa detik.
       </StepCard>
-      <StepCard step={4} title="Save the Clip to Your Device">
-        You'll get options: MP4 for the full video with sound or MP3 for just the audio. Choose MP4 for most clips. Tap to download, and it saves to your Downloads folder or phone's gallery. Name it something clear, like "diy_paint.mp4," before saving. Play it to confirm it's perfect.
+      <StepCard step={4} title="Pilih format dan simpan">
+        Pilih MP4 untuk video + audio atau MP3 untuk hanya mengunduh audio. File akan disimpan di folder default perangkat dan tersedia untuk ditonton offline.
       </StepCard>
     </div>
   );

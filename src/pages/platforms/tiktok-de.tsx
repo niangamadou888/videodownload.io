@@ -40,71 +40,70 @@ import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
-export default function PinterestPage() {
+export default function TikTokPageDe() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Pinterest Video Download | Free & HD",
-    description: "Download Pinterest videos and pins in mp4, 1080p quality. Free online video downloader and converter."
+    title: "TikTok Video Herunterladen | Kostenlos & HD",
+    description:
+      "TikTok-Videos ohne Wasserzeichen in HD-Qualität herunterladen. Kostenloser TikTok-Downloader: schnell, sicher und ohne Kosten."
   });
 
   return (
     <div className="min-h-screen relative">
-      <PlatformSubheader platform="Pinterest" />
+      <PlatformSubheader platform="TikTok" />
       <div className="container mx-auto px-4 py-12">
         <div className="mx-auto max-w-5xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
-          {/* Minimal Download Box */}
-          <div id="pinterest-downloader" className="mb-10">
+          {/* Minimale Download-Box */}
+          <div id="tiktok-downloader" className="mb-10">
             <VideoDownloader
               boxOnly
-              inputPlaceholder="Paste a Pinterest video or pin URL"
+              inputPlaceholder="TikTok-Video-URL einfügen"
             />
           </div>
-          {/* Features */}
+
+          {/* Funktionen */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Features
+            TikTok-Videos ganz einfach herunterladen
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            Download Pinterest Videos Easily
+            Der praktische Leitfaden zum Offline-Speichern von Clips
           </h2>
           <p className="text-muted-foreground mb-6">
-            Your Simple Guide to Saving Creative Clips Offline
+            Speichere TikTok-Videos in HD ohne Wasserzeichen. Unser Downloader ist schnell, sicher und völlig kostenlos – perfekt für unterwegs.
           </p>
 
           <EnhancedFeatures />
 
-          {/* How to Download */}
+          {/* Wie herunterladen */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            How to Download Pinterest Videos
+            So lädst du TikTok-Videos herunter
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            A Clear, Step-by-Step Guide to Save Videos Effortlessly
+            Eine einfache Schritt-für-Schritt-Anleitung
           </h2>
           <p className="text-muted-foreground mb-6">
-            Getting Pinterest videos onto your device is simple with
-            videodownload.io. Follow these four straightforward steps to
-            download any video in minutes. Each step is designed to be
-            intuitive, even if you're not tech-savvy.
+            Mit videodownload.io lädst du jeden Clip in wenigen Minuten herunter. Vier intuitive Schritte, die auch ohne technisches Wissen funktionieren.
           </p>
           <EnhancedSteps />
           <div className="text-center mt-6 mb-10">
-            <a href="#pinterest-downloader">
+            <a href="#tiktok-downloader">
               <Button variant="download" className="px-6">
-                Download Pinterest Video
+                TikTok-Video herunterladen
               </Button>
             </a>
           </div>
 
-          {/* Why Download */}
+          {/* Warum herunterladen */}
           <div className="section-block section-why mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Download Pinterest Videos
+              Warum TikTok-Videos herunterladen
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Best Use Cases
+              Wann Offline-Zugriff den Unterschied macht
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is a goldmine for inspiration, but its feed moves fast, and pins can disappear. Downloading lets you keep the videos that spark ideas, turning fleeting finds into a personal collection. It's about saving what fuels your creativity or plans, not just hoarding content. You control your stash, safe from deleted pins or app glitches.
+              TikTok ändert sich in Stunden: Trends verschwinden, Profile wechseln und wichtige Videos sind weg. Durch Herunterladen behältst du, was wirklich wichtig ist, baust deine eigene Sammlung auf und bleibst unabhängig von Signal oder Plattform.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -113,10 +112,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Offline Viewing
+                    Offline ansehen auf Reisen
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save DIY tutorials or travel guides for trips with no Wi-Fi, like camping or long flights. Parents download kid-friendly craft videos for rainy days, keeping kids busy without internet.
+                    Flugzeuge, U-Bahnen oder instabiles WLAN zerstören das Erlebnis. Speichere Tutorials, Comedy und Kinderlieder vor dem Verlassen des Hauses und schau ohne Unterbrechungen.
                   </p>
                 </div>
               </div>
@@ -126,10 +125,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Repurposing for Creators
+                    Remix und Content-Erstellung
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers save decor clips to remix into their own content, adding tips or tweaks. Small businesses grab product demos to share on other platforms, skipping watermarks for clean edits.
+                    Creator speichern Referenz-Clips zum Remixen von Trends, Vergleichen von Techniken oder Antworten ans Publikum ohne Wasserzeichen. Ideal für Reacts, Reels und Kollaborationen.
                   </p>
                 </div>
               </div>
@@ -139,10 +138,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Archiving Your Own Pins
+                    Backup deiner eigenen Videos
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If you post videos, they can vanish from board changes or platform issues. Download them to a drive to protect your work, like a recipe you shared or a portfolio piece.
+                    Wer häufig postet, weiß, dass ein Bann oder eine falsche Bearbeitung alles löschen kann. Speichere eine HD-Kopie auf dem Computer oder in der Cloud und bleib entspannt. Auch Schüler speichern Zusammenfassungen oder Lerntipps zur Offline-Wiederholung.
                   </p>
                 </div>
               </div>
@@ -152,10 +151,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Learning and Planning
+                    Auf anderen Plattformen wiederverwenden
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Students save art tutorials or study tips for offline practice. Event planners download wedding or party ideas to show clients, no need to search again.
+                    Passe das Video für Reels oder Shorts an und erweitere deine Reichweite. Kleine Unternehmen speichern Testimonials oder Backstage-Material für Websites, Präsentationen oder Verkaufsstellen.
                   </p>
                 </div>
               </div>
@@ -165,31 +164,29 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Personal Projects
+                    Persönliches Archiv von Erinnerungen
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save gardening tips for spring planting or workout routines for daily use. Turn a quick pin into a go-to resource for your next big idea.
+                    Familienmomente, Rezepte, Schulpräsentationen oder Ehrungen bleiben geschützt und können geteilt werden, ohne von der App abhängig zu sein.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              Downloading Pinterest videos offers flexibility and convenience,
-              making it easier to enjoy content on your terms, whether for fun,
-              work, or learning.
+              Kurz gesagt: Das Herunterladen von TikTok-Videos gibt dir völlige Freiheit zum Konsumieren, Lernen oder Arbeiten in deinem eigenen Tempo.
             </p>
           </div>
 
-          {/* Who Should Download */}
+          {/* Wer sollte herunterladen */}
           <div className="section-block section-who mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Who Should Download Pinterest Videos
+              Wer sollte TikTok-Videos herunterladen
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              People Who Benefit Most from Downloading
+              Menschen, die am meisten vom Offline-Modus profitieren
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is all about ideas, but downloading videos fits people who turn those ideas into action. It's for those who use the platform to create, plan, or learn, not just browse for fun. If you're saving clips to make something real, downloading is your tool.
+              Das Herunterladen ist wichtig für alle, die TikTok als Werkzeug für Kreation, Studium oder Business nutzen. Wenn Videos deine Routine unterstützen, macht es Sinn, sie gespeichert zu haben.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -198,10 +195,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Content Creators
+                    Content Creator
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers and influencers save DIY or style videos to remix for their audience, like a fashion vlogger tweaking a look from a pin. They download their own posts too, keeping clean copies without logos.
+                    Speichern eigene Videos oder Inspirationen zum entspannten Bearbeiten, Vergleichen von Trends und Produzieren von Antworten ohne Wasserzeichen.
                   </p>
                 </div>
               </div>
@@ -211,10 +208,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Hobbyists and DIYers
+                    Lehrer und Schüler
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Crafters save knitting or painting tutorials to follow step-by-step at home. Gardeners download planting guides to check while digging. It's hands-on inspiration, offline.
+                    Speichern Demonstrationen, Experimente oder schnelle Tipps für den Unterricht, späteres Wiederholen oder Vorbereiten von Aktivitäten ohne Internetabhängigkeit.
                   </p>
                 </div>
               </div>
@@ -224,10 +221,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Event Planners and Small Businesses
+                    Familien und Betreuer
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Wedding planners save decor clips to pitch clients. Shops grab product videos to feature on websites or ads, building trust without watermarks.
+                    Speichern besondere Momente, Lieder und Geschichten zum gemeinsamen Anschauen oder Teilen mit denen, die die App nicht nutzen.
                   </p>
                 </div>
               </div>
@@ -237,10 +234,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Parents and Educators
+                    Kleine Unternehmen
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Teachers save craft demos for classroom projects. Moms download sensory play videos for toddlers, ready for screen-free days.
+                    Nutzen UGC, Testimonials und Backstage-Material für Schaufenster, Präsentationen und Omnichannel-Kampagnen.
                   </p>
                 </div>
               </div>
@@ -250,31 +247,35 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Homeowners and Renovators
+                    Hobbyisten und Autodidakten
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save kitchen remodel tips or furniture hacks to plan upgrades. Even casual users download motivational clips, like vision board ideas, to keep dreams in focus.
+                    Laden Rezepte, Musiklektionen, Gartentipps oder Trainingsroutinen herunter, um im richtigen Tempo zu üben.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              No matter your role or lifestyle, downloading Pinterest videos can
-              save time, data, and effort while keeping your favorite content
-              accessible.
+              Egal welches Profil: Das Herunterladen von Videos spart Zeit, Daten und garantiert ständigen Zugriff auf Hauptinhalte.
             </p>
           </div>
 
-          {/* Legal */}
+          {/* Rechtliche Aspekte */}
           <div className="section-block section-legal mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Is It Legal to Download Pinterest Videos?
+              Ist das Herunterladen von TikTok-Videos legal?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              What You Need to Know About the Law
+              Was das Gesetz über Downloads sagt
             </h2>
             <p className="section-muted mb-4">
-              Videos are copyrighted by their creators under laws like the DMCA in the US. Saving for private viewing, like practicing a craft offline, often counts as fair use. But sharing without credit or using for profit can lead to legal trouble. Music or voiceovers in videos may have extra copyright layers, though short personal saves rarely face issues.
+              Das Herunterladen von TikTok-Videos ist eine Grauzone. <a href="https://support.tiktok.com/en/using-tiktok/exploring-videos/video-downloads">Die Plattformregeln erlauben das Speichern öffentlicher Clips</a> zum Offline-Ansehen, wenn der Creator es nicht blockiert hat. Für den persönlichen Gebrauch gibt es kein Problem, aber die Bedingungen verbieten Tools von Drittanbietern, also könnte TikTok theoretisch Muster erkennen. In der Praxis konzentrieren sich die Bemühungen auf massive Re-Uploads.
+            </p>
+            <p className="section-muted mb-4">
+              Urheberrechtsgesetze wie das DMCA schützen die Creator. Das Speichern eines Videos zum späteren Ansehen fällt meist unter Fair Use, wenn du es nicht änderst oder verteilst. Reposten ohne Credit oder ohne Transformation stellt eine Verletzung dar und kann zu Entfernungen führen. Soundtracks haben auch Eigentümer, obwohl kurze Ausschnitte für den persönlichen Gebrauch selten markiert werden.
+            </p>
+            <p className="section-muted mb-2">
+              Situationen, in denen der Download erlaubt ist:
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -283,107 +284,122 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    When It's Allowed
+                    Erlaubnis des Creators
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If the creator allows downloads or the content is public domain, you're safe. Educational use, like showing a tutorial in class, often qualifies as fair use. Check pin descriptions for permissions. Keep downloads private and credit creators if you share to stay on the right side.
+                    Wenn der Autor den Download freigibt, kannst du ohne Bedenken herunterladen.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 section-muted">
+                <div className="mt-1 w-8 h-8 rounded-lg bg-green-500/20 text-green-500 flex items-center justify-center">
+                  <Shield className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="font-semibold text-green-400">
+                    Inhalte im Public Domain
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Werke ohne Urheberrechtsschutz können frei heruntergeladen werden.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 section-muted">
+                <div className="mt-1 w-8 h-8 rounded-lg bg-green-500/20 text-green-500 flex items-center justify-center">
+                  <Shield className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="font-semibold text-green-400">
+                    Faire Bildungsnutzung
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Schulen und Lehrer können auf kurze Ausschnitte für pädagogische Zwecke im Rahmen von Fair Use zurückgreifen. Überprüfe immer die Videobeschreibung.
                   </p>
                 </div>
               </div>
             </div>
+            <p className="section-muted">
+              Fazit: Halte die Nutzung privat und respektvoll. Wenn du teilen möchtest, frage um Erlaubnis oder kreditiere den Autor klar.
+            </p>
           </div>
 
-          {/* Risks */}
+          {/* Risiken */}
           <div className="section-block section-risks mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              The Risks Associated with Downloading Pinterest Videos
+              Risiken beim Herunterladen von TikTok-Videos
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Potential Dangers and How to Avoid Them
+              Häufige Gefahren und wie man sie vermeidet
             </h2>
             <p className="section-muted mb-4">
-              Third-party downloaders sound convenient, but sketchy ones bring real trouble. Not every site is safe, and clicking blindly can mess up your device or data. Know the risks before you download to avoid headaches later.
+              Tools von Drittanbietern können Fallen verstecken: von Viren bis zu Betrug. Bevor du einen Link auf einer Website einfügst, lohnt es sich, die Hauptrisiken zu kennen, um dein Gerät zu schützen.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6">
-              <FeatureCard
-                tone="red"
-                icon={AlertTriangle}
-                title="Malware"
-              >
-                Shady sites hide viruses in video files, sneaking in spyware or ransomware. One bad download can lock your files or steal passwords. Some tools have been caught with keyloggers, turning a craft clip into a privacy mess.
+              <FeatureCard tone="red" icon={AlertTriangle} title="Malware auf verdächtigen Seiten">
+                Einige Portale fügen Viren, Trojaner oder Ransomware zusammen mit dem Download hinzu. Ein Klick kann deine Daten gefährden oder das Gerät sperren.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Shield} title="Phishing Scams">
-                Fake download pages mimic Pinterest's login, grabbing your credentials if you fall for it. Or ads push "updates" that install trackers, watching your activity beyond the platform.
+              <FeatureCard tone="red" icon={Shield} title="Phishing-Betrug">
+                Gefälschte Buttons imitieren den TikTok-Login-Bildschirm und stehlen Zugangsdaten oder bieten "Updates" an, die Spyware installieren.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={FileX}
-                title="Quality Issues"
-              >
-                Bad sites compress videos, causing choppy playback or lost audio. You wanted a clear tutorial, but get a glitchy file instead.
+              <FeatureCard tone="red" icon={EyeOff} title="Datenexposition">
+                Unzuverlässige Tools protokollieren deinen Verlauf und verkaufen Informationen an Dritte, was zu Spam und Betrugsversuchen führt.
               </FeatureCard>
-              <FeatureCard tone="red" icon={EyeOff} title="Privacy Leaks">
-                Some sites log your downloads, selling your IP or video choices to advertisers. Hackers could snag that data, leading to spam or targeted scams.
+              <FeatureCard tone="red" icon={FileX} title="Qualitätsverlust">
+                Schwache Dienste komprimieren die Datei zu stark, was zu Unterbrechungen, asynchronem Audio und verblassten Farben führt.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Ban} title="Pinterest Bans">
-                Heavy use of third-party tools can flag your account, especially for creators. You could lose your boards or followers overnight.
+              <FeatureCard tone="red" icon={Ban} title="Kontosperrung">
+                TikTok kann massive Downloads über externe Tools erkennen und Profile sperren, besonders von Creators.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={AlertCircle}
-                title="Storage Overload"
-              >
-                Saving lots of videos eats space, bogging down phones or drives. Corrupted files might crash players, wasting time to fix.
+              <FeatureCard tone="red" icon={AlertCircle} title="Speicher voll">
+                Das Ansammeln großer Videos belegt schnell Speicher und kann den Player zum Absturz bringen. Halte die Bibliothek organisiert.
               </FeatureCard>
             </div>
             <p className="section-muted">
-              Stick to trusted sites, scan downloads, and use VPNs to stay safe.
+              Nutze nur vertrauenswürdige Seiten, analysiere heruntergeladene Dateien und surfe wenn möglich mit VPN und aktualisierter Antivirensoftware.
             </p>
           </div>
 
-          {/* Why Use videodownload.io */}
+          {/* Warum videodownload.io nutzen */}
           <div className="section-block section-whyuse mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Use videodownload.io
+              Warum videodownload.io nutzen
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Your Trusted Partner for Pinterest Downloads
+              Dein vertrauenswürdiger Partner für TikTok-Downloads
             </h2>
             <p className="section-muted mb-4">
-              We started videodownload.io in 2022 because we were fed up with buggy apps and risky sites. As Pinterest users, we wanted a fast, clean way to save videos without drama. We're a small team, not a big company, focused on making downloads easy and secure. Millions of users trust us with no data breaches, and we keep tweaking based on their feedback.
+              Wir haben videodownload.io entwickelt, um eine zuverlässige Methode ohne aufdringliche Werbung oder schwere Apps zu haben. Seitdem haben wir Millionen Downloads sicher verarbeitet. Wir verbessern das Tool weiterhin basierend auf Community-Feedback, um ein einfaches und stabiles Erlebnis zu bieten.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-2">
-              <FeatureCard icon={Zap} title="Under Five Seconds">
-                Downloads complete even on busy days.
+              <FeatureCard icon={Zap} title="Sofortige Geschwindigkeit">
+                Wir verarbeiten die meisten Videos in wenigen Sekunden dank optimierter Server.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="No Ads or Pop-ups">
-                Just a simple interface.
+              <FeatureCard icon={Shield} title="Keine nervige Werbung">
+                Saubere Oberfläche ohne Pop-ups oder seltsame Weiterleitungen.
               </FeatureCard>
-              <FeatureCard icon={VideoIcon} title="Watermarks Removed">
-                Clean, usable clips.
+              <FeatureCard icon={VideoIcon} title="Ohne Wasserzeichen">
+                Wir liefern die Datei ohne Watermark, bereit für Bearbeitungen oder autorisierte Reposts.
               </FeatureCard>
-              <FeatureCard icon={ListChecks} title="Unlimited Saves">
-                No daily caps.
+              <FeatureCard icon={ListChecks} title="Unbegrenzte Downloads">
+                Nutze so viel du willst. Wir begrenzen nicht die Anzahl der Videos pro Tag.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="Works on Any Device">
-                From old tablets to new laptops.
+              <FeatureCard icon={Monitor} title="Funktioniert auf jedem Gerät">
+                Nur ein Browser auf deinem Handy, Tablet oder Computer. Nichts zu installieren.
               </FeatureCard>
-              <FeatureCard icon={Shield} title="Secure Setup">
-                No data stored after you're done.
+              <FeatureCard icon={Shield} title="Garantierte Privatsphäre">
+                Wir tracken deine Downloads nicht und speichern keine Links. Nach dem Prozess bleiben keine Daten gespeichert.
               </FeatureCard>
             </div>
           </div>
 
-          {/* FAQs */}
+          {/* Häufige Fragen */}
           <div className="section-block section-faqs mb-8 md:mb-10">
-            <h1 className="section-title text-3xl md:text-4xl">FAQs</h1>
+            <h1 className="section-title text-3xl md:text-4xl">Häufig gestellte Fragen</h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Common Questions About Pinterest Downloads
+              Alles, was du über videodownload.io wissen musst
             </h2>
             <p className="section-muted mb-4">
-              We've compiled answers to the most frequent questions about using
-              videodownload.io and downloading Pinterest videos to help you get
-              started with confidence.
+              Wir haben schnelle Antworten zusammengestellt, damit du den Service beruhigt nutzen und deine TikTok-Downloads optimal nutzen kannst.
             </p>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem
@@ -391,10 +407,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I download videos from private Pinterest boards?
+                  Kann ich private TikTok-Videos herunterladen?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No, we only support public pins. Private or secret board videos need creator permission, and we respect those boundaries to stay legit.
+                  Nein. Das Tool funktioniert nur mit öffentlichen Videos. Private Inhalte erfordern die Erlaubnis des Creators. Wenn das Video dein eigenes ist, verwende den nativen TikTok-Download.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -402,10 +418,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Will downloading slow my phone or computer?
+                  Macht das Herunterladen mein Handy langsam?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Our files are clean and light, so no lag. But saving lots of videos can fill storage, so manage your space carefully.
+                  Nicht durch uns. Die Dateien sind leicht und wir installieren nichts. Überwache nur den Speicherplatz, wenn du viele Videos herunterlädst.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -413,10 +429,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Why is my downloaded video watermark-free?
+                  Warum hat das heruntergeladene Video kein Wasserzeichen?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest adds logos to track shares, but we pull the raw file and clean it up, giving you a clear video for personal use.
+                  Weil wir den Original-Stream verwenden und das von TikTok angebrachte Wasserzeichen entfernen, sodass die Datei sauber für den persönlichen Gebrauch bleibt.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -424,10 +440,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I save just the audio from a Pinterest video?
+                  Kann ich nur den Ton herunterladen?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, choose MP3 after pasting the link. Great for grabbing music or voiceovers from tutorials without the visuals.
+                  Ja. Nach dem Einfügen des Links wähle das MP3-Format, um nur den Ton zu speichern.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -435,10 +451,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  What if my download doesn't start?
+                  Was tun, wenn der Download fehlschlägt?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Ensure the link is public and starts with pinterest.com. Try another browser or clear cache. Our support chat fixes issues fast.
+                  Stelle sicher, dass der Link vollständig ist und das Video öffentlich ist. Versuche einen anderen Browser oder lösche den Cache. Bestehen bleibt? Rufe unseren Support an – wir antworten schnell.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -446,10 +462,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Is there a limit on video length?
+                  Gibt es eine Größen- oder Längenbeschränkung?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  We handle videos up to 60 minutes, though most Pinterest clips are short. Longer ones take a bit but download fully.
+                  Wir unterstützen Videos bis zu 60 Minuten. Die größeren brauchen etwas mehr Zeit zur Verarbeitung, werden aber vollständig heruntergeladen.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -457,10 +473,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Do you keep my downloaded videos?
+                  Speichert ihr die Videos, die ich heruntergeladen habe?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No way. We process instantly and delete everything after. Your files stay on your device, not our servers.
+                  Nein. Der Prozess erfolgt in Echtzeit und nichts wird gespeichert. Die Datei bleibt nur bei dir.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -468,54 +484,54 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can creators see if I downloaded their video?
+                  Erfährt der Creator, dass ich das Video heruntergeladen habe?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest doesn't notify them. Your download stays private, with no alerts to the poster.
+                  Nein. TikTok sendet keine Benachrichtigungen; der Download bleibt anonym.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
 
-          {/* Start Downloading Now */}
+          {/* Jetzt starten */}
           <div className="section-block section-cta mb-2 text-center">
             <h1 className="section-title text-3xl md:text-4xl">
-              Start Saving Pinterest Videos Now
+              Bereit, deine Favoriten zu speichern?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Grab Your Inspiration Clips in Seconds
+              Nimm deine Videos in Sekunden offline
             </h2>
             <div className="grid sm:grid-cols-3 gap-3 max-w-3xl mx-auto mb-4">
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Copy Pinterest Pin Link
+                TikTok-Link kopieren
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Paste on Our Site
+                Hier einfügen
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Download Clean Video
+                Auf Herunterladen klicken
               </div>
             </div>
             <div className="mt-2">
-              <a href="#pinterest-downloader">
+              <a href="#tiktok-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Download Pinterest Video
+                  TikTok-Video herunterladen
                 </Button>
               </a>
             </div>
           </div>
 
-          {/* Explore More Downloaders */}
+          {/* Weitere Downloader entdecken */}
           <div className="section-block section-downloaders mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Explore More Downloaders
+              Weitere Downloader entdecken
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Download from your favorite platforms
+              Von deinen Lieblingsplattformen herunterladen
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-4">
               {[
@@ -583,7 +599,7 @@ export default function PinterestPage() {
               ].map((p) => (
                 <Link
                   key={p.name}
-                  to={`/en/${p.name.toLowerCase().replace(/\s+/g, "")}`}
+                  to={buildUrl(`/${p.name.toLowerCase().replace(/\s+/g, "")}`)}
                   className="block h-full"
                 >
                   <Card className="group glass-card p-4 h-24 sm:h-28 flex items-center hover:scale-[1.03] hover:translate-y-[-1px] transition-all duration-200 border border-primary/10 hover:border-primary/30 overflow-hidden relative">
@@ -593,7 +609,7 @@ export default function PinterestPage() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Download {p.name} Video
+                        {p.name}-Video herunterladen
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}
@@ -653,29 +669,28 @@ function FeatureCard({
 function EnhancedFeatures() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
-      <FeatureCard icon={VideoIcon} title="Top-Notch Video Quality">
-        Save Pinterest videos in their best resolution, up to 1080p if the original pin supports it. No blurry visuals or faded colors when you watch later. We pull the file straight from Pinterest's servers, keeping every detail sharp for that DIY tutorial or recipe clip.
+      <FeatureCard icon={VideoIcon} title="Downloads in HD">
+        Lade bis zu 1080p herunter (oder mehr, wenn verfügbar) und behalte lebendige Farben und scharfe Details, da wir die Datei direkt von der Quelle erfassen.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="No Watermarks or Overlays">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest displays the creator's username on videos downloaded through their app</a>, cluttering the view. We strip all that away, delivering a clean clip ready for your projects or personal use. Watch that home decor idea without text blocking the details.
+      <FeatureCard icon={FileX} title="Ohne Wasserzeichen">
+        Anders als die offizielle App liefern wir das Video sauber, ohne Logos, bereit für Bearbeitung oder autorisierten Repost.
       </FeatureCard>
-      <FeatureCard icon={Monitor} title="Works on Any Device">
-        Use your phone, tablet, laptop, or desktop, and it runs smoothly. No apps or extra software needed. Just open our site in your browser, paste the link, and download. Tested on everything from old iPhones to new PCs, it's always hassle-free.
+      <FeatureCard icon={Monitor} title="Funktioniert auf jedem Gerät">
+        Nutze auf Android, iOS, Windows oder macOS direkt im Browser. Nichts zu installieren oder konfigurieren.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="Fast Download Speeds">
-        Waiting stinks. Our tool grabs Pinterest videos in seconds, usually under 10 for most clips. We use servers close to Pinterest's for quick pulls, so you can save a craft video or workout routine during a coffee break.
+      <FeatureCard icon={Zap} title="Schnelle Verarbeitung">
+        Die meisten Downloads dauern nur wenige Sekunden dank optimierter Server in der Nähe von TikTok.
       </FeatureCard>
-      <FeatureCard icon={ListChecks} title="Completely Free to Use">
-        No costs, no sign-ups, no hidden fees. Download as many videos as you want, every day, without limits. We keep it free so you can save that wedding inspo or art project clip without hitting a paywall.
+      <FeatureCard icon={Download} title="100% kostenlos">
+        Keine Registrierung, Kreditkarte oder versteckte Gebühr. Lade so viele Videos herunter, wie du willst, jeden Tag.
       </FeatureCard>
-      <FeatureCard icon={Shield} title="Safe and Private Process">
-        Your info stays secure. We don't store your links or videos after you download. No tracking, no logs, and no spammy ads. The process is clean, keeping your device free from junk or risks.
+      <FeatureCard icon={Shield} title="Sicher und privat">
+        Wir tracken nichts und speichern keine Links. Nach dem Download bleiben keine Informationen bei uns.
       </FeatureCard>
     </div>
   );
 }
 
-// --- Enhanced Steps ---
 function StepCard({
   step,
   title,
@@ -708,17 +723,17 @@ function StepCard({
 function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-      <StepCard step={1} title="Copy the Video Link from Pinterest">
-        <a href="http://www.pinterest.com">Open Pinterest</a> on your phone or browser. Find the video you love, like a knitting tutorial or a home makeover clip. Click the three dots at the top right of the pin. From the menu, select "Copy link." This grabs the full URL, something like pinterest.com/pin/123456789. Make sure it's exact.
+      <StepCard step={1} title="Kopiere den Video-Link">
+        <a href="https://www.tiktok.com/">Öffne TikTok</a> per App oder Browser, finde das gewünschte Video, tippe auf Teilen und wähle «Link kopieren», um die vollständige URL zu erhalten.
       </StepCard>
-      <StepCard step={2} title="Paste the Link into Our Site">
-        Go to videodownload.io in your browser. You'll see a box labeled "Paste Pinterest link here." Click inside and paste the copied link. Check that it starts with pinterest.com to avoid mistakes. Only public pins work; private or secret board videos won't download.
+      <StepCard step={2} title="Füge den Link auf videodownload.io ein">
+        Öffne videodownload.io im Browser, klicke in das obere Feld und füge die kopierte Adresse ein. Bestätige, dass der Link mit tiktok.com beginnt und das Video öffentlich ist.
       </StepCard>
-      <StepCard step={3} title="We Fetch and Clean the Video">
-        Click the green "Download" button next to the box. Our system pulls the video from Pinterest's servers in seconds. We remove any watermarks and ensure the quality is solid. Audio stays clear, so you don't miss steps in that recipe or craft guide.
+      <StepCard step={3} title="Lass das System die Datei vorbereiten">
+        Klicke auf «Herunterladen». Wir holen das Video von den TikTok-Servern, entfernen das Wasserzeichen und prüfen die Qualität in wenigen Sekunden.
       </StepCard>
-      <StepCard step={4} title="Save the Clip to Your Device">
-        You'll get options: MP4 for the full video with sound or MP3 for just the audio. Choose MP4 for most clips. Tap to download, and it saves to your Downloads folder or phone's gallery. Name it something clear, like "diy_paint.mp4," before saving. Play it to confirm it's perfect.
+      <StepCard step={4} title="Wähle das Format und speichere">
+        Wähle MP4 für Video + Audio oder MP3, um nur den Ton herunterzuladen. Die Datei landet im Standard-Download-Ordner des Geräts und ist zum Offline-Ansehen verfügbar.
       </StepCard>
     </div>
   );

@@ -15,6 +15,14 @@ import YouTubePageDe from "./pages/platforms/youtube-de";
 import YouTubePageVi from "./pages/platforms/youtube-vi";
 import YouTubePageId from "./pages/platforms/youtube-id";
 import TikTokPage from "./pages/platforms/tiktok";
+import TikTokPageFr from "./pages/platforms/tiktok-fr";
+import TikTokPageIt from "./pages/platforms/tiktok-it";
+import TikTokPageEs from "./pages/platforms/tiktok-es";
+import TikTokPagePt from "./pages/platforms/tiktok-pt";
+import TikTokPageNl from "./pages/platforms/tiktok-nl";
+import TikTokPageDe from "./pages/platforms/tiktok-de";
+import TikTokPageVi from "./pages/platforms/tiktok-vi";
+import TikTokPageId from "./pages/platforms/tiktok-id";
 import InstagramPage from "./pages/platforms/instagram";
 import FacebookPage from "./pages/platforms/facebook";
 import FacebookPageFr from "./pages/platforms/facebook-fr";
@@ -66,7 +74,7 @@ const App = () => (
             {/* French routes */}
             <Route path="/fr" element={<Index />} />
             <Route path="/fr/youtube" element={<YouTubePageFr />} />
-            <Route path="/fr/tiktok" element={<TikTokPage />} />
+            <Route path="/fr/tiktok" element={<TikTokPageFr />} />
             <Route path="/fr/instagram" element={<InstagramPage />} />
             <Route path="/fr/facebook" element={<FacebookPageFr />} />
             <Route path="/fr/twitter" element={<TwitterPage />} />
@@ -79,7 +87,7 @@ const App = () => (
             {/* Italian routes */}
             <Route path="/it" element={<Index />} />
             <Route path="/it/youtube" element={<YouTubePageIt />} />
-            <Route path="/it/tiktok" element={<TikTokPage />} />
+            <Route path="/it/tiktok" element={<TikTokPageIt />} />
             <Route path="/it/instagram" element={<InstagramPage />} />
             <Route path="/it/facebook" element={<FacebookPageIt />} />
             <Route path="/it/twitter" element={<TwitterPage />} />
@@ -92,7 +100,7 @@ const App = () => (
             {/* Portuguese routes */}
             <Route path="/pt" element={<Index />} />
             <Route path="/pt/youtube" element={<YouTubePagePt />} />
-            <Route path="/pt/tiktok" element={<TikTokPage />} />
+            <Route path="/pt/tiktok" element={<TikTokPagePt />} />
             <Route path="/pt/instagram" element={<InstagramPage />} />
             <Route path="/pt/facebook" element={<FacebookPagePt />} />
             <Route path="/pt/twitter" element={<TwitterPage />} />
@@ -105,7 +113,7 @@ const App = () => (
             {/* Spanish routes */}
             <Route path="/es" element={<Index />} />
             <Route path="/es/youtube" element={<YouTubePageEs />} />
-            <Route path="/es/tiktok" element={<TikTokPage />} />
+            <Route path="/es/tiktok" element={<TikTokPageEs />} />
             <Route path="/es/instagram" element={<InstagramPage />} />
             <Route path="/es/facebook" element={<FacebookPageEs />} />
             <Route path="/es/twitter" element={<TwitterPage />} />
@@ -118,7 +126,7 @@ const App = () => (
             {/* Dutch routes */}
             <Route path="/nl" element={<Index />} />
             <Route path="/nl/youtube" element={<YouTubePageNl />} />
-            <Route path="/nl/tiktok" element={<TikTokPage />} />
+            <Route path="/nl/tiktok" element={<TikTokPageNl />} />
             <Route path="/nl/instagram" element={<InstagramPage />} />
             <Route path="/nl/facebook" element={<FacebookPageNl />} />
             <Route path="/nl/twitter" element={<TwitterPage />} />
@@ -131,7 +139,7 @@ const App = () => (
             {/* German routes */}
             <Route path="/de" element={<Index />} />
             <Route path="/de/youtube" element={<YouTubePageDe />} />
-            <Route path="/de/tiktok" element={<TikTokPage />} />
+            <Route path="/de/tiktok" element={<TikTokPageDe />} />
             <Route path="/de/instagram" element={<InstagramPage />} />
             <Route path="/de/facebook" element={<FacebookPageDe />} />
             <Route path="/de/twitter" element={<TwitterPage />} />
@@ -144,7 +152,7 @@ const App = () => (
             {/* Vietnamese routes */}
             <Route path="/vi" element={<Index />} />
             <Route path="/vi/youtube" element={<YouTubePageVi />} />
-            <Route path="/vi/tiktok" element={<TikTokPage />} />
+            <Route path="/vi/tiktok" element={<TikTokPageVi />} />
             <Route path="/vi/instagram" element={<InstagramPage />} />
             <Route path="/vi/facebook" element={<FacebookPageVi />} />
             <Route path="/vi/twitter" element={<TwitterPage />} />
@@ -157,7 +165,7 @@ const App = () => (
             {/* Indonesian routes */}
             <Route path="/id" element={<Index />} />
             <Route path="/id/youtube" element={<YouTubePageId />} />
-            <Route path="/id/tiktok" element={<TikTokPage />} />
+            <Route path="/id/tiktok" element={<TikTokPageId />} />
             <Route path="/id/instagram" element={<InstagramPage />} />
             <Route path="/id/facebook" element={<FacebookPageId />} />
             <Route path="/id/twitter" element={<TwitterPage />} />
