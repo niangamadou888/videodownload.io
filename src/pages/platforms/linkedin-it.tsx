@@ -40,71 +40,75 @@ import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
-export default function PinterestPage() {
+export default function LinkedInPageIt() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Pinterest Video Download | Free & HD",
-    description: "Download Pinterest videos and pins in mp4, 1080p quality. Free online video downloader and converter."
+    title: "Scaricare Video LinkedIn | Gratis & HD",
+    description:
+      "Scarica video e post LinkedIn in mp4, qualità 1080p. Downloader e convertitore video online gratuito."
   });
 
   return (
     <div className="min-h-screen relative">
-      <PlatformSubheader platform="Pinterest" />
+      <PlatformSubheader platform="LinkedIn" />
       <div className="container mx-auto px-4 py-12">
         <div className="mx-auto max-w-5xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
-          {/* Minimal Download Box */}
-          <div id="pinterest-downloader" className="mb-10">
+          {/* Box di download minimale */}
+          <div id="linkedin-downloader" className="mb-10">
             <VideoDownloader
               boxOnly
-              inputPlaceholder="Paste a Pinterest video or pin URL"
+              inputPlaceholder="Incolla l'URL di un video o post LinkedIn"
             />
           </div>
-          {/* Features */}
+          {/* Funzionalità */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Features
+            Funzionalità
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            Download Pinterest Videos Easily
+            Scarica i video LinkedIn con facilità
           </h2>
           <p className="text-muted-foreground mb-6">
-            Your Simple Guide to Saving Creative Clips Offline
+            La guida semplice per salvare clip professionali e vederle offline
           </p>
 
           <EnhancedFeatures />
 
-          {/* How to Download */}
+          {/* Come scaricare */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            How to Download Pinterest Videos
+            Come scaricare video LinkedIn
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            A Clear, Step-by-Step Guide to Save Videos Effortlessly
+            Istruzioni chiare, passo dopo passo, per salvare senza sforzo
           </h2>
           <p className="text-muted-foreground mb-6">
-            Getting Pinterest videos onto your device is simple with
-            videodownload.io. Follow these four straightforward steps to
-            download any video in minutes. Each step is designed to be
-            intuitive, even if you're not tech-savvy.
+            Con videodownload.io portare un video LinkedIn sul tuo dispositivo è
+            questione di minuti. Segui questi quattro passaggi intuitivi – anche se
+            non sei esperto di tecnologia – e scarica qualsiasi clip in un attimo.
           </p>
           <EnhancedSteps />
           <div className="text-center mt-6 mb-10">
-            <a href="#pinterest-downloader">
+            <a href="#linkedin-downloader">
               <Button variant="download" className="px-6">
-                Download Pinterest Video
+                Scarica video LinkedIn
               </Button>
             </a>
           </div>
 
-          {/* Why Download */}
+          {/* Perché scaricare */}
           <div className="section-block section-why mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Download Pinterest Videos
+              Perché scaricare video LinkedIn
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Best Use Cases
+              I casi d'uso più efficaci
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is a goldmine for inspiration, but its feed moves fast, and pins can disappear. Downloading lets you keep the videos that spark ideas, turning fleeting finds into a personal collection. It's about saving what fuels your creativity or plans, not just hoarding content. You control your stash, safe from deleted pins or app glitches.
+              Il feed di LinkedIn scorre veloce e i video di valore finiscono presto
+              nel dimenticatoio. Scaricandoli puoi conservare ciò che conta,
+              trasformando lo scroll veloce in risorse durature. Non si tratta di
+              raccogliere tutto, ma di salvare ciò che supporta carriera o business,
+              al sicuro da bug e post eliminati.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -113,10 +117,13 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Offline Viewing
+                    Accesso offline per professionisti
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save DIY tutorials or travel guides for trips with no Wi-Fi, like camping or long flights. Parents download kid-friendly craft videos for rainy days, keeping kids busy without internet.
+                    Salva un talk di leadership o una strategia marketing per vederli
+                    in aereo o durante i pendolarismi senza Wi-Fi. I trainer
+                    scaricano clip dei workshop da mostrare ai team senza affidarsi a
+                    connessioni instabili.
                   </p>
                 </div>
               </div>
@@ -126,10 +133,14 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Repurposing for Creators
+                    Riutilizzo dei contenuti
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers save decor clips to remix into their own content, adding tips or tweaks. Small businesses grab product demos to share on other platforms, skipping watermarks for clean edits.
+                    I marketer salvano case study da mostrare ai clienti o da
+                    ricondividere su altre piattaforme. Chi cerca lavoro scarica
+                    consigli su CV e colloqui per analizzarli fotogramma per
+                    fotogramma. Puoi estrarre i momenti chiave per presentazioni e
+                    pitch senza ripartire da zero.
                   </p>
                 </div>
               </div>
@@ -139,10 +150,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Archiving Your Own Pins
+                    Archiviare i propri post
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If you post videos, they can vanish from board changes or platform issues. Download them to a drive to protect your work, like a recipe you shared or a portfolio piece.
+                    Se condividi aggiornamenti o contenuti di thought leadership, le
+                    piattaforme possono modificarli o rimuoverli. Salvali su un drive
+                    per proteggerli da ban o glitch improvvisi.
                   </p>
                 </div>
               </div>
@@ -152,10 +165,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Learning and Planning
+                    Formazione e didattica
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Students save art tutorials or study tips for offline practice. Event planners download wedding or party ideas to show clients, no need to search again.
+                    I team HR salvano video di onboarding per i nuovi assunti.
+                    Studenti e corsisti scaricano panel e webinar per prendere appunti
+                    e rivedere i contenuti offline.
                   </p>
                 </div>
               </div>
@@ -165,31 +180,38 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Personal Projects
+                    Crescita personale
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save gardening tips for spring planting or workout routines for daily use. Turn a quick pin into a go-to resource for your next big idea.
+                    Conserva talk motivazionali o suggerimenti sul networking da
+                    riguardare quando serve una spinta. Trasforma il consiglio di un
+                    mentor in un promemoria quotidiano senza cercarlo ogni volta
+                    nell'app.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              Downloading Pinterest videos offers flexibility and convenience,
-              making it easier to enjoy content on your terms, whether for fun,
-              work, or learning.
+              Scaricare video LinkedIn ti offre flessibilità e comodità, permettendoti
+              di utilizzare i contenuti alle tue condizioni, per lavoro, studio o
+              ispirazione.
             </p>
           </div>
 
-          {/* Who Should Download */}
+          {/* A chi serve */}
           <div className="section-block section-who mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Who Should Download Pinterest Videos
+              Chi dovrebbe scaricare video LinkedIn
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              People Who Benefit Most from Downloading
+              Le persone che ne traggono maggiore vantaggio
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is all about ideas, but downloading videos fits people who turn those ideas into action. It's for those who use the platform to create, plan, or learn, not just browse for fun. If you're saving clips to make something real, downloading is your tool.
+              LinkedIn è il centro dei professionisti, ma il download dei video è
+              perfetto per chi usa la piattaforma per crescere, imparare o costruire
+              relazioni. È pensato per chi vede i post come strumenti, non come
+              semplici aggiornamenti. Se sei attivo e strategico, è una marcia in
+              più.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -198,10 +220,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Content Creators
+                    Professionisti e manager
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers and influencers save DIY or style videos to remix for their audience, like a fashion vlogger tweaking a look from a pin. They download their own posts too, keeping clean copies without logos.
+                    I manager salvano speech di leadership da condividere con i team.
+                    I marketer scaricano annunci e casi studio dei competitor per
+                    studiare i trend e riutilizzano clip pulite nelle loro slide.
                   </p>
                 </div>
               </div>
@@ -211,10 +235,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Hobbyists and DIYers
+                    Candidati e career coach
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Crafters save knitting or painting tutorials to follow step-by-step at home. Gardeners download planting guides to check while digging. It's hands-on inspiration, offline.
+                    Scarica consigli su colloqui e CV per esercitarti offline. I coach
+                    di carriera raccolgono storie di successo dei clienti da mostrare
+                    durante le sessioni, senza watermark.
                   </p>
                 </div>
               </div>
@@ -224,10 +250,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Event Planners and Small Businesses
+                    Imprenditori e titolari di PMI
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Wedding planners save decor clips to pitch clients. Shops grab product videos to feature on websites or ads, building trust without watermarks.
+                    Le startup salvano pitch o aggiornamenti di settore per studiare la
+                    concorrenza. Le piccole aziende scaricano testimonianze clienti da
+                    inserire nel sito o nelle proposte commerciali.
                   </p>
                 </div>
               </div>
@@ -237,10 +265,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Parents and Educators
+                    Formatori e docenti
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Teachers save craft demos for classroom projects. Moms download sensory play videos for toddlers, ready for screen-free days.
+                    I professionisti HR conservano video di compliance per le sessioni
+                    interne. I docenti scaricano panel aziendali da discutere in aula,
+                    mostrando esempi reali anche senza connessione.
                   </p>
                 </div>
               </div>
@@ -250,31 +280,40 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Homeowners and Renovators
+                    Studenti e learner a vita
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save kitchen remodel tips or furniture hacks to plan upgrades. Even casual users download motivational clips, like vision board ideas, to keep dreams in focus.
+                    Scarica consigli di carriera o tutorial tecnici da rivedere con i
+                    tuoi tempi. Anche gli utenti occasionali salvano clip motivanti da
+                    riguardare durante una ricerca di lavoro o un progetto impegnativo.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              No matter your role or lifestyle, downloading Pinterest videos can
-              save time, data, and effort while keeping your favorite content
-              accessible.
+              Qualunque sia il tuo ruolo, scaricare video LinkedIn ti fa risparmiare
+              tempo, dati e fatica, tenendo i contenuti più importanti sempre a
+              portata di mano.
             </p>
           </div>
 
-          {/* Legal */}
+          {/* Legale */}
           <div className="section-block section-legal mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Is It Legal to Download Pinterest Videos?
+              È legale scaricare video LinkedIn?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              What You Need to Know About the Law
+              Cosa sapere sulla normativa
             </h2>
             <p className="section-muted mb-4">
-              Videos are copyrighted by their creators under laws like the DMCA in the US. Saving for private viewing, like practicing a craft offline, often counts as fair use. But sharing without credit or using for profit can lead to legal trouble. Music or voiceovers in videos may have extra copyright layers, though short personal saves rarely face issues.
+              Scaricare video LinkedIn rientra in un'area grigia. I contenuti sono
+              coperti dal diritto d'autore dei creatori, secondo leggi come il
+              <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> negli Stati Uniti. Salvare per uso personale – ad
+              esempio rivedere un webinar offline – spesso rientra nel fair use.
+              Condividere senza permesso o usarli a scopo di lucro può però causare
+              problemi legali. L'audio, come musica o voiceover, può avere ulteriori
+              livelli di copyright, anche se i salvataggi brevi e personali raramente
+              vengono contestati.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -283,239 +322,236 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    When It's Allowed
+                    Quando è consentito
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If the creator allows downloads or the content is public domain, you're safe. Educational use, like showing a tutorial in class, often qualifies as fair use. Check pin descriptions for permissions. Keep downloads private and credit creators if you share to stay on the right side.
+                    Se il creator permette la diffusione o se il video è di dominio
+                    pubblico, sei al sicuro. L'uso educativo – insegnanti che mostrano
+                    clip in aula – rientra spesso nel fair use. Controlla la descrizione
+                    del post per eventuali permessi e mantieni i download per uso
+                    privato, citando sempre l'autore quando condividi.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Risks */}
+          {/* Rischi */}
           <div className="section-block section-risks mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              The Risks Associated with Downloading Pinterest Videos
+              Rischi legati al download di video LinkedIn
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Potential Dangers and How to Avoid Them
+              Minacce potenziali e come evitarle
             </h2>
             <p className="section-muted mb-4">
-              Third-party downloaders sound convenient, but sketchy ones bring real trouble. Not every site is safe, and clicking blindly can mess up your device or data. Know the risks before you download to avoid headaches later.
+              Scaricare da siti poco affidabili può sembrare comodo, ma espone a
+              rischi reali. Non tutti gli strumenti sono sicuri e pochi click
+              distratti possono compromettere dispositivo e dati. Conosci i rischi
+              prima di premere “Download”.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6">
-              <FeatureCard
-                tone="red"
-                icon={AlertTriangle}
-                title="Malware"
-              >
-                Shady sites hide viruses in video files, sneaking in spyware or ransomware. One bad download can lock your files or steal passwords. Some tools have been caught with keyloggers, turning a craft clip into a privacy mess.
+              <FeatureCard tone="red" icon={AlertTriangle} title="Malware e virus">
+                Siti sospetti inseriscono virus nei file video, installando spyware o
+                ransomware. Un singolo download errato può bloccare i tuoi file o
+                rubare password. Alcuni tool nascondono keylogger, trasformando un
+                semplice salvataggio in una fuga di dati.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Shield} title="Phishing Scams">
-                Fake download pages mimic Pinterest's login, grabbing your credentials if you fall for it. Or ads push "updates" that install trackers, watching your activity beyond the platform.
+              <FeatureCard tone="red" icon={Shield} title="Truffe di phishing">
+                Pagine fake imitano il login LinkedIn e rubano le credenziali.
+                Pop-up insistenti propongono “aggiornamenti” che installano tracker su
+                ogni clic.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={FileX}
-                title="Quality Issues"
-              >
-                Bad sites compress videos, causing choppy playback or lost audio. You wanted a clear tutorial, but get a glitchy file instead.
+              <FeatureCard tone="red" icon={FileX} title="Perdita di qualità">
+                Strumenti scadenti comprimono troppo i video, causando fotogrammi
+                scattosi o audio muto. Ti aspetti un contenuto nitido e ottieni un file
+                inutilizzabile.
               </FeatureCard>
-              <FeatureCard tone="red" icon={EyeOff} title="Privacy Leaks">
-                Some sites log your downloads, selling your IP or video choices to advertisers. Hackers could snag that data, leading to spam or targeted scams.
+              <FeatureCard tone="red" icon={EyeOff} title="Falle di privacy">
+                Alcuni servizi registrano i tuoi download e vendono IP e preferenze a
+                inserzionisti. I malintenzionati possono usarli per spam o frodi.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Ban} title="Pinterest Bans">
-                Heavy use of third-party tools can flag your account, especially for creators. You could lose your boards or followers overnight.
+              <FeatureCard tone="red" icon={Ban} title="Blocchi del profilo LinkedIn">
+                L'uso intensivo di tool esterni può segnalare l'account, soprattutto
+                per i creator attivi. Potresti perdere accesso a rete e contenuti.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={AlertCircle}
-                title="Storage Overload"
-              >
-                Saving lots of videos eats space, bogging down phones or drives. Corrupted files might crash players, wasting time to fix.
+              <FeatureCard tone="red" icon={AlertCircle} title="Memoria piena">
+                Salvare molti video occupa spazio, rallenta smartphone e dischi.
+                File corrotti possono mandare in crash i player e farti perdere tempo.
               </FeatureCard>
             </div>
             <p className="section-muted">
-              Stick to trusted sites, scan downloads, and use VPNs to stay safe.
+              Affidati a siti sicuri, scansiona i file scaricati e valuta l'uso di una
+              VPN per ridurre i rischi.
             </p>
           </div>
 
-          {/* Why Use videodownload.io */}
+          {/* Perché videodownload.io */}
           <div className="section-block section-whyuse mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Use videodownload.io
+              Perché scegliere videodownload.io
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Your Trusted Partner for Pinterest Downloads
+              Il partner affidabile per i download LinkedIn
             </h2>
             <p className="section-muted mb-4">
-              We started videodownload.io in 2022 because we were fed up with buggy apps and risky sites. As Pinterest users, we wanted a fast, clean way to save videos without drama. We're a small team, not a big company, focused on making downloads easy and secure. Millions of users trust us with no data breaches, and we keep tweaking based on their feedback.
+              Abbiamo lanciato videodownload.io nel 2022 perché eravamo stanchi di
+              strumenti lenti e poco sicuri. Da utenti LinkedIn avevamo bisogno di un
+              modo rapido e pulito per salvare video senza rischi. Siamo un piccolo
+              team, focalizzato su download semplici e protetti. Dopo milioni di
+              utenti e zero violazioni, continuiamo a migliorare ascoltando i loro
+              feedback.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-2">
-              <FeatureCard icon={Zap} title="Under Five Seconds">
-                Downloads complete even on busy days.
+              <FeatureCard icon={Zap} title="Meno di cinque secondi">
+                I download si completano anche nelle ore di punta.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="No Ads or Pop-ups">
-                Just a simple interface.
+              <FeatureCard icon={Monitor} title="Nessuna pubblicità">
+                Interfaccia pulita, senza pop-up.
               </FeatureCard>
-              <FeatureCard icon={VideoIcon} title="Watermarks Removed">
-                Clean, usable clips.
+              <FeatureCard icon={VideoIcon} title="Senza watermark">
+                Clip pulite e pronte all'uso.
               </FeatureCard>
-              <FeatureCard icon={ListChecks} title="Unlimited Saves">
-                No daily caps.
+              <FeatureCard icon={ListChecks} title="Download illimitati">
+                Nessun limite giornaliero.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="Works on Any Device">
-                From old tablets to new laptops.
+              <FeatureCard icon={Monitor} title="Funziona ovunque">
+                Da vecchi tablet a laptop nuovi.
               </FeatureCard>
-              <FeatureCard icon={Shield} title="Secure Setup">
-                No data stored after you're done.
+              <FeatureCard icon={Shield} title="Setup sicuro">
+                Nessun dato viene conservato dopo il download.
               </FeatureCard>
             </div>
           </div>
 
-          {/* FAQs */}
+          {/* FAQ */}
           <div className="section-block section-faqs mb-8 md:mb-10">
-            <h1 className="section-title text-3xl md:text-4xl">FAQs</h1>
+            <h1 className="section-title text-3xl md:text-4xl">Domande frequenti</h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Common Questions About Pinterest Downloads
+              Le risposte ai dubbi più comuni sui download LinkedIn
             </h2>
             <p className="section-muted mb-4">
-              We've compiled answers to the most frequent questions about using
-              videodownload.io and downloading Pinterest videos to help you get
-              started with confidence.
+              Abbiamo raccolto le risposte alle domande più frequenti su
+              videodownload.io e sul download dei video LinkedIn, per aiutarti a
+              iniziare con sicurezza.
             </p>
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem
-                value="item-1"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-1" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I download videos from private Pinterest boards?
+                  Posso scaricare video LinkedIn privati?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No, we only support public pins. Private or secret board videos need creator permission, and we respect those boundaries to stay legit.
+                  No, supportiamo solo post pubblici. I video privati o di gruppo
+                  richiedono l'autorizzazione del creator e rispettiamo questi limiti.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-2"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-2" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Will downloading slow my phone or computer?
+                  Il download rallenta il mio dispositivo?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Our files are clean and light, so no lag. But saving lots of videos can fill storage, so manage your space carefully.
+                  I nostri file sono puliti e ottimizzati, quindi nessun rallentamento.
+                  Monitora tuttavia lo spazio se scarichi molti video.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-3"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-3" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Why is my downloaded video watermark-free?
+                  Perché il video scaricato non ha watermark?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest adds logos to track shares, but we pull the raw file and clean it up, giving you a clear video for personal use.
+                  LinkedIn aggiunge i loghi per tracciare le condivisioni, ma noi
+                  preleviamo il file originale e lo puliamo, offrendoti un video
+                  limpido per uso personale.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-4"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-4" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I save just the audio from a Pinterest video?
+                  Posso salvare solo l'audio di un video LinkedIn?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, choose MP3 after pasting the link. Great for grabbing music or voiceovers from tutorials without the visuals.
+                  Certo, scegli MP3 dopo aver incollato il link. Perfetto per podcast o
+                  discorsi senza parte visiva.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-5"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-5" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  What if my download doesn't start?
+                  Cosa faccio se il download non parte?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Ensure the link is public and starts with pinterest.com. Try another browser or clear cache. Our support chat fixes issues fast.
+                  Verifica che il link sia pubblico e inizi con linkedin.com. Prova un
+                  altro browser o svuota la cache. Il nostro supporto in chat è pronto
+                  ad aiutarti.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-6"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-6" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Is there a limit on video length?
+                  Ci sono limiti di durata?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  We handle videos up to 60 minutes, though most Pinterest clips are short. Longer ones take a bit but download fully.
+                  Gestiamo video fino a 60 minuti. Quelli più lunghi richiedono un po'
+                  più di tempo, ma vengono scaricati completi.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-7"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-7" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Do you keep my downloaded videos?
+                  Conservate i video che scarico?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No way. We process instantly and delete everything after. Your files stay on your device, not our servers.
+                  Assolutamente no. Elaboriamo e cancelliamo subito tutto. I file restano
+                  solo sul tuo dispositivo.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-8"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-8" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can creators see if I downloaded their video?
+                  Il creator vede che ho scaricato il suo video?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest doesn't notify them. Your download stays private, with no alerts to the poster.
+                  LinkedIn non invia notifiche ai creator. Il download resta privato e
+                  invisibile all'autore.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
 
-          {/* Start Downloading Now */}
+          {/* CTA */}
           <div className="section-block section-cta mb-2 text-center">
             <h1 className="section-title text-3xl md:text-4xl">
-              Start Saving Pinterest Videos Now
+              Inizia a salvare i video LinkedIn oggi
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Grab Your Inspiration Clips in Seconds
+              Scarica clip professionali in pochi secondi
             </h2>
             <div className="grid sm:grid-cols-3 gap-3 max-w-3xl mx-auto mb-4">
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Copy Pinterest Pin Link
+                Copia il link LinkedIn
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Paste on Our Site
+                Incolla sul nostro sito
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Download Clean Video
+                Scarica il video pulito
               </div>
             </div>
             <div className="mt-2">
-              <a href="#pinterest-downloader">
+              <a href="#linkedin-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Download Pinterest Video
+                  Scarica video LinkedIn
                 </Button>
               </a>
             </div>
           </div>
 
-          {/* Explore More Downloaders */}
+          {/* Altri downloader */}
           <div className="section-block section-downloaders mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Explore More Downloaders
+              Scopri altri downloader
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Download from your favorite platforms
+              Scarica dai tuoi social preferiti
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-4">
               {[
@@ -593,7 +629,7 @@ export default function PinterestPage() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Download {p.name} Video
+                        Scarica video {p.name}
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}
@@ -653,29 +689,39 @@ function FeatureCard({
 function EnhancedFeatures() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
-      <FeatureCard icon={VideoIcon} title="Top-Notch Video Quality">
-        Save Pinterest videos in their best resolution, up to 1080p if the original pin supports it. No blurry visuals or faded colors when you watch later. We pull the file straight from Pinterest's servers, keeping every detail sharp for that DIY tutorial or recipe clip.
+      <FeatureCard icon={VideoIcon} title="Video in alta qualità">
+        Ottieni video LinkedIn nitidi fino a 1080p quando il post originale lo
+        consente. Niente fotogrammi sfocati o colori spenti quando li riguardi.
+        Preleviamo il file direttamente dai server LinkedIn per mantenere ogni
+        dettaglio, perfetto per talk e demo.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="No Watermarks or Overlays">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest displays the creator's username on videos downloaded through their app</a>, cluttering the view. We strip all that away, delivering a clean clip ready for your projects or personal use. Watch that home decor idea without text blocking the details.
+      <FeatureCard icon={Zap} title="Zero watermark o loghi">
+        L'app LinkedIn aggiunge il proprio branding alle clip salvate. Noi lo
+        rimuoviamo, consegnandoti un video pulito pronto per presentazioni o uso
+        personale.
       </FeatureCard>
-      <FeatureCard icon={Monitor} title="Works on Any Device">
-        Use your phone, tablet, laptop, or desktop, and it runs smoothly. No apps or extra software needed. Just open our site in your browser, paste the link, and download. Tested on everything from old iPhones to new PCs, it's always hassle-free.
+      <FeatureCard icon={Monitor} title="Funziona su ogni dispositivo">
+        Usa laptop, iPhone, Android o tablet e funziona senza installare nulla.
+        Apri il sito, incolla il link e scarica. Testato su PC datati e smartphone
+        nuovi, sempre fluido.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="Fast Download Speeds">
-        Waiting stinks. Our tool grabs Pinterest videos in seconds, usually under 10 for most clips. We use servers close to Pinterest's for quick pulls, so you can save a craft video or workout routine during a coffee break.
+      <FeatureCard icon={Zap} title="Download rapidi e affidabili">
+        Attendere spezza il ritmo. Il nostro tool scarica i video in pochi secondi,
+        di solito meno di 10 per la maggior parte dei clip. I server vicino a LinkedIn
+        garantiscono velocità e stabilità.
       </FeatureCard>
-      <FeatureCard icon={ListChecks} title="Completely Free to Use">
-        No costs, no sign-ups, no hidden fees. Download as many videos as you want, every day, without limits. We keep it free so you can save that wedding inspo or art project clip without hitting a paywall.
+      <FeatureCard icon={ListChecks} title="Gratis e senza limiti">
+        Nessun costo, registrazione o fee nascosta. Scarica tutti i video che vuoi
+        ogni giorno senza limiti. Tieni i consigli professionali sempre con te.
       </FeatureCard>
-      <FeatureCard icon={Shield} title="Safe and Private Process">
-        Your info stays secure. We don't store your links or videos after you download. No tracking, no logs, and no spammy ads. The process is clean, keeping your device free from junk or risks.
+      <FeatureCard icon={Shield} title="Processo sicuro e privato">
+        I tuoi dati restano protetti. Non memorizziamo link o video dopo il download.
+        Nessun tracking, log o pubblicità fastidiose: solo un flusso pulito.
       </FeatureCard>
     </div>
   );
 }
 
-// --- Enhanced Steps ---
 function StepCard({
   step,
   title,
@@ -708,17 +754,29 @@ function StepCard({
 function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-      <StepCard step={1} title="Copy the Video Link from Pinterest">
-        <a href="http://www.pinterest.com">Open Pinterest</a> on your phone or browser. Find the video you love, like a knitting tutorial or a home makeover clip. Click the three dots at the top right of the pin. From the menu, select "Copy link." This grabs the full URL, something like pinterest.com/pin/123456789. Make sure it's exact.
+      <StepCard step={1} title="Copia il link dal post LinkedIn">
+        <a href="http://www.linkedin.com">Apri LinkedIn</a> da smartphone o browser.
+        Trova il video da salvare, ad esempio un consiglio per il colloquio o un
+        annuncio aziendale. Tocca i tre puntini in alto a destra del post e scegli
+        "Copia link al post" per ottenere l'URL completo (es. linkedin.com/posts/utente_123456).
+        Controlla che sia corretto.
       </StepCard>
-      <StepCard step={2} title="Paste the Link into Our Site">
-        Go to videodownload.io in your browser. You'll see a box labeled "Paste Pinterest link here." Click inside and paste the copied link. Check that it starts with pinterest.com to avoid mistakes. Only public pins work; private or secret board videos won't download.
+      <StepCard step={2} title="Incolla il link nel nostro strumento">
+        Vai su videodownload.io nel browser. Vedrai un campo "Incolla il link LinkedIn qui".
+        Clicca e incolla l'URL copiato. Assicurati che inizi con linkedin.com per
+        evitare errori. Solo i post pubblici sono supportati; niente contenuti privati
+        o di gruppo.
       </StepCard>
-      <StepCard step={3} title="We Fetch and Clean the Video">
-        Click the green "Download" button next to the box. Our system pulls the video from Pinterest's servers in seconds. We remove any watermarks and ensure the quality is solid. Audio stays clear, so you don't miss steps in that recipe or craft guide.
+      <StepCard step={3} title="Elaboriamo il video per te">
+        Premi il pulsante blu "Download" accanto al campo. Il nostro sistema recupera
+        il video dai server LinkedIn in pochi istanti, rimuove watermark e verifica la
+        qualità. L'audio resta limpido, ideale per interventi e panel.
       </StepCard>
-      <StepCard step={4} title="Save the Clip to Your Device">
-        You'll get options: MP4 for the full video with sound or MP3 for just the audio. Choose MP4 for most clips. Tap to download, and it saves to your Downloads folder or phone's gallery. Name it something clear, like "diy_paint.mp4," before saving. Play it to confirm it's perfect.
+      <StepCard step={4} title="Salva la clip sul dispositivo">
+        Scegli il formato: MP4 per video + audio oppure MP3 solo audio. Per la
+        maggior parte dei casi seleziona MP4. Il file finirà nella cartella Download o
+        nella galleria. Rinominalo, ad esempio "talk_carriera.mp4", e riproducilo per
+        confermare che sia perfetto.
       </StepCard>
     </div>
   );

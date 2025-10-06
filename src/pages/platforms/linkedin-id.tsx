@@ -40,71 +40,74 @@ import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
-export default function PinterestPage() {
+export default function LinkedInPageId() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Pinterest Video Download | Free & HD",
-    description: "Download Pinterest videos and pins in mp4, 1080p quality. Free online video downloader and converter."
+    title: "Unduh Video LinkedIn | Gratis & HD",
+    description:
+      "Unduh video dan postingan LinkedIn dalam format mp4 kualitas 1080p. Pengunduh dan konverter video online gratis."
   });
 
   return (
     <div className="min-h-screen relative">
-      <PlatformSubheader platform="Pinterest" />
+      <PlatformSubheader platform="LinkedIn" />
       <div className="container mx-auto px-4 py-12">
         <div className="mx-auto max-w-5xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
-          {/* Minimal Download Box */}
-          <div id="pinterest-downloader" className="mb-10">
+          {/* Kotak unduhan minimalis */}
+          <div id="linkedin-downloader" className="mb-10">
             <VideoDownloader
               boxOnly
-              inputPlaceholder="Paste a Pinterest video or pin URL"
+              inputPlaceholder="Tempel URL video atau postingan LinkedIn"
             />
           </div>
-          {/* Features */}
+          {/* Fitur */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Features
+            Fitur
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            Download Pinterest Videos Easily
+            Unduh video LinkedIn dengan mudah
           </h2>
           <p className="text-muted-foreground mb-6">
-            Your Simple Guide to Saving Creative Clips Offline
+            Panduan ringkas untuk menyimpan klip profesional dan menontonnya offline kapan saja
           </p>
 
           <EnhancedFeatures />
 
-          {/* How to Download */}
+          {/* Cara mengunduh */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            How to Download Pinterest Videos
+            Cara mengunduh video LinkedIn
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            A Clear, Step-by-Step Guide to Save Videos Effortlessly
+            Langkah jelas dan cepat untuk menyimpan video
           </h2>
           <p className="text-muted-foreground mb-6">
-            Getting Pinterest videos onto your device is simple with
-            videodownload.io. Follow these four straightforward steps to
-            download any video in minutes. Each step is designed to be
-            intuitive, even if you're not tech-savvy.
+            Dengan videodownload.io, memindahkan video LinkedIn ke perangkat hanya butuh
+            beberapa menit. Ikuti empat langkah intuitif ini—bahkan jika Anda tidak
+            terlalu teknis—untuk mengunduh klip apa pun tanpa repot.
           </p>
           <EnhancedSteps />
           <div className="text-center mt-6 mb-10">
-            <a href="#pinterest-downloader">
+            <a href="#linkedin-downloader">
               <Button variant="download" className="px-6">
-                Download Pinterest Video
+                Unduh video LinkedIn
               </Button>
             </a>
           </div>
 
-          {/* Why Download */}
+          {/* Mengapa perlu unduh */}
           <div className="section-block section-why mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Download Pinterest Videos
+              Mengapa mengunduh video LinkedIn
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Best Use Cases
+              Kegunaan terbaik
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is a goldmine for inspiration, but its feed moves fast, and pins can disappear. Downloading lets you keep the videos that spark ideas, turning fleeting finds into a personal collection. It's about saving what fuels your creativity or plans, not just hoarding content. You control your stash, safe from deleted pins or app glitches.
+              Feed LinkedIn bergerak cepat dan video berkualitas mudah tenggelam. Dengan
+              mengunduh, Anda bisa menyimpan konten yang benar-benar penting dan menjadikan
+              scroll singkat sebagai referensi jangka panjang. Fokuslah pada video yang
+              mendukung karier atau bisnis Anda, bukan sekadar menumpuk konten.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -113,10 +116,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Offline Viewing
+                    Akses offline untuk profesional
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save DIY tutorials or travel guides for trips with no Wi-Fi, like camping or long flights. Parents download kid-friendly craft videos for rainy days, keeping kids busy without internet.
+                    Simpan materi kepemimpinan atau strategi pemasaran untuk perjalanan
+                    tanpa Wi-Fi. Trainer mengunduh klip workshop agar bisa ditayangkan
+                    kepada tim tanpa mengandalkan koneksi internet.
                   </p>
                 </div>
               </div>
@@ -126,10 +131,13 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Repurposing for Creators
+                    Memanfaatkan ulang konten
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers save decor clips to remix into their own content, adding tips or tweaks. Small businesses grab product demos to share on other platforms, skipping watermarks for clean edits.
+                    Marketer menyimpan studi kasus untuk dibagikan di presentasi atau
+                    platform lain. Pencari kerja mengunduh tips CV untuk dianalisis dan
+                    menyempurnakan pitch mereka. Ambil bagian terpenting dan gunakan kembali
+                    tanpa membuat ulang dari nol.
                   </p>
                 </div>
               </div>
@@ -139,10 +147,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Archiving Your Own Pins
+                    Cadangkan konten sendiri
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If you post videos, they can vanish from board changes or platform issues. Download them to a drive to protect your work, like a recipe you shared or a portfolio piece.
+                    Jika Anda rutin berbagi insight, perubahan platform bisa saja
+                    menyembunyikan atau menghapus postingan. Simpan video ke drive lokal untuk
+                    melindungi karya dari bug atau blokir akun.
                   </p>
                 </div>
               </div>
@@ -152,10 +162,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Learning and Planning
+                    Pelatihan dan edukasi
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Students save art tutorials or study tips for offline practice. Event planners download wedding or party ideas to show clients, no need to search again.
+                    Tim HR menyimpan video onboarding untuk karyawan baru. Pelajar dan peserta
+                    kursus mengunduh panel industri untuk dicatat dan ditinjau ulang secara
+                    offline.
                   </p>
                 </div>
               </div>
@@ -165,31 +177,35 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Personal Projects
+                    Pengembangan diri
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save gardening tips for spring planting or workout routines for daily use. Turn a quick pin into a go-to resource for your next big idea.
+                    Simpan talk motivasi atau tips networking untuk ditonton ketika Anda
+                    butuh dorongan. Jadikan insight mentor sebagai pengingat harian tanpa
+                    harus menggulir ulang di aplikasi.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              Downloading Pinterest videos offers flexibility and convenience,
-              making it easier to enjoy content on your terms, whether for fun,
-              work, or learning.
+              Mengunduh video LinkedIn memberi fleksibilitas dan kenyamanan: Anda menikmati
+              konten sesuai waktu dan cara Anda, baik untuk pekerjaan, belajar, maupun inspirasi.
             </p>
           </div>
 
-          {/* Who Should Download */}
+          {/* Siapa yang cocok */}
           <div className="section-block section-who mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Who Should Download Pinterest Videos
+              Siapa yang sebaiknya mengunduh video LinkedIn
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              People Who Benefit Most from Downloading
+              Pengguna yang paling diuntungkan
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is all about ideas, but downloading videos fits people who turn those ideas into action. It's for those who use the platform to create, plan, or learn, not just browse for fun. If you're saving clips to make something real, downloading is your tool.
+              LinkedIn adalah rumah para profesional, dan unduhan video sangat membantu bagi
+              mereka yang menggunakan platform secara strategis untuk tumbuh, belajar, atau
+              membangun jaringan. Jika Anda melihat postingan sebagai alat kerja, ini adalah
+              fitur yang wajib dimiliki.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -198,10 +214,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Content Creators
+                    Profesional dan manajer
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers and influencers save DIY or style videos to remix for their audience, like a fashion vlogger tweaking a look from a pin. They download their own posts too, keeping clean copies without logos.
+                    Manajer menyimpan sesi kepemimpinan untuk dibagikan ke tim. Marketer
+                    mengunduh iklan atau studi pesaing untuk menganalisis tren dan
+                    menampilkan klip bersih di slide presentasi.
                   </p>
                 </div>
               </div>
@@ -211,10 +229,11 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Hobbyists and DIYers
+                    Pencari kerja dan coach karier
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Crafters save knitting or painting tutorials to follow step-by-step at home. Gardeners download planting guides to check while digging. It's hands-on inspiration, offline.
+                    Unduh tips wawancara atau walkthrough CV untuk latihan offline. Coach karier
+                    menyimpan testimoni klien sebagai bukti sosial tanpa watermark.
                   </p>
                 </div>
               </div>
@@ -224,10 +243,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Event Planners and Small Businesses
+                    Pemilik bisnis dan startup
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Wedding planners save decor clips to pitch clients. Shops grab product videos to feature on websites or ads, building trust without watermarks.
+                    Startup menyimpan pitch atau update industri untuk memantau kompetitor.
+                    Bisnis kecil mengunduh testimoni pelanggan untuk dimasukkan ke website atau
+                    proposal.
                   </p>
                 </div>
               </div>
@@ -237,10 +258,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Parents and Educators
+                    Trainer dan pendidik
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Teachers save craft demos for classroom projects. Moms download sensory play videos for toddlers, ready for screen-free days.
+                    Tim HR menyimpan video compliance untuk pelatihan internal. Dosen dan
+                    fasilitator mengunduh panel industri untuk dibahas di kelas tanpa bergantung
+                    pada koneksi internet.
                   </p>
                 </div>
               </div>
@@ -250,31 +273,37 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Homeowners and Renovators
+                    Pelajar dan lifelong learner
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save kitchen remodel tips or furniture hacks to plan upgrades. Even casual users download motivational clips, like vision board ideas, to keep dreams in focus.
+                    Simpan saran karier atau tutorial teknis untuk ditinjau ulang sesuai tempo.
+                    Bahkan pengguna santai menyimpan klip motivasi untuk ditonton saat butuh
+                    dorongan.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              No matter your role or lifestyle, downloading Pinterest videos can
-              save time, data, and effort while keeping your favorite content
-              accessible.
+              Apa pun peran Anda, mengunduh video LinkedIn menghemat waktu, kuota, dan tenaga,
+              sekaligus memastikan konten favorit tetap mudah diakses.
             </p>
           </div>
 
           {/* Legal */}
           <div className="section-block section-legal mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Is It Legal to Download Pinterest Videos?
+              Apakah legal mengunduh video LinkedIn?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              What You Need to Know About the Law
+              Hal-hal yang perlu Anda ketahui soal hukum
             </h2>
             <p className="section-muted mb-4">
-              Videos are copyrighted by their creators under laws like the DMCA in the US. Saving for private viewing, like practicing a craft offline, often counts as fair use. But sharing without credit or using for profit can lead to legal trouble. Music or voiceovers in videos may have extra copyright layers, though short personal saves rarely face issues.
+              Mengunduh video LinkedIn berada di area abu-abu. Video dilindungi hak cipta
+              kreatornya menurut hukum seperti <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a>. Menyimpan untuk
+              ditonton pribadi—misalnya belajar webinar secara offline—sering dianggap fair
+              use. Namun membagikan tanpa izin atau memonetisasi dapat menimbulkan masalah
+              hukum. Audio seperti musik atau voice-over juga memiliki lapisan hak cipta
+              tambahan, walau unduhan pribadi yang singkat jarang dipermasalahkan.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -283,239 +312,226 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    When It's Allowed
+                    Kapan diperbolehkan
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If the creator allows downloads or the content is public domain, you're safe. Educational use, like showing a tutorial in class, often qualifies as fair use. Check pin descriptions for permissions. Keep downloads private and credit creators if you share to stay on the right side.
+                    Jika kreator memberi izin atau videonya berada di domain publik, Anda aman.
+                    Penggunaan edukatif—misalnya dosen menayangkan cuplikan di kelas—sering masuk
+                    kategori fair use. Cek deskripsi postingan untuk melihat izin dan gunakan
+                    secara pribadi sambil tetap memberi kredit saat dibagikan.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Risks */}
+          {/* Risiko */}
           <div className="section-block section-risks mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              The Risks Associated with Downloading Pinterest Videos
+              Risiko saat mengunduh video LinkedIn
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Potential Dangers and How to Avoid Them
+              Ancaman potensial dan cara menghindarinya
             </h2>
             <p className="section-muted mb-4">
-              Third-party downloaders sound convenient, but sketchy ones bring real trouble. Not every site is safe, and clicking blindly can mess up your device or data. Know the risks before you download to avoid headaches later.
+              Mengunduh dari situs tak terpercaya memang cepat, tetapi bisa berbahaya. Tidak
+              semua alat bersih, dan beberapa klik sembarangan dapat membahayakan perangkat
+              maupun data Anda. Kenali risikonya sebelum menekan tombol unduh.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6">
-              <FeatureCard
-                tone="red"
-                icon={AlertTriangle}
-                title="Malware"
-              >
-                Shady sites hide viruses in video files, sneaking in spyware or ransomware. One bad download can lock your files or steal passwords. Some tools have been caught with keyloggers, turning a craft clip into a privacy mess.
+              <FeatureCard tone="red" icon={AlertTriangle} title="Malware dan virus">
+                Situs meragukan menyisipkan malware dalam video—mulai spyware sampai ransomware.
+                Satu unduhan buruk dapat mengunci file atau mencuri kata sandi. Beberapa alat
+                bahkan menyembunyikan keylogger.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Shield} title="Phishing Scams">
-                Fake download pages mimic Pinterest's login, grabbing your credentials if you fall for it. Or ads push "updates" that install trackers, watching your activity beyond the platform.
+              <FeatureCard tone="red" icon={Shield} title="Phishing">
+                Halaman palsu meniru login LinkedIn dan mencuri kredensial. Pop-up "pembaruan"
+                palsu memasang pelacak yang memantau setiap klik.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={FileX}
-                title="Quality Issues"
-              >
-                Bad sites compress videos, causing choppy playback or lost audio. You wanted a clear tutorial, but get a glitchy file instead.
+              <FeatureCard tone="red" icon={FileX} title="Kualitas menurun">
+                Alat berkualitas rendah mengompres video berlebihan sehingga gambar patah atau
+                audio hilang. Anda berharap webinar tajam, tapi yang datang justru file buram.
               </FeatureCard>
-              <FeatureCard tone="red" icon={EyeOff} title="Privacy Leaks">
-                Some sites log your downloads, selling your IP or video choices to advertisers. Hackers could snag that data, leading to spam or targeted scams.
+              <FeatureCard tone="red" icon={EyeOff} title="Kebocoran privasi">
+                Beberapa layanan mencatat unduhan Anda lalu menjual IP atau preferensi video ke
+                pengiklan. Penjahat dapat memanfaatkan data tersebut untuk spam atau penipuan.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Ban} title="Pinterest Bans">
-                Heavy use of third-party tools can flag your account, especially for creators. You could lose your boards or followers overnight.
+              <FeatureCard tone="red" icon={Ban} title="Akun bisa diblokir">
+                Penggunaan berlebihan alat pihak ketiga dapat menandai akun, terutama bagi
+                kreator aktif. Anda bisa kehilangan akses ke jaringan dan postingan dalam semalam.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={AlertCircle}
-                title="Storage Overload"
-              >
-                Saving lots of videos eats space, bogging down phones or drives. Corrupted files might crash players, wasting time to fix.
+              <FeatureCard tone="red" icon={AlertCircle} title="Memori cepat penuh">
+                Menumpuk banyak video menghabiskan ruang penyimpanan dan membuat perangkat lambat.
+                File rusak dapat menyebabkan pemutar video crash dan menyita waktu Anda.
               </FeatureCard>
             </div>
             <p className="section-muted">
-              Stick to trusted sites, scan downloads, and use VPNs to stay safe.
+              Gunakan situs tepercaya, pindai file yang diunduh, dan pertimbangkan VPN untuk
+              menjaga keamanan.
             </p>
           </div>
 
-          {/* Why Use videodownload.io */}
+          {/* Mengapa videodownload.io */}
           <div className="section-block section-whyuse mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Use videodownload.io
+              Mengapa memilih videodownload.io
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Your Trusted Partner for Pinterest Downloads
+              Partner tepercaya untuk unduhan LinkedIn
             </h2>
             <p className="section-muted mb-4">
-              We started videodownload.io in 2022 because we were fed up with buggy apps and risky sites. As Pinterest users, we wanted a fast, clean way to save videos without drama. We're a small team, not a big company, focused on making downloads easy and secure. Millions of users trust us with no data breaches, and we keep tweaking based on their feedback.
+              Kami meluncurkan videodownload.io pada 2022 karena lelah dengan alat lambat dan
+              berisiko. Sebagai pengguna LinkedIn kami ingin solusi cepat dan aman untuk
+              menyimpan video. Kami tim kecil yang fokus menjaga proses unduh tetap sederhana
+              dan terlindungi. Setelah jutaan unduhan tanpa kebocoran data, kami terus
+              meningkatkan layanan dari masukan pengguna.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-2">
-              <FeatureCard icon={Zap} title="Under Five Seconds">
-                Downloads complete even on busy days.
+              <FeatureCard icon={Zap} title="Kurang dari lima detik">
+                Unduhan selesai bahkan saat jam sibuk.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="No Ads or Pop-ups">
-                Just a simple interface.
+              <FeatureCard icon={Monitor} title="Tanpa iklan dan pop-up">
+                Antarmuka bersih dan fokus.
               </FeatureCard>
-              <FeatureCard icon={VideoIcon} title="Watermarks Removed">
-                Clean, usable clips.
+              <FeatureCard icon={VideoIcon} title="Tanpa watermark">
+                Klip siap pakai untuk presentasi atau arsip pribadi.
               </FeatureCard>
-              <FeatureCard icon={ListChecks} title="Unlimited Saves">
-                No daily caps.
+              <FeatureCard icon={ListChecks} title="Unduhan tak terbatas">
+                Tidak ada batas harian.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="Works on Any Device">
-                From old tablets to new laptops.
+              <FeatureCard icon={Monitor} title="Berjalan di semua perangkat">
+                Dari perangkat lama hingga terbaru.
               </FeatureCard>
-              <FeatureCard icon={Shield} title="Secure Setup">
-                No data stored after you're done.
+              <FeatureCard icon={Shield} title="Sistem aman">
+                Tidak ada data yang disimpan setelah proses selesai.
               </FeatureCard>
             </div>
           </div>
 
-          {/* FAQs */}
+          {/* FAQ */}
           <div className="section-block section-faqs mb-8 md:mb-10">
-            <h1 className="section-title text-3xl md:text-4xl">FAQs</h1>
+            <h1 className="section-title text-3xl md:text-4xl">Pertanyaan umum</h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Common Questions About Pinterest Downloads
+              Jawaban seputar pengunduhan video LinkedIn
             </h2>
             <p className="section-muted mb-4">
-              We've compiled answers to the most frequent questions about using
-              videodownload.io and downloading Pinterest videos to help you get
-              started with confidence.
+              Kami mengumpulkan pertanyaan yang paling sering diajukan mengenai penggunaan
+              videodownload.io dan cara mengunduh video LinkedIn agar Anda bisa mulai dengan yakin.
             </p>
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem
-                value="item-1"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-1" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I download videos from private Pinterest boards?
+                  Bisakah saya mengunduh video LinkedIn privat?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No, we only support public pins. Private or secret board videos need creator permission, and we respect those boundaries to stay legit.
+                  Tidak. Kami hanya mendukung postingan publik. Konten privat atau grup
+                  memerlukan izin kreator dan kami menghormatinya untuk tetap patuh.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-2"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-2" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Will downloading slow my phone or computer?
+                  Apakah mengunduh memperlambat perangkat saya?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Our files are clean and light, so no lag. But saving lots of videos can fill storage, so manage your space carefully.
+                  File yang kami hasilkan bersih dan ringan, jadi tidak menimbulkan lag. Pastikan
+                  saja ruang penyimpanan tetap cukup jika Anda menyimpan banyak video.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-3"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-3" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Why is my downloaded video watermark-free?
+                  Mengapa video yang diunduh bebas watermark?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest adds logos to track shares, but we pull the raw file and clean it up, giving you a clear video for personal use.
+                  LinkedIn menambahkan logo untuk melacak penyebaran. Kami mengambil file asli dan
+                  membersihkannya sehingga Anda memperoleh video jelas untuk penggunaan pribadi.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-4"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-4" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I save just the audio from a Pinterest video?
+                  Bisakah saya menyimpan hanya audionya?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, choose MP3 after pasting the link. Great for grabbing music or voiceovers from tutorials without the visuals.
+                  Bisa. Pilih format MP3 setelah menempelkan link untuk mengambil audio saja—ideal
+                  untuk podcast atau pidato.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-5"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-5" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  What if my download doesn't start?
+                  Apa yang harus dilakukan jika unduhan gagal?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Ensure the link is public and starts with pinterest.com. Try another browser or clear cache. Our support chat fixes issues fast.
+                  Pastikan tautan publik dan diawali linkedin.com. Coba browser lain atau bersihkan cache.
+                  Tim dukungan kami di chat siap membantu jika masih bermasalah.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-6"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-6" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Is there a limit on video length?
+                  Apakah ada batas durasi video?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  We handle videos up to 60 minutes, though most Pinterest clips are short. Longer ones take a bit but download fully.
+                  Kami mendukung video hingga 60 menit. Yang lebih panjang membutuhkan sedikit waktu
+                  lebih untuk diproses tapi tetap terunduh penuh.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-7"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-7" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Do you keep my downloaded videos?
+                  Apakah kalian menyimpan video yang saya unduh?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No way. We process instantly and delete everything after. Your files stay on your device, not our servers.
+                  Tidak sama sekali. Kami memproses secara instan lalu menghapusnya. File hanya ada di
+                  perangkat Anda.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-8"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-8" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can creators see if I downloaded their video?
+                  Apakah kreator tahu jika saya mengunduh videonya?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest doesn't notify them. Your download stays private, with no alerts to the poster.
+                  LinkedIn tidak mengirim notifikasi. Unduhan Anda sepenuhnya privat.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
 
-          {/* Start Downloading Now */}
+          {/* CTA */}
           <div className="section-block section-cta mb-2 text-center">
             <h1 className="section-title text-3xl md:text-4xl">
-              Start Saving Pinterest Videos Now
+              Mulai simpan video LinkedIn sekarang
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Grab Your Inspiration Clips in Seconds
+              Dapatkan klip profesional dalam hitungan detik
             </h2>
             <div className="grid sm:grid-cols-3 gap-3 max-w-3xl mx-auto mb-4">
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Copy Pinterest Pin Link
+                Salin link LinkedIn
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Paste on Our Site
+                Tempel di situs kami
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Download Clean Video
+                Unduh video bersih
               </div>
             </div>
             <div className="mt-2">
-              <a href="#pinterest-downloader">
+              <a href="#linkedin-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Download Pinterest Video
+                  Unduh video LinkedIn
                 </Button>
               </a>
             </div>
           </div>
 
-          {/* Explore More Downloaders */}
+          {/* Pengunduh lain */}
           <div className="section-block section-downloaders mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Explore More Downloaders
+              Jelajahi pengunduh lainnya
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Download from your favorite platforms
+              Unduh konten dari platform favorit Anda
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-4">
               {[
@@ -593,7 +609,7 @@ export default function PinterestPage() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Download {p.name} Video
+                        Unduh video {p.name}
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}
@@ -653,29 +669,33 @@ function FeatureCard({
 function EnhancedFeatures() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
-      <FeatureCard icon={VideoIcon} title="Top-Notch Video Quality">
-        Save Pinterest videos in their best resolution, up to 1080p if the original pin supports it. No blurry visuals or faded colors when you watch later. We pull the file straight from Pinterest's servers, keeping every detail sharp for that DIY tutorial or recipe clip.
+      <FeatureCard icon={VideoIcon} title="Video kualitas tinggi">
+        Unduh video LinkedIn dalam resolusi tajam hingga 1080p jika postingan aslinya
+        mendukung. Tidak ada gambar buram atau warna pudar ketika diputar ulang.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="No Watermarks or Overlays">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest displays the creator's username on videos downloaded through their app</a>, cluttering the view. We strip all that away, delivering a clean clip ready for your projects or personal use. Watch that home decor idea without text blocking the details.
+      <FeatureCard icon={Zap} title="Tanpa logo dan watermark">
+        LinkedIn menambahkan branding saat Anda menyimpan lewat aplikasi mereka. Kami menghapus
+        semuanya supaya Anda mendapatkan klip bersih.
       </FeatureCard>
-      <FeatureCard icon={Monitor} title="Works on Any Device">
-        Use your phone, tablet, laptop, or desktop, and it runs smoothly. No apps or extra software needed. Just open our site in your browser, paste the link, and download. Tested on everything from old iPhones to new PCs, it's always hassle-free.
+      <FeatureCard icon={Monitor} title="Berfungsi di semua perangkat">
+        Gunakan laptop, iPhone, Android, atau tablet—tanpa instalasi tambahan. Cukup buka situs
+        kami, tempel tautan, dan unduh.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="Fast Download Speeds">
-        Waiting stinks. Our tool grabs Pinterest videos in seconds, usually under 10 for most clips. We use servers close to Pinterest's for quick pulls, so you can save a craft video or workout routine during a coffee break.
+      <FeatureCard icon={Zap} title="Unduhan cepat dan stabil">
+        Alat kami mengambil video hanya dalam hitungan detik, biasanya kurang dari 10 untuk
+        kebanyakan klip, dengan server yang dekat dengan LinkedIn.
       </FeatureCard>
-      <FeatureCard icon={ListChecks} title="Completely Free to Use">
-        No costs, no sign-ups, no hidden fees. Download as many videos as you want, every day, without limits. We keep it free so you can save that wedding inspo or art project clip without hitting a paywall.
+      <FeatureCard icon={ListChecks} title="Gratis tanpa batas">
+        Tidak ada biaya, akun, atau batas harian. Simpan semua video penting yang Anda perlukan.
       </FeatureCard>
-      <FeatureCard icon={Shield} title="Safe and Private Process">
-        Your info stays secure. We don't store your links or videos after you download. No tracking, no logs, and no spammy ads. The process is clean, keeping your device free from junk or risks.
+      <FeatureCard icon={Shield} title="Proses aman dan privat">
+        Kami tidak menyimpan tautan atau file setelah unduhan selesai. Tanpa tracking maupun
+        iklan mengganggu.
       </FeatureCard>
     </div>
   );
 }
 
-// --- Enhanced Steps ---
 function StepCard({
   step,
   title,
@@ -708,17 +728,23 @@ function StepCard({
 function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-      <StepCard step={1} title="Copy the Video Link from Pinterest">
-        <a href="http://www.pinterest.com">Open Pinterest</a> on your phone or browser. Find the video you love, like a knitting tutorial or a home makeover clip. Click the three dots at the top right of the pin. From the menu, select "Copy link." This grabs the full URL, something like pinterest.com/pin/123456789. Make sure it's exact.
+      <StepCard step={1} title="Salin tautan dari LinkedIn">
+        <a href="http://www.linkedin.com">Buka LinkedIn</a> di ponsel atau browser. Cari video
+        yang ingin Anda simpan, ketuk tiga titik di kanan atas postingan, lalu pilih "Copy link
+        to post" untuk menyalin URL lengkap.
       </StepCard>
-      <StepCard step={2} title="Paste the Link into Our Site">
-        Go to videodownload.io in your browser. You'll see a box labeled "Paste Pinterest link here." Click inside and paste the copied link. Check that it starts with pinterest.com to avoid mistakes. Only public pins work; private or secret board videos won't download.
+      <StepCard step={2} title="Tempel tautan ke situs kami">
+        Buka videodownload.io dan tempel tautan pada kotak "Tempel link LinkedIn di sini".
+        Pastikan URL diawali linkedin.com—postingan privat tidak akan berfungsi.
       </StepCard>
-      <StepCard step={3} title="We Fetch and Clean the Video">
-        Click the green "Download" button next to the box. Our system pulls the video from Pinterest's servers in seconds. We remove any watermarks and ensure the quality is solid. Audio stays clear, so you don't miss steps in that recipe or craft guide.
+      <StepCard step={3} title="Kami memproses videonya">
+        Klik tombol "Download" berwarna biru. Sistem kami mengambil video langsung dari server
+        LinkedIn, menghapus watermark, dan memastikan kualitas tetap terjaga.
       </StepCard>
-      <StepCard step={4} title="Save the Clip to Your Device">
-        You'll get options: MP4 for the full video with sound or MP3 for just the audio. Choose MP4 for most clips. Tap to download, and it saves to your Downloads folder or phone's gallery. Name it something clear, like "diy_paint.mp4," before saving. Play it to confirm it's perfect.
+      <StepCard step={4} title="Simpan file ke perangkat">
+        Pilih MP4 jika ingin video lengkap atau MP3 bila hanya perlu audio. File akan tersimpan di
+        folder Downloads atau galeri Anda. Ganti nama sesuai kebutuhan dan putar untuk memastikan
+        semuanya lancar.
       </StepCard>
     </div>
   );

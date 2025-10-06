@@ -40,71 +40,76 @@ import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
-export default function PinterestPage() {
+export default function InstagramPagePt() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Pinterest Video Download | Free & HD",
-    description: "Download Pinterest videos and pins in mp4, 1080p quality. Free online video downloader and converter."
+    title: "Baixar Vídeo do Instagram | Grátis & HD",
+    description:
+      "Baixe vídeos do Instagram, Reels, Stories e IGTV em mp4, 1080p e 4k. Downloader e conversor de vídeos online gratuito."
   });
 
   return (
     <div className="min-h-screen relative">
-      <PlatformSubheader platform="Pinterest" />
+      <PlatformSubheader platform="Instagram" />
       <div className="container mx-auto px-4 py-12">
         <div className="mx-auto max-w-5xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
-          {/* Minimal Download Box */}
-          <div id="pinterest-downloader" className="mb-10">
+          {/* Caixa de download mínima */}
+          <div id="instagram-downloader" className="mb-10">
             <VideoDownloader
               boxOnly
-              inputPlaceholder="Paste a Pinterest video or pin URL"
+              inputPlaceholder="Cole uma URL de vídeo, Reel ou Story do Instagram"
             />
           </div>
-          {/* Features */}
+          {/* Recursos */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Features
+            Recursos
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            Download Pinterest Videos Easily
+            Baixe vídeos do Instagram com facilidade
           </h2>
           <p className="text-muted-foreground mb-6">
-            Your Simple Guide to Saving Creative Clips Offline
+            Seu guia simples para salvar Reels e clipes para assistir offline.
           </p>
 
           <EnhancedFeatures />
 
-          {/* How to Download */}
+          {/* Como baixar */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            How to Download Pinterest Videos
+            Como baixar vídeos do Instagram
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            A Clear, Step-by-Step Guide to Save Videos Effortlessly
+            Passo a passo claro para salvar vídeos sem esforço
           </h2>
           <p className="text-muted-foreground mb-6">
-            Getting Pinterest videos onto your device is simple with
-            videodownload.io. Follow these four straightforward steps to
-            download any video in minutes. Each step is designed to be
-            intuitive, even if you're not tech-savvy.
+            Colocar vídeos do Instagram no seu dispositivo é simples com o
+            videodownload.io. Siga estes quatro passos diretos para baixar
+            qualquer vídeo em minutos. Cada etapa foi pensada para ser intuitiva,
+            mesmo se você não for expert em tecnologia.
           </p>
           <EnhancedSteps />
           <div className="text-center mt-6 mb-10">
-            <a href="#pinterest-downloader">
+            <a href="#instagram-downloader">
               <Button variant="download" className="px-6">
-                Download Pinterest Video
+                Baixar vídeo do Instagram
               </Button>
             </a>
           </div>
 
-          {/* Why Download */}
+          {/* Por que baixar */}
           <div className="section-block section-why mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Download Pinterest Videos
+              Por que baixar vídeos do Instagram
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Best Use Cases
+              Melhores casos de uso
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is a goldmine for inspiration, but its feed moves fast, and pins can disappear. Downloading lets you keep the videos that spark ideas, turning fleeting finds into a personal collection. It's about saving what fuels your creativity or plans, not just hoarding content. You control your stash, safe from deleted pins or app glitches.
+              O feed acelerado do Instagram enterra conteúdos valiosos rapidinho.
+              Baixar permite guardar os clipes que importam, transformando o
+              scroll em uma coleção pessoal. Não é sobre salvar cada post, e sim
+              manter vídeos que inspiram ou significam algo. Você decide o que
+              fica, mesmo que contas virem privadas ou posts sumam.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -113,10 +118,13 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Offline Viewing
+                    Visualização offline
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save DIY tutorials or travel guides for trips with no Wi-Fi, like camping or long flights. Parents download kid-friendly craft videos for rainy days, keeping kids busy without internet.
+                    Salve dicas de viagem ou Reels de treino para voos ou
+                    acampamentos sem sinal. Pais baixam músicas infantis ou
+                    histórias para viagens de carro, mantendo as crianças
+                    entretidas sem Wi-Fi.
                   </p>
                 </div>
               </div>
@@ -126,10 +134,14 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Repurposing for Creators
+                    Criação de conteúdo
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers save decor clips to remix into their own content, adding tips or tweaks. Small businesses grab product demos to share on other platforms, skipping watermarks for clean edits.
+                    Criadores usam downloads para remixar. Uma blogueira de moda
+                    guarda Reels de looks para misturar no conteúdo dela,
+                    adicionando narrações ou novos ângulos. Músicos salvam sons
+                    em alta para sobrepor nas faixas, evitando marcas d'água e
+                    garantindo cortes limpos.
                   </p>
                 </div>
               </div>
@@ -139,10 +151,13 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Archiving Your Own Pins
+                    Fazer backup das suas postagens
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If you post videos, they can vanish from board changes or platform issues. Download them to a drive to protect your work, like a recipe you shared or a portfolio piece.
+                    O Instagram pode deletar ou falhar, então criadores salvam
+                    seus Reels em HD em discos externos. Estudantes guardam
+                    dicas de estudo ou trechos de aula para rever sem precisar
+                    logar no app.
                   </p>
                 </div>
               </div>
@@ -152,10 +167,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Learning and Planning
+                    Reaproveitar em outras plataformas
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Students save art tutorials or study tips for offline practice. Event planners download wedding or party ideas to show clients, no need to search again.
+                    Transforme um Reel em um Short do YouTube ou clipe do TikTok
+                    com alguns ajustes. Negócios salvam depoimentos de clientes
+                    para incorporar em sites, aumentando a confiança.
                   </p>
                 </div>
               </div>
@@ -165,31 +182,38 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Personal Projects
+                    Recordações pessoais
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save gardening tips for spring planting or workout routines for daily use. Turn a quick pin into a go-to resource for your next big idea.
+                    Baixe momentos em família, como a dança de casamento de um
+                    primo ou a atualização do bebê de um amigo, para rever em
+                    encontros ou guardar por anos. É um jeito de manter memórias
+                    por perto.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              Downloading Pinterest videos offers flexibility and convenience,
-              making it easier to enjoy content on your terms, whether for fun,
-              work, or learning.
+              Baixar vídeos do Instagram oferece flexibilidade e conveniência,
+              tornando mais fácil curtir o conteúdo do seu jeito, seja para
+              lazer, trabalho ou aprendizado.
             </p>
           </div>
 
-          {/* Who Should Download */}
+          {/* Quem deve baixar */}
           <div className="section-block section-who mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Who Should Download Pinterest Videos
+              Quem deve baixar vídeos do Instagram
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              People Who Benefit Most from Downloading
+              Pessoas que mais se beneficiam
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is all about ideas, but downloading videos fits people who turn those ideas into action. It's for those who use the platform to create, plan, or learn, not just browse for fun. If you're saving clips to make something real, downloading is your tool.
+              O scroll infinito do Instagram prende milhões, mas baixar vídeos é
+              ideal para quem usa a plataforma com propósito. É para quem vê os
+              Reels como ferramentas, inspiração ou lembranças, não só
+              entretenimento rápido. Se você está construindo, aprendendo ou
+              guardando momentos, essa solução é para você.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -198,10 +222,14 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Content Creators
+                    Criadores de conteúdo
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers and influencers save DIY or style videos to remix for their audience, like a fashion vlogger tweaking a look from a pin. They download their own posts too, keeping clean copies without logos.
+                    Postam diariamente e buscam ideias em Reels em alta.
+                    Baixar permite guardar o próprio trabalho ou estudar outros,
+                    como uma vlogger de gastronomia coletando técnicas de
+                    empratamento para adaptar ao estilo dela sem logotipos no
+                    meio.
                   </p>
                 </div>
               </div>
@@ -211,10 +239,13 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Hobbyists and DIYers
+                    Estudantes e professores
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Crafters save knitting or painting tutorials to follow step-by-step at home. Gardeners download planting guides to check while digging. It's hands-on inspiration, offline.
+                    Docentes guardam Reels demonstrativos para aulas, como
+                    experimentos científicos, exibindo sem depender da internet.
+                    Estudantes baixam guias de estudo ou exercícios de idiomas e
+                    revisam offline no próprio ritmo.
                   </p>
                 </div>
               </div>
@@ -224,10 +255,13 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Event Planners and Small Businesses
+                    Famílias
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Wedding planners save decor clips to pitch clients. Shops grab product videos to feature on websites or ads, building trust without watermarks.
+                    Pais salvam os primeiros passos de um filho ou um momento de
+                    férias para compartilhar com parentes ou arquivar para o
+                    futuro. É mais confiável do que esperar que o Instagram
+                    mantenha tudo.
                   </p>
                 </div>
               </div>
@@ -237,10 +271,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Parents and Educators
+                    Donos de negócios e marketers
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Teachers save craft demos for classroom projects. Moms download sensory play videos for toddlers, ready for screen-free days.
+                    Uma boutique salva posts de clientes usando seus produtos
+                    para anúncios ou prova social. Marketers testam tendências de
+                    Reels para campanhas e adaptam o conteúdo em várias redes.
                   </p>
                 </div>
               </div>
@@ -250,31 +286,48 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Homeowners and Renovators
+                    Entusiastas
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save kitchen remodel tips or furniture hacks to plan upgrades. Even casual users download motivational clips, like vision board ideas, to keep dreams in focus.
+                    Fãs de treino guardam fluxos de yoga para praticar na
+                    academia. Amantes de DIY baixam tutoriais de artesanato para
+                    seguir passo a passo. Mesmo usuários casuais salvam clipes
+                    motivacionais para rever em dias difíceis.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              No matter your role or lifestyle, downloading Pinterest videos can
-              save time, data, and effort while keeping your favorite content
-              accessible.
+              Não importa seu papel ou estilo de vida: baixar vídeos do
+              Instagram economiza tempo, dados e esforço enquanto mantém seu
+              conteúdo favorito acessível.
             </p>
           </div>
 
           {/* Legal */}
           <div className="section-block section-legal mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Is It Legal to Download Pinterest Videos?
+              É legal baixar vídeos do Instagram?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              What You Need to Know About the Law
+              O que você precisa saber sobre a lei
             </h2>
             <p className="section-muted mb-4">
-              Videos are copyrighted by their creators under laws like the DMCA in the US. Saving for private viewing, like practicing a craft offline, often counts as fair use. But sharing without credit or using for profit can lead to legal trouble. Music or voiceovers in videos may have extra copyright layers, though short personal saves rarely face issues.
+              Baixar vídeos do Instagram não é totalmente preto no branco. As
+              regras do Instagram permitem salvar posts públicos pelo app para
+              uso pessoal, desde que o criador não tenha desativado. Usar
+              ferramentas de terceiros como a nossa tecnicamente viola os
+              termos, o que pode sinalizar sua conta, embora banimentos sejam
+              raros a menos que haja download em massa ou republicação.
+            </p>
+            <p className="section-muted mb-2">
+              Legalmente, os vídeos pertencem aos criadores sob leis de direitos
+              autorais como a DMCA nos EUA. Guardar para visualização pessoal
+              geralmente se encaixa em uso justo, como assistir a um Reel offline.
+              Mas compartilhar sem permissão ou editar para fins lucrativos pode
+              gerar alegações de infração. A música nos Reels complica mais,
+              pois gravadoras detêm as faixas, mas salvamentos pessoais curtos
+              raramente enfrentam problemas.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -283,239 +336,243 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    When It's Allowed
+                    Quando é permitido
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If the creator allows downloads or the content is public domain, you're safe. Educational use, like showing a tutorial in class, often qualifies as fair use. Check pin descriptions for permissions. Keep downloads private and credit creators if you share to stay on the right side.
+                    Se o criador permite downloads ou o vídeo é de domínio
+                    público, tudo certo. Uso educacional, como professores
+                    mostrando clipes em aula, muitas vezes se enquadra como uso
+                    justo. Confira as legendas dos posts para ver se há
+                    permissão. Mantenha para uso privado e credite os criadores
+                    ao compartilhar e você tende a ficar seguro.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Risks */}
+          {/* Riscos */}
           <div className="section-block section-risks mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              The Risks Associated with Downloading Pinterest Videos
+              Riscos de baixar vídeos do Instagram
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Potential Dangers and How to Avoid Them
+              Perigos potenciais e como evitá-los
             </h2>
             <p className="section-muted mb-4">
-              Third-party downloaders sound convenient, but sketchy ones bring real trouble. Not every site is safe, and clicking blindly can mess up your device or data. Know the risks before you download to avoid headaches later.
+              Baixar de sites de terceiros parece fácil, mas páginas suspeitas
+              trazem problemas reais. Nem toda ferramenta é confiável, e clicar
+              sem cuidado pode comprometer seu dispositivo ou dados. Conheça os
+              riscos para se manter seguro antes de apertar o botão de download.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6">
-              <FeatureCard
-                tone="red"
-                icon={AlertTriangle}
-                title="Malware"
-              >
-                Shady sites hide viruses in video files, sneaking in spyware or ransomware. One bad download can lock your files or steal passwords. Some tools have been caught with keyloggers, turning a craft clip into a privacy mess.
+              <FeatureCard tone="red" icon={AlertTriangle} title="Malware é a maior ameaça">
+                Sites duvidosos escondem vírus em arquivos de vídeo, instalando
+                spyware ou ransomware. Um download ruim pode bloquear seus
+                arquivos ou roubar senhas. Alguns relatos mostram ferramentas com
+                keyloggers, transformando um simples Reel em uma violação de
+                dados.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Shield} title="Phishing Scams">
-                Fake download pages mimic Pinterest's login, grabbing your credentials if you fall for it. Or ads push "updates" that install trackers, watching your activity beyond the platform.
+              <FeatureCard tone="red" icon={Shield} title="Golpes de phishing">
+                Páginas falsas imitam o login do Instagram e capturam suas
+                credenciais se você digitar. Pop-ups insistentes empurram
+                "atualizações" que instalam rastreadores e monitoram cada clique.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={FileX}
-                title="Quality Issues"
-              >
-                Bad sites compress videos, causing choppy playback or lost audio. You wanted a clear tutorial, but get a glitchy file instead.
+              <FeatureCard tone="red" icon={FileX} title="Problemas de qualidade">
+                Sites ruins comprimem os vídeos, deixando frames travados ou
+                áudio em silêncio. Você espera um Reel em HD e recebe um arquivo
+                borrado e inutilizável.
               </FeatureCard>
-              <FeatureCard tone="red" icon={EyeOff} title="Privacy Leaks">
-                Some sites log your downloads, selling your IP or video choices to advertisers. Hackers could snag that data, leading to spam or targeted scams.
+              <FeatureCard tone="red" icon={EyeOff} title="Vazamento de privacidade">
+                Alguns serviços registram suas downloads e vendem seu IP ou
+                preferências de vídeo para anunciantes. Hackers podem obter esses
+                dados e disparar spam ou golpes.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Ban} title="Pinterest Bans">
-                Heavy use of third-party tools can flag your account, especially for creators. You could lose your boards or followers overnight.
+              <FeatureCard tone="red" icon={Ban} title="Banimentos no Instagram">
+                Downloads intensos com ferramentas de terceiros podem sinalizar a
+                conta, especialmente para criadores. Você pode perder o perfil ou
+                seguidores de um dia para o outro.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={AlertCircle}
-                title="Storage Overload"
-              >
-                Saving lots of videos eats space, bogging down phones or drives. Corrupted files might crash players, wasting time to fix.
+              <FeatureCard tone="red" icon={AlertCircle} title="Problemas de armazenamento">
+                Reels acumulam rápido, deixando celulares lentos ou enchendo
+                discos. Arquivos corrompidos podem travar o player, fazendo você
+                perder tempo tentando consertar.
               </FeatureCard>
             </div>
             <p className="section-muted">
-              Stick to trusted sites, scan downloads, and use VPNs to stay safe.
+              Use sites confiáveis, escaneie os arquivos baixados e considere uma
+              VPN para manter tudo seguro.
             </p>
           </div>
 
-          {/* Why Use videodownload.io */}
+          {/* Por que usar videodownload.io */}
           <div className="section-block section-whyuse mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Use videodownload.io
+              Por que usar o videodownload.io
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Your Trusted Partner for Pinterest Downloads
+              Seu parceiro confiável para downloads do Instagram
             </h2>
             <p className="section-muted mb-4">
-              We started videodownload.io in 2022 because we were fed up with buggy apps and risky sites. As Pinterest users, we wanted a fast, clean way to save videos without drama. We're a small team, not a big company, focused on making downloads easy and secure. Millions of users trust us with no data breaches, and we keep tweaking based on their feedback.
+              Criamos o videodownload.io em 2022 porque estávamos cansados de
+              apps cheios de bugs e <a href="https://blog.avast.com/malicious-browser-extensions-avast">downloaders com malware</a>.
+              Como usuários do Instagram, queríamos um jeito limpo de salvar
+              Reels sem dor de cabeça ou risco. Somos uma equipe pequena, focada
+              em tornar o download simples e seguro. Depois de milhões de
+              downloads, não tivemos violações e os usuários continuam voltando
+              pela confiabilidade.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-2">
-              <FeatureCard icon={Zap} title="Under Five Seconds">
-                Downloads complete even on busy days.
+              <FeatureCard icon={Zap} title="Downloads rápidos">
+                Menos de cinco segundos mesmo em horários de pico.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="No Ads or Pop-ups">
-                Just a simple interface.
+              <FeatureCard icon={Monitor} title="Sem anúncios, sem pop-ups">
+                Apenas uma página limpa.
               </FeatureCard>
-              <FeatureCard icon={VideoIcon} title="Watermarks Removed">
-                Clean, usable clips.
+              <FeatureCard icon={VideoIcon} title="Sem marcas d'água">
+                Cada vídeo sai puro.
               </FeatureCard>
-              <FeatureCard icon={ListChecks} title="Unlimited Saves">
-                No daily caps.
+              <FeatureCard icon={ListChecks} title="Salvar ilimitado">
+                Sem limites diários.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="Works on Any Device">
-                From old tablets to new laptops.
+              <FeatureCard icon={Monitor} title="Funciona em qualquer dispositivo">
+                De celulares a computadores.
               </FeatureCard>
-              <FeatureCard icon={Shield} title="Secure Setup">
-                No data stored after you're done.
+              <FeatureCard icon={Shield} title="Sistema seguro">
+                Nada fica armazenado depois do download.
               </FeatureCard>
             </div>
           </div>
 
-          {/* FAQs */}
+          {/* FAQ */}
           <div className="section-block section-faqs mb-8 md:mb-10">
-            <h1 className="section-title text-3xl md:text-4xl">FAQs</h1>
+            <h1 className="section-title text-3xl md:text-4xl">Perguntas frequentes</h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Common Questions About Pinterest Downloads
+              Dúvidas comuns sobre baixar vídeos do Instagram
             </h2>
             <p className="section-muted mb-4">
-              We've compiled answers to the most frequent questions about using
-              videodownload.io and downloading Pinterest videos to help you get
-              started with confidence.
+              Reunimos respostas para as perguntas mais frequentes sobre o uso do
+              videodownload.io e o download de vídeos do Instagram para ajudar
+              você a começar com confiança.
             </p>
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem
-                value="item-1"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-1" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I download videos from private Pinterest boards?
+                  Posso baixar vídeos privados do Instagram?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No, we only support public pins. Private or secret board videos need creator permission, and we respect those boundaries to stay legit.
+                  Não, apenas lidamos com Reels e posts públicos. Conteúdos
+                  privados precisam de permissão do criador, e respeitamos isso
+                  para manter tudo legítimo.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-2"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-2" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Will downloading slow my phone or computer?
+                  Baixar prejudica o desempenho do meu telefone?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Our files are clean and light, so no lag. But saving lots of videos can fill storage, so manage your space carefully.
+                  Não, os arquivos vêm limpos e prontos. Basta garantir que você
+                  tenha armazenamento livre. O download é tão leve quanto
+                  assistir ao Reel normalmente.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-3"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-3" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Why is my downloaded video watermark-free?
+                  Posso baixar apenas o áudio de um Reel?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest adds logos to track shares, but we pull the raw file and clean it up, giving you a clear video for personal use.
+                  Sim! Oferecemos opção MP3 para que você capture apenas o áudio.
+                  Perfeito para mixes, dublagens ou listas de reprodução offline.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-4"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-4" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I save just the audio from a Pinterest video?
+                  Preciso instalar algum aplicativo?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, choose MP3 after pasting the link. Great for grabbing music or voiceovers from tutorials without the visuals.
+                  Nada de instalação. Tudo é feito no navegador. Cole o link,
+                  clique em baixar e pronto.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-5"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-5" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  What if my download doesn't start?
+                  As marcas d'água são removidas automaticamente?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Ensure the link is public and starts with pinterest.com. Try another browser or clear cache. Our support chat fixes issues fast.
+                  Sim, removemos marcas d'água do Instagram para que o vídeo fique
+                  pronto para uso, sem texto cobrindo a imagem.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-6"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-6" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Is there a limit on video length?
+                  Há limites de tamanho para os vídeos?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  We handle videos up to 60 minutes, though most Pinterest clips are short. Longer ones take a bit but download fully.
+                  Trabalhamos com Reels de até 60 minutos, embora a maioria seja
+                  curta. Os maiores demoram um pouco mais, mas entregamos o
+                  arquivo completo.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-7"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-7" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Do you keep my downloaded videos?
+                  Vocês guardam meus downloads?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No way. We process instantly and delete everything after. Your files stay on your device, not our servers.
+                  De jeito nenhum. Processamos instantaneamente e excluímos tudo
+                  depois. Seus arquivos ficam apenas no seu dispositivo.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-8"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-8" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can creators see if I downloaded their video?
+                  O criador consegue ver que baixei o Reel?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest doesn't notify them. Your download stays private, with no alerts to the poster.
+                  O Instagram não envia notificações. Seu download permanece
+                  privado, sem alertas para o autor.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
 
-          {/* Start Downloading Now */}
+          {/* CTA */}
           <div className="section-block section-cta mb-2 text-center">
             <h1 className="section-title text-3xl md:text-4xl">
-              Start Saving Pinterest Videos Now
+              Comece a salvar vídeos do Instagram agora
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Grab Your Inspiration Clips in Seconds
+              Baixe seus Reels offline em segundos
             </h2>
             <div className="grid sm:grid-cols-3 gap-3 max-w-3xl mx-auto mb-4">
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Copy Pinterest Pin Link
+                Copie o link do Instagram
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Paste on Our Site
+                Cole em nosso site
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Download Clean Video
+                Baixe o vídeo limpo
               </div>
             </div>
             <div className="mt-2">
-              <a href="#pinterest-downloader">
+              <a href="#instagram-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Download Pinterest Video
+                  Baixar vídeo do Instagram
                 </Button>
               </a>
             </div>
           </div>
 
-          {/* Explore More Downloaders */}
+          {/* Outros downloaders */}
           <div className="section-block section-downloaders mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Explore More Downloaders
+              Explore outros downloaders
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Download from your favorite platforms
+              Baixe das suas plataformas favoritas
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-4">
               {[
@@ -593,7 +650,7 @@ export default function PinterestPage() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Download {p.name} Video
+                        Baixar vídeo do {p.name}
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}
@@ -653,29 +710,45 @@ function FeatureCard({
 function EnhancedFeatures() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
-      <FeatureCard icon={VideoIcon} title="Top-Notch Video Quality">
-        Save Pinterest videos in their best resolution, up to 1080p if the original pin supports it. No blurry visuals or faded colors when you watch later. We pull the file straight from Pinterest's servers, keeping every detail sharp for that DIY tutorial or recipe clip.
+      <FeatureCard icon={VideoIcon} title="Vídeo cristalino em HD">
+        Pegue vídeos do Instagram em toda a qualidade, até 1080p quando a
+        publicação original permite. Nada de reprodução granulada ou cores sem
+        vida ao assistir depois. Buscamos o arquivo direto dos servidores do
+        Instagram para manter cada frame nítido, perfeito para aquele clip de
+        viagem ou demo de culinária.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="No Watermarks or Overlays">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest displays the creator's username on videos downloaded through their app</a>, cluttering the view. We strip all that away, delivering a clean clip ready for your projects or personal use. Watch that home decor idea without text blocking the details.
+      <FeatureCard icon={Zap} title="Downloads sem marca d'água">
+        O Instagram aplica logo e nome de usuário nos vídeos salvos, poluindo a
+        tela. Removemos tudo, deixando um clipe limpo e pronto para editar ou
+        compartilhar. Assista à coreografia ou ao momento com pets sem textos
+        cobrindo a ação.
       </FeatureCard>
-      <FeatureCard icon={Monitor} title="Works on Any Device">
-        Use your phone, tablet, laptop, or desktop, and it runs smoothly. No apps or extra software needed. Just open our site in your browser, paste the link, and download. Tested on everything from old iPhones to new PCs, it's always hassle-free.
+      <FeatureCard icon={Monitor} title="Funciona em todos os dispositivos">
+        Use iPhone, Android, PC ou tablet e tudo simplesmente funciona. Sem apps
+        para instalar ou softwares complicados. Abra o site em qualquer
+        navegador, cole o link e baixe. Testado de laptops antigos a celulares
+        novos, o fluxo é suave sempre.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="Fast Download Speeds">
-        Waiting stinks. Our tool grabs Pinterest videos in seconds, usually under 10 for most clips. We use servers close to Pinterest's for quick pulls, so you can save a craft video or workout routine during a coffee break.
+      <FeatureCard icon={Zap} title="Downloads ultrarrápidos">
+        Ninguém gosta de esperar. Nossa ferramenta captura vídeos do Instagram
+        em segundos, muitas vezes em menos de 10 para a maioria dos clipes.
+        Usamos servidores próximos aos do Instagram para garantir velocidade, o
+        que permite salvar um Reel no intervalo sem travamentos ou erros.
       </FeatureCard>
-      <FeatureCard icon={ListChecks} title="Completely Free to Use">
-        No costs, no sign-ups, no hidden fees. Download as many videos as you want, every day, without limits. We keep it free so you can save that wedding inspo or art project clip without hitting a paywall.
+      <FeatureCard icon={ListChecks} title="Acesso totalmente gratuito">
+        Sem taxas, cadastros ou cobranças escondidas. Baixe quantos vídeos quiser
+        por dia, sem limites. Mantemos gratuito para você salvar aquela rotina de
+        treino ou cena engraçada sem se preocupar com paywall.
       </FeatureCard>
-      <FeatureCard icon={Shield} title="Safe and Private Process">
-        Your info stays secure. We don't store your links or videos after you download. No tracking, no logs, and no spammy ads. The process is clean, keeping your device free from junk or risks.
+      <FeatureCard icon={Shield} title="Processo seguro e protegido">
+        Sua privacidade fica blindada. Não guardamos links nem vídeos depois do
+        download. Nada de rastreamento, dados armazenados ou anúncios suspeitos.
+        O processo é limpo e seu dispositivo permanece protegido.
       </FeatureCard>
     </div>
   );
 }
 
-// --- Enhanced Steps ---
 function StepCard({
   step,
   title,
@@ -708,17 +781,31 @@ function StepCard({
 function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-      <StepCard step={1} title="Copy the Video Link from Pinterest">
-        <a href="http://www.pinterest.com">Open Pinterest</a> on your phone or browser. Find the video you love, like a knitting tutorial or a home makeover clip. Click the three dots at the top right of the pin. From the menu, select "Copy link." This grabs the full URL, something like pinterest.com/pin/123456789. Make sure it's exact.
+      <StepCard step={1} title="Copie o link do vídeo no Instagram">
+        <a href="http://www.instagram.com">Abra o Instagram</a> no celular ou no
+        navegador. Encontre o Reel ou vídeo que deseja, como uma receita rápida
+        ou vlog de viagem. Toque nos três pontos no canto superior direito do
+        post. No menu, selecione "Copiar link". Isso captura a URL completa,
+        algo como instagram.com/reel/ABC123. Confira se está correta.
       </StepCard>
-      <StepCard step={2} title="Paste the Link into Our Site">
-        Go to videodownload.io in your browser. You'll see a box labeled "Paste Pinterest link here." Click inside and paste the copied link. Check that it starts with pinterest.com to avoid mistakes. Only public pins work; private or secret board videos won't download.
+      <StepCard step={2} title="Cole o link em nosso site">
+        Acesse o videodownload.io no navegador. Você verá uma caixa clara com o
+        texto "Cole o link do Instagram aqui". Clique dentro e cole o link
+        copiado. Verifique se começa com instagram.com para evitar erros. Posts
+        privados não funcionam, mas Reels e vídeos públicos estão liberados.
       </StepCard>
-      <StepCard step={3} title="We Fetch and Clean the Video">
-        Click the green "Download" button next to the box. Our system pulls the video from Pinterest's servers in seconds. We remove any watermarks and ensure the quality is solid. Audio stays clear, so you don't miss steps in that recipe or craft guide.
+      <StepCard step={3} title="Nós buscamos e limpamos o vídeo">
+        Clique no botão verde "Baixar" ao lado da caixa. Nosso sistema captura o
+        vídeo dos servidores do Instagram em segundos. Removemos a marca d'água e
+        conferimos a qualidade, assim você não fica preso a arquivos problemáticos.
+        O áudio continua sincronizado, pronto para reproduzir.
       </StepCard>
-      <StepCard step={4} title="Save the Clip to Your Device">
-        You'll get options: MP4 for the full video with sound or MP3 for just the audio. Choose MP4 for most clips. Tap to download, and it saves to your Downloads folder or phone's gallery. Name it something clear, like "diy_paint.mp4," before saving. Play it to confirm it's perfect.
+      <StepCard step={4} title="Salve o arquivo no seu dispositivo">
+        Você verá opções: MP4 para o vídeo completo com áudio ou MP3 apenas para
+        o som. Escolha MP4 para a maioria dos clipes. Toque para baixar e o
+        arquivo irá para a pasta de Downloads ou galeria. Renomeie algo simples,
+        como "reel_treino.mp4", antes de salvar. Reproduza para confirmar que
+        está perfeito.
       </StepCard>
     </div>
   );

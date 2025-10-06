@@ -40,12 +40,12 @@ import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
-export default function PinterestPage() {
+export default function PinterestPageVi() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Pinterest Video Download | Free & HD",
-    description: "Download Pinterest videos and pins in mp4, 1080p quality. Free online video downloader and converter."
+    title: "Tải Video Pinterest | Miễn Phí & HD",
+    description: "Tải video Pinterest và ghim ở định dạng mp4, chất lượng 1080p. Trình tải và chuyển đổi video trực tuyến miễn phí."
   });
 
   return (
@@ -57,40 +57,40 @@ export default function PinterestPage() {
           <div id="pinterest-downloader" className="mb-10">
             <VideoDownloader
               boxOnly
-              inputPlaceholder="Paste a Pinterest video or pin URL"
+              inputPlaceholder="Dán URL video hoặc ghim Pinterest"
             />
           </div>
           {/* Features */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Features
+            Tính năng
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            Download Pinterest Videos Easily
+            Tải video Pinterest dễ dàng
           </h2>
           <p className="text-muted-foreground mb-6">
-            Your Simple Guide to Saving Creative Clips Offline
+            Hướng dẫn đơn giản để lưu các clip sáng tạo ngoại tuyến
           </p>
 
           <EnhancedFeatures />
 
           {/* How to Download */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            How to Download Pinterest Videos
+            Cách tải video Pinterest
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            A Clear, Step-by-Step Guide to Save Videos Effortlessly
+            Hướng dẫn từng bước rõ ràng để lưu video dễ dàng
           </h2>
           <p className="text-muted-foreground mb-6">
-            Getting Pinterest videos onto your device is simple with
-            videodownload.io. Follow these four straightforward steps to
-            download any video in minutes. Each step is designed to be
-            intuitive, even if you're not tech-savvy.
+            Lấy video Pinterest về thiết bị của bạn rất đơn giản với
+            videodownload.io. Làm theo bốn bước đơn giản này để tải bất kỳ
+            video nào trong vài phút. Mỗi bước được thiết kế trực quan, ngay
+            cả khi bạn không am hiểu công nghệ.
           </p>
           <EnhancedSteps />
           <div className="text-center mt-6 mb-10">
             <a href="#pinterest-downloader">
               <Button variant="download" className="px-6">
-                Download Pinterest Video
+                Tải video Pinterest
               </Button>
             </a>
           </div>
@@ -98,13 +98,13 @@ export default function PinterestPage() {
           {/* Why Download */}
           <div className="section-block section-why mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Download Pinterest Videos
+              Tại sao tải video Pinterest
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Best Use Cases
+              Các trường hợp sử dụng tốt nhất
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is a goldmine for inspiration, but its feed moves fast, and pins can disappear. Downloading lets you keep the videos that spark ideas, turning fleeting finds into a personal collection. It's about saving what fuels your creativity or plans, not just hoarding content. You control your stash, safe from deleted pins or app glitches.
+              Pinterest là kho tàng cảm hứng, nhưng nguồn cấp dữ liệu di chuyển nhanh và ghim có thể biến mất. Tải xuống cho phép bạn giữ những video tạo ra ý tưởng, biến những phát hiện thoáng qua thành bộ sưu tập cá nhân. Đó là về việc lưu những gì thúc đẩy sự sáng tạo hoặc kế hoạch của bạn, không chỉ tích trữ nội dung. Bạn kiểm soát kho của mình, an toàn khỏi ghim bị xóa hoặc sự cố ứng dụng.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -113,10 +113,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Offline Viewing
+                    Xem ngoại tuyến
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save DIY tutorials or travel guides for trips with no Wi-Fi, like camping or long flights. Parents download kid-friendly craft videos for rainy days, keeping kids busy without internet.
+                    Lưu hướng dẫn tự làm hoặc hướng dẫn du lịch cho các chuyến đi không có Wi-Fi, như cắm trại hoặc chuyến bay dài. Phụ huynh tải video thủ công thân thiện với trẻ em cho những ngày mưa, giữ trẻ bận rộn mà không cần internet.
                   </p>
                 </div>
               </div>
@@ -126,10 +126,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Repurposing for Creators
+                    Tái sử dụng cho người tạo nội dung
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers save decor clips to remix into their own content, adding tips or tweaks. Small businesses grab product demos to share on other platforms, skipping watermarks for clean edits.
+                    Blogger lưu clip trang trí để pha trộn vào nội dung của họ, thêm mẹo hoặc chỉnh sửa. Doanh nghiệp nhỏ lấy video demo sản phẩm để chia sẻ trên các nền tảng khác, bỏ qua hình mờ để chỉnh sửa sạch.
                   </p>
                 </div>
               </div>
@@ -139,10 +139,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Archiving Your Own Pins
+                    Lưu trữ ghim của riêng bạn
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If you post videos, they can vanish from board changes or platform issues. Download them to a drive to protect your work, like a recipe you shared or a portfolio piece.
+                    Nếu bạn đăng video, chúng có thể biến mất do thay đổi bảng hoặc sự cố nền tảng. Tải chúng vào ổ đĩa để bảo vệ công việc của bạn, như công thức bạn đã chia sẻ hoặc mẫu danh mục đầu tư.
                   </p>
                 </div>
               </div>
@@ -152,10 +152,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Learning and Planning
+                    Học tập và lập kế hoạch
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Students save art tutorials or study tips for offline practice. Event planners download wedding or party ideas to show clients, no need to search again.
+                    Sinh viên lưu hướng dẫn nghệ thuật hoặc mẹo học tập để thực hành ngoại tuyến. Người lập kế hoạch sự kiện tải ý tưởng đám cưới hoặc tiệc để cho khách hàng xem, không cần tìm kiếm lại.
                   </p>
                 </div>
               </div>
@@ -165,31 +165,31 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Personal Projects
+                    Dự án cá nhân
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save gardening tips for spring planting or workout routines for daily use. Turn a quick pin into a go-to resource for your next big idea.
+                    Lưu mẹo làm vườn cho mùa trồng xuân hoặc thói quen tập luyện hàng ngày. Biến ghim nhanh thành tài nguyên tiếp theo cho ý tưởng lớn tiếp theo của bạn.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              Downloading Pinterest videos offers flexibility and convenience,
-              making it easier to enjoy content on your terms, whether for fun,
-              work, or learning.
+              Tải video Pinterest mang lại sự linh hoạt và tiện lợi, giúp bạn dễ
+              dàng thưởng thức nội dung theo cách của mình, cho dù là để giải trí,
+              làm việc hay học tập.
             </p>
           </div>
 
           {/* Who Should Download */}
           <div className="section-block section-who mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Who Should Download Pinterest Videos
+              Ai nên tải video Pinterest
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              People Who Benefit Most from Downloading
+              Những người được lợi nhiều nhất từ việc tải xuống
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is all about ideas, but downloading videos fits people who turn those ideas into action. It's for those who use the platform to create, plan, or learn, not just browse for fun. If you're saving clips to make something real, downloading is your tool.
+              Pinterest là tất cả về ý tưởng, nhưng việc tải video phù hợp với những người biến ý tưởng thành hành động. Đó là dành cho những người sử dụng nền tảng để tạo, lập kế hoạch hoặc học hỏi, không chỉ duyệt cho vui. Nếu bạn lưu clip để tạo ra điều gì đó thực tế, tải xuống là công cụ của bạn.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -198,10 +198,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Content Creators
+                    Người tạo nội dung
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers and influencers save DIY or style videos to remix for their audience, like a fashion vlogger tweaking a look from a pin. They download their own posts too, keeping clean copies without logos.
+                    Blogger và influencer lưu video tự làm hoặc phong cách để pha trộn cho khán giả của họ, như vlogger thời trang điều chỉnh vẻ ngoài từ ghim. Họ cũng tải bài đăng của riêng mình, giữ bản sao sạch không có logo.
                   </p>
                 </div>
               </div>
@@ -211,10 +211,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Hobbyists and DIYers
+                    Người yêu thích và thợ DIY
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Crafters save knitting or painting tutorials to follow step-by-step at home. Gardeners download planting guides to check while digging. It's hands-on inspiration, offline.
+                    Thợ thủ công lưu hướng dẫn đan hoặc vẽ để theo dõi từng bước tại nhà. Người làm vườn tải hướng dẫn trồng để kiểm tra khi đào. Đó là cảm hứng thực hành, ngoại tuyến.
                   </p>
                 </div>
               </div>
@@ -224,10 +224,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Event Planners and Small Businesses
+                    Người lập kế hoạch sự kiện và doanh nghiệp nhỏ
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Wedding planners save decor clips to pitch clients. Shops grab product videos to feature on websites or ads, building trust without watermarks.
+                    Người lập kế hoạch đám cưới lưu clip trang trí để giới thiệu khách hàng. Cửa hàng lấy video sản phẩm để đặc trưng trên trang web hoặc quảng cáo, xây dựng lòng tin mà không có hình mờ.
                   </p>
                 </div>
               </div>
@@ -237,10 +237,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Parents and Educators
+                    Phụ huynh và nhà giáo dục
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Teachers save craft demos for classroom projects. Moms download sensory play videos for toddlers, ready for screen-free days.
+                    Giáo viên lưu demo thủ công cho dự án lớp học. Các bà mẹ tải video chơi cảm giác cho trẻ mới biết đi, sẵn sàng cho những ngày không màn hình.
                   </p>
                 </div>
               </div>
@@ -250,31 +250,31 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Homeowners and Renovators
+                    Chủ nhà và người cải tạo
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save kitchen remodel tips or furniture hacks to plan upgrades. Even casual users download motivational clips, like vision board ideas, to keep dreams in focus.
+                    Lưu mẹo cải tạo bếp hoặc mẹo về đồ nội thất để lập kế hoạch nâng cấp. Ngay cả người dùng bình thường cũng tải clip động lực, như ý tưởng bảng tầm nhìn, để giữ ước mơ tập trung.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              No matter your role or lifestyle, downloading Pinterest videos can
-              save time, data, and effort while keeping your favorite content
-              accessible.
+              Bất kể vai trò hoặc lối sống của bạn, tải video Pinterest có thể tiết
+              kiệm thời gian, dữ liệu và công sức trong khi giữ nội dung yêu thích
+              của bạn có thể truy cập.
             </p>
           </div>
 
           {/* Legal */}
           <div className="section-block section-legal mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Is It Legal to Download Pinterest Videos?
+              Có hợp pháp khi tải video Pinterest không?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              What You Need to Know About the Law
+              Những gì bạn cần biết về luật pháp
             </h2>
             <p className="section-muted mb-4">
-              Videos are copyrighted by their creators under laws like the DMCA in the US. Saving for private viewing, like practicing a craft offline, often counts as fair use. But sharing without credit or using for profit can lead to legal trouble. Music or voiceovers in videos may have extra copyright layers, though short personal saves rarely face issues.
+              Video được bảo vệ bản quyền bởi người tạo ra chúng theo luật như DMCA ở Mỹ. Lưu để xem riêng tư, như thực hành thủ công ngoại tuyến, thường được tính là sử dụng hợp lý. Nhưng chia sẻ mà không ghi công hoặc sử dụng cho mục đích lợi nhuận có thể dẫn đến rắc rối pháp lý. Nhạc hoặc lồng tiếng trong video có thể có các lớp bản quyền bổ sung, mặc dù việc lưu cá nhân ngắn hiếm khi gặp vấn đề.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -283,10 +283,10 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    When It's Allowed
+                    Khi nào được phép
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If the creator allows downloads or the content is public domain, you're safe. Educational use, like showing a tutorial in class, often qualifies as fair use. Check pin descriptions for permissions. Keep downloads private and credit creators if you share to stay on the right side.
+                    Nếu người tạo cho phép tải xuống hoặc nội dung thuộc phạm vi công cộng, bạn an toàn. Sử dụng giáo dục, như hiển thị hướng dẫn trong lớp, thường đủ điều kiện là sử dụng hợp lý. Kiểm tra mô tả ghim để biết quyền. Giữ tải xuống riêng tư và ghi công người tạo nếu bạn chia sẻ để ở phía đúng.
                   </p>
                 </div>
               </div>
@@ -296,94 +296,94 @@ export default function PinterestPage() {
           {/* Risks */}
           <div className="section-block section-risks mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              The Risks Associated with Downloading Pinterest Videos
+              Rủi ro liên quan đến việc tải video Pinterest
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Potential Dangers and How to Avoid Them
+              Nguy hiểm tiềm ẩn và cách tránh chúng
             </h2>
             <p className="section-muted mb-4">
-              Third-party downloaders sound convenient, but sketchy ones bring real trouble. Not every site is safe, and clicking blindly can mess up your device or data. Know the risks before you download to avoid headaches later.
+              Trình tải xuống của bên thứ ba nghe có vẻ tiện lợi, nhưng những trình đáng ngờ mang lại rắc rối thực sự. Không phải mọi trang web đều an toàn, và nhấp mù quáng có thể làm hỏng thiết bị hoặc dữ liệu của bạn. Biết rủi ro trước khi tải xuống để tránh đau đầu sau này.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6">
               <FeatureCard
                 tone="red"
                 icon={AlertTriangle}
-                title="Malware"
+                title="Phần mềm độc hại"
               >
-                Shady sites hide viruses in video files, sneaking in spyware or ransomware. One bad download can lock your files or steal passwords. Some tools have been caught with keyloggers, turning a craft clip into a privacy mess.
+                Các trang web đáng ngờ giấu virus trong tệp video, len lỏi phần mềm gián điệp hoặc ransomware. Một lần tải xuống tồi có thể khóa tệp của bạn hoặc đánh cắp mật khẩu. Một số công cụ đã bị phát hiện với keylogger, biến clip thủ công thành mớ hỗn độn về quyền riêng tư.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Shield} title="Phishing Scams">
-                Fake download pages mimic Pinterest's login, grabbing your credentials if you fall for it. Or ads push "updates" that install trackers, watching your activity beyond the platform.
+              <FeatureCard tone="red" icon={Shield} title="Lừa đảo Phishing">
+                Các trang tải xuống giả mạo đăng nhập Pinterest, lấy thông tin đăng nhập của bạn nếu bạn tin vào nó. Hoặc quảng cáo đẩy "cập nhật" cài đặt trình theo dõi, xem hoạt động của bạn ngoài nền tảng.
               </FeatureCard>
               <FeatureCard
                 tone="red"
                 icon={FileX}
-                title="Quality Issues"
+                title="Vấn đề chất lượng"
               >
-                Bad sites compress videos, causing choppy playback or lost audio. You wanted a clear tutorial, but get a glitchy file instead.
+                Các trang web xấu nén video, gây ra phát lại giật lag hoặc mất âm thanh. Bạn muốn hướng dẫn rõ ràng, nhưng nhận được tệp lỗi thay thế.
               </FeatureCard>
-              <FeatureCard tone="red" icon={EyeOff} title="Privacy Leaks">
-                Some sites log your downloads, selling your IP or video choices to advertisers. Hackers could snag that data, leading to spam or targeted scams.
+              <FeatureCard tone="red" icon={EyeOff} title="Rò rỉ quyền riêng tư">
+                Một số trang web ghi lại lượt tải xuống của bạn, bán IP hoặc lựa chọn video của bạn cho nhà quảng cáo. Tin tặc có thể lấy dữ liệu đó, dẫn đến spam hoặc lừa đảo có mục tiêu.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Ban} title="Pinterest Bans">
-                Heavy use of third-party tools can flag your account, especially for creators. You could lose your boards or followers overnight.
+              <FeatureCard tone="red" icon={Ban} title="Cấm Pinterest">
+                Sử dụng nhiều công cụ của bên thứ ba có thể đánh dấu tài khoản của bạn, đặc biệt là đối với người tạo. Bạn có thể mất bảng hoặc người theo dõi qua đêm.
               </FeatureCard>
               <FeatureCard
                 tone="red"
                 icon={AlertCircle}
-                title="Storage Overload"
+                title="Quá tải lưu trữ"
               >
-                Saving lots of videos eats space, bogging down phones or drives. Corrupted files might crash players, wasting time to fix.
+                Lưu nhiều video ăn không gian, làm chậm điện thoại hoặc ổ đĩa. Tệp bị hỏng có thể làm sập trình phát, lãng phí thời gian sửa chữa.
               </FeatureCard>
             </div>
             <p className="section-muted">
-              Stick to trusted sites, scan downloads, and use VPNs to stay safe.
+              Chọn các trang web đáng tin cậy, quét tải xuống và sử dụng VPN để an toàn.
             </p>
           </div>
 
           {/* Why Use videodownload.io */}
           <div className="section-block section-whyuse mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Use videodownload.io
+              Tại sao sử dụng videodownload.io
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Your Trusted Partner for Pinterest Downloads
+              Đối tác đáng tin cậy của bạn cho tải xuống Pinterest
             </h2>
             <p className="section-muted mb-4">
-              We started videodownload.io in 2022 because we were fed up with buggy apps and risky sites. As Pinterest users, we wanted a fast, clean way to save videos without drama. We're a small team, not a big company, focused on making downloads easy and secure. Millions of users trust us with no data breaches, and we keep tweaking based on their feedback.
+              Chúng tôi bắt đầu videodownload.io vào năm 2022 vì chúng tôi chán với các ứng dụng lỗi và trang web rủi ro. Là người dùng Pinterest, chúng tôi muốn một cách nhanh chóng, sạch sẽ để lưu video mà không gây rắc rối. Chúng tôi là một nhóm nhỏ, không phải công ty lớn, tập trung vào làm cho việc tải xuống dễ dàng và an toàn. Hàng triệu người dùng tin tưởng chúng tôi không có vi phạm dữ liệu, và chúng tôi tiếp tục điều chỉnh dựa trên phản hồi của họ.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-2">
-              <FeatureCard icon={Zap} title="Under Five Seconds">
-                Downloads complete even on busy days.
+              <FeatureCard icon={Zap} title="Dưới năm giây">
+                Tải xuống hoàn thành ngay cả trong những ngày bận rộn.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="No Ads or Pop-ups">
-                Just a simple interface.
+              <FeatureCard icon={Monitor} title="Không có quảng cáo hoặc pop-up">
+                Chỉ một giao diện đơn giản.
               </FeatureCard>
-              <FeatureCard icon={VideoIcon} title="Watermarks Removed">
-                Clean, usable clips.
+              <FeatureCard icon={VideoIcon} title="Hình mờ được xóa">
+                Clip sạch, có thể sử dụng.
               </FeatureCard>
-              <FeatureCard icon={ListChecks} title="Unlimited Saves">
-                No daily caps.
+              <FeatureCard icon={ListChecks} title="Lưu không giới hạn">
+                Không có giới hạn hàng ngày.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="Works on Any Device">
-                From old tablets to new laptops.
+              <FeatureCard icon={Monitor} title="Hoạt động trên mọi thiết bị">
+                Từ máy tính bảng cũ đến máy tính xách tay mới.
               </FeatureCard>
-              <FeatureCard icon={Shield} title="Secure Setup">
-                No data stored after you're done.
+              <FeatureCard icon={Shield} title="Cài đặt an toàn">
+                Không có dữ liệu được lưu trữ sau khi bạn xong.
               </FeatureCard>
             </div>
           </div>
 
           {/* FAQs */}
           <div className="section-block section-faqs mb-8 md:mb-10">
-            <h1 className="section-title text-3xl md:text-4xl">FAQs</h1>
+            <h1 className="section-title text-3xl md:text-4xl">Câu hỏi thường gặp</h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Common Questions About Pinterest Downloads
+              Câu hỏi phổ biến về tải xuống Pinterest
             </h2>
             <p className="section-muted mb-4">
-              We've compiled answers to the most frequent questions about using
-              videodownload.io and downloading Pinterest videos to help you get
-              started with confidence.
+              Chúng tôi đã biên soạn câu trả lời cho các câu hỏi thường gặp nhất về
+              việc sử dụng videodownload.io và tải video Pinterest để giúp bạn bắt
+              đầu với sự tự tin.
             </p>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem
@@ -391,10 +391,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I download videos from private Pinterest boards?
+                  Tôi có thể tải video từ bảng Pinterest riêng tư không?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No, we only support public pins. Private or secret board videos need creator permission, and we respect those boundaries to stay legit.
+                  Không, chúng tôi chỉ hỗ trợ ghim công khai. Video bảng riêng tư hoặc bí mật cần sự cho phép của người tạo, và chúng tôi tôn trọng ranh giới đó để hợp pháp.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -402,10 +402,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Will downloading slow my phone or computer?
+                  Tải xuống có làm chậm điện thoại hoặc máy tính của tôi không?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Our files are clean and light, so no lag. But saving lots of videos can fill storage, so manage your space carefully.
+                  Tệp của chúng tôi sạch và nhẹ, vì vậy không trễ. Nhưng lưu nhiều video có thể lấp đầy bộ nhớ, vì vậy hãy quản lý không gian của bạn cẩn thận.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -413,10 +413,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Why is my downloaded video watermark-free?
+                  Tại sao video đã tải xuống của tôi không có hình mờ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest adds logos to track shares, but we pull the raw file and clean it up, giving you a clear video for personal use.
+                  Pinterest thêm logo để theo dõi chia sẻ, nhưng chúng tôi kéo tệp thô và làm sạch nó, cung cấp cho bạn video rõ ràng để sử dụng cá nhân.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -424,10 +424,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I save just the audio from a Pinterest video?
+                  Tôi có thể chỉ lưu âm thanh từ video Pinterest không?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, choose MP3 after pasting the link. Great for grabbing music or voiceovers from tutorials without the visuals.
+                  Có, chọn MP3 sau khi dán liên kết. Tuyệt vời để lấy nhạc hoặc lồng tiếng từ hướng dẫn mà không có hình ảnh.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -435,10 +435,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  What if my download doesn't start?
+                  Điều gì xảy ra nếu tải xuống của tôi không bắt đầu?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Ensure the link is public and starts with pinterest.com. Try another browser or clear cache. Our support chat fixes issues fast.
+                  Đảm bảo liên kết là công khai và bắt đầu bằng pinterest.com. Thử trình duyệt khác hoặc xóa bộ nhớ cache. Trò chuyện hỗ trợ của chúng tôi khắc phục sự cố nhanh chóng.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -446,10 +446,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Is there a limit on video length?
+                  Có giới hạn về độ dài video không?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  We handle videos up to 60 minutes, though most Pinterest clips are short. Longer ones take a bit but download fully.
+                  Chúng tôi xử lý video lên đến 60 phút, mặc dù hầu hết clip Pinterest đều ngắn. Những cái dài hơn mất một chút nhưng tải xuống đầy đủ.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -457,10 +457,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Do you keep my downloaded videos?
+                  Bạn có giữ video đã tải xuống của tôi không?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No way. We process instantly and delete everything after. Your files stay on your device, not our servers.
+                  Không đâu. Chúng tôi xử lý ngay lập tức và xóa mọi thứ sau đó. Tệp của bạn ở trên thiết bị của bạn, không phải máy chủ của chúng tôi.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -468,10 +468,10 @@ export default function PinterestPage() {
                 className="border-b border-primary/10"
               >
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can creators see if I downloaded their video?
+                  Người tạo có thể thấy nếu tôi tải video của họ không?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest doesn't notify them. Your download stays private, with no alerts to the poster.
+                  Pinterest không thông báo cho họ. Tải xuống của bạn ở lại riêng tư, không có cảnh báo cho người đăng.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -480,30 +480,30 @@ export default function PinterestPage() {
           {/* Start Downloading Now */}
           <div className="section-block section-cta mb-2 text-center">
             <h1 className="section-title text-3xl md:text-4xl">
-              Start Saving Pinterest Videos Now
+              Bắt đầu lưu video Pinterest ngay bây giờ
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Grab Your Inspiration Clips in Seconds
+              Lấy clip cảm hứng của bạn trong vài giây
             </h2>
             <div className="grid sm:grid-cols-3 gap-3 max-w-3xl mx-auto mb-4">
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Copy Pinterest Pin Link
+                Sao chép liên kết ghim Pinterest
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Paste on Our Site
+                Dán trên trang web của chúng tôi
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Download Clean Video
+                Tải video sạch
               </div>
             </div>
             <div className="mt-2">
               <a href="#pinterest-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Download Pinterest Video
+                  Tải video Pinterest
                 </Button>
               </a>
             </div>
@@ -512,10 +512,10 @@ export default function PinterestPage() {
           {/* Explore More Downloaders */}
           <div className="section-block section-downloaders mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Explore More Downloaders
+              Khám phá thêm trình tải xuống
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Download from your favorite platforms
+              Tải xuống từ các nền tảng yêu thích của bạn
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-4">
               {[
@@ -593,7 +593,7 @@ export default function PinterestPage() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Download {p.name} Video
+                        Tải video {p.name}
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}
@@ -653,23 +653,23 @@ function FeatureCard({
 function EnhancedFeatures() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
-      <FeatureCard icon={VideoIcon} title="Top-Notch Video Quality">
-        Save Pinterest videos in their best resolution, up to 1080p if the original pin supports it. No blurry visuals or faded colors when you watch later. We pull the file straight from Pinterest's servers, keeping every detail sharp for that DIY tutorial or recipe clip.
+      <FeatureCard icon={VideoIcon} title="Chất lượng video hàng đầu">
+        Lưu video Pinterest ở độ phân giải tốt nhất của chúng, lên đến 1080p nếu ghim gốc hỗ trợ. Không có hình ảnh mờ hoặc màu phai khi bạn xem sau. Chúng tôi kéo tệp thẳng từ máy chủ Pinterest, giữ mọi chi tiết sắc nét cho hướng dẫn DIY hoặc clip công thức đó.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="No Watermarks or Overlays">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest displays the creator's username on videos downloaded through their app</a>, cluttering the view. We strip all that away, delivering a clean clip ready for your projects or personal use. Watch that home decor idea without text blocking the details.
+      <FeatureCard icon={Zap} title="Không có hình mờ hoặc lớp phủ">
+        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest hiển thị tên người dùng của người tạo trên video được tải xuống qua ứng dụng của họ</a>, làm lộn xộn chế độ xem. Chúng tôi loại bỏ tất cả điều đó, cung cấp clip sạch sẵn sàng cho các dự án hoặc sử dụng cá nhân của bạn. Xem ý tưởng trang trí nhà đó mà không có văn bản chặn các chi tiết.
       </FeatureCard>
-      <FeatureCard icon={Monitor} title="Works on Any Device">
-        Use your phone, tablet, laptop, or desktop, and it runs smoothly. No apps or extra software needed. Just open our site in your browser, paste the link, and download. Tested on everything from old iPhones to new PCs, it's always hassle-free.
+      <FeatureCard icon={Monitor} title="Hoạt động trên mọi thiết bị">
+        Sử dụng điện thoại, máy tính bảng, máy tính xách tay hoặc máy tính để bàn của bạn và nó chạy mượt mà. Không cần ứng dụng hoặc phần mềm bổ sung. Chỉ cần mở trang web của chúng tôi trong trình duyệt của bạn, dán liên kết và tải xuống. Được thử nghiệm trên mọi thứ từ iPhone cũ đến PC mới, nó luôn không rắc rối.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="Fast Download Speeds">
-        Waiting stinks. Our tool grabs Pinterest videos in seconds, usually under 10 for most clips. We use servers close to Pinterest's for quick pulls, so you can save a craft video or workout routine during a coffee break.
+      <FeatureCard icon={Zap} title="Tốc độ tải xuống nhanh">
+        Chờ đợi thật tệ. Công cụ của chúng tôi lấy video Pinterest trong vài giây, thường dưới 10 cho hầu hết các clip. Chúng tôi sử dụng máy chủ gần Pinterest để kéo nhanh, vì vậy bạn có thể lưu video thủ công hoặc thói quen tập luyện trong giờ nghỉ cà phê.
       </FeatureCard>
-      <FeatureCard icon={ListChecks} title="Completely Free to Use">
-        No costs, no sign-ups, no hidden fees. Download as many videos as you want, every day, without limits. We keep it free so you can save that wedding inspo or art project clip without hitting a paywall.
+      <FeatureCard icon={ListChecks} title="Hoàn toàn miễn phí sử dụng">
+        Không có chi phí, không có đăng ký, không có phí ẩn. Tải xuống nhiều video như bạn muốn, mỗi ngày, không giới hạn. Chúng tôi giữ nó miễn phí để bạn có thể lưu cảm hứng đám cưới hoặc clip dự án nghệ thuật mà không gặp rào cản thanh toán.
       </FeatureCard>
-      <FeatureCard icon={Shield} title="Safe and Private Process">
-        Your info stays secure. We don't store your links or videos after you download. No tracking, no logs, and no spammy ads. The process is clean, keeping your device free from junk or risks.
+      <FeatureCard icon={Shield} title="Quy trình an toàn và riêng tư">
+        Thông tin của bạn được bảo mật. Chúng tôi không lưu trữ liên kết hoặc video của bạn sau khi bạn tải xuống. Không theo dõi, không ghi nhật ký và không có quảng cáo spam. Quy trình sạch sẽ, giữ cho thiết bị của bạn không có rác hoặc rủi ro.
       </FeatureCard>
     </div>
   );
@@ -708,17 +708,17 @@ function StepCard({
 function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-      <StepCard step={1} title="Copy the Video Link from Pinterest">
-        <a href="http://www.pinterest.com">Open Pinterest</a> on your phone or browser. Find the video you love, like a knitting tutorial or a home makeover clip. Click the three dots at the top right of the pin. From the menu, select "Copy link." This grabs the full URL, something like pinterest.com/pin/123456789. Make sure it's exact.
+      <StepCard step={1} title="Sao chép liên kết video từ Pinterest">
+        <a href="http://www.pinterest.com">Mở Pinterest</a> trên điện thoại hoặc trình duyệt của bạn. Tìm video bạn yêu thích, như hướng dẫn đan hoặc clip cải tạo nhà. Nhấp vào ba dấu chấm ở góc trên bên phải của ghim. Từ menu, chọn "Sao chép liên kết". Điều này lấy URL đầy đủ, một cái gì đó như pinterest.com/pin/123456789. Đảm bảo nó chính xác.
       </StepCard>
-      <StepCard step={2} title="Paste the Link into Our Site">
-        Go to videodownload.io in your browser. You'll see a box labeled "Paste Pinterest link here." Click inside and paste the copied link. Check that it starts with pinterest.com to avoid mistakes. Only public pins work; private or secret board videos won't download.
+      <StepCard step={2} title="Dán liên kết vào trang web của chúng tôi">
+        Truy cập videodownload.io trong trình duyệt của bạn. Bạn sẽ thấy một hộp có nhãn "Dán liên kết Pinterest tại đây". Nhấp vào bên trong và dán liên kết đã sao chép. Kiểm tra rằng nó bắt đầu bằng pinterest.com để tránh lỗi. Chỉ ghim công khai hoạt động; video bảng riêng tư hoặc bí mật sẽ không tải xuống.
       </StepCard>
-      <StepCard step={3} title="We Fetch and Clean the Video">
-        Click the green "Download" button next to the box. Our system pulls the video from Pinterest's servers in seconds. We remove any watermarks and ensure the quality is solid. Audio stays clear, so you don't miss steps in that recipe or craft guide.
+      <StepCard step={3} title="Chúng tôi lấy và làm sạch video">
+        Nhấp vào nút "Tải xuống" màu xanh lá cây bên cạnh hộp. Hệ thống của chúng tôi kéo video từ máy chủ Pinterest trong vài giây. Chúng tôi loại bỏ bất kỳ hình mờ nào và đảm bảo chất lượng vững chắc. Âm thanh vẫn rõ ràng, vì vậy bạn không bỏ lỡ các bước trong công thức hoặc hướng dẫn thủ công đó.
       </StepCard>
-      <StepCard step={4} title="Save the Clip to Your Device">
-        You'll get options: MP4 for the full video with sound or MP3 for just the audio. Choose MP4 for most clips. Tap to download, and it saves to your Downloads folder or phone's gallery. Name it something clear, like "diy_paint.mp4," before saving. Play it to confirm it's perfect.
+      <StepCard step={4} title="Lưu clip vào thiết bị của bạn">
+        Bạn sẽ có các tùy chọn: MP4 cho video đầy đủ có âm thanh hoặc MP3 chỉ cho âm thanh. Chọn MP4 cho hầu hết các clip. Nhấn để tải xuống và nó lưu vào thư mục Tải xuống hoặc thư viện điện thoại của bạn. Đặt tên nó một cái gì đó rõ ràng, như "diy_paint.mp4", trước khi lưu. Phát nó để xác nhận nó hoàn hảo.
       </StepCard>
     </div>
   );

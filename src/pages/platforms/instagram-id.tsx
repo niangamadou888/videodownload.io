@@ -40,71 +40,76 @@ import { VideoDownloader } from "@/components/VideoDownloader";
 import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
-export default function PinterestPage() {
+export default function InstagramPageId() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Pinterest Video Download | Free & HD",
-    description: "Download Pinterest videos and pins in mp4, 1080p quality. Free online video downloader and converter."
+    title: "Unduh Video Instagram | Gratis & HD",
+    description:
+      "Unduh video Instagram, Reels, Stories, dan IGTV dalam format mp4, 1080p, dan 4k. Pengunduh dan konverter video online gratis."
   });
 
   return (
     <div className="min-h-screen relative">
-      <PlatformSubheader platform="Pinterest" />
+      <PlatformSubheader platform="Instagram" />
       <div className="container mx-auto px-4 py-12">
         <div className="mx-auto max-w-5xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
-          {/* Minimal Download Box */}
-          <div id="pinterest-downloader" className="mb-10">
+          {/* Kotak unduhan minimal */}
+          <div id="instagram-downloader" className="mb-10">
             <VideoDownloader
               boxOnly
-              inputPlaceholder="Paste a Pinterest video or pin URL"
+              inputPlaceholder="Tempel URL video, Reel, atau Story Instagram"
             />
           </div>
-          {/* Features */}
+          {/* Fitur */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Features
+            Fitur
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            Download Pinterest Videos Easily
+            Unduh video Instagram dengan mudah
           </h2>
           <p className="text-muted-foreground mb-6">
-            Your Simple Guide to Saving Creative Clips Offline
+            Panduan sederhana untuk menyimpan Reel dan klip agar bisa ditonton offline.
           </p>
 
           <EnhancedFeatures />
 
-          {/* How to Download */}
+          {/* Cara mengunduh */}
           <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            How to Download Pinterest Videos
+            Cara mengunduh video Instagram
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-white">
-            A Clear, Step-by-Step Guide to Save Videos Effortlessly
+            Panduan langkah demi langkah yang jelas untuk menyimpan video tanpa repot
           </h2>
           <p className="text-muted-foreground mb-6">
-            Getting Pinterest videos onto your device is simple with
-            videodownload.io. Follow these four straightforward steps to
-            download any video in minutes. Each step is designed to be
-            intuitive, even if you're not tech-savvy.
+            Mengunduh video Instagram ke perangkat Anda sangat mudah dengan
+            videodownload.io. Ikuti empat langkah sederhana ini untuk mengunduh
+            video apa pun dalam hitungan menit. Setiap langkah dibuat intuitif,
+            bahkan jika Anda tidak terlalu paham teknologi.
           </p>
           <EnhancedSteps />
           <div className="text-center mt-6 mb-10">
-            <a href="#pinterest-downloader">
+            <a href="#instagram-downloader">
               <Button variant="download" className="px-6">
-                Download Pinterest Video
+                Unduh video Instagram
               </Button>
             </a>
           </div>
 
-          {/* Why Download */}
+          {/* Mengapa perlu mengunduh */}
           <div className="section-block section-why mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Download Pinterest Videos
+              Mengapa mengunduh video Instagram
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Best Use Cases
+              Skenario penggunaan terbaik
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is a goldmine for inspiration, but its feed moves fast, and pins can disappear. Downloading lets you keep the videos that spark ideas, turning fleeting finds into a personal collection. It's about saving what fuels your creativity or plans, not just hoarding content. You control your stash, safe from deleted pins or app glitches.
+              Feed Instagram bergerak cepat dan membuat konten menarik cepat tenggelam.
+              Mengunduh membantu Anda menyimpan klip yang penting, mengubah scrolling
+              menjadi koleksi pribadi. Bukan soal menimbun semua postingan, tetapi
+              menjaga video yang memberi ide atau punya makna. Anda menentukan apa
+              yang tetap ada, meski akun menjadi privat atau postingan hilang.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -113,10 +118,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Offline Viewing
+                    Menonton offline
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save DIY tutorials or travel guides for trips with no Wi-Fi, like camping or long flights. Parents download kid-friendly craft videos for rainy days, keeping kids busy without internet.
+                    Simpan tips perjalanan atau Reel olahraga untuk penerbangan atau
+                    kemah tanpa sinyal. Orang tua mengunduh lagu anak atau Story untuk
+                    perjalanan jauh agar anak tetap terhibur tanpa Wi-Fi.
                   </p>
                 </div>
               </div>
@@ -126,10 +133,14 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Repurposing for Creators
+                    Pembuatan konten
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers save decor clips to remix into their own content, adding tips or tweaks. Small businesses grab product demos to share on other platforms, skipping watermarks for clean edits.
+                    Kreator memakai unduhan untuk remix. Seorang blogger fashion
+                    menyimpan Reel outfit untuk digabungkan ke kontennya, memberi
+                    narasi atau sudut baru. Musisi mengambil suara yang sedang tren
+                    untuk dilapis ke lagu mereka, tanpa watermark sehingga editan
+                    tetap bersih.
                   </p>
                 </div>
               </div>
@@ -139,10 +150,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Archiving Your Own Pins
+                    Mencadangkan unggahan
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If you post videos, they can vanish from board changes or platform issues. Download them to a drive to protect your work, like a recipe you shared or a portfolio piece.
+                    Instagram bisa menghapus atau error, jadi kreator mencadangkan
+                    Reel mereka ke hard drive. Pelajar menyimpan tips belajar atau
+                    potongan kuliah untuk catatan, bisa ditonton tanpa login ke aplikasi.
                   </p>
                 </div>
               </div>
@@ -152,10 +165,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Learning and Planning
+                    Menggunakan ulang di platform lain
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Students save art tutorials or study tips for offline practice. Event planners download wedding or party ideas to show clients, no need to search again.
+                    Ubah satu Reel menjadi YouTube Short atau klip TikTok dengan sedikit
+                    penyesuaian. Bisnis menyimpan testimoni pelanggan untuk ditempel di
+                    situs web demi meningkatkan kepercayaan.
                   </p>
                 </div>
               </div>
@@ -165,31 +180,37 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Personal Projects
+                    Kenangan pribadi
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save gardening tips for spring planting or workout routines for daily use. Turn a quick pin into a go-to resource for your next big idea.
+                    Unduh momen keluarga, seperti tarian pernikahan sepupu atau update
+                    bayi teman, untuk diputar ulang saat kumpul atau disimpan bertahun-tahun.
+                    Cara ini menjaga kenangan tetap dekat.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              Downloading Pinterest videos offers flexibility and convenience,
-              making it easier to enjoy content on your terms, whether for fun,
-              work, or learning.
+              Mengunduh video Instagram memberi fleksibilitas dan kemudahan sehingga
+              Anda bisa menikmati konten sesuai keinginan, baik untuk hiburan, kerja,
+              maupun belajar.
             </p>
           </div>
 
-          {/* Who Should Download */}
+          {/* Siapa yang cocok */}
           <div className="section-block section-who mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Who Should Download Pinterest Videos
+              Siapa yang sebaiknya mengunduh video Instagram
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              People Who Benefit Most from Downloading
+              Pengguna yang paling diuntungkan
             </h2>
             <p className="section-muted mb-4">
-              Pinterest is all about ideas, but downloading videos fits people who turn those ideas into action. It's for those who use the platform to create, plan, or learn, not just browse for fun. If you're saving clips to make something real, downloading is your tool.
+              Scroll tanpa akhir di Instagram membuat banyak orang terpaku, tetapi
+              mengunduh video cocok bagi mereka yang memakai platform secara sadar.
+              Untuk mereka yang melihat Reel sebagai alat, inspirasi, atau kenangan,
+              bukan sekadar hiburan instan. Jika Anda sedang membangun sesuatu,
+              belajar, atau ingin menyimpan momen, inilah solusinya.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -198,10 +219,13 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Content Creators
+                    Kreator konten
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Bloggers and influencers save DIY or style videos to remix for their audience, like a fashion vlogger tweaking a look from a pin. They download their own posts too, keeping clean copies without logos.
+                    Mengunggah setiap hari dan mencari ide dari Reel yang sedang tren.
+                    Mengunduh membantu mereka menyimpan karya sendiri atau mempelajari
+                    kreator lain, seperti vlogger kuliner yang mengumpulkan trik plating
+                    untuk menyesuaikannya dengan gaya mereka tanpa logo di tengah video.
                   </p>
                 </div>
               </div>
@@ -211,10 +235,13 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Hobbyists and DIYers
+                    Pelajar dan pengajar
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Crafters save knitting or painting tutorials to follow step-by-step at home. Gardeners download planting guides to check while digging. It's hands-on inspiration, offline.
+                    Guru menyimpan Reel demonstrasi untuk pelajaran, seperti eksperimen
+                    sains, agar bisa ditampilkan tanpa masalah internet. Siswa mengunduh
+                    panduan belajar atau latihan bahasa untuk ditinjau offline sesuai
+                    kecepatan masing-masing.
                   </p>
                 </div>
               </div>
@@ -224,10 +251,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Event Planners and Small Businesses
+                    Keluarga
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Wedding planners save decor clips to pitch clients. Shops grab product videos to feature on websites or ads, building trust without watermarks.
+                    Orang tua menyimpan langkah pertama anak atau cuplikan liburan untuk
+                    dibagikan ke kerabat atau diarsipkan. Lebih bisa diandalkan daripada
+                    berharap Instagram menyimpannya selamanya.
                   </p>
                 </div>
               </div>
@@ -237,10 +266,12 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Parents and Educators
+                    Pemilik bisnis dan marketer
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Teachers save craft demos for classroom projects. Moms download sensory play videos for toddlers, ready for screen-free days.
+                    Sebuah butik menyimpan postingan pelanggan yang memakai produk mereka
+                    untuk iklan atau testimoni sosial. Tim marketing mencoba tren Reel
+                    untuk kampanye dan menyesuaikannya di berbagai platform.
                   </p>
                 </div>
               </div>
@@ -250,31 +281,46 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-white">
-                    Homeowners and Renovators
+                    Penggemar
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Save kitchen remodel tips or furniture hacks to plan upgrades. Even casual users download motivational clips, like vision board ideas, to keep dreams in focus.
+                    Pencinta fitness menyimpan alur yoga untuk dipraktikkan di gym. Pecinta
+                    DIY mengunduh tutorial kerajinan untuk diikuti langkah demi langkah.
+                    Bahkan pengguna kasual menyimpan klip motivasi untuk ditonton ulang
+                    di hari-hari berat.
                   </p>
                 </div>
               </div>
             </div>
             <p className="section-muted">
-              No matter your role or lifestyle, downloading Pinterest videos can
-              save time, data, and effort while keeping your favorite content
-              accessible.
+              Apa pun peran atau gaya hidup Anda, mengunduh video Instagram membantu
+              menghemat waktu, kuota, dan tenaga sambil membuat konten favorit tetap mudah diakses.
             </p>
           </div>
 
           {/* Legal */}
           <div className="section-block section-legal mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Is It Legal to Download Pinterest Videos?
+              Apakah legal mengunduh video Instagram?
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              What You Need to Know About the Law
+              Hal-hal yang perlu Anda ketahui soal hukum
             </h2>
             <p className="section-muted mb-4">
-              Videos are copyrighted by their creators under laws like the DMCA in the US. Saving for private viewing, like practicing a craft offline, often counts as fair use. But sharing without credit or using for profit can lead to legal trouble. Music or voiceovers in videos may have extra copyright layers, though short personal saves rarely face issues.
+              Mengunduh video Instagram bukan perkara hitam putih. Aturan Instagram
+              mengizinkan penyimpanan postingan publik melalui aplikasinya untuk penggunaan
+              pribadi, selama kreator tidak menonaktifkannya. Menggunakan alat pihak ketiga
+              seperti milik kami secara teknis melanggar ketentuan, sehingga akun Anda bisa
+              ditandai, walaupun pemblokiran jarang terjadi kecuali Anda mengunduh massal atau
+              memposting ulang.
+            </p>
+            <p className="section-muted mb-2">
+              Secara hukum, video dimiliki kreatornya berdasarkan undang-undang hak cipta
+              seperti DMCA di AS. Menyimpan untuk ditonton pribadi sering dianggap fair use,
+              misalnya memutar Reel secara offline. Namun membagikan tanpa izin atau mengeditnya
+              untuk tujuan komersial bisa memicu klaim pelanggaran. Musik dalam Reel menambah
+              kompleksitas karena label memiliki hak, tetapi simpanan pribadi yang singkat jarang
+              bermasalah.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
@@ -283,239 +329,226 @@ export default function PinterestPage() {
                 </div>
                 <div>
                   <div className="font-semibold text-green-400">
-                    When It's Allowed
+                    Kapan diperbolehkan
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    If the creator allows downloads or the content is public domain, you're safe. Educational use, like showing a tutorial in class, often qualifies as fair use. Check pin descriptions for permissions. Keep downloads private and credit creators if you share to stay on the right side.
+                    Jika kreator mengizinkan unduhan atau videonya domain publik, Anda aman.
+                    Penggunaan edukatif, seperti guru menayangkan klip di kelas, sering masuk
+                    kategori fair use. Periksa caption untuk melihat izin. Simpan untuk pribadi dan
+                    cantumkan kredit saat membagikan, biasanya Anda tetap aman.
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Risks */}
+          {/* Risiko */}
           <div className="section-block section-risks mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              The Risks Associated with Downloading Pinterest Videos
+              Risiko saat mengunduh video Instagram
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Potential Dangers and How to Avoid Them
+              Potensi bahaya dan cara menghindarinya
             </h2>
             <p className="section-muted mb-4">
-              Third-party downloaders sound convenient, but sketchy ones bring real trouble. Not every site is safe, and clicking blindly can mess up your device or data. Know the risks before you download to avoid headaches later.
+              Mengunduh dari situs pihak ketiga terdengar mudah, tapi situs meragukan bisa
+              menghadirkan masalah nyata. Tidak semua alat bersih, dan klik sembarangan dapat
+              merusak perangkat atau data Anda. Kenali risikonya sebelum menekan tombol unduh.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6">
-              <FeatureCard
-                tone="red"
-                icon={AlertTriangle}
-                title="Malware"
-              >
-                Shady sites hide viruses in video files, sneaking in spyware or ransomware. One bad download can lock your files or steal passwords. Some tools have been caught with keyloggers, turning a craft clip into a privacy mess.
+              <FeatureCard tone="red" icon={AlertTriangle} title="Malware adalah ancaman terbesar">
+                Situs tidak tepercaya menyisipkan virus dalam file video, memasukkan spyware atau
+                ransomware. Satu unduhan buruk dapat mengunci file Anda atau mencuri kata sandi.
+                Beberapa laporan menemukan alat yang menyembunyikan keylogger, mengubah unduhan
+                Reel menjadi kebocoran data.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Shield} title="Phishing Scams">
-                Fake download pages mimic Pinterest's login, grabbing your credentials if you fall for it. Or ads push "updates" that install trackers, watching your activity beyond the platform.
+              <FeatureCard tone="red" icon={Shield} title="Penipuan phishing">
+                Halaman palsu meniru login Instagram dan akan mencuri kredensial jika Anda mengetikkan
+                data. Pop-up agresif menawarkan "pembaruan" yang sebenarnya memasang pelacak yang memantau
+                setiap klik.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={FileX}
-                title="Quality Issues"
-              >
-                Bad sites compress videos, causing choppy playback or lost audio. You wanted a clear tutorial, but get a glitchy file instead.
+              <FeatureCard tone="red" icon={FileX} title="Masalah kualitas">
+                Situs buruk mengompresi video secara agresif sehingga gambar patah-patah atau audio hilang.
+                Alih-alih Reel tajam, Anda mendapat rekaman buram yang tidak nyaman ditonton.
               </FeatureCard>
-              <FeatureCard tone="red" icon={EyeOff} title="Privacy Leaks">
-                Some sites log your downloads, selling your IP or video choices to advertisers. Hackers could snag that data, leading to spam or targeted scams.
+              <FeatureCard tone="red" icon={EyeOff} title="Kebocoran privasi">
+                Beberapa layanan mencatat apa yang Anda unduh dan menjual alamat IP atau preferensi video
+                ke pengiklan. Peretas bisa memanfaatkan data itu untuk spam atau penipuan.
               </FeatureCard>
-              <FeatureCard tone="red" icon={Ban} title="Pinterest Bans">
-                Heavy use of third-party tools can flag your account, especially for creators. You could lose your boards or followers overnight.
+              <FeatureCard tone="red" icon={Ban} title="Pemblokiran Instagram">
+                Mengunduh berlebihan lewat alat pihak ketiga bisa menandai akun Anda, terutama bagi kreator.
+                Anda bisa kehilangan profil atau pengikut dalam semalam.
               </FeatureCard>
-              <FeatureCard
-                tone="red"
-                icon={AlertCircle}
-                title="Storage Overload"
-              >
-                Saving lots of videos eats space, bogging down phones or drives. Corrupted files might crash players, wasting time to fix.
+              <FeatureCard tone="red" icon={AlertCircle} title="Masalah penyimpanan">
+                Reel menumpuk dengan cepat, memperlambat ponsel atau memenuhi disk. File korup bisa membuat
+                pemutar video macet dan menyita waktu saat memperbaiki.
               </FeatureCard>
             </div>
             <p className="section-muted">
-              Stick to trusted sites, scan downloads, and use VPNs to stay safe.
+              Gunakan situs tepercaya, pindai file yang diunduh, dan pertimbangkan VPN untuk menjaga keamanan.
             </p>
           </div>
 
-          {/* Why Use videodownload.io */}
+          {/* Mengapa memilih videodownload.io */}
           <div className="section-block section-whyuse mb-8 md:mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Why Use videodownload.io
+              Mengapa memakai videodownload.io
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Your Trusted Partner for Pinterest Downloads
+              Partner tepercaya untuk unduhan Instagram
             </h2>
             <p className="section-muted mb-4">
-              We started videodownload.io in 2022 because we were fed up with buggy apps and risky sites. As Pinterest users, we wanted a fast, clean way to save videos without drama. We're a small team, not a big company, focused on making downloads easy and secure. Millions of users trust us with no data breaches, and we keep tweaking based on their feedback.
+              Kami memulai videodownload.io pada 2022 karena bosan dengan aplikasi bermasalah dan <a href="https://blog.avast.com/malicious-browser-extensions-avast">downloader yang membawa malware</a>.
+              Sebagai pengguna Instagram, kami ingin cara yang bersih untuk menyimpan Reel tanpa ribet dan tanpa risiko.
+              Kami tim kecil yang fokus menjadikan proses unduh sesederhana dan seaman mungkin. Setelah jutaan unduhan,
+              tidak ada kebocoran data dan pengguna terus kembali karena keandalannya.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-2">
-              <FeatureCard icon={Zap} title="Under Five Seconds">
-                Downloads complete even on busy days.
+              <FeatureCard icon={Zap} title="Unduhan cepat">
+                Kurang dari lima detik bahkan saat jam sibuk.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="No Ads or Pop-ups">
-                Just a simple interface.
+              <FeatureCard icon={Monitor} title="Tanpa iklan, tanpa pop-up">
+                Hanya satu situs yang bersih.
               </FeatureCard>
-              <FeatureCard icon={VideoIcon} title="Watermarks Removed">
-                Clean, usable clips.
+              <FeatureCard icon={VideoIcon} title="Tanpa watermark">
+                Setiap video tetap murni.
               </FeatureCard>
-              <FeatureCard icon={ListChecks} title="Unlimited Saves">
-                No daily caps.
+              <FeatureCard icon={ListChecks} title="Simpan tanpa batas">
+                Tanpa limit harian.
               </FeatureCard>
-              <FeatureCard icon={Monitor} title="Works on Any Device">
-                From old tablets to new laptops.
+              <FeatureCard icon={Monitor} title="Berfungsi di perangkat apa pun">
+                Dari ponsel hingga PC.
               </FeatureCard>
-              <FeatureCard icon={Shield} title="Secure Setup">
-                No data stored after you're done.
+              <FeatureCard icon={Shield} title="Sistem aman">
+                Tidak ada data yang disimpan setelah proses selesai.
               </FeatureCard>
             </div>
           </div>
 
-          {/* FAQs */}
+          {/* FAQ */}
           <div className="section-block section-faqs mb-8 md:mb-10">
-            <h1 className="section-title text-3xl md:text-4xl">FAQs</h1>
+            <h1 className="section-title text-3xl md:text-4xl">Pertanyaan umum</h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Common Questions About Pinterest Downloads
+              Tanya jawab seputar unduhan Instagram
             </h2>
             <p className="section-muted mb-4">
-              We've compiled answers to the most frequent questions about using
-              videodownload.io and downloading Pinterest videos to help you get
-              started with confidence.
+              Kami mengumpulkan jawaban dari pertanyaan paling sering tentang penggunaan
+              videodownload.io dan cara mengunduh video Instagram agar Anda bisa mulai dengan yakin.
             </p>
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem
-                value="item-1"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-1" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I download videos from private Pinterest boards?
+                  Bisakah saya mengunduh video Instagram privat?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No, we only support public pins. Private or secret board videos need creator permission, and we respect those boundaries to stay legit.
+                  Tidak. Kami hanya menangani Reel dan postingan publik. Konten privat membutuhkan
+                  izin kreator, dan kami menghormatinya agar tetap aman.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-2"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-2" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Will downloading slow my phone or computer?
+                  Apakah unduhan merusak kinerja ponsel saya?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Our files are clean and light, so no lag. But saving lots of videos can fill storage, so manage your space carefully.
+                  Tidak, file yang Anda dapat bersih dan siap pakai. Pastikan saja ruang penyimpanan
+                  cukup. Proses unduh seenteng menonton Reel secara langsung.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-3"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-3" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Why is my downloaded video watermark-free?
+                  Bisakah saya mengunduh hanya audio dari sebuah Reel?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest adds logos to track shares, but we pull the raw file and clean it up, giving you a clear video for personal use.
+                  Ya! Kami menyediakan opsi MP3 agar Anda bisa mengambil audionya saja. Cocok untuk remix,
+                  dubbing, atau playlist offline.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-4"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-4" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can I save just the audio from a Pinterest video?
+                  Apakah saya perlu menginstal aplikasi?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Yes, choose MP3 after pasting the link. Great for grabbing music or voiceovers from tutorials without the visuals.
+                  Tidak perlu. Semuanya berjalan di browser. Tempel tautan, klik unduh, selesai.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-5"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-5" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  What if my download doesn't start?
+                  Apakah watermark dihapus otomatis?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Ensure the link is public and starts with pinterest.com. Try another browser or clear cache. Our support chat fixes issues fast.
+                  Ya, kami menghapus watermark Instagram sehingga videonya siap digunakan tanpa tulisan
+                  yang mengganggu.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-6"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-6" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Is there a limit on video length?
+                  Apakah ada batas ukuran video?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  We handle videos up to 60 minutes, though most Pinterest clips are short. Longer ones take a bit but download fully.
+                  Kami mendukung Reel hingga 60 menit walaupun kebanyakan berdurasi pendek. Video lebih
+                  panjang butuh sedikit waktu ekstra, tetapi tetap kami berikan secara utuh.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-7"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-7" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Do you keep my downloaded videos?
+                  Apakah kalian menyimpan video yang saya unduh?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  No way. We process instantly and delete everything after. Your files stay on your device, not our servers.
+                  Sama sekali tidak. Kami memproses secara instan lalu menghapus semuanya. File hanya
+                  tersimpan di perangkat Anda.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem
-                value="item-8"
-                className="border-b border-primary/10"
-              >
+              <AccordionItem value="item-8" className="border-b border-primary/10">
                 <AccordionTrigger className="text-left font-medium hover:text-primary transition-colors">
-                  Can creators see if I downloaded their video?
+                  Apakah kreator bisa tahu ketika saya mengunduh Reel mereka?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Pinterest doesn't notify them. Your download stays private, with no alerts to the poster.
+                  Instagram tidak memberi notifikasi pada kreator. Unduhan Anda tetap privat tanpa memberi
+                  tahu pemiliknya.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
 
-          {/* Start Downloading Now */}
+          {/* CTA */}
           <div className="section-block section-cta mb-2 text-center">
             <h1 className="section-title text-3xl md:text-4xl">
-              Start Saving Pinterest Videos Now
+              Mulai unduh video Instagram sekarang
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Grab Your Inspiration Clips in Seconds
+              Dapatkan Reel Anda secara offline dalam hitungan detik
             </h2>
             <div className="grid sm:grid-cols-3 gap-3 max-w-3xl mx-auto mb-4">
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Copy Pinterest Pin Link
+                Salin tautan Instagram
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Paste on Our Site
+                Tempel di situs kami
               </div>
               <div className="flex items-center justify-center gap-2 section-muted">
                 <CheckCircle className="w-5 h-5 text-accent" />
-                Download Clean Video
+                Unduh video bersih
               </div>
             </div>
             <div className="mt-2">
-              <a href="#pinterest-downloader">
+              <a href="#instagram-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Download Pinterest Video
+                  Unduh video Instagram
                 </Button>
               </a>
             </div>
           </div>
 
-          {/* Explore More Downloaders */}
+          {/* Downloader lain */}
           <div className="section-block section-downloaders mb-10">
             <h1 className="section-title text-3xl md:text-4xl">
-              Explore More Downloaders
+              Jelajahi downloader lainnya
             </h1>
             <h2 className="section-subtitle text-xl md:text-2xl">
-              Download from your favorite platforms
+              Unduh dari platform favorit Anda
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-4">
               {[
@@ -593,7 +626,7 @@ export default function PinterestPage() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Download {p.name} Video
+                        Unduh video {p.name}
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}
@@ -653,29 +686,38 @@ function FeatureCard({
 function EnhancedFeatures() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-10">
-      <FeatureCard icon={VideoIcon} title="Top-Notch Video Quality">
-        Save Pinterest videos in their best resolution, up to 1080p if the original pin supports it. No blurry visuals or faded colors when you watch later. We pull the file straight from Pinterest's servers, keeping every detail sharp for that DIY tutorial or recipe clip.
+      <FeatureCard icon={VideoIcon} title="Kualitas video jernih">
+        Ambil video Instagram dalam kualitas penuh hingga 1080p jika postingan asalnya mendukung.
+        Tidak ada tayangan berpasir atau warna pudar saat ditonton ulang. Kami menarik file langsung
+        dari server Instagram sehingga setiap frame tetap tajam, sempurna untuk klip perjalanan atau demo memasak.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="No Watermarks or Overlays">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest displays the creator's username on videos downloaded through their app</a>, cluttering the view. We strip all that away, delivering a clean clip ready for your projects or personal use. Watch that home decor idea without text blocking the details.
+      <FeatureCard icon={Zap} title="Unduhan tanpa watermark">
+        Instagram menempelkan logo dan nama pengguna pada video yang disimpan, mengganggu tampilan.
+        Kami menghapusnya sepenuhnya sehingga klip bersih dan siap diedit atau dibagikan. Nikmati Reel tari
+        atau momen hewan peliharaan tanpa teks menutupi aksi.
       </FeatureCard>
-      <FeatureCard icon={Monitor} title="Works on Any Device">
-        Use your phone, tablet, laptop, or desktop, and it runs smoothly. No apps or extra software needed. Just open our site in your browser, paste the link, and download. Tested on everything from old iPhones to new PCs, it's always hassle-free.
+      <FeatureCard icon={Monitor} title="Berjalan di semua perangkat">
+        Pakai iPhone, Android, PC, atau tablet dan semuanya tetap berjalan. Tidak ada aplikasi atau software
+        yang perlu diinstal. Buka situs kami di browser mana pun, tempel link, dan ambil videonya. Sudah diuji
+        di laptop lama hingga ponsel baru, selalu mulus.
       </FeatureCard>
-      <FeatureCard icon={Zap} title="Fast Download Speeds">
-        Waiting stinks. Our tool grabs Pinterest videos in seconds, usually under 10 for most clips. We use servers close to Pinterest's for quick pulls, so you can save a craft video or workout routine during a coffee break.
+      <FeatureCard icon={Zap} title="Unduhan super cepat">
+        Tidak ada yang suka menunggu. Alat kami mengambil video Instagram dalam hitungan detik, sering kurang
+        dari 10 detik untuk kebanyakan klip. Kami memanfaatkan server yang dekat dengan Instagram untuk kecepatan,
+        jadi Anda bisa menyimpan Reel saat rehat singkat tanpa buffering atau error.
       </FeatureCard>
-      <FeatureCard icon={ListChecks} title="Completely Free to Use">
-        No costs, no sign-ups, no hidden fees. Download as many videos as you want, every day, without limits. We keep it free so you can save that wedding inspo or art project clip without hitting a paywall.
+      <FeatureCard icon={ListChecks} title="Akses sepenuhnya gratis">
+        Tanpa biaya, tanpa registrasi, tanpa tagihan tersembunyi. Unduh sebanyak yang Anda mau setiap hari tanpa batas.
+        Kami menjaga layanan tetap gratis agar Anda bisa menyimpan rutinitas olahraga atau sketsa lucu tanpa memikirkan paywall.
       </FeatureCard>
-      <FeatureCard icon={Shield} title="Safe and Private Process">
-        Your info stays secure. We don't store your links or videos after you download. No tracking, no logs, and no spammy ads. The process is clean, keeping your device free from junk or risks.
+      <FeatureCard icon={Shield} title="Proses aman dan terlindungi">
+        Privasi Anda tetap aman. Kami tidak menyimpan tautan atau video setelah proses selesai. Tidak ada pelacakan,
+        tidak ada data yang disimpan, dan tidak ada iklan meragukan. Prosesnya bersih dan perangkat Anda tetap terlindungi.
       </FeatureCard>
     </div>
   );
 }
 
-// --- Enhanced Steps ---
 function StepCard({
   step,
   title,
@@ -708,17 +750,24 @@ function StepCard({
 function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-      <StepCard step={1} title="Copy the Video Link from Pinterest">
-        <a href="http://www.pinterest.com">Open Pinterest</a> on your phone or browser. Find the video you love, like a knitting tutorial or a home makeover clip. Click the three dots at the top right of the pin. From the menu, select "Copy link." This grabs the full URL, something like pinterest.com/pin/123456789. Make sure it's exact.
+      <StepCard step={1} title="Salin tautan video dari Instagram">
+        <a href="http://www.instagram.com">Buka Instagram</a> di ponsel atau browser Anda. Temukan Reel atau video
+        yang ingin disimpan, misalnya resep cepat atau vlog perjalanan. Ketuk tiga titik di kanan atas postingan.
+        Dari menu, pilih "Copy Link". Ini akan mengambil URL lengkap, contohnya instagram.com/reel/ABC123. Pastikan sudah benar.
       </StepCard>
-      <StepCard step={2} title="Paste the Link into Our Site">
-        Go to videodownload.io in your browser. You'll see a box labeled "Paste Pinterest link here." Click inside and paste the copied link. Check that it starts with pinterest.com to avoid mistakes. Only public pins work; private or secret board videos won't download.
+      <StepCard step={2} title="Tempel tautan di situs kami">
+        Buka videodownload.io di browser. Anda akan melihat kotak dengan teks "Tempel link Instagram Anda di sini".
+        Klik di dalamnya dan tempel tautan yang disalin. Pastikan link diawali instagram.com untuk menghindari error.
+        Postingan privat tidak akan berfungsi, tetapi Reel dan video publik aman digunakan.
       </StepCard>
-      <StepCard step={3} title="We Fetch and Clean the Video">
-        Click the green "Download" button next to the box. Our system pulls the video from Pinterest's servers in seconds. We remove any watermarks and ensure the quality is solid. Audio stays clear, so you don't miss steps in that recipe or craft guide.
+      <StepCard step={3} title="Kami mengambil dan membersihkan video">
+        Klik tombol hijau "Download" di sebelah kolom. Sistem kami mengambil video dari server Instagram dalam beberapa detik.
+        Kami menghapus watermark dan memeriksa kualitas, sehingga Anda tidak mendapat file bermasalah. Audio tetap sinkron dan siap diputar.
       </StepCard>
-      <StepCard step={4} title="Save the Clip to Your Device">
-        You'll get options: MP4 for the full video with sound or MP3 for just the audio. Choose MP4 for most clips. Tap to download, and it saves to your Downloads folder or phone's gallery. Name it something clear, like "diy_paint.mp4," before saving. Play it to confirm it's perfect.
+      <StepCard step={4} title="Simpan file ke perangkat Anda">
+        Anda akan melihat opsi: MP4 untuk video lengkap dengan suara atau MP3 bila hanya ingin audio. Pilih MP4 untuk sebagian besar klip.
+        Tekan unduh dan file masuk ke folder Downloads atau galeri ponsel. Beri nama sederhana, seperti "reel_workout.mp4" sebelum menyimpan.
+        Putar ulang untuk memastikan semuanya sempurna.
       </StepCard>
     </div>
   );

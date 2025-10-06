@@ -24,6 +24,14 @@ import TikTokPageDe from "./pages/platforms/tiktok-de";
 import TikTokPageVi from "./pages/platforms/tiktok-vi";
 import TikTokPageId from "./pages/platforms/tiktok-id";
 import InstagramPage from "./pages/platforms/instagram";
+import InstagramPageFr from "./pages/platforms/instagram-fr";
+import InstagramPageIt from "./pages/platforms/instagram-it";
+import InstagramPagePt from "./pages/platforms/instagram-pt";
+import InstagramPageEs from "./pages/platforms/instagram-es";
+import InstagramPageDe from "./pages/platforms/instagram-de";
+import InstagramPageId from "./pages/platforms/instagram-id";
+import InstagramPageVi from "./pages/platforms/instagram-vi";
+import InstagramPageNl from "./pages/platforms/instagram-nl";
 import FacebookPage from "./pages/platforms/facebook";
 import FacebookPageFr from "./pages/platforms/facebook-fr";
 import FacebookPageIt from "./pages/platforms/facebook-it";
@@ -35,7 +43,23 @@ import FacebookPageId from "./pages/platforms/facebook-id";
 import FacebookPageVi from "./pages/platforms/facebook-vi";
 import TwitterPage from "./pages/platforms/twitter";
 import PinterestPage from "./pages/platforms/pinterest";
+import PinterestPageFr from "./pages/platforms/pinterest-fr";
+import PinterestPageIt from "./pages/platforms/pinterest-it";
+import PinterestPageEs from "./pages/platforms/pinterest-es";
+import PinterestPagePt from "./pages/platforms/pinterest-pt";
+import PinterestPageDe from "./pages/platforms/pinterest-de";
+import PinterestPageNl from "./pages/platforms/pinterest-nl";
+import PinterestPageVi from "./pages/platforms/pinterest-vi";
+import PinterestPageId from "./pages/platforms/pinterest-id";
 import LinkedInPage from "./pages/platforms/linkedin";
+import LinkedInPageFr from "./pages/platforms/linkedin-fr";
+import LinkedInPageIt from "./pages/platforms/linkedin-it";
+import LinkedInPageEs from "./pages/platforms/linkedin-es";
+import LinkedInPagePt from "./pages/platforms/linkedin-pt";
+import LinkedInPageDe from "./pages/platforms/linkedin-de";
+import LinkedInPageNl from "./pages/platforms/linkedin-nl";
+import LinkedInPageVi from "./pages/platforms/linkedin-vi";
+import LinkedInPageId from "./pages/platforms/linkedin-id";
 import RedditPage from "./pages/platforms/reddit";
 import VimeoPage from "./pages/platforms/vimeo";
 import ThreadsPage from "./pages/platforms/threads";
@@ -75,11 +99,11 @@ const App = () => (
             <Route path="/fr" element={<Index />} />
             <Route path="/fr/youtube" element={<YouTubePageFr />} />
             <Route path="/fr/tiktok" element={<TikTokPageFr />} />
-            <Route path="/fr/instagram" element={<InstagramPage />} />
+            <Route path="/fr/instagram" element={<InstagramPageFr />} />
             <Route path="/fr/facebook" element={<FacebookPageFr />} />
             <Route path="/fr/twitter" element={<TwitterPage />} />
-            <Route path="/fr/pinterest" element={<PinterestPage />} />
-            <Route path="/fr/linkedin" element={<LinkedInPage />} />
+            <Route path="/fr/pinterest" element={<PinterestPageFr />} />
+            <Route path="/fr/linkedin" element={<LinkedInPageFr />} />
             <Route path="/fr/reddit" element={<RedditPage />} />
             <Route path="/fr/vimeo" element={<VimeoPage />} />
             <Route path="/fr/threads" element={<ThreadsPage />} />
@@ -88,11 +112,11 @@ const App = () => (
             <Route path="/it" element={<Index />} />
             <Route path="/it/youtube" element={<YouTubePageIt />} />
             <Route path="/it/tiktok" element={<TikTokPageIt />} />
-            <Route path="/it/instagram" element={<InstagramPage />} />
+            <Route path="/it/instagram" element={<InstagramPageIt />} />
             <Route path="/it/facebook" element={<FacebookPageIt />} />
             <Route path="/it/twitter" element={<TwitterPage />} />
-            <Route path="/it/pinterest" element={<PinterestPage />} />
-            <Route path="/it/linkedin" element={<LinkedInPage />} />
+            <Route path="/it/pinterest" element={<PinterestPageIt />} />
+            <Route path="/it/linkedin" element={<LinkedInPageIt />} />
             <Route path="/it/reddit" element={<RedditPage />} />
             <Route path="/it/vimeo" element={<VimeoPage />} />
             <Route path="/it/threads" element={<ThreadsPage />} />
@@ -101,11 +125,11 @@ const App = () => (
             <Route path="/pt" element={<Index />} />
             <Route path="/pt/youtube" element={<YouTubePagePt />} />
             <Route path="/pt/tiktok" element={<TikTokPagePt />} />
-            <Route path="/pt/instagram" element={<InstagramPage />} />
+            <Route path="/pt/instagram" element={<InstagramPagePt />} />
             <Route path="/pt/facebook" element={<FacebookPagePt />} />
             <Route path="/pt/twitter" element={<TwitterPage />} />
-            <Route path="/pt/pinterest" element={<PinterestPage />} />
-            <Route path="/pt/linkedin" element={<LinkedInPage />} />
+            <Route path="/pt/pinterest" element={<PinterestPagePt />} />
+            <Route path="/pt/linkedin" element={<LinkedInPagePt />} />
             <Route path="/pt/reddit" element={<RedditPage />} />
             <Route path="/pt/vimeo" element={<VimeoPage />} />
             <Route path="/pt/threads" element={<ThreadsPage />} />
@@ -114,11 +138,11 @@ const App = () => (
             <Route path="/es" element={<Index />} />
             <Route path="/es/youtube" element={<YouTubePageEs />} />
             <Route path="/es/tiktok" element={<TikTokPageEs />} />
-            <Route path="/es/instagram" element={<InstagramPage />} />
+            <Route path="/es/instagram" element={<InstagramPageEs />} />
             <Route path="/es/facebook" element={<FacebookPageEs />} />
             <Route path="/es/twitter" element={<TwitterPage />} />
-            <Route path="/es/pinterest" element={<PinterestPage />} />
-            <Route path="/es/linkedin" element={<LinkedInPage />} />
+            <Route path="/es/pinterest" element={<PinterestPageEs />} />
+            <Route path="/es/linkedin" element={<LinkedInPageEs />} />
             <Route path="/es/reddit" element={<RedditPage />} />
             <Route path="/es/vimeo" element={<VimeoPage />} />
             <Route path="/es/threads" element={<ThreadsPage />} />
@@ -127,11 +151,11 @@ const App = () => (
             <Route path="/nl" element={<Index />} />
             <Route path="/nl/youtube" element={<YouTubePageNl />} />
             <Route path="/nl/tiktok" element={<TikTokPageNl />} />
-            <Route path="/nl/instagram" element={<InstagramPage />} />
+            <Route path="/nl/instagram" element={<InstagramPageNl />} />
             <Route path="/nl/facebook" element={<FacebookPageNl />} />
             <Route path="/nl/twitter" element={<TwitterPage />} />
-            <Route path="/nl/pinterest" element={<PinterestPage />} />
-            <Route path="/nl/linkedin" element={<LinkedInPage />} />
+            <Route path="/nl/pinterest" element={<PinterestPageNl />} />
+            <Route path="/nl/linkedin" element={<LinkedInPageNl />} />
             <Route path="/nl/reddit" element={<RedditPage />} />
             <Route path="/nl/vimeo" element={<VimeoPage />} />
             <Route path="/nl/threads" element={<ThreadsPage />} />
@@ -140,11 +164,11 @@ const App = () => (
             <Route path="/de" element={<Index />} />
             <Route path="/de/youtube" element={<YouTubePageDe />} />
             <Route path="/de/tiktok" element={<TikTokPageDe />} />
-            <Route path="/de/instagram" element={<InstagramPage />} />
+            <Route path="/de/instagram" element={<InstagramPageDe />} />
             <Route path="/de/facebook" element={<FacebookPageDe />} />
             <Route path="/de/twitter" element={<TwitterPage />} />
-            <Route path="/de/pinterest" element={<PinterestPage />} />
-            <Route path="/de/linkedin" element={<LinkedInPage />} />
+            <Route path="/de/pinterest" element={<PinterestPageDe />} />
+            <Route path="/de/linkedin" element={<LinkedInPageDe />} />
             <Route path="/de/reddit" element={<RedditPage />} />
             <Route path="/de/vimeo" element={<VimeoPage />} />
             <Route path="/de/threads" element={<ThreadsPage />} />
@@ -153,11 +177,11 @@ const App = () => (
             <Route path="/vi" element={<Index />} />
             <Route path="/vi/youtube" element={<YouTubePageVi />} />
             <Route path="/vi/tiktok" element={<TikTokPageVi />} />
-            <Route path="/vi/instagram" element={<InstagramPage />} />
+            <Route path="/vi/instagram" element={<InstagramPageVi />} />
             <Route path="/vi/facebook" element={<FacebookPageVi />} />
             <Route path="/vi/twitter" element={<TwitterPage />} />
-            <Route path="/vi/pinterest" element={<PinterestPage />} />
-            <Route path="/vi/linkedin" element={<LinkedInPage />} />
+            <Route path="/vi/pinterest" element={<PinterestPageVi />} />
+            <Route path="/vi/linkedin" element={<LinkedInPageVi />} />
             <Route path="/vi/reddit" element={<RedditPage />} />
             <Route path="/vi/vimeo" element={<VimeoPage />} />
             <Route path="/vi/threads" element={<ThreadsPage />} />
@@ -166,11 +190,11 @@ const App = () => (
             <Route path="/id" element={<Index />} />
             <Route path="/id/youtube" element={<YouTubePageId />} />
             <Route path="/id/tiktok" element={<TikTokPageId />} />
-            <Route path="/id/instagram" element={<InstagramPage />} />
+            <Route path="/id/instagram" element={<InstagramPageId />} />
             <Route path="/id/facebook" element={<FacebookPageId />} />
             <Route path="/id/twitter" element={<TwitterPage />} />
-            <Route path="/id/pinterest" element={<PinterestPage />} />
-            <Route path="/id/linkedin" element={<LinkedInPage />} />
+            <Route path="/id/pinterest" element={<PinterestPageId />} />
+            <Route path="/id/linkedin" element={<LinkedInPageId />} />
             <Route path="/id/reddit" element={<RedditPage />} />
             <Route path="/id/vimeo" element={<VimeoPage />} />
             <Route path="/id/threads" element={<ThreadsPage />} />
