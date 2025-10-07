@@ -291,7 +291,7 @@ export default function LinkedInPageDe() {
             </h2>
             <p className="section-muted mb-4">
               LinkedIn-Videos herunterzuladen bewegt sich im rechtlichen Graubereich. Die Rechte liegen bei den
-              Creator:innen, beispielsweise nach der <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a>. Für den
+              Creator:innen, beispielsweise nach der <a href="https://de.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a>. Für den
               privaten Gebrauch – etwa ein Webinar offline zu sehen – gilt oft Fair Use. Wer Inhalte jedoch teilt
               oder kommerziell nutzt, kann Abmahnungen riskieren. Auch Audiospuren wie Musik unterliegen zusätzlichen
               Rechten.

@@ -299,7 +299,7 @@ export default function LinkedInPageVi() {
             </h2>
             <p className="section-muted mb-4">
               Việc tải video LinkedIn nằm trong vùng xám. Nội dung thuộc bản quyền của
-              tác giả theo luật như <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> tại Mỹ. Lưu để xem cá nhân –
+              tác giả theo luật như <a href="https://vi.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> tại Mỹ. Lưu để xem cá nhân –
               ví dụ xem lại webinar offline – thường được xem là fair use. Tuy nhiên,
               chia sẻ lại mà không xin phép hoặc dùng để kiếm lời có thể gây rắc rối pháp
               lý. Âm thanh như nhạc nền hay lời thoại cũng có lớp bản quyền riêng, dù việc

@@ -861,8 +861,8 @@ function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
       <StepCard step={1} title="Sao chép URL video YouTube">
-        Mở YouTube trên trình duyệt hoặc ứng dụng, tìm video bạn muốn tải và sao chép URL. Bạn có thể lấy link từ thanh địa chỉ hoặc nhấn nút “Chia sẻ” dưới video
-        rồi chọn “Sao chép liên kết”.
+        <a href="http://www.youtube.com">Mở YouTube</a> trên trình duyệt hoặc ứng dụng, tìm video bạn muốn tải và sao chép URL. Bạn có thể lấy link từ thanh địa chỉ hoặc nhấn nút "Chia sẻ" dưới video
+        rồi chọn "Sao chép liên kết".
       </StepCard>
       <StepCard step={2} title="Dán URL vào website của chúng tôi">
         Truy cập videodownload.io bằng bất kỳ trình duyệt nào. Ở trang chủ, bạn sẽ thấy ô nhập để dán URL YouTube. Nhấn giữ hoặc click chuột phải để dán link vào đúng ô.

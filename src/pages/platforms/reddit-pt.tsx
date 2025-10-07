@@ -274,7 +274,7 @@ export default function RedditPage() {
               O Que Você Precisa Saber Sobre a Lei
             </h2>
             <p className="section-muted mb-4">
-              Os vídeos são protegidos por direitos autorais por seus criadores sob leis como a <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> nos EUA. Salvar para visualização privada, como assistir a um tutorial offline, geralmente conta como uso justo. Mas compartilhar sem permissão ou usar para lucro pode levar a problemas legais. Música ou narrações em vídeos podem ter camadas extras de direitos autorais, embora salvamentos pessoais curtos raramente enfrentem problemas.
+              Os vídeos são protegidos por direitos autorais por seus criadores sob leis como a <a href="https://pt.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> nos EUA. Salvar para visualização privada, como assistir a um tutorial offline, geralmente conta como uso justo. Mas compartilhar sem permissão ou usar para lucro pode levar a problemas legais. Música ou narrações em vídeos podem ter camadas extras de direitos autorais, embora salvamentos pessoais curtos raramente enfrentem problemas.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

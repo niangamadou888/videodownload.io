@@ -274,7 +274,7 @@ export default function ThreadsPage() {
               What You Need to Know About the Law
             </h2>
             <p className="section-muted mb-4">
-              Videos are copyrighted by their creators under laws like the DMCA in the US. Saving for private viewing, like watching a clip offline, often counts as fair use. But sharing without permission or using for profit can lead to legal issues. Music or voiceovers in videos may have extra copyright layers, though short personal saves rarely face trouble.
+              Videos are copyrighted by their creators under laws like the <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> in the US. Saving for private viewing, like watching a clip offline, often counts as fair use. But sharing without permission or using for profit can lead to legal issues. Music or voiceovers in videos may have extra copyright layers, though short personal saves rarely face trouble.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

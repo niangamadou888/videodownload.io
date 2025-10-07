@@ -302,10 +302,10 @@ export default function LinkedInPageEs() {
             </h2>
             <p className="section-muted mb-4">
               Descargar videos de LinkedIn es un área gris. Los creadores conservan los
-              derechos de autor según leyes como la <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a>. Guardar
-              para uso personal —por ejemplo revisar un webinar offline— suele
+              derechos de autor según leyes como la <a href="https://es.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a>. Guardar
+              para uso personal (por ejemplo revisar un webinar offline) suele
               considerarse uso legítimo. Pero compartir sin permiso o usarlo con fines
-              comerciales puede acarrear problemas legales. El audio —música o voces—
+              comerciales puede acarrear problemas legales. El audio (música o voces)
               también puede tener derechos adicionales, aunque los guardados personales
               y cortos rara vez enfrentan conflictos.
             </p>

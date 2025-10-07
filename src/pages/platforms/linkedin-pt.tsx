@@ -296,7 +296,7 @@ export default function LinkedInPagePt() {
             </h2>
             <p className="section-muted mb-4">
               Baixar vídeos do LinkedIn está em uma área cinzenta. Os criadores detêm os direitos
-              autorais conforme leis como a <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a>. Guardar para
+              autorais conforme leis como a <a href="https://pt.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a>. Guardar para
               uso pessoal — por exemplo, rever um webinar offline — costuma se enquadrar em fair
               use. Já compartilhar sem autorização ou usar comercialmente pode gerar problemas
               legais. O áudio (músicas ou narrações) pode ter camadas extras de proteção.

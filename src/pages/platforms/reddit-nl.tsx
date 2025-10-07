@@ -274,7 +274,7 @@ export default function RedditPage() {
               Wat Je Moet Weten Over de Wet
             </h2>
             <p className="section-muted mb-4">
-              Video's zijn auteursrechtelijk beschermd door hun makers onder wetten zoals de <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> in de VS. Opslaan voor privégebruik, zoals het offline bekijken van een tutorial, telt vaak als fair use. Maar delen zonder toestemming of gebruiken voor winst kan leiden tot juridische problemen. Muziek of voice-overs in video's kunnen extra auteursrechtlagen hebben, hoewel korte persoonlijke opslagen zelden problemen ondervinden.
+              Video's zijn auteursrechtelijk beschermd door hun makers onder wetten zoals de <a href="https://nl.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> in de VS. Opslaan voor privégebruik, zoals het offline bekijken van een tutorial, telt vaak als fair use. Maar delen zonder toestemming of gebruiken voor winst kan leiden tot juridische problemen. Muziek of voice-overs in video's kunnen extra auteursrechtlagen hebben, hoewel korte persoonlijke opslagen zelden problemen ondervinden.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

@@ -657,7 +657,7 @@ function EnhancedFeatures() {
         Lưu video Pinterest ở độ phân giải tốt nhất của chúng, lên đến 1080p nếu ghim gốc hỗ trợ. Không có hình ảnh mờ hoặc màu phai khi bạn xem sau. Chúng tôi kéo tệp thẳng từ máy chủ Pinterest, giữ mọi chi tiết sắc nét cho hướng dẫn DIY hoặc clip công thức đó.
       </FeatureCard>
       <FeatureCard icon={Zap} title="Không có hình mờ hoặc lớp phủ">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest hiển thị tên người dùng của người tạo trên video được tải xuống qua ứng dụng của họ</a>, làm lộn xộn chế độ xem. Chúng tôi loại bỏ tất cả điều đó, cung cấp clip sạch sẵn sàng cho các dự án hoặc sử dụng cá nhân của bạn. Xem ý tưởng trang trí nhà đó mà không có văn bản chặn các chi tiết.
+        <a href="https://help.pinterest.com/vi/article/download-an-image">Pinterest hiển thị tên người dùng của người tạo trên video được tải xuống qua ứng dụng của họ</a>, làm lộn xộn chế độ xem. Chúng tôi loại bỏ tất cả điều đó, cung cấp clip sạch sẵn sàng cho các dự án hoặc sử dụng cá nhân của bạn. Xem ý tưởng trang trí nhà đó mà không có văn bản chặn các chi tiết.
       </FeatureCard>
       <FeatureCard icon={Monitor} title="Hoạt động trên mọi thiết bị">
         Sử dụng điện thoại, máy tính bảng, máy tính xách tay hoặc máy tính để bàn của bạn và nó chạy mượt mà. Không cần ứng dụng hoặc phần mềm bổ sung. Chỉ cần mở trang web của chúng tôi trong trình duyệt của bạn, dán liên kết và tải xuống. Được thử nghiệm trên mọi thứ từ iPhone cũ đến PC mới, nó luôn không rắc rối.

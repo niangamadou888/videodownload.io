@@ -289,7 +289,7 @@ export default function LinkedInPageNl() {
             </h2>
             <p className="section-muted mb-4">
               Het downloaden van LinkedIn-video's valt in een grijs gebied. Makers behouden hun rechten onder wetten zoals de
-              <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act"> DMCA</a>. Voor privégebruik – bijvoorbeeld een webinar offline terugkijken – valt dat vaak onder fair use. Delen zonder toestemming of commerciële inzet kan echter problemen opleveren. Geluidssporen, zoals muziek of voice-overs, kunnen extra rechten hebben.
+              <a href="https://nl.wikipedia.org/wiki/Digital_Millennium_Copyright_Act"> DMCA</a>. Voor privégebruik – bijvoorbeeld een webinar offline terugkijken – valt dat vaak onder fair use. Delen zonder toestemming of commerciële inzet kan echter problemen opleveren. Geluidssporen, zoals muziek of voice-overs, kunnen extra rechten hebben.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

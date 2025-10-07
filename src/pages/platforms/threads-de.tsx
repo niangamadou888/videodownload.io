@@ -271,7 +271,7 @@ export default function ThreadsPageDE() {
               Das musst du über die Rechtslage wissen
             </h2>
             <p className="section-muted mb-4">
-              Videos sind durch ihre Creator urheberrechtlich geschützt, etwa nach dem DMCA in den USA. Das Speichern für private Nutzung, zum Beispiel um einen Clip offline zu schauen, gilt oft als Fair Use. Doch Teilen ohne Erlaubnis oder kommerzielle Nutzung kann rechtliche Folgen haben. Musik oder Voice-over in Videos können zusätzliche Rechte besitzen, auch wenn kurze private Sicherungen selten Probleme machen.
+              Videos sind durch ihre Creator urheberrechtlich geschützt, etwa nach dem <a href="https://de.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> in den USA. Das Speichern für private Nutzung, zum Beispiel um einen Clip offline zu schauen, gilt oft als Fair Use. Doch Teilen ohne Erlaubnis oder kommerzielle Nutzung kann rechtliche Folgen haben. Musik oder Voice-over in Videos können zusätzliche Rechte besitzen, auch wenn kurze private Sicherungen selten Probleme machen.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

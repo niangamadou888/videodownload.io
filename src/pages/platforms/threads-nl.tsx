@@ -271,7 +271,7 @@ export default function ThreadsPageNL() {
               Wat je moet weten over de wetgeving
             </h2>
             <p className="section-muted mb-4">
-              Video's zijn auteursrechtelijk beschermd door de makers, onder wetten zoals de DMCA in de VS. Opslaan voor privégebruik, zoals offline terugkijken, valt vaak onder fair use. Maar delen zonder toestemming of commercieel gebruik kan juridische problemen geven. Muziek of voice-overs in video's kunnen extra rechten hebben, al leidt een korte persoonlijke download zelden tot gedoe.
+              Video's zijn auteursrechtelijk beschermd door de makers, onder wetten zoals de <a href="https://nl.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> in de VS. Opslaan voor privégebruik, zoals offline terugkijken, valt vaak onder fair use. Maar delen zonder toestemming of commercieel gebruik kan juridische problemen geven. Muziek of voice-overs in video's kunnen extra rechten hebben, al leidt een korte persoonlijke download zelden tot gedoe.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

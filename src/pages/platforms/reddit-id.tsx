@@ -274,7 +274,7 @@ export default function RedditPage() {
               Apa yang Perlu Anda Ketahui Tentang Hukum
             </h2>
             <p className="section-muted mb-4">
-              Video dilindungi hak cipta oleh pembuatnya di bawah hukum seperti <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> di AS. Menyimpan untuk menonton pribadi, seperti menonton tutorial offline, sering dihitung sebagai penggunaan wajar. Tapi berbagi tanpa izin atau menggunakan untuk keuntungan dapat menyebabkan masalah hukum. Musik atau voice-over dalam video mungkin memiliki lapisan hak cipta tambahan, meskipun penyimpanan pribadi pendek jarang menghadapi masalah.
+              Video dilindungi hak cipta oleh pembuatnya di bawah hukum seperti <a href="https://id.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> di AS. Menyimpan untuk menonton pribadi, seperti menonton tutorial offline, sering dihitung sebagai penggunaan wajar. Tapi berbagi tanpa izin atau menggunakan untuk keuntungan dapat menyebabkan masalah hukum. Musik atau voice-over dalam video mungkin memiliki lapisan hak cipta tambahan, meskipun penyimpanan pribadi pendek jarang menghadapi masalah.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

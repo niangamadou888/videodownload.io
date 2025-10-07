@@ -637,7 +637,7 @@ function EnhancedFeatures() {
         Speichern Sie Pinterest-Videos in bester Auflösung, bis zu 1080p, wenn der ursprüngliche Pin dies unterstützt. Keine verschwommenen Bilder oder verblassten Farben beim späteren Ansehen. Wir ziehen die Datei direkt von Pinterests Servern und halten jedes Detail scharf für dieses DIY-Tutorial oder Rezept-Clip.
       </FeatureCard>
       <FeatureCard icon={Zap} title="Keine Wasserzeichen oder Overlays">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest zeigt den Benutzernamen des Erstellers auf über die App heruntergeladenen Videos an</a>, was die Ansicht überladen macht. Wir entfernen all das und liefern einen sauberen Clip, der für Ihre Projekte oder den persönlichen Gebrauch bereit ist. Sehen Sie sich diese Wohndekor-Idee an, ohne dass Text die Details blockiert.
+        <a href="https://help.pinterest.com/de/article/download-an-image">Pinterest zeigt den Benutzernamen des Erstellers auf über die App heruntergeladenen Videos an</a>, was die Ansicht überladen macht. Wir entfernen all das und liefern einen sauberen Clip, der für Ihre Projekte oder den persönlichen Gebrauch bereit ist. Sehen Sie sich diese Wohndekor-Idee an, ohne dass Text die Details blockiert.
       </FeatureCard>
       <FeatureCard icon={Monitor} title="Funktioniert auf jedem Gerät">
         Verwenden Sie Ihr Telefon, Tablet, Laptop oder Desktop, und es läuft reibungslos. Keine Apps oder zusätzliche Software erforderlich. Öffnen Sie einfach unsere Website in Ihrem Browser, fügen Sie den Link ein und laden Sie herunter. Getestet auf allem von alten iPhones bis zu neuen PCs, es ist immer problemlos.

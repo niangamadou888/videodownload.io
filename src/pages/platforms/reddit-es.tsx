@@ -274,7 +274,7 @@ export default function RedditPage() {
               Lo Que Necesitas Saber Sobre la Ley
             </h2>
             <p className="section-muted mb-4">
-              Los vídeos están protegidos por derechos de autor por sus creadores bajo leyes como la <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> en EE.UU. Guardar para visualización privada, como ver un tutorial sin conexión, a menudo cuenta como uso justo. Pero compartir sin permiso o usar con fines lucrativos puede llevar a problemas legales. La música o voces en off en vídeos pueden tener capas adicionales de derechos de autor, aunque las guardadas personales cortas rara vez enfrentan problemas.
+              Los vídeos están protegidos por derechos de autor por sus creadores bajo leyes como la <a href="https://es.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> en EE.UU. Guardar para visualización privada, como ver un tutorial sin conexión, a menudo cuenta como uso justo. Pero compartir sin permiso o usar con fines lucrativos puede llevar a problemas legales. La música o voces en off en vídeos pueden tener capas adicionales de derechos de autor, aunque las guardadas personales cortas rara vez enfrentan problemas.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

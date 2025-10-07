@@ -274,7 +274,7 @@ export default function ThreadsPageVI() {
               Điều Bạn Cần Biết Về Pháp Luật
             </h2>
             <p className="section-muted mb-4">
-              Video được bảo vệ bản quyền bởi người sáng tạo theo luật như DMCA ở Mỹ. Lưu để xem riêng tư, như xem clip ngoại tuyến, thường được coi là sử dụng hợp lý. Nhưng chia sẻ mà không có phép hoặc sử dụng để kiếm lợi nhuận có thể dẫn đến vấn đề pháp lý. Nhạc hoặc lồng tiếng trong video có thể có các lớp bản quyền bổ sung, mặc dù việc lưu cá nhân ngắn hiếm khi gặp vấn đề.
+              Video được bảo vệ bản quyền bởi người sáng tạo theo luật như <a href="https://vi.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> ở Mỹ. Lưu để xem riêng tư, như xem clip ngoại tuyến, thường được coi là sử dụng hợp lý. Nhưng chia sẻ mà không có phép hoặc sử dụng để kiếm lợi nhuận có thể dẫn đến vấn đề pháp lý. Nhạc hoặc lồng tiếng trong video có thể có các lớp bản quyền bổ sung, mặc dù việc lưu cá nhân ngắn hiếm khi gặp vấn đề.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

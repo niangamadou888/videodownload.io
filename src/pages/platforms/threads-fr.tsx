@@ -274,7 +274,7 @@ export default function ThreadsPageFR() {
               Ce Que Vous Devez Savoir Sur la Loi
             </h2>
             <p className="section-muted mb-4">
-              Les vidéos sont protégées par le droit d'auteur de leurs créateurs en vertu de lois comme le DMCA aux États-Unis. Sauvegarder pour un visionnage privé, comme regarder un clip hors ligne, compte souvent comme un usage équitable. Mais partager sans permission ou utiliser à des fins lucratives peut entraîner des problèmes juridiques. La musique ou les voix off dans les vidéos peuvent avoir des couches supplémentaires de droits d'auteur, bien que les courtes sauvegardes personnelles rencontrent rarement des problèmes.
+              Les vidéos sont protégées par le droit d'auteur de leurs créateurs en vertu de lois comme le <a href="https://fr.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> aux États-Unis. Sauvegarder pour un visionnage privé, comme regarder un clip hors ligne, compte souvent comme un usage équitable. Mais partager sans permission ou utiliser à des fins lucratives peut entraîner des problèmes juridiques. La musique ou les voix off dans les vidéos peuvent avoir des couches supplémentaires de droits d'auteur, bien que les courtes sauvegardes personnelles rencontrent rarement des problèmes.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

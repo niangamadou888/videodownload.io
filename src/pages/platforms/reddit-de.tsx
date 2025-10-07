@@ -274,7 +274,7 @@ export default function RedditPage() {
               Was Sie Über das Gesetz Wissen Müssen
             </h2>
             <p className="section-muted mb-4">
-              Videos sind urheberrechtlich geschützt von ihren Erstellern nach Gesetzen wie dem <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> in den USA. Das Speichern für private Wiedergabe, wie das Offline-Ansehen eines Tutorials, gilt oft als faire Nutzung. Aber das Teilen ohne Erlaubnis oder die Verwendung für Profit kann zu rechtlichen Problemen führen. Musik oder Voice-Overs in Videos können zusätzliche Urheberrechtsschichten haben, obwohl kurze persönliche Speicherungen selten Probleme haben.
+              Videos sind urheberrechtlich geschützt von ihren Erstellern nach Gesetzen wie dem <a href="https://de.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> in den USA. Das Speichern für private Wiedergabe, wie das Offline-Ansehen eines Tutorials, gilt oft als faire Nutzung. Aber das Teilen ohne Erlaubnis oder die Verwendung für Profit kann zu rechtlichen Problemen führen. Musik oder Voice-Overs in Videos können zusätzliche Urheberrechtsschichten haben, obwohl kurze persönliche Speicherungen selten Probleme haben.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

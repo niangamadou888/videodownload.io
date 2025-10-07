@@ -634,7 +634,7 @@ function EnhancedFeatures() {
         Salve vídeos do Pinterest na melhor resolução disponível, até 1080p se o pin original suportar. Sem imagens desfocadas ou cores desbotadas na reprodução. Obtemos o arquivo diretamente dos servidores do Pinterest, preservando cada detalhe nítido para aquele tutorial DIY ou receita.
       </FeatureCard>
       <FeatureCard icon={Zap} title="Sem marcas d'água ou sobreposições">
-        <a href="https://help.pinterest.com/en/article/download-an-image">O Pinterest exibe o nome de usuário do criador em vídeos baixados através do aplicativo</a>, poluindo a visualização. Removemos tudo isso, entregando um clipe limpo pronto para seus projetos ou uso pessoal. Assista àquela ideia de decoração sem texto bloqueando os detalhes.
+        <a href="https://help.pinterest.com/pt-br/article/download-an-image">O Pinterest exibe o nome de usuário do criador em vídeos baixados através do aplicativo</a>, poluindo a visualização. Removemos tudo isso, entregando um clipe limpo pronto para seus projetos ou uso pessoal. Assista àquela ideia de decoração sem texto bloqueando os detalhes.
       </FeatureCard>
       <FeatureCard icon={Monitor} title="Funciona em qualquer dispositivo">
         Use seu telefone, tablet, laptop ou desktop, e funciona perfeitamente. Sem aplicativos ou software adicional necessário. Basta abrir nosso site no navegador, colar o link e baixar. Testado em tudo, desde iPhones antigos até PCs novos, é sempre simples.

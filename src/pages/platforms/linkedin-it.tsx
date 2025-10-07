@@ -308,7 +308,7 @@ export default function LinkedInPageIt() {
             <p className="section-muted mb-4">
               Scaricare video LinkedIn rientra in un'area grigia. I contenuti sono
               coperti dal diritto d'autore dei creatori, secondo leggi come il
-              <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> negli Stati Uniti. Salvare per uso personale – ad
+              <a href="https://it.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> negli Stati Uniti. Salvare per uso personale – ad
               esempio rivedere un webinar offline – spesso rientra nel fair use.
               Condividere senza permesso o usarli a scopo di lucro può però causare
               problemi legali. L'audio, come musica o voiceover, può avere ulteriori

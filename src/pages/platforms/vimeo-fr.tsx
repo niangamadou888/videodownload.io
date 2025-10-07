@@ -271,7 +271,7 @@ export default function VimeoPageFR() {
               Ce qu'il faut savoir sur la loi
             </h2>
             <p className="section-muted mb-4">
-              Télécharger des vidéos Vimeo reste une zone grise. Les règles de Vimeo <a href="https://help.vimeo.com/hc/en-us/articles/12426502581265-How-to-download-a-video-on-vimeo-com">autorisent le téléchargement de vidéos publiques via leur site</a> pour un usage personnel, si le créateur n'a pas désactivé cette option. Utiliser des outils tiers comme le nôtre enfreint leurs conditions et peut signaler votre compte, même si les bannissements sont rares tant que vous ne téléchargez pas massivement ou ne republiez pas sans autorisation.
+              Télécharger des vidéos Vimeo reste une zone grise. Les règles de Vimeo <a href="https://help.vimeo.com/hc/fr/articles/12426502581265-Comment-puis-je-t%C3%A9l%C3%A9charger-une-vid%C3%A9o-sur-vimeo-com">autorisent le téléchargement de vidéos publiques via leur site</a> pour un usage personnel, si le créateur n'a pas désactivé cette option. Utiliser des outils tiers comme le nôtre enfreint leurs conditions et peut signaler votre compte, même si les bannissements sont rares tant que vous ne téléchargez pas massivement ou ne republiez pas sans autorisation.
             </p>
             <p className="section-muted mb-4">
               Les vidéos sont protégées par le droit d'auteur, selon des lois comme le DMCA aux États-Unis. Les sauvegarder pour un visionnage privé, par exemple pour étudier un tutoriel hors ligne, est souvent considéré comme fair use. Mais les partager sans crédit ou les exploiter commercialement peut entraîner des problèmes juridiques. La musique ou les voix off peuvent ajouter des couches de droits, même si les sauvegardes personnelles et courtes posent rarement souci.
@@ -404,7 +404,7 @@ export default function VimeoPageFR() {
                   Le téléchargement va-t-il ralentir mon appareil ?
                 </AccordionTrigger>
                 <AccordionContent className="section-muted">
-                  Nos fichiers sont légers et propres, donc pas de ralentissement. Mais accumuler beaucoup de vidéos peut saturer le stockage ; surveillez simplement l'espace libre.
+                  Nos fichiers sont légers et propres, donc pas de ralentissement. Mais accumuler beaucoup de vidéos peut saturer le stockage; surveillez simplement l'espace libre.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -711,7 +711,7 @@ function EnhancedSteps() {
         <a href="http://www.vimeo.com">Ouvrez Vimeo</a> sur votre téléphone ou dans votre navigateur. Trouvez la vidéo qui vous plaît, comme un conseil de réalisation ou une animation créative. Cliquez sur l'icône de partage, souvent un avion en papier, en bas ou sur le côté. Dans le menu, choisissez "Copier le lien". Vous récupérez ainsi l'URL complète, par exemple vimeo.com/123456789. Vérifiez qu'elle est correcte.
       </StepCard>
       <StepCard step={2} title="Collez le lien dans notre outil">
-        Rendez-vous sur videodownload.io dans votre navigateur. Vous verrez une zone intitulée "Collez le lien Vimeo ici". Cliquez dedans et collez le lien copié. Assurez-vous qu'il commence par vimeo.com pour éviter les erreurs. Seules les vidéos publiques fonctionnent ; les contenus privés ou protégés ne seront pas téléchargés.
+        Rendez-vous sur videodownload.io dans votre navigateur. Vous verrez une zone intitulée "Collez le lien Vimeo ici". Cliquez dedans et collez le lien copié. Assurez-vous qu'il commence par vimeo.com pour éviter les erreurs. Seules les vidéos publiques fonctionnent; les contenus privés ou protégés ne seront pas téléchargés.
       </StepCard>
       <StepCard step={3} title="Nous récupérons et nettoyons la vidéo">
         Cliquez sur le bouton vert "Télécharger" à côté du champ. Notre système extrait la vidéo des serveurs de Vimeo en quelques secondes. Nous retirons les filigranes et vérifions la qualité pour vous livrer un clip fluide. L'audio reste clair, pour ne rien manquer d'un tutoriel ou d'une interview.

@@ -657,7 +657,7 @@ function EnhancedFeatures() {
         Simpan video Pinterest dalam resolusi terbaik mereka, hingga 1080p jika pin asli mendukungnya. Tidak ada visual buram atau warna pudar saat Anda menonton nanti. Kami menarik file langsung dari server Pinterest, menjaga setiap detail tajam untuk tutorial DIY atau klip resep itu.
       </FeatureCard>
       <FeatureCard icon={Zap} title="Tanpa watermark atau overlay">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest menampilkan nama pengguna pembuat pada video yang diunduh melalui aplikasi mereka</a>, mengacaukan tampilan. Kami menghapus semua itu, memberikan klip bersih yang siap untuk proyek atau penggunaan pribadi Anda. Tonton ide dekorasi rumah itu tanpa teks menghalangi detail.
+        <a href="https://help.pinterest.com/id/article/download-an-image">Pinterest menampilkan nama pengguna pembuat pada video yang diunduh melalui aplikasi mereka</a>, mengacaukan tampilan. Kami menghapus semua itu, memberikan klip bersih yang siap untuk proyek atau penggunaan pribadi Anda. Tonton ide dekorasi rumah itu tanpa teks menghalangi detail.
       </FeatureCard>
       <FeatureCard icon={Monitor} title="Bekerja di perangkat apa pun">
         Gunakan ponsel, tablet, laptop, atau desktop Anda, dan berjalan dengan lancar. Tidak perlu aplikasi atau perangkat lunak tambahan. Cukup buka situs kami di browser Anda, tempel tautan, dan unduh. Diuji pada segala hal dari iPhone lama hingga PC baru, selalu tanpa hambatan.

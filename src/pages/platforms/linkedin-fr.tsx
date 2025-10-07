@@ -313,7 +313,7 @@ export default function LinkedInPageFr() {
             </h2>
             <p className="section-muted mb-4">
               Télécharger des vidéos LinkedIn reste une zone grise. Les contenus sont
-              protégés par leurs auteurs via des lois comme la <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> aux
+              protégés par leurs auteurs via des lois comme la <a href="https://fr.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> aux
               États-Unis. Conserver une vidéo pour un visionnage privé – par exemple
               étudier un webinar hors ligne – relève souvent du fair use. En revanche,
               partager sans autorisation ou utiliser à des fins commerciales peut

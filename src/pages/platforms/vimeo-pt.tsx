@@ -271,7 +271,7 @@ export default function VimeoPagePT() {
               O que você precisa saber sobre a lei
             </h2>
             <p className="section-muted mb-4">
-              Baixar vídeos do Vimeo ainda é uma área cinzenta. As regras da plataforma <a href="https://help.vimeo.com/hc/en-us/articles/12426502581265-How-to-download-a-video-on-vimeo-com">permitem baixar vídeos públicos pelo site</a> para uso pessoal, caso o criador não tenha desativado a opção. Usar ferramentas de terceiros como a nossa quebra os termos de uso e pode marcar sua conta, embora banimentos sejam raros a menos que você faça downloads em massa ou publique sem permissão.
+              Baixar vídeos do Vimeo ainda é uma área cinzenta. As regras da plataforma <a href="https://help.vimeo.com/hc/pt/articles/12426502581265-Como-posso-baixar-um-v%C3%ADdeo-no-vimeo-com">permitem baixar vídeos públicos pelo site</a> para uso pessoal, caso o criador não tenha desativado a opção. Usar ferramentas de terceiros como a nossa quebra os termos de uso e pode marcar sua conta, embora banimentos sejam raros a menos que você faça downloads em massa ou publique sem permissão.
             </p>
             <p className="section-muted mb-4">
               Os vídeos são protegidos por direitos autorais, seguindo leis como o DMCA nos EUA. Guardar para assistir de forma privada – por exemplo, estudar um tutorial offline – normalmente se encaixa em fair use. Mas compartilhar sem crédito ou usar comercialmente pode gerar problemas legais. Músicas ou narrações podem ter camadas extras de direitos, ainda que downloads pessoais e curtos raramente causem dores de cabeça.

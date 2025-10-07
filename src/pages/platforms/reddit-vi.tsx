@@ -274,7 +274,7 @@ export default function RedditPage() {
               Những Gì Bạn Cần Biết Về Luật Pháp
             </h2>
             <p className="section-muted mb-4">
-              Video được bảo vệ bản quyền bởi người tạo ra chúng theo luật như <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> ở Mỹ. Lưu để xem riêng tư, như xem hướng dẫn ngoại tuyến, thường được tính là sử dụng hợp lý. Nhưng chia sẻ mà không có sự cho phép hoặc sử dụng để kiếm lợi nhuận có thể dẫn đến vấn đề pháp lý. Âm nhạc hoặc lồng tiếng trong video có thể có các lớp bản quyền bổ sung, mặc dù việc lưu cá nhân ngắn hiếm khi gặp rắc rối.
+              Video được bảo vệ bản quyền bởi người tạo ra chúng theo luật như <a href="https://vi.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> ở Mỹ. Lưu để xem riêng tư, như xem hướng dẫn ngoại tuyến, thường được tính là sử dụng hợp lý. Nhưng chia sẻ mà không có sự cho phép hoặc sử dụng để kiếm lợi nhuận có thể dẫn đến vấn đề pháp lý. Âm nhạc hoặc lồng tiếng trong video có thể có các lớp bản quyền bổ sung, mặc dù việc lưu cá nhân ngắn hiếm khi gặp rắc rối.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

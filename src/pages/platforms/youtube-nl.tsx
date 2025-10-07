@@ -973,7 +973,7 @@ function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
       <StepCard step={1} title="Kopieer de YouTube-video-URL">
-        Open YouTube in je browser of app, zoek de video die je wilt downloaden
+        <a href="http://www.youtube.com">Open YouTube</a> in je browser of app, zoek de video die je wilt downloaden
         en kopieer de URL. Je kunt de link pakken uit de adresbalk of via de
         knop "Delen" onder de video en vervolgens "Link kopiëren" kiezen.
       </StepCard>

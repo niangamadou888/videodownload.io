@@ -947,9 +947,9 @@ function EnhancedSteps() {
   return (
     <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
       <StepCard step={1} title="Copie a URL do vídeo do YouTube">
-        Abra o YouTube no navegador ou aplicativo, encontre o vídeo que deseja baixar
+        <a href="http://www.youtube.com">Abra o YouTube</a> no navegador ou aplicativo, encontre o vídeo que deseja baixar
         e copie a URL. Você pode pegar o link na barra de endereços ou tocar no botão
-        “Compartilhar” abaixo do vídeo e escolher “Copiar link”.
+        "Compartilhar" abaixo do vídeo e escolher "Copiar link".
       </StepCard>
       <StepCard step={2} title="Cole a URL em nosso site">
         Acesse o videodownload.io em qualquer navegador. Na página inicial há uma barra

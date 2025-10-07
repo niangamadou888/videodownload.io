@@ -271,7 +271,7 @@ export default function VimeoPageDE() {
               Was du über die Rechtslage wissen solltest
             </h2>
             <p className="section-muted mb-4">
-              Vimeo-Downloads bewegen sich in einer Grauzone. Die Vimeo-Regeln <a href="https://help.vimeo.com/hc/en-us/articles/12426502581265-How-to-download-a-video-on-vimeo-com">erlauben den Download öffentlicher Videos direkt über die Website</a> für private Nutzung, sofern der Creator Downloads nicht deaktiviert hat. Der Einsatz von Dritt-Tools wie unserem verstößt gegen die Nutzungsbedingungen und kann dein Konto markieren – Sperren sind jedoch selten, solange du nicht massenhaft herunterlädst oder ohne Erlaubnis repostest.
+              Vimeo-Downloads bewegen sich in einer Grauzone. Die Vimeo-Regeln <a href="https://help.vimeo.com/hc/de/articles/12426502581265-Wie-kann-ich-ein-Video-auf-vimeo-com-herunterladen">erlauben den Download öffentlicher Videos direkt über die Website</a> für private Nutzung, sofern der Creator Downloads nicht deaktiviert hat. Der Einsatz von Dritt-Tools wie unserem verstößt gegen die Nutzungsbedingungen und kann dein Konto markieren – Sperren sind jedoch selten, solange du nicht massenhaft herunterlädst oder ohne Erlaubnis repostest.
             </p>
             <p className="section-muted mb-4">
               Videos sind durch Urheberrecht geschützt, etwa nach dem DMCA in den USA. Das Speichern zur privaten Ansicht, z. B. um ein Tutorial offline zu studieren, gilt oft als Fair Use. Doch das Teilen ohne Nennung oder eine kommerzielle Nutzung kann rechtliche Folgen haben. Musik oder Voice-overs können zusätzliche Rechte mitbringen, auch wenn kurze private Sicherungen kaum Probleme verursachen.

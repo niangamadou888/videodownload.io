@@ -274,7 +274,7 @@ export default function ThreadsPageES() {
               Lo Que Necesitas Saber Sobre la Ley
             </h2>
             <p className="section-muted mb-4">
-              Los videos están protegidos por derechos de autor de sus creadores según leyes como la DMCA en EE.UU. Guardar para visualización privada, como ver un clip sin conexión, a menudo cuenta como uso justo. Pero compartir sin permiso o usar con fines de lucro puede llevar a problemas legales. La música o voces en off en los videos pueden tener capas adicionales de derechos de autor, aunque los guardados personales cortos rara vez enfrentan problemas.
+              Los videos están protegidos por derechos de autor de sus creadores según leyes como la <a href="https://es.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> en EE.UU. Guardar para visualización privada, como ver un clip sin conexión, a menudo cuenta como uso justo. Pero compartir sin permiso o usar con fines de lucro puede llevar a problemas legales. La música o voces en off en los videos pueden tener capas adicionales de derechos de autor, aunque los guardados personales cortos rara vez enfrentan problemas.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">

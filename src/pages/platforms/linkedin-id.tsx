@@ -299,7 +299,7 @@ export default function LinkedInPageId() {
             </h2>
             <p className="section-muted mb-4">
               Mengunduh video LinkedIn berada di area abu-abu. Video dilindungi hak cipta
-              kreatornya menurut hukum seperti <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a>. Menyimpan untuk
+              kreatornya menurut hukum seperti <a href="https://id.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a>. Menyimpan untuk
               ditonton pribadi—misalnya belajar webinar secara offline—sering dianggap fair
               use. Namun membagikan tanpa izin atau memonetisasi dapat menimbulkan masalah
               hukum. Audio seperti musik atau voice-over juga memiliki lapisan hak cipta

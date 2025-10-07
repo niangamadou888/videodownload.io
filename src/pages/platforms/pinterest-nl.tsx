@@ -628,7 +628,7 @@ function EnhancedFeatures() {
         Bewaar Pinterest-video's in de beste resolutie, tot 1080p als de originele pin dit ondersteunt. Geen wazige beelden of vervaagde kleuren bij het afspelen. We halen het bestand rechtstreeks van Pinterest's servers, waarbij elk detail scherp blijft voor die doe-het-zelf tutorial of dat recept.
       </FeatureCard>
       <FeatureCard icon={Zap} title="Geen watermerken of overlays">
-        <a href="https://help.pinterest.com/en/article/download-an-image">Pinterest toont de gebruikersnaam van de maker op video's gedownload via hun app</a>, waardoor het zicht belemmerd wordt. Wij verwijderen dat allemaal en leveren een schone clip, klaar voor je projecten of persoonlijk gebruik. Bekijk dat interieuridee zonder tekst die details blokkeert.
+        <a href="https://help.pinterest.com/nl/article/download-an-image">Pinterest toont de gebruikersnaam van de maker op video's gedownload via hun app</a>, waardoor het zicht belemmerd wordt. Wij verwijderen dat allemaal en leveren een schone clip, klaar voor je projecten of persoonlijk gebruik. Bekijk dat interieuridee zonder tekst die details blokkeert.
       </FeatureCard>
       <FeatureCard icon={Monitor} title="Werkt op elk apparaat">
         Gebruik je telefoon, tablet, laptop of desktop, en het werkt perfect. Geen apps of extra software nodig. Open gewoon onze site in je browser, plak de link en download. Getest op alles van oude iPhones tot nieuwe PC's, het is altijd eenvoudig.

@@ -41,7 +41,13 @@ import { useLanguageNavigation } from "@/hooks/useLanguageNavigation";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function PinterestPage() {
-  const { buildUrl } = useLanguageNavigation();
+  const { buildUrl, currentLanguage } = useLanguageNavigation();
+
+  // Temporary fix for buildUrl to ensure proper prefixing
+  const buildFixedUrl = (path: string) => {
+    const cleanPath = path.startsWith('/') ? path : `/${path}`;
+    return `/${currentLanguage}${cleanPath}`;
+  };
 
   usePageMeta({
     title: "Pinterest Video Download | Free & HD",
@@ -583,7 +589,7 @@ export default function PinterestPage() {
               ].map((p) => (
                 <Link
                   key={p.name}
-                  to={buildUrl(`/${p.name.toLowerCase().replace(/\s+/g, "")}`)}
+                  to={buildFixedUrl(`/${p.name.toLowerCase().replace(/\s+/g, "")}`)}
                   className="block h-full"
                 >
                   <Card className="group glass-card p-4 h-24 sm:h-28 flex items-center hover:scale-[1.03] hover:translate-y-[-1px] transition-all duration-200 border border-primary/10 hover:border-primary/30 overflow-hidden relative">

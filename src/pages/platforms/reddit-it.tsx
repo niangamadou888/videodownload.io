@@ -274,7 +274,7 @@ export default function RedditPage() {
               Cosa Devi Sapere sulla Legge
             </h2>
             <p className="section-muted mb-4">
-              I video sono protetti da copyright dai loro creatori secondo leggi come il <a href="https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> negli Stati Uniti. Salvare per visualizzazione privata, come guardare un tutorial offline, spesso conta come uso equo. Ma condividere senza permesso o usare per profitto può portare a problemi legali. La musica o le voci fuori campo nei video possono avere strati aggiuntivi di copyright, anche se i salvataggi personali brevi raramente affrontano problemi.
+              I video sono protetti da copyright dai loro creatori secondo leggi come il <a href="https://it.wikipedia.org/wiki/Digital_Millennium_Copyright_Act">DMCA</a> negli Stati Uniti. Salvare per visualizzazione privata, come guardare un tutorial offline, spesso conta come uso equo. Ma condividere senza permesso o usare per profitto può portare a problemi legali. La musica o le voci fuori campo nei video possono avere strati aggiuntivi di copyright, anche se i salvataggi personali brevi raramente affrontano problemi.
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3 section-muted">
