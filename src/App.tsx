@@ -61,6 +61,14 @@ import LinkedInPageNl from "./pages/platforms/linkedin-nl";
 import LinkedInPageVi from "./pages/platforms/linkedin-vi";
 import LinkedInPageId from "./pages/platforms/linkedin-id";
 import RedditPage from "./pages/platforms/reddit";
+import RedditPageFr from "./pages/platforms/reddit-fr";
+import RedditPageIt from "./pages/platforms/reddit-it";
+import RedditPageEs from "./pages/platforms/reddit-es";
+import RedditPagePt from "./pages/platforms/reddit-pt";
+import RedditPageNl from "./pages/platforms/reddit-nl";
+import RedditPageDe from "./pages/platforms/reddit-de";
+import RedditPageVi from "./pages/platforms/reddit-vi";
+import RedditPageId from "./pages/platforms/reddit-id";
 import VimeoPage from "./pages/platforms/vimeo";
 import ThreadsPage from "./pages/platforms/threads";
 import { LanguageProvider } from "@/contexts/LanguageContext";
@@ -104,7 +112,7 @@ const App = () => (
             <Route path="/fr/twitter" element={<TwitterPage />} />
             <Route path="/fr/pinterest" element={<PinterestPageFr />} />
             <Route path="/fr/linkedin" element={<LinkedInPageFr />} />
-            <Route path="/fr/reddit" element={<RedditPage />} />
+            <Route path="/fr/reddit" element={<RedditPageFr />} />
             <Route path="/fr/vimeo" element={<VimeoPage />} />
             <Route path="/fr/threads" element={<ThreadsPage />} />
             
@@ -117,7 +125,7 @@ const App = () => (
             <Route path="/it/twitter" element={<TwitterPage />} />
             <Route path="/it/pinterest" element={<PinterestPageIt />} />
             <Route path="/it/linkedin" element={<LinkedInPageIt />} />
-            <Route path="/it/reddit" element={<RedditPage />} />
+            <Route path="/it/reddit" element={<RedditPageIt />} />
             <Route path="/it/vimeo" element={<VimeoPage />} />
             <Route path="/it/threads" element={<ThreadsPage />} />
             
@@ -130,7 +138,7 @@ const App = () => (
             <Route path="/pt/twitter" element={<TwitterPage />} />
             <Route path="/pt/pinterest" element={<PinterestPagePt />} />
             <Route path="/pt/linkedin" element={<LinkedInPagePt />} />
-            <Route path="/pt/reddit" element={<RedditPage />} />
+            <Route path="/pt/reddit" element={<RedditPagePt />} />
             <Route path="/pt/vimeo" element={<VimeoPage />} />
             <Route path="/pt/threads" element={<ThreadsPage />} />
             
@@ -143,7 +151,7 @@ const App = () => (
             <Route path="/es/twitter" element={<TwitterPage />} />
             <Route path="/es/pinterest" element={<PinterestPageEs />} />
             <Route path="/es/linkedin" element={<LinkedInPageEs />} />
-            <Route path="/es/reddit" element={<RedditPage />} />
+            <Route path="/es/reddit" element={<RedditPageEs />} />
             <Route path="/es/vimeo" element={<VimeoPage />} />
             <Route path="/es/threads" element={<ThreadsPage />} />
             
@@ -156,7 +164,7 @@ const App = () => (
             <Route path="/nl/twitter" element={<TwitterPage />} />
             <Route path="/nl/pinterest" element={<PinterestPageNl />} />
             <Route path="/nl/linkedin" element={<LinkedInPageNl />} />
-            <Route path="/nl/reddit" element={<RedditPage />} />
+            <Route path="/nl/reddit" element={<RedditPageNl />} />
             <Route path="/nl/vimeo" element={<VimeoPage />} />
             <Route path="/nl/threads" element={<ThreadsPage />} />
             
@@ -169,7 +177,7 @@ const App = () => (
             <Route path="/de/twitter" element={<TwitterPage />} />
             <Route path="/de/pinterest" element={<PinterestPageDe />} />
             <Route path="/de/linkedin" element={<LinkedInPageDe />} />
-            <Route path="/de/reddit" element={<RedditPage />} />
+            <Route path="/de/reddit" element={<RedditPageDe />} />
             <Route path="/de/vimeo" element={<VimeoPage />} />
             <Route path="/de/threads" element={<ThreadsPage />} />
             
@@ -182,7 +190,7 @@ const App = () => (
             <Route path="/vi/twitter" element={<TwitterPage />} />
             <Route path="/vi/pinterest" element={<PinterestPageVi />} />
             <Route path="/vi/linkedin" element={<LinkedInPageVi />} />
-            <Route path="/vi/reddit" element={<RedditPage />} />
+            <Route path="/vi/reddit" element={<RedditPageVi />} />
             <Route path="/vi/vimeo" element={<VimeoPage />} />
             <Route path="/vi/threads" element={<ThreadsPage />} />
             
@@ -195,7 +203,7 @@ const App = () => (
             <Route path="/id/twitter" element={<TwitterPage />} />
             <Route path="/id/pinterest" element={<PinterestPageId />} />
             <Route path="/id/linkedin" element={<LinkedInPageId />} />
-            <Route path="/id/reddit" element={<RedditPage />} />
+            <Route path="/id/reddit" element={<RedditPageId />} />
             <Route path="/id/vimeo" element={<VimeoPage />} />
             <Route path="/id/threads" element={<ThreadsPage />} />
             
