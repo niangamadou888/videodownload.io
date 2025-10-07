@@ -79,6 +79,14 @@ import RedditPageVi from "./pages/platforms/reddit-vi";
 import RedditPageId from "./pages/platforms/reddit-id";
 import VimeoPage from "./pages/platforms/vimeo";
 import ThreadsPage from "./pages/platforms/threads";
+import ThreadsPageFr from "./pages/platforms/threads-fr";
+import ThreadsPageIt from "./pages/platforms/threads-it";
+import ThreadsPagePt from "./pages/platforms/threads-pt";
+import ThreadsPageEs from "./pages/platforms/threads-es";
+import ThreadsPageNl from "./pages/platforms/threads-nl";
+import ThreadsPageDe from "./pages/platforms/threads-de";
+import ThreadsPageVi from "./pages/platforms/threads-vi";
+import ThreadsPageId from "./pages/platforms/threads-id";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import BackToTopButton from "@/components/BackToTopButton";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -122,7 +130,7 @@ const App = () => (
             <Route path="/fr/linkedin" element={<LinkedInPageFr />} />
             <Route path="/fr/reddit" element={<RedditPageFr />} />
             <Route path="/fr/vimeo" element={<VimeoPage />} />
-            <Route path="/fr/threads" element={<ThreadsPage />} />
+            <Route path="/fr/threads" element={<ThreadsPageFr />} />
             
             {/* Italian routes */}
             <Route path="/it" element={<Index />} />
@@ -135,7 +143,7 @@ const App = () => (
             <Route path="/it/linkedin" element={<LinkedInPageIt />} />
             <Route path="/it/reddit" element={<RedditPageIt />} />
             <Route path="/it/vimeo" element={<VimeoPage />} />
-            <Route path="/it/threads" element={<ThreadsPage />} />
+            <Route path="/it/threads" element={<ThreadsPageIt />} />
             
             {/* Portuguese routes */}
             <Route path="/pt" element={<Index />} />
@@ -148,7 +156,7 @@ const App = () => (
             <Route path="/pt/linkedin" element={<LinkedInPagePt />} />
             <Route path="/pt/reddit" element={<RedditPagePt />} />
             <Route path="/pt/vimeo" element={<VimeoPage />} />
-            <Route path="/pt/threads" element={<ThreadsPage />} />
+            <Route path="/pt/threads" element={<ThreadsPagePt />} />
             
             {/* Spanish routes */}
             <Route path="/es" element={<Index />} />
@@ -161,7 +169,7 @@ const App = () => (
             <Route path="/es/linkedin" element={<LinkedInPageEs />} />
             <Route path="/es/reddit" element={<RedditPageEs />} />
             <Route path="/es/vimeo" element={<VimeoPage />} />
-            <Route path="/es/threads" element={<ThreadsPage />} />
+            <Route path="/es/threads" element={<ThreadsPageEs />} />
             
             {/* Dutch routes */}
             <Route path="/nl" element={<Index />} />
@@ -174,7 +182,7 @@ const App = () => (
             <Route path="/nl/linkedin" element={<LinkedInPageNl />} />
             <Route path="/nl/reddit" element={<RedditPageNl />} />
             <Route path="/nl/vimeo" element={<VimeoPage />} />
-            <Route path="/nl/threads" element={<ThreadsPage />} />
+            <Route path="/nl/threads" element={<ThreadsPageNl />} />
             
             {/* German routes */}
             <Route path="/de" element={<Index />} />
@@ -187,7 +195,7 @@ const App = () => (
             <Route path="/de/linkedin" element={<LinkedInPageDe />} />
             <Route path="/de/reddit" element={<RedditPageDe />} />
             <Route path="/de/vimeo" element={<VimeoPage />} />
-            <Route path="/de/threads" element={<ThreadsPage />} />
+            <Route path="/de/threads" element={<ThreadsPageDe />} />
             
             {/* Vietnamese routes */}
             <Route path="/vi" element={<Index />} />
@@ -200,7 +208,7 @@ const App = () => (
             <Route path="/vi/linkedin" element={<LinkedInPageVi />} />
             <Route path="/vi/reddit" element={<RedditPageVi />} />
             <Route path="/vi/vimeo" element={<VimeoPage />} />
-            <Route path="/vi/threads" element={<ThreadsPage />} />
+            <Route path="/vi/threads" element={<ThreadsPageVi />} />
             
             {/* Indonesian routes */}
             <Route path="/id" element={<Index />} />
@@ -213,7 +221,7 @@ const App = () => (
             <Route path="/id/linkedin" element={<LinkedInPageId />} />
             <Route path="/id/reddit" element={<RedditPageId />} />
             <Route path="/id/vimeo" element={<VimeoPage />} />
-            <Route path="/id/threads" element={<ThreadsPage />} />
+            <Route path="/id/threads" element={<ThreadsPageId />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
