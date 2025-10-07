@@ -78,6 +78,14 @@ import RedditPageDe from "./pages/platforms/reddit-de";
 import RedditPageVi from "./pages/platforms/reddit-vi";
 import RedditPageId from "./pages/platforms/reddit-id";
 import VimeoPage from "./pages/platforms/vimeo";
+import VimeoPageFr from "./pages/platforms/vimeo-fr";
+import VimeoPageIt from "./pages/platforms/vimeo-it";
+import VimeoPageEs from "./pages/platforms/vimeo-es";
+import VimeoPagePt from "./pages/platforms/vimeo-pt";
+import VimeoPageDe from "./pages/platforms/vimeo-de";
+import VimeoPageNl from "./pages/platforms/vimeo-nl";
+import VimeoPageVi from "./pages/platforms/vimeo-vi";
+import VimeoPageId from "./pages/platforms/vimeo-id";
 import ThreadsPage from "./pages/platforms/threads";
 import ThreadsPageFr from "./pages/platforms/threads-fr";
 import ThreadsPageIt from "./pages/platforms/threads-it";
@@ -129,7 +137,7 @@ const App = () => (
             <Route path="/fr/pinterest" element={<PinterestPageFr />} />
             <Route path="/fr/linkedin" element={<LinkedInPageFr />} />
             <Route path="/fr/reddit" element={<RedditPageFr />} />
-            <Route path="/fr/vimeo" element={<VimeoPage />} />
+            <Route path="/fr/vimeo" element={<VimeoPageFr />} />
             <Route path="/fr/threads" element={<ThreadsPageFr />} />
             
             {/* Italian routes */}
@@ -142,7 +150,7 @@ const App = () => (
             <Route path="/it/pinterest" element={<PinterestPageIt />} />
             <Route path="/it/linkedin" element={<LinkedInPageIt />} />
             <Route path="/it/reddit" element={<RedditPageIt />} />
-            <Route path="/it/vimeo" element={<VimeoPage />} />
+            <Route path="/it/vimeo" element={<VimeoPageIt />} />
             <Route path="/it/threads" element={<ThreadsPageIt />} />
             
             {/* Portuguese routes */}
@@ -155,7 +163,7 @@ const App = () => (
             <Route path="/pt/pinterest" element={<PinterestPagePt />} />
             <Route path="/pt/linkedin" element={<LinkedInPagePt />} />
             <Route path="/pt/reddit" element={<RedditPagePt />} />
-            <Route path="/pt/vimeo" element={<VimeoPage />} />
+            <Route path="/pt/vimeo" element={<VimeoPagePt />} />
             <Route path="/pt/threads" element={<ThreadsPagePt />} />
             
             {/* Spanish routes */}
@@ -168,7 +176,7 @@ const App = () => (
             <Route path="/es/pinterest" element={<PinterestPageEs />} />
             <Route path="/es/linkedin" element={<LinkedInPageEs />} />
             <Route path="/es/reddit" element={<RedditPageEs />} />
-            <Route path="/es/vimeo" element={<VimeoPage />} />
+            <Route path="/es/vimeo" element={<VimeoPageEs />} />
             <Route path="/es/threads" element={<ThreadsPageEs />} />
             
             {/* Dutch routes */}
@@ -181,7 +189,7 @@ const App = () => (
             <Route path="/nl/pinterest" element={<PinterestPageNl />} />
             <Route path="/nl/linkedin" element={<LinkedInPageNl />} />
             <Route path="/nl/reddit" element={<RedditPageNl />} />
-            <Route path="/nl/vimeo" element={<VimeoPage />} />
+            <Route path="/nl/vimeo" element={<VimeoPageNl />} />
             <Route path="/nl/threads" element={<ThreadsPageNl />} />
             
             {/* German routes */}
@@ -194,7 +202,7 @@ const App = () => (
             <Route path="/de/pinterest" element={<PinterestPageDe />} />
             <Route path="/de/linkedin" element={<LinkedInPageDe />} />
             <Route path="/de/reddit" element={<RedditPageDe />} />
-            <Route path="/de/vimeo" element={<VimeoPage />} />
+            <Route path="/de/vimeo" element={<VimeoPageDe />} />
             <Route path="/de/threads" element={<ThreadsPageDe />} />
             
             {/* Vietnamese routes */}
@@ -207,7 +215,7 @@ const App = () => (
             <Route path="/vi/pinterest" element={<PinterestPageVi />} />
             <Route path="/vi/linkedin" element={<LinkedInPageVi />} />
             <Route path="/vi/reddit" element={<RedditPageVi />} />
-            <Route path="/vi/vimeo" element={<VimeoPage />} />
+            <Route path="/vi/vimeo" element={<VimeoPageVi />} />
             <Route path="/vi/threads" element={<ThreadsPageVi />} />
             
             {/* Indonesian routes */}
@@ -220,7 +228,7 @@ const App = () => (
             <Route path="/id/pinterest" element={<PinterestPageId />} />
             <Route path="/id/linkedin" element={<LinkedInPageId />} />
             <Route path="/id/reddit" element={<RedditPageId />} />
-            <Route path="/id/vimeo" element={<VimeoPage />} />
+            <Route path="/id/vimeo" element={<VimeoPageId />} />
             <Route path="/id/threads" element={<ThreadsPageId />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
