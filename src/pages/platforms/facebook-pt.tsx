@@ -52,8 +52,11 @@ export default function FacebookPagePt() {
     <div className="min-h-screen relative">
       <PlatformSubheader platform="Facebook" />
       <div className="container mx-auto px-4 py-12">
-        <div className="mx-auto max-w-5xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
+        <div className="mx-auto max-w-6xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
           {/* Caixa de download minimalista (sem outras seções da home) */}
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
+            Baixar vídeo do Facebook
+          </h1>
           <div id="facebook-downloader" className="mb-10">
             <VideoDownloader
               boxOnly
