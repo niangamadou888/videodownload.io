@@ -8,6 +8,10 @@ interface Translations {
 
 export const translations: Translations = {
   en: {
+    // Meta tags
+    homeMetaTitle: 'VideoDownload.io - Free Video Downloader for 40+ Platforms',
+    homeMetaDescription: 'Download videos, audio, and images from TikTok, Instagram, YouTube, Facebook and 40+ social media platforms. Fast, free, and without watermarks.',
+
     // Hero section
     appTitle: 'VideoDownload.io',
     appDescription: 'Download videos, audio, and images from 40+ social media platforms. Fast, free, and without watermarks.',
@@ -93,6 +97,10 @@ export const translations: Translations = {
   },
   
   fr: {
+    // Meta tags
+    homeMetaTitle: 'VideoDownload.io - Téléchargeur de Vidéos Gratuit pour 40+ Plateformes',
+    homeMetaDescription: 'Téléchargez des vidéos, de l\'audio et des images de TikTok, Instagram, YouTube, Facebook et plus de 40 plateformes de médias sociaux. Rapide, gratuit et sans filigranes.',
+
     // Hero section
     appTitle: 'VideoDownload.io',
     appDescription: 'Téléchargez des vidéos, de l\'audio et des images à partir de plus de 40 plateformes de médias sociaux. Rapide, gratuit et sans filigranes.',
@@ -178,6 +186,10 @@ export const translations: Translations = {
   },
   
   it: {
+    // Meta tags
+    homeMetaTitle: 'VideoDownload.io - Downloader Video Gratuito per 40+ Piattaforme',
+    homeMetaDescription: 'Scarica video, audio e immagini da TikTok, Instagram, YouTube, Facebook e più di 40 piattaforme di social media. Veloce, gratuito e senza filigrane.',
+
     // Hero section
     appTitle: 'VideoDownload.io',
     appDescription: 'Scarica video, audio e immagini da più di 40 piattaforme di social media. Veloce, gratuito e senza filigrane.',
@@ -230,6 +242,10 @@ export const translations: Translations = {
   },
   
   pt: {
+    // Meta tags
+    homeMetaTitle: 'VideoDownload.io - Downloader de Vídeo Grátis para 40+ Plataformas',
+    homeMetaDescription: 'Baixe vídeos, áudio e imagens do TikTok, Instagram, YouTube, Facebook e mais de 40 plataformas de redes sociais. Rápido, gratuito e sem marcas d\'água.',
+
     // Hero section
     appTitle: 'VideoDownload.io',
     appDescription: 'Baixe vídeos, áudio e imagens de mais de 40 plataformas de redes sociais. Rápido, gratuito e sem marcas d\'água.',
@@ -282,6 +298,10 @@ export const translations: Translations = {
   },
   
   es: {
+    // Meta tags
+    homeMetaTitle: 'VideoDownload.io - Descargador de Videos Gratis para 40+ Plataformas',
+    homeMetaDescription: 'Descarga videos, audio e imágenes de TikTok, Instagram, YouTube, Facebook y más de 40 plataformas de redes sociales. Rápido, gratuito y sin marcas de agua.',
+
     // Hero section
     appTitle: 'VideoDownload.io',
     appDescription: 'Descarga videos, audio e imágenes de más de 40 plataformas de redes sociales. Rápido, gratuito y sin marcas de agua.',
@@ -334,6 +354,10 @@ export const translations: Translations = {
   },
   
   nl: {
+    // Meta tags
+    homeMetaTitle: 'VideoDownload.io - Gratis Video Downloader voor 40+ Platforms',
+    homeMetaDescription: 'Download video\'s, audio en afbeeldingen van TikTok, Instagram, YouTube, Facebook en meer dan 40 sociale media platforms. Snel, gratis en zonder watermerken.',
+
     // Hero section
     appTitle: 'VideoDownload.io',
     appDescription: 'Download video\'s, audio en afbeeldingen van meer dan 40 sociale media platforms. Snel, gratis en zonder watermerken.',
@@ -386,6 +410,10 @@ export const translations: Translations = {
   },
   
   de: {
+    // Meta tags
+    homeMetaTitle: 'VideoDownload.io - Kostenloser Video-Downloader für 40+ Plattformen',
+    homeMetaDescription: 'Laden Sie Videos, Audio und Bilder von TikTok, Instagram, YouTube, Facebook und über 40 Social-Media-Plattformen herunter. Schnell, kostenlos und ohne Wasserzeichen.',
+
     // Hero section
     appTitle: 'VideoDownload.io',
     appDescription: 'Laden Sie Videos, Audio und Bilder von über 40 Social-Media-Plattformen herunter. Schnell, kostenlos und ohne Wasserzeichen.',
@@ -471,6 +499,10 @@ export const translations: Translations = {
   },
   
   vi: {
+    // Meta tags
+    homeMetaTitle: 'VideoDownload.io - Trình Tải Video Miễn Phí cho 40+ Nền Tảng',
+    homeMetaDescription: 'Tải xuống video, âm thanh và hình ảnh từ TikTok, Instagram, YouTube, Facebook và hơn 40 nền tảng mạng xã hội. Nhanh, miễn phí và không có watermark.',
+
     // Hero section
     appTitle: 'VideoDownload.io',
     appDescription: 'Tải xuống video, âm thanh và hình ảnh từ hơn 40 nền tảng mạng xã hội. Nhanh, miễn phí và không có watermark.',
@@ -523,6 +555,10 @@ export const translations: Translations = {
   },
   
   id: {
+    // Meta tags
+    homeMetaTitle: 'VideoDownload.io - Pengunduh Video Gratis untuk 40+ Platform',
+    homeMetaDescription: 'Unduh video, audio, dan gambar dari TikTok, Instagram, YouTube, Facebook dan 40+ platform media sosial. Cepat, gratis, dan tanpa watermark.',
+
     // Hero section
     appTitle: 'VideoDownload.io',
     appDescription: 'Unduh video, audio, dan gambar dari 40+ platform media sosial. Cepat, gratis, dan tanpa watermark.',
