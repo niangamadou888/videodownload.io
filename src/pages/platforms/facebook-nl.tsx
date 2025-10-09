@@ -55,7 +55,7 @@ export default function FacebookPageNl() {
         <div className="mx-auto max-w-6xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
           {/* Minimalistische downloadbox (zonder extra homepage-secties) */}
           <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Download Facebook Video
+            Facebook-video downloaden
           </h1>
           <div id="facebook-downloader" className="mb-10">
             <VideoDownloader
