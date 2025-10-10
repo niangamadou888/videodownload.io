@@ -93,7 +93,7 @@ export default function TwitterPage() {
           <div className="text-center mt-6 mb-10">
             <a href="#twitter-downloader">
               <Button variant="download" className="px-6">
-                Download Twitter X Video
+                Download Twitter Video
               </Button>
             </a>
           </div>
@@ -506,7 +506,7 @@ export default function TwitterPage() {
               <a href="#twitter-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Download Twitter X Video
+                  Download Twitter Video
                 </Button>
               </a>
             </div>

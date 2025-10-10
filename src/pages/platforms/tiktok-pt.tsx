@@ -56,7 +56,7 @@ export default function TikTokPagePt() {
         <div className="mx-auto max-w-6xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
           {/* Caixa de download mínima (sem outras seções da home) */}
           <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Baixar vídeo do TikTok
+            Download TikTok Video
           </h1>
           <div id="tiktok-downloader" className="mb-10">
             <VideoDownloader
@@ -91,7 +91,7 @@ export default function TikTokPagePt() {
           <div className="text-center mt-6 mb-10">
             <a href="#tiktok-downloader">
               <Button variant="download" className="px-6">
-                Baixar vídeo TikTok
+                Download TikTok Video
               </Button>
             </a>
           </div>
@@ -521,7 +521,7 @@ export default function TikTokPagePt() {
               <a href="#tiktok-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Baixar vídeo TikTok
+                  Download TikTok Video
                 </Button>
               </a>
             </div>
@@ -611,7 +611,7 @@ export default function TikTokPagePt() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Baixar vídeo de {p.name}
+                        Download {p.name} Video
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}

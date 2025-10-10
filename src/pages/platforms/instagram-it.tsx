@@ -55,7 +55,7 @@ export default function InstagramPageIt() {
         <div className="mx-auto max-w-6xl rounded-xl border border-primary/10 bg-card/40 p-6 md:p-8 shadow-lg backdrop-blur text-foreground">
           {/* Minimal Download Box */}
           <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent">
-            Scarica video Instagram
+            Download Instagram Video
           </h1>
           <div id="instagram-downloader" className="mb-10">
             <VideoDownloader
@@ -94,7 +94,7 @@ export default function InstagramPageIt() {
           <div className="text-center mt-6 mb-10">
             <a href="#instagram-downloader">
               <Button variant="download" className="px-6">
-                Scarica video Instagram
+                Download Instagram Video
               </Button>
             </a>
           </div>
@@ -511,7 +511,7 @@ export default function InstagramPageIt() {
               <a href="#instagram-downloader">
                 <Button variant="download" size="lg" className="px-8">
                   <Download className="w-5 h-5" />
-                  Scarica video Instagram
+                  Download Instagram Video
                 </Button>
               </a>
             </div>
@@ -601,7 +601,7 @@ export default function InstagramPageIt() {
                     />
                     <div className="flex items-center justify-between gap-3 relative z-10 w-full">
                       <div className="text-white font-medium text-sm md:text-base">
-                        Scarica video {p.name}
+                        Download {p.name} Video
                       </div>
                       <div
                         className={`w-24 h-12 rounded-full ${p.color} flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-110`}
