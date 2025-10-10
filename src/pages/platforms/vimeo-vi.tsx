@@ -44,7 +44,7 @@ export default function VimeoPageVI() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Tải Video Vimeo | Miễn Phí & HD",
+    title: "Download Video Vimeo | Miễn Phí & HD",
     description: "Tải video Vimeo định dạng MP4 với chất lượng 1080p. Trình tải và chuyển đổi video trực tuyến miễn phí."
   });
 

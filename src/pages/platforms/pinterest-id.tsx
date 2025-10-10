@@ -44,7 +44,7 @@ export default function PinterestPageId() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Unduh Video Pinterest | Gratis & HD",
+    title: "Download Video Pinterest | Gratis & HD",
     description: "Unduh video Pinterest dan pin dalam format mp4, kualitas 1080p. Pengunduh dan konverter video online gratis."
   });
 

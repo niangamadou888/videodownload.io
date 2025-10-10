@@ -44,7 +44,7 @@ export default function PinterestPageFr() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Télécharger Vidéo Pinterest | Gratuit & HD",
+    title: "Download Vidéo Pinterest | Gratuit & HD",
     description:
       "Téléchargez des vidéos et épingles Pinterest en mp4, 1080p. Convertisseur et téléchargeur vidéo en ligne gratuit."
   });

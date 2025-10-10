@@ -44,7 +44,7 @@ export default function TikTokPagePt() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Baixar Vídeo TikTok | Grátis & HD",
+    title: "Download Vídeo TikTok | Grátis & HD",
     description:
       "Baixe vídeos do TikTok sem marca d'água em qualidade HD. Downloader TikTok online gratuito: rápido, seguro e sem watermark."
   });

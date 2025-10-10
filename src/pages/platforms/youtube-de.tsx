@@ -44,7 +44,7 @@ export default function YouTubePageDe() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "YouTube Video Herunterladen | Kostenlos & HD",
+    title: "YouTube Video Download | Kostenlos & HD",
     description: "YouTube Videos, Shorts und Lives in mp4, 1080p, 4k herunterladen. Kostenloser Online-Video-Downloader und Converter."
   });
 

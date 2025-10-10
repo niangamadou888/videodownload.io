@@ -44,7 +44,7 @@ export default function ThreadsPageID() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Unduh Video Threads | Gratis & HD",
+    title: "Download Video Threads | Gratis & HD",
     description: "Unduh video dan postingan Threads dalam mp4, kualitas 1080p. Pengunduh dan konverter video online gratis."
   });
 

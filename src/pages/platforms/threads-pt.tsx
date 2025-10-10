@@ -44,7 +44,7 @@ export default function ThreadsPagePT() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Baixar Vídeos do Threads | Grátis & HD",
+    title: "Download Vídeos do Threads | Grátis & HD",
     description: "Baixe vídeos e postagens do Threads em mp4, qualidade 1080p. Baixador e conversor de vídeos online gratuito."
   });
 

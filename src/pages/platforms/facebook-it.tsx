@@ -44,7 +44,7 @@ export default function FacebookPageIt() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Scarica Video Facebook | Gratis & HD",
+    title: "Download Video Facebook | Gratis & HD",
     description: "Scarica video Facebook, Reels e Live in mp4, 1080p, HD. Convertitore e downloader video online gratuito."
   });
 

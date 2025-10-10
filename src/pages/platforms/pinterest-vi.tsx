@@ -44,7 +44,7 @@ export default function PinterestPageVi() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Tải Video Pinterest | Miễn Phí & HD",
+    title: "Download Video Pinterest | Miễn Phí & HD",
     description: "Tải video Pinterest và ghim ở định dạng mp4, chất lượng 1080p. Trình tải và chuyển đổi video trực tuyến miễn phí."
   });
 

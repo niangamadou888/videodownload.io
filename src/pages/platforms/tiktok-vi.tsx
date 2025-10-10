@@ -44,7 +44,7 @@ export default function TikTokPageVi() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Tải Video TikTok | Miễn Phí & HD",
+    title: "Download Video TikTok | Miễn Phí & HD",
     description:
       "Tải video TikTok không logo chất lượng HD. Công cụ tải TikTok miễn phí: nhanh, an toàn và không mất phí."
   });

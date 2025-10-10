@@ -44,7 +44,7 @@ export default function InstagramPageId() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Unduh Video Instagram | Gratis & HD",
+    title: "Download Video Instagram | Gratis & HD",
     description:
       "Unduh video Instagram, Reels, Stories, dan IGTV dalam format mp4, 1080p, dan 4k. Pengunduh dan konverter video online gratis."
   });

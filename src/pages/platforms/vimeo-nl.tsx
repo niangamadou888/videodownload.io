@@ -44,7 +44,7 @@ export default function VimeoPageNL() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Vimeo Video Downloaden | Gratis & HD",
+    title: "Vimeo Video Download | Gratis & HD",
     description: "Download Vimeo-video's in MP4 en 1080p-kwaliteit. Gratis online videodownloader en converter."
   });
 

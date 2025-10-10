@@ -44,7 +44,7 @@ export default function LinkedInPageVi() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Tải Video LinkedIn | Miễn Phí & HD",
+    title: "Download Video LinkedIn | Miễn Phí & HD",
     description:
       "Tải video và bài đăng LinkedIn ở định dạng mp4, chất lượng 1080p. Công cụ tải và chuyển đổi video trực tuyến miễn phí."
   });

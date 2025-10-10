@@ -44,7 +44,7 @@ export default function VimeoPageID() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Unduh Video Vimeo | Gratis & HD",
+    title: "Download Video Vimeo | Gratis & HD",
     description: "Unduh video Vimeo dalam format MP4 dengan kualitas 1080p. Pengunduh dan konverter video online gratis."
   });
 

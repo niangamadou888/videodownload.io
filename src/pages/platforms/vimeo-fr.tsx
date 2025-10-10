@@ -44,7 +44,7 @@ export default function VimeoPageFR() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Téléchargement de Vidéos Vimeo | Gratuit & HD",
+    title: "Download Vidéos Vimeo | Gratuit & HD",
     description: "Téléchargez des vidéos Vimeo en MP4, qualité 1080p. Téléchargeur et convertisseur de vidéos en ligne gratuit."
   });
 

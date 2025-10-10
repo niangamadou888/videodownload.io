@@ -44,7 +44,7 @@ export default function RedditPage() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Tải Video Reddit | Miễn Phí & HD",
+    title: "Download Video Reddit | Miễn Phí & HD",
     description: "Tải video và bài đăng Reddit ở định dạng mp4, chất lượng 1080p. Trình tải và chuyển đổi video trực tuyến miễn phí."
   });
 

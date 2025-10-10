@@ -44,7 +44,7 @@ export default function RedditPage() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Unduh Video Reddit | Gratis & HD",
+    title: "Download Video Reddit | Gratis & HD",
     description: "Unduh video dan postingan Reddit dalam mp4, kualitas 1080p. Pengunduh dan konverter video online gratis."
   });
 

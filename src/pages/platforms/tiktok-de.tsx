@@ -44,7 +44,7 @@ export default function TikTokPageDe() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "TikTok Video Herunterladen | Kostenlos & HD",
+    title: "TikTok Video Download | Kostenlos & HD",
     description:
       "TikTok-Videos ohne Wasserzeichen in HD-Qualität herunterladen. Kostenloser TikTok-Downloader: schnell, sicher und ohne Kosten."
   });

@@ -44,7 +44,7 @@ export default function PinterestPageDe() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Pinterest Video Herunterladen | Kostenlos & HD",
+    title: "Pinterest Video Download | Kostenlos & HD",
     description:
       "Lade Pinterest-Videos und Pins als mp4 in 1080p herunter. Kostenloser Online-Downloader und Konverter."
   });

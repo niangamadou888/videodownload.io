@@ -44,7 +44,7 @@ export default function LinkedInPagePt() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Baixar Vídeo do LinkedIn | Grátis & HD",
+    title: "Download Vídeo do LinkedIn | Grátis & HD",
     description:
       "Baixe vídeos e publicações do LinkedIn em mp4, qualidade 1080p. Downloader e conversor de vídeo online gratuito."
   });

@@ -44,7 +44,7 @@ export default function ThreadsPageVI() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Tải Video Threads | Miễn Phí & HD",
+    title: "Download Video Threads | Miễn Phí & HD",
     description: "Tải video và bài đăng Threads dạng mp4, chất lượng 1080p. Trình tải và chuyển đổi video trực tuyến miễn phí."
   });
 

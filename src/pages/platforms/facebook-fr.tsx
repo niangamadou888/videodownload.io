@@ -44,7 +44,7 @@ export default function FacebookPageFr() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Télécharger Vidéo Facebook | Gratuit & HD",
+    title: "Download Vidéo Facebook | Gratuit & HD",
     description: "Téléchargez des vidéos Facebook, Reels et Lives en mp4, 1080p, HD. Convertisseur et téléchargeur de vidéos gratuit en ligne."
   });
 

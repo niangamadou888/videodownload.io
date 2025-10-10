@@ -44,7 +44,7 @@ export default function TikTokPageId() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Unduh Video TikTok | Gratis & HD",
+    title: "Download Video TikTok | Gratis & HD",
     description:
       "Unduh video TikTok tanpa watermark dalam kualitas HD. Pengunduh TikTok gratis: cepat, aman, dan tanpa biaya."
   });

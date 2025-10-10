@@ -44,7 +44,7 @@ export default function ThreadsPageNL() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Threads Video Downloaden | Gratis & HD",
+    title: "Threads Video Download | Gratis & HD",
     description: "Download Threads-video's en posts in MP4, 1080p-kwaliteit. Gratis online videodownloader en converter."
   });
 

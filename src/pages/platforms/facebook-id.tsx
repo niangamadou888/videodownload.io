@@ -44,7 +44,7 @@ export default function FacebookPageId() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Unduh Video Facebook | Gratis & HD",
+    title: "Download Video Facebook | Gratis & HD",
     description: "Unduh video Facebook, Reels, dan Live dalam format mp4, 1080p, dan kualitas HD. Pengunduh dan konverter video online gratis."
   });
 

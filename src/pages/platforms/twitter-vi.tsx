@@ -44,7 +44,7 @@ export default function TwitterPage() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Tải Video Twitter X | Miễn Phí & HD",
+    title: "Download Video Twitter X | Miễn Phí & HD",
     description: "Tải video và bài đăng Twitter X ở định dạng mp4, chất lượng 1080p. Công cụ tải và chuyển đổi video trực tuyến miễn phí."
   });
 

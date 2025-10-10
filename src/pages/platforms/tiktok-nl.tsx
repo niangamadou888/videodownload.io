@@ -44,7 +44,7 @@ export default function TikTokPageNl() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "TikTok Video Downloaden | Gratis & HD",
+    title: "TikTok Video Download | Gratis & HD",
     description:
       "Download TikTok-video's zonder watermerk in HD-kwaliteit. Gratis TikTok-downloader: snel, veilig en zonder kosten."
   });

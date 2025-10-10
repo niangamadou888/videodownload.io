@@ -44,7 +44,7 @@ export default function TwitterPage() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Twitter X Video Downloaden | Gratis & HD",
+    title: "Twitter X Video Download | Gratis & HD",
     description: "Download Twitter X video's en posts in mp4, 1080p kwaliteit. Gratis online video downloader en converter."
   });
 

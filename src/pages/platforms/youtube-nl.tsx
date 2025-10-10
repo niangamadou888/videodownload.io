@@ -44,7 +44,7 @@ export default function YouTubePageNl() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "YouTube Video Downloaden | Gratis & HD",
+    title: "YouTube Video Download | Gratis & HD",
     description: "Download YouTube videos, Shorts en Lives in mp4, 1080p, 4k. Gratis online video downloader en converter."
   });
 

@@ -44,7 +44,7 @@ export default function TikTokPageIt() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Scarica Video TikTok | Gratis & HD",
+    title: "Download Video TikTok | Gratis & HD",
     description: "Scarica video TikTok senza filigrana in qualità HD. Downloader TikTok online gratuito: veloce, sicuro e senza watermark."
   });
 

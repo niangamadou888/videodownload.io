@@ -46,7 +46,7 @@ export default function YouTubePageFr() {
   const { t } = useLanguage();
 
   usePageMeta({
-    title: "Télécharger Vidéo YouTube | Gratuit & HD",
+    title: "Download Vidéo YouTube | Gratuit & HD",
     description: "Téléchargez des vidéos YouTube, Shorts et Live en mp4, 1080p, 4k. Convertisseur et téléchargeur de vidéos gratuit en ligne."
   });
 

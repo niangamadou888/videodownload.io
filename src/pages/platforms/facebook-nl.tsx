@@ -44,7 +44,7 @@ export default function FacebookPageNl() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Facebook Video Downloaden | Gratis & HD",
+    title: "Facebook Video Download | Gratis & HD",
     description: "Download Facebook video's, Reels en livestreams in mp4, 1080p en HD-kwaliteit. Gratis online video downloader en converter."
   });
 

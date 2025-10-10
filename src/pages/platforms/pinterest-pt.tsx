@@ -44,7 +44,7 @@ export default function PinterestPagePt() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Baixar Vídeo Pinterest | Grátis & HD",
+    title: "Download Vídeo Pinterest | Grátis & HD",
     description:
       "Baixe vídeos e pins do Pinterest em mp4, qualidade 1080p. Downloader e conversor online gratuito."
   });

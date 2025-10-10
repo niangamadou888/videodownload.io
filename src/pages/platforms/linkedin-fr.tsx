@@ -44,7 +44,7 @@ export default function LinkedInPageFr() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Télécharger Vidéo LinkedIn | Gratuit & HD",
+    title: "Download Vidéo LinkedIn | Gratuit & HD",
     description:
       "Téléchargez des vidéos et publications LinkedIn en mp4, 1080p. Téléchargeur et convertisseur vidéo en ligne gratuit."
   });

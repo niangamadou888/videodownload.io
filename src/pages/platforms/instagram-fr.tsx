@@ -44,7 +44,7 @@ export default function InstagramPageFr() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Télécharger Vidéo Instagram | Gratuit & HD",
+    title: "Download Vidéo Instagram | Gratuit & HD",
     description: "Téléchargez des vidéos Instagram, Reels, Stories et IGTV en mp4, 1080p, 4k. Convertisseur et téléchargeur de vidéos gratuit en ligne."
   });
 

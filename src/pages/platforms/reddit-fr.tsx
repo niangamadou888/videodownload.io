@@ -44,7 +44,7 @@ export default function RedditPage() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Télécharger Vidéo Reddit | Gratuit & HD",
+    title: "Download Vidéo Reddit | Gratuit & HD",
     description: "Téléchargez des vidéos et posts Reddit en mp4, qualité 1080p. Téléchargeur et convertisseur de vidéos en ligne gratuit."
   });
 

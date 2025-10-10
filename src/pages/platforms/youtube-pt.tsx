@@ -44,7 +44,7 @@ export default function YouTubePagePt() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Baixar Vídeo YouTube | Grátis & HD",
+    title: "Download Vídeo YouTube | Grátis & HD",
     description: "Baixe vídeos do YouTube, Shorts e Lives em mp4, 1080p, 4k. Conversor e downloader de vídeos grátis online."
   });
 

@@ -9,7 +9,7 @@ interface Translations {
 export const translations: Translations = {
   en: {
     // Meta tags
-    homeMetaTitle: 'VideoDownload.io - Free Video Downloader for 40+ Platforms',
+    homeMetaTitle: 'VideoDownload.io - Free Video Download for 40+ Platforms',
     homeMetaDescription: 'Download videos, audio, and images from TikTok, Instagram, YouTube, Facebook and 40+ social media platforms. Fast, free, and without watermarks.',
 
     // Hero section
@@ -98,7 +98,7 @@ export const translations: Translations = {
   
   fr: {
     // Meta tags
-    homeMetaTitle: 'VideoDownload.io - Téléchargeur de Vidéos Gratuit pour 40+ Plateformes',
+    homeMetaTitle: 'VideoDownload.io - Download de Vidéos Gratuit pour 40+ Plateformes',
     homeMetaDescription: 'Téléchargez des vidéos, de l\'audio et des images de TikTok, Instagram, YouTube, Facebook et plus de 40 plateformes de médias sociaux. Rapide, gratuit et sans filigranes.',
 
     // Hero section
@@ -187,7 +187,7 @@ export const translations: Translations = {
   
   it: {
     // Meta tags
-    homeMetaTitle: 'VideoDownload.io - Downloader Video Gratuito per 40+ Piattaforme',
+    homeMetaTitle: 'VideoDownload.io - Download Video Gratuito per 40+ Piattaforme',
     homeMetaDescription: 'Scarica video, audio e immagini da TikTok, Instagram, YouTube, Facebook e più di 40 piattaforme di social media. Veloce, gratuito e senza filigrane.',
 
     // Hero section
@@ -243,7 +243,7 @@ export const translations: Translations = {
   
   pt: {
     // Meta tags
-    homeMetaTitle: 'VideoDownload.io - Downloader de Vídeo Grátis para 40+ Plataformas',
+    homeMetaTitle: 'VideoDownload.io - Download de Vídeo Grátis para 40+ Plataformas',
     homeMetaDescription: 'Baixe vídeos, áudio e imagens do TikTok, Instagram, YouTube, Facebook e mais de 40 plataformas de redes sociais. Rápido, gratuito e sem marcas d\'água.',
 
     // Hero section
@@ -299,7 +299,7 @@ export const translations: Translations = {
   
   es: {
     // Meta tags
-    homeMetaTitle: 'VideoDownload.io - Descargador de Videos Gratis para 40+ Plataformas',
+    homeMetaTitle: 'VideoDownload.io - Download de Videos Gratis para 40+ Plataformas',
     homeMetaDescription: 'Descarga videos, audio e imágenes de TikTok, Instagram, YouTube, Facebook y más de 40 plataformas de redes sociales. Rápido, gratuito y sin marcas de agua.',
 
     // Hero section
@@ -355,7 +355,7 @@ export const translations: Translations = {
   
   nl: {
     // Meta tags
-    homeMetaTitle: 'VideoDownload.io - Gratis Video Downloader voor 40+ Platforms',
+    homeMetaTitle: 'VideoDownload.io - Gratis Video Download voor 40+ Platforms',
     homeMetaDescription: 'Download video\'s, audio en afbeeldingen van TikTok, Instagram, YouTube, Facebook en meer dan 40 sociale media platforms. Snel, gratis en zonder watermerken.',
 
     // Hero section
@@ -411,7 +411,7 @@ export const translations: Translations = {
   
   de: {
     // Meta tags
-    homeMetaTitle: 'VideoDownload.io - Kostenloser Video-Downloader für 40+ Plattformen',
+    homeMetaTitle: 'VideoDownload.io - Kostenloser Video-Download für 40+ Plattformen',
     homeMetaDescription: 'Laden Sie Videos, Audio und Bilder von TikTok, Instagram, YouTube, Facebook und über 40 Social-Media-Plattformen herunter. Schnell, kostenlos und ohne Wasserzeichen.',
 
     // Hero section
@@ -500,7 +500,7 @@ export const translations: Translations = {
   
   vi: {
     // Meta tags
-    homeMetaTitle: 'VideoDownload.io - Trình Tải Video Miễn Phí cho 40+ Nền Tảng',
+    homeMetaTitle: 'VideoDownload.io - Download Video Miễn Phí cho 40+ Nền Tảng',
     homeMetaDescription: 'Tải xuống video, âm thanh và hình ảnh từ TikTok, Instagram, YouTube, Facebook và hơn 40 nền tảng mạng xã hội. Nhanh, miễn phí và không có watermark.',
 
     // Hero section
@@ -556,7 +556,7 @@ export const translations: Translations = {
   
   id: {
     // Meta tags
-    homeMetaTitle: 'VideoDownload.io - Pengunduh Video Gratis untuk 40+ Platform',
+    homeMetaTitle: 'VideoDownload.io - Download Video Gratis untuk 40+ Platform',
     homeMetaDescription: 'Unduh video, audio, dan gambar dari TikTok, Instagram, YouTube, Facebook dan 40+ platform media sosial. Cepat, gratis, dan tanpa watermark.',
 
     // Hero section

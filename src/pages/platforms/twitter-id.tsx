@@ -44,7 +44,7 @@ export default function TwitterPage() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Unduh Video Twitter X | Gratis & HD",
+    title: "Download Video Twitter X | Gratis & HD",
     description: "Unduh video dan postingan Twitter X dalam mp4, kualitas 1080p. Pengunduh dan konverter video online gratis."
   });
 

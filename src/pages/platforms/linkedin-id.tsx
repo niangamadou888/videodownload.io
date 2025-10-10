@@ -44,7 +44,7 @@ export default function LinkedInPageId() {
   const { buildUrl } = useLanguageNavigation();
 
   usePageMeta({
-    title: "Unduh Video LinkedIn | Gratis & HD",
+    title: "Download Video LinkedIn | Gratis & HD",
     description:
       "Unduh video dan postingan LinkedIn dalam format mp4 kualitas 1080p. Pengunduh dan konverter video online gratis."
   });
