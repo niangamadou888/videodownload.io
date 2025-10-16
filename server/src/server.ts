@@ -35,7 +35,7 @@ app.use("/api/", limiter);
 const BASE = process.env.RAPIDAPI_BASE || "https://social-download-all-in-one.p.rapidapi.com";
 const HOST = process.env.RAPIDAPI_HOST || "social-download-all-in-one.p.rapidapi.com";
 const KEY = process.env.RAPIDAPI_KEY;
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 3000;
 
 // URL validation helper
 function isValidHttpUrl(s: unknown): s is string {

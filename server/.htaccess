@@ -1,0 +1,18 @@
+# Apache/LiteSpeed Configuration for Node.js App
+# This file sets environment variables to prevent WebAssembly memory issues
+
+# Set Node.js options to disable experimental fetch and prevent WASM allocation
+SetEnv NODE_OPTIONS "--no-experimental-fetch"
+
+# Optional: Increase request timeout if needed
+SetEnv REQUEST_TIMEOUT 30000
+
+# Enable CORS if not handled by the app (optional, app already handles it)
+# Header set Access-Control-Allow-Origin "*"
+
+# Prevent directory listing
+Options -Indexes
+
+# Custom error pages (optional)
+# ErrorDocument 404 /404.html
+# ErrorDocument 500 /500.html

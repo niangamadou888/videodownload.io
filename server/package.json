@@ -2,11 +2,12 @@
   "name": "videodownload-server",
   "version": "1.0.0",
   "description": "Backend server for videodownload.io",
-  "main": "dist/server.js",
+  "main": "launcher.cjs",
   "type": "commonjs",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "NODE_OPTIONS='--no-experimental-fetch' node launcher.cjs",
+    "start:sh": "./start.sh",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
